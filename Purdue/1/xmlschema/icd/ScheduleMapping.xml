@@ -1,0 +1,182 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Schedule of Activities" elementType="Schedule" file="ScheduleMapping.xml" systemName="Schedule" tabColor="#83A49D" tabLabel="Schedule" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+  <ElementBucket bucketLabel="Schedule" elementType="Schedule" hidden="true" systemName="Schedule">
+    <ChooserEntry elementLabel="Schedule Of Activities" elementPath="/FTICP/StudySchedule/Schedules/Schedule" toolTip="Schedule of activities or events.">
+      <Complex>
+        <ChooserEntry elementLabel="Schedule Name" elementPath="soaName" ftElementType="Element" stickyCase="true" toolTip="The name of this schedule" />
+        <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Arms/Arm" assocClass="Tspd.Businessobject.Arm" elementLabel="Study Arms" elementPath="AssociatedArms/AssociatedArm" ftElementType="Collection" toolTip="The study arms using this schedule">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="DosingScheduleActivityType" elementLabel="Dosing Schedule Activity Type" ftElementType="Element" toolTip="The activity type" stickyCase="true" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry detEditorClass="WP_PERIOD_DETAIL_ELD04" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Period" elementPath="Periods/Period" ftElementType="Template" toolTip="Study Period">
+      <Complex>
+        <ChooserEntry elementLabel="Period Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a period within the study" />
+        <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a period within the study" />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this period" />
+        <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+        <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="TimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this period." />
+        <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+        <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry detEditorClass="WP_SUBPERIOD_DETAIL_ELD05" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Sub-Period" elementPath="Children/SubPeriod" ftElementType="Template" toolTip="A sub-period is an optional breakout of the study period">
+      <Complex>
+        <ChooserEntry elementLabel="Sub-Period Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a subperiod within the study" />
+        <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a subperiod within the study" />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this subperiod" />
+        <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+        <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="TimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this subperiod." />
+        <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+        <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry detEditorClass="WP_EVENT_DETAIL_FORM_ELD06" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Event" elementPath="Children/ProtocolEvent" ftElementType="Template" toolTip="This may be either an outpatient visit, or an inpatient day.">
+      <Complex>
+        <ChooserEntry elementLabel="Event Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a visit within the study" />
+        <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a visit within the study" />
+        <ChooserEntry dataType="Coded" elementLabel="Event Type" elementPath="eventType" enumList="EventTypes" ftElementType="Element" hidden="false" toolTip="The class of the study event">
+          <ElementStatus default="true" docType="Protocol" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+        <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this visit" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this visit" />
+        <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+        <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry detEditorClass="WP_SOA_CELL_DETAIL_FORM_ELD07" editorClass="PDG.Tasks" elementLabel="Task-Visit" elementPath="TaskVisits/TaskVisit" ftElementType="Template" toolTip="A task-visit lists all of the tasks that happen on a given visit.">
+      <Complex>
+        <ChooserEntry assocChooserPath="TaskVisitPurpose" assocClass="Tspd.Businessobject.TaskVisitPurpose" dataType="Coded" elementLabel="Purpose" elementPath="TaskVisitPurpose" enumList="PurposeTypes" ftElementType="Collection" toolTip="The purpose for this task at this visit" />
+        <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome" elementLabel="Assoc. Outcomes" elementPath="associatedOutcomes/associatedOutcome" ftElementType="Collection" hidden="true" toolTip="Outcomes associated with this task on this visit" />
+        <ChooserEntry dataType="Coded" elementLabel="Local Lab" elementPath="localFacilityType" enumList="LocalFacilityTypes" ftElementType="Element" toolTip="Is the Visit to be held in a local facility." />
+        <ChooserEntry dataType="Coded" elementLabel="Central Lab" elementPath="centralFacilityType" enumList="CentralFacilityTypes" ftElementType="Element" toolTip="Is the Visit to be held in a central facility." />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail pertaining to the performance of this task at this visit" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="A label for a planned execution of a Task at this visit" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Footnotes for this task during this visit" />
+        <ChooserEntry dataType="Coded" elementLabel="Frequency" elementPath="repeatInterval" enumList="TimeIntervalTypes" ftElementType="Element" toolTip="Frequency at which Task should be performed" />
+        <ChooserEntry dataType="Integer" elementLabel="Min Repeats" elementPath="repeatMin" ftElementType="Element" toolTip="Minimum number of repeats (0 = no minimum)" />
+        <ChooserEntry dataType="Integer" elementLabel="Max Repeats" elementPath="repeatMax" ftElementType="Element" toolTip="Maximum number of repeats (0 = no maximum)" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Valid window for repeatt" uomPath="windowUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for Repeat Window" />
+        <ChooserEntry dataType="String" elementLabel="Critical" elementPath="critical" ftElementType="Element" toolTip="Critical" stickyCase="false" hidden="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <!-- always fetched in the context of a TaskVisit - so the path is relative-->
+    <ChooserEntry elementLabel="Purpose of Task at Visit" elementPath="TaskVisitPurpose" ftElementType="Template" toolTip="The purpose of this task at this specific visit.">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Purpose" elementPath="purposeType" enumList="PurposeTypes" ftElementType="Element" toolTip="Purpose of task at this visit" />
+        <ChooserEntry elementLabel="Other Purpose" elementPath="purposeType/@otherText" ftElementType="Element" toolTip="The user supplied purpose for this task at this visit" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="Divider Name" elementPath="Periods/Period" ftElementType="Template" isDivider="true" toolTip="A visual help to grouping periods.">
+      <Complex>
+        <ChooserEntry elementLabel="Divider Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a column break within the study" />
+        <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a column break within the study" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Arm Path" elementPath="ArmRules/ArmRule" ftElementType="Template" toolTip="A link between two trial Periods">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Arm Linkage" elementPath="qualifier" enumList="LocalFacilityTypes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Last Element" elementPath="fromID" ftElementType="Element" hidden="false" toolTip="" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" toolTip="" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Unused" elementPath="termEVID" ftElementType="Element" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Decision Rule" elementPath="ClinicalRules/ClinicalRule" ftElementType="Template" toolTip="A branch which is executed now if the rule evaluates to true">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Clinical Rule" elementPath="qualifier" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Last Activity" elementPath="fromID" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Next Activity" elementPath="toID" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Skip Rule" elementPath="NegationRules/NegationRule" ftElementType="Template" toolTip="Whether to Skip">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Negation of current Event" elementPath="qualifier" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Element To Test" elementPath="fromID" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Repeat Rule" elementPath="CycleRules/CycleRule" ftElementType="Template" toolTip="Repeat rule for a group of trial activities">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="This" elementPath="fromID" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Next" elementPath="toID" ftElementType="Element" hidden="false" toolTip="" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Current" elementPath="current" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Frequency" elementPath="repeatInterval" enumList="TimeIntervalTypes" ftElementType="Element" toolTip="Frequency of   repeat" />
+        <ChooserEntry dataType="Integer" elementLabel="Min Repeats" elementPath="repeatMin" ftElementType="Element" toolTip="Minimum number of repeats (0 = no minimum)" />
+        <ChooserEntry dataType="Integer" elementLabel="Max Repeats" elementPath="repeatMax" ftElementType="Element" toolTip="Maximum number of repeats (0 = no maximum)" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Valid window for repeatt" uomPath="windowUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for Repeat Window" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Time Offset" elementPath="TemporalRules/TemporalRule" ftElementType="Template" toolTip="A temporal offset  between two trial Activities or Events">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Anchor" elementPath="fromID" ftElementType="Element" hidden="false" toolTip="" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="This" elementPath="toID" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Pegged To" elementPath="anchorPosition" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Time Offset" elementPath="duration" ftElementType="Element" toolTip="Time offset" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Offset Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for offset" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Time offset" uomPath="windowUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for offset" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Alarm Rule" elementPath="TriggerRules/TriggerRule" ftElementType="Template" toolTip="A branch which is executed whenever the rule evaluates to true">
+      <Complex>
+        <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Starting" elementPath="fromID" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="This" elementPath="toID" ftElementType="Element" hidden="true" />
+        <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+        <ChooserEntry elementLabel="Ending" elementPath="termEVID" ftElementType="Element" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

@@ -1,0 +1,83 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" file="TaskMapping.xml" systemName="Tasks" tabColor="#83A49D" tabLabel="Tasks" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" toolTip="" hidden="false" cdiscIdentifier="">
+  <ElementBucket bucketLabel="Tasks" elementType="Tasks" hidden="true" systemName="Tasks">
+    <ChooserEntry elementLabel="Task" elementPath="Tasks/TSPDTask" ftElementType="Template" toolTip="A task is a procedure or treatment performed for the study." hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" hidden="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" hidden="true" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this planned Task" uomPath="durationTimeUnit" hidden="true" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" hidden="true" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Complexity" elementPath="complexity" ftElementType="Element" hidden="false" toolTip="Complexity" dataType="Number" default="false" cdiscIdentifier="">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Cost" elementPath="costAmount" ftElementType="Element" hidden="false" toolTip="Procedure Cost" dataType="Number" default="false" cdiscIdentifier="">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Source Text" elementPath="sourceText" ftElementType="Element" toolTip="Original detail about the task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Dose Task" elementPath="Tasks/TSPDTask" ftElementType="Template" isDoseTask="true" toolTip="Administration of a specific study material in a specific dose" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+      <Complex>
+        <ChooserEntry elementLabel="Dose Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" hidden="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this dosing administration" uomPath="durationTimeUnit" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Complexity" elementPath="complexity" ftElementType="Element" hidden="false" toolTip="Complexity" dataType="Number" default="false" cdiscIdentifier="">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Cost" elementPath="costAmount" ftElementType="Element" hidden="false" toolTip="Procedure Cost" dataType="Number" default="false" cdiscIdentifier="">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Source Text" elementPath="sourceText" ftElementType="Element" toolTip="Original detail about the task" hidden="false" stickyCase="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="unused" elementPath="ctMaterialID" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Associated Dose Element" elementPath="ctMaterialAlias" ftElementType="Element" hidden="false" toolTip="The Test Article Dose associated with this task" />
+      </Complex>
+      <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+    </ChooserEntry>
+    <ChooserEntry elementLabel="Task Divider" elementPath="Tasks/TSPDTask" ftElementType="Template" isDivider="true" toolTip="A visual help to grouping tasks.">
+      <Complex>
+        <ChooserEntry elementLabel="Task Divider" elementPath="description/brief" ftElementType="Element" toolTip="The name of a task divider" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

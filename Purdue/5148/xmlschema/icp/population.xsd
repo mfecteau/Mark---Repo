@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<!-- COPYRIGHT 2002-2005 FastTrack Systems INC -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="PopulationDomain">
+		<xs:all>
+			<xs:element name="Population">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:all>
+								<xs:element name="EligibilityCriteria">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="EligibilityCriterion" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="gender" type="GenderTypes"/>
+								<xs:element name="entranceCriteriaSummary" type="xs:string"/>
+								<xs:element name="evaluableSubjectDef" type="xs:string"/>
+								<xs:element name="acceptsHealthyVolunteersType" type="AcceptsHealthyVolunteersTypes"/>
+								<xs:element name="minSubjectAge" type="xs:integer"/>
+								<xs:element name="maxSubjectAge" type="xs:integer"/>
+								<xs:element name="subjectAgeTimeUnit" type="xs:string"/>
+							</xs:all>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="EligibilityCriterion">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="criterionType" type="EntranceCriterionTypes"/>
+						<xs:element name="description" type="DescriptorSet"/>
+						<xs:element name="classifierType" type="EntranceCriterionClassifierTypes"/>
+						<xs:element name="rationale" type="xs:string"/>
+						<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

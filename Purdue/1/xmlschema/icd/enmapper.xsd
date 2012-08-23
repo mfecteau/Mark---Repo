@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="EnumMapper">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="EnumType" nillable="true" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="EnumPair" nillable="true" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="systemName" type="xs:string"/>
+									<xs:attribute name="userLabel" type="xs:string"/>
+									<xs:attribute name="hidden" type="xs:boolean"/>
+									<xs:attribute name="customValue" type="xs:boolean"/>
+									<xs:attribute name="preserve" type="xs:boolean"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="enumName" type="Enumerations"/>
+						<xs:attribute name="enumLabel" type="xs:string"/>
+						<xs:attribute name="toolTip" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="BaseEnumerations">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="AcceptsHealthyVolunteersTypes"/>
+			<xs:enumeration value="AllocationTypes"/>
+			<xs:enumeration value="AlphaTailTypes"/>
+			<xs:enumeration value="BlindingTypes"/>
+			<xs:enumeration value="CentralFacilityTypes"/>
+			<xs:enumeration value="CodedPhaseTypes"/>
+			<xs:enumeration value="ConfigurationTypes"/>
+			<xs:enumeration value="ContactRoleTypes"/>
+			<xs:enumeration value="ControlTypes"/>
+			<xs:enumeration value="CTMaterialRoleTypes"/>
+			<xs:enumeration value="CTMaterialTypes"/>
+			<xs:enumeration value="CurrencyTypes"/>
+			<xs:enumeration value="EntranceCriterionClassifierTypes"/>
+			<xs:enumeration value="EntranceCriterionTypes"/>
+			<xs:enumeration value="FormulationTypes"/>
+			<xs:enumeration value="GenderTypes"/>
+			<xs:enumeration value="InvestigationTypes"/>
+			<xs:enumeration value="LocalFacilityTypes"/>
+			<xs:enumeration value="MultiCenteredTypes"/>
+			<xs:enumeration value="ObjectiveTypes"/>
+			<xs:enumeration value="OrganizationTypes"/>
+			<xs:enumeration value="OutcomeTypes"/>
+			<xs:enumeration value="OverallStudyOutcomeTypes"/>
+			<xs:enumeration value="PurposeTypes"/>
+			<xs:enumeration value="RouteOfAdminTypes"/>
+			<xs:enumeration value="ScheduleItemTypes"/>
+			<xs:enumeration value="StudyPurposeTypes"/>
+			<xs:enumeration value="TimeUnit"/>
+			<xs:enumeration value="RestrictedTimeUnit"/>
+			<xs:enumeration value="UsesIVRSTypes"/>
+			<xs:enumeration value="PositionRoles"/>
+			<xs:enumeration value="ProcessModes"/>
+			<xs:enumeration value="AnalysisTypes"/>
+			<xs:enumeration value="AnalysisRoles"/>
+			<xs:enumeration value="AnalyticComparisonTypes"/>
+			<xs:enumeration value="AnalysisSetTypes"/>
+			<xs:enumeration value="StudyVariableOrigins"/>
+			<xs:enumeration value="StudyDatumStatus"/>
+			<xs:enumeration value="InterimAnalysisTypes"/>
+			<xs:enumeration value="VariableDataTypes"/>
+			<xs:enumeration value="HypothesisTypes"/>
+			<xs:enumeration value="TimeIntervalTypes"/>
+			<xs:enumeration value="FoodFastingTypes"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="Enumerations">
+		<xs:union memberTypes="BaseEnumerations xs:string"/>
+	</xs:simpleType>
+</xs:schema>

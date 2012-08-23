@@ -1,0 +1,3 @@
+<ElementTab tabLabel="DocumentElements" systemName="TOC" elementType="TOC" file="DocumentElements.xml">
+  <ElementBucket elementType="TOC" systemName="TOC" bucketLabel="Protocol" docType="protocol" />
+</ElementTab>

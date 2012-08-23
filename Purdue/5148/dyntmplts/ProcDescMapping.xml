@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tasks>
+	<Task id="94760" name="Vital signs and SpO2" >
+		<Description libraryItem="Vital Signs And SpO2 - CheckIn (P1)"  />
+		<Description libraryItem="Vital Signs And SpO2 - End of Study (P1)"  />
+		<Description libraryItem="Vital Signs And SpO2 - Screening (P1)"  />
+		<Description libraryItem="Vital Signs And SpO2 - Treatment (P1)"  />
+	</Task>
+	<Task id="*INEX" name="Inclusion/Exclusion Criteria" >
+		<Description libraryItem="Incl./Excl. Criteria - CheckIn (P1)"  />
+		<Description libraryItem="Incl./Excl. Criteria - Screening (P1)"  />
+	</Task>
+	<Task id="99211" name="Oral temperature" >
+		<Description libraryItem="Oral Temperature - End of Study (P1)"   />
+		<Description libraryItem="Oral Temperature - Screening (P1)"   />
+	</Task>
+	<Task id="85205" name="Hematology">
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - CheckIn (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - End Of Study (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - Screening (P1)"   />
+	</Task>
+	<Task id="NC125" name="Chemistry">
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - CheckIn (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - End Of Study (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - Screening (P1)"   />
+	</Task>
+	<Task id="81000" name="Urinalysis">
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - CheckIn (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - End Of Study (P1)"   />
+		<Description libraryItem="Hematology/Chemistry/Urinalysis - Screening (P1)"   />
+	</Task>
+	<Task id="80100" name="Drug/Alcohol/Cotinine Screen">
+		<Description libraryItem="Drug/Alcohol/Cotinine Screen - Check In (P1)"   />
+		<Description libraryItem="Drug/Alcohol/Cotinine Screen - Screening (P1)"   />
+	</Task>
+	<Task id="*RCM*" name="Concomitant Therapies">
+		<Description libraryItem="Concomitant Therapies - End of Study (P1)"   />
+		<Description libraryItem="Concomitant Therapies - Screening (P1)"   />
+	</Task>
+</Tasks>

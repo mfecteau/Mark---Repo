@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="StatisticsFullDomain">
+		<xs:complexContent>
+			<xs:extension base="ConceptLocking">
+				<xs:all>
+					<xs:element name="evaluableSubjectDef" type="xs:string"/>
+					<xs:element name="intentToTreatPopulation" type="xs:string"/>
+					<xs:element name="methodForMinimizingBias" type="xs:string"/>
+					<xs:element name="randAndStratDetails" type="xs:string"/>
+					<xs:element name="reportingDeviationsFromPlan" type="xs:string"/>
+					<xs:element name="statSoftware" type="xs:string"/>
+					<xs:element name="Analyses">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Analysis" type="Analysis" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AnalysisSets">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="AnalysisSet" type="AnalysisSet" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Hypotheses">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Hypothesis" type="Hypothesis" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="StatisticalModels">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="StatisticalModel" type="StatisticalModel" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ModelMappings">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="AnalysisToModel" type="AnalysisToModel" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="VariableDictionary">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="StudyVarDef" type="StudyVarDef" nillable="true" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="StudyDatumRepository">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="StudyDatum">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="ElementBase">
+												<xs:all>
+													<xs:element name="mappingObjID" type="xs:integer"/>
+													<xs:element name="varObjID" type="xs:integer"/>
+													<xs:element name="value" type="xs:string"/>
+													<xs:element name="timestamp" type="xs:string"/>
+													<xs:element name="status" type="StudyDatumStatus"/>
+												</xs:all>
+											</xs:extension>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AnalysisSet">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="setType" type="AnalysisSetTypes"/>
+					<xs:element name="rationale" type="xs:string"/>
+					<xs:element name="criteria" type="StringList"/>
+					<xs:element name="classVariables">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="StudyVarRef" nillable="true" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Analysis">
+		<xs:complexContent>
+			<xs:extension base="AbstractActivity">
+				<xs:all>
+					<xs:element name="rationale" type="xs:string"/>
+					<xs:element name="analysisRole" type="AnalysisRoles"/>
+					<xs:element name="analysisClass" type="AnalysisClassTypes"/>
+					<xs:element name="significanceLevel" type="xs:double"/>
+					<xs:element name="power" type="xs:double"/>
+					<xs:element name="alphaTails" type="AlphaTailTypes"/>
+					<xs:element name="lowerRejectionLimit" type="xs:double"/>
+					<xs:element name="upperRejectionLimit" type="xs:double"/>
+					<xs:element name="comparisonType" type="AnalyticComparisonTypes"/>
+					<xs:element name="multipleComparisonsAdjustment" type="xs:string"/>
+					<xs:element name="compositeEndpoints" type="xs:string"/>
+					<xs:element name="missingDataProcedures" type="xs:string"/>
+					<xs:element name="variability" type="xs:double"/>
+					<xs:element name="Variables">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="StudyVarRef"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AnalysisSets">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="analysisSet" type="FTObjectLink"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="SampleSizeCalculations">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="SampleSizeCalculation" type="FTObjectLink"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="InterimAnalyses">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="InterimAnalysis" type="InterimAnalysis" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="StatisticalModels">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="StatisticalModel" type="FTObjectLink"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="Hypothesis">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="clinicallySignificantDifference" type="xs:string"/>
+					<xs:element name="hypothesisType" type="HypothesisTypes"/>
+					<xs:element name="AssociatedObjectives">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedObjective" type="FTObjectLink"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="AssociatedAnalyses">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedAnalysis" type="FTObjectLink"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="TestStatistics">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="StudyVarRef"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="InterimAnalysis">
+		<xs:complexContent>
+			<xs:extension base="ActivityRelationship">
+				<xs:all>
+					<xs:element name="trialAdjustmentRule" type="xs:string"/>
+					<xs:element name="timingAdjustment" type="xs:string"/>
+					<xs:element name="alphaSpendingFunction" type="xs:string"/>
+					<xs:element name="interimType" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="StatisticalModel">
+		<xs:complexContent>
+			<xs:extension base="AbstractActivity">
+				<xs:all>
+					<xs:element name="methodFunc" type="xs:string"/>
+					<xs:element name="Assumptions" type="StringList"/>
+					<xs:element name="modelType" type="AnalysisTypes"/>
+					<xs:element name="procSignature" type="xs:string"/>
+					<xs:element name="Variables">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="StudyVarRef"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+				<xs:attribute name="modelID" type="xs:string"/>
+				<xs:attribute name="parentModelID" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="AnalysisVariable">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="StudyVarDef">
+					<xs:all>
+						<xs:element name="dataType" type="xs:string"/>
+						<xs:element name="dimension" type="xs:string"/>
+						<xs:element name="origin" type="StudyVariableOrigins"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AnalysisToModel">
+		<xs:complexContent>
+			<xs:extension base="ActivityRelationship">
+				<xs:all>
+					<xs:element name="Variables">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element ref="StudyVarRef"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

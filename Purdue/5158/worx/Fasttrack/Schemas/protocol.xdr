@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<!--Declare all the shared attribute  Types-->
+	<AttributeType name="elementPath" dt:type="string"/>
+	<AttributeType name="elementLabel" dt:type="string"/>
+	<AttributeType name="editorClass" dt:type="string"/>
+	<AttributeType name="detEditorClass" dt:type="string"/>
+	<AttributeType name="sectionLevel" dt:type="int" required="yes"/>
+	<ElementType name="Protocol" content="mixed" order="many" model="open">
+		<element type="Reference" minOccurs="0" maxOccurs="*"/>
+		<element type="Macro" minOccurs="0" maxOccurs="*"/>
+		<element type="DocSection" minOccurs="0" maxOccurs="*"/>
+		<attribute type="sectionLevel" required="yes" default="0"/>
+	</ElementType>
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<!-- DO NOT CHANGE BELOW THIS LINE -->
+	<ElementType name="Reference" content="textOnly">
+		<AttributeType name="deleted" dt:type="boolean"/>
+		<AttributeType name="unlinked" dt:type="boolean"/>
+		<AttributeType name="id" dt:type="id"/>
+		<AttributeType name="default" dt:type="boolean"/>
+		<AttributeType name="required" dt:type="boolean"/>
+		<AttributeType name="inlineEditorClass" dt:type="string"/>
+		<AttributeType name="enumList" dt:type="string"/>
+		<attribute type="elementPath" required="yes"/>
+		<attribute type="elementLabel" required="yes"/>
+		<attribute type="editorClass"  required="no"/>
+		<attribute type="detEditorClass"  required="no"/>
+		<attribute type="deleted" required="no "/>
+		<attribute type="unlinked" required="no "/>
+		<attribute type="id" required="no "/>
+		<attribute type="default" required="no "/>
+		<attribute type="required" required="no "/>
+		<attribute type="inlineEditorClass" required="no "/>
+		<attribute type="enumList" required="no "/>
+	</ElementType>
+	<ElementType name="Macro" content="mixed" model="open">
+		<AttributeType name="default" dt:type="boolean"/>
+		<AttributeType name="autogenerates" dt:type="boolean"/>
+		<AttributeType name="shouldRun" dt:type="boolean"/>
+		<AttributeType name="timeStamp" dt:type="string"/>
+		<AttributeType name="protected" dt:type="boolean"/>
+		<AttributeType name="ftMacroType" dt:type="string"/>
+		<AttributeType name="specialShading" dt:type="string"/>
+		<element type="Reference" minOccurs="0" maxOccurs="*"/>
+		<attribute type="elementPath" required="yes"/>
+		<attribute type="elementLabel" required="yes"/>
+		<attribute type="default" required="no"/>
+		<attribute type="editorClass" required="no"/>
+		<attribute type="specialShading" required="no"/>
+		<attribute type="autogenerates" required="no"/>
+		<attribute type="shouldRun" required="no"/>
+		<attribute type="timeStamp" required="no"/>
+		<attribute type="protected" required="no"/>
+		<attribute type="ftMacroType" required="yes"/>
+	</ElementType>
+	<ElementType name="DocSection" content="mixed" order="many">
+		<AttributeType name="textStyle" dt:type="string"/>
+		<AttributeType name="custSecID" dt:type="string"/>
+		<element type="SectionText" maxOccurs="1" minOccurs="1"/>
+		<element type="DocSection" minOccurs="0" maxOccurs="*"/>
+		<element type="Reference" minOccurs="0" maxOccurs="*"/>
+		<element type="Macro" minOccurs="0" maxOccurs="*"/>
+		<attribute type="sectionLevel" required="yes"/>
+		<attribute type="textStyle" required="no"/>
+		<attribute type="custSecID" required="no"/>
+		<attribute type="elementPath" required="yes"/>
+	</ElementType>
+	<ElementType name="SectionText" dt:type="string"/>
+	<!-- Ad hoc attribute: SectionText/@diffOutlineNbr -->
+	<ElementType name="DiffTable" content="mixed" model="open"/>
+	<ElementType name="DiffResultsTable" content="mixed" model="open"/>
+	<ElementType name="Footnote" dt:type="string"/>
+	<ElementType name="Endnote" dt:type="string"/>
+</Schema>

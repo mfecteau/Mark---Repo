@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="CTMaterialsConceptCollection">
+		<xs:complexContent>
+			<xs:extension base="ConceptLocking">
+				<xs:all>
+					<xs:element name="ClinicalTrialMaterials" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="ClinicalTrialMaterial" type="ClinicalTrialMaterialType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MaterialsInArms" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="MaterialInArm" type="CTMaterialInStudyArmType" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ClinicalTrialMaterialType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name=" associatedCTMaterials ">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name=" associatedCTMaterial " type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="MaterialsInArms">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="MaterialInArmID" type="FTObjectLink" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="CTMaterialType" type="CTMaterialTypes"/>
+					<xs:element name="routeOfAdministration" type="RouteOfAdminTypes"/>
+					<xs:element name="formulation" type="FormulationTypes"/>
+					<xs:element name="primaryRoleInStudy" type="CTMaterialRoleTypes"/>
+					<xs:element name="sequence" type="xs:integer"/>
+					<xs:element name="CTMaterialName" type="xs:string"/>
+					<xs:element name="dose" type="xs:string"/>
+					<xs:element name="strength" type="xs:string"/>
+					<xs:element name="accountabilityProcedures" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CTMaterialInStudyArmType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:sequence>
+					<xs:element name="roleOfMaterialInArm" type="CTMaterialRoleTypes"/>
+					<xs:element name="armID" type="FTObjectLink" nillable="true"/>
+					<xs:element name="ClinicalTrialMaterialID" type="FTObjectLink"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

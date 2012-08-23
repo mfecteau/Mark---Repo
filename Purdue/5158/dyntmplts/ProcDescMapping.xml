@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tasks>
+	<Task name="Informed Consent Form (ICF)" >
+		<Description libraryItem="ICF" type="default" />
+	</Task>
+	<Task name="Contact IVRS/IWRS" >
+		<Description libraryItem="Contact IVRS/IWRS" type="default" />
+	</Task>
+	<Task name="Demography" >
+		<Description libraryItem="Demography" type="default" />
+	</Task>
+	<Task name="Medical History" >
+		<Description libraryItem="Medical History" type="default" />
+	</Task>
+	<Task name="Pain History" >
+		<Description libraryItem="Pain History" type="default" />
+	</Task>
+	<Task name="Physical Examination" >
+		<Description libraryItem="Physical Examination" type="default" />
+	</Task>
+	<Task name="Vital Signs" >
+		<Description libraryItem="Vital Signs" type="default" />
+	</Task>
+	<Task name="Concomitant Therapies" >
+		<Description libraryItem="Concomitant Therapies" type="default" />
+		<Description libraryItem="Concomitant Therapies - Visit 1" type="visit-specific" />
+		<Description libraryItem="Concomitant Therapies - Visit 2" type="visit-specific" />
+	</Task>
+	<Task name="Serum Pregnancy Test" >
+		<Description libraryItem="Serum Pregnancy Test" type="default" />
+	</Task>
+	<Task name="Laboratory Evaluations" >
+		<Description libraryItem="Laboratory Evaluations" type="default" />
+		<Description libraryItem="Laboratory Evaluations - Visit 1" type="visit-specific" />
+	</Task>
+	<Task name="Pharmacogenomic sample" >
+		<Description libraryItem="Pharmacogenomic sample (predose)" type="visit-specific" />
+		<Description libraryItem="Pharmacogenomic sample (postdose)" type="visit-specific" />
+	</Task>
+	<Task name="Electrocardiogram" >
+		<Description libraryItem="Electrocardiogram (ECGs) - Visit 1" type="visit-specific" />
+		<Description libraryItem="Electrocardiogram (ECGs)- Randomization Visit" type="visit-specific" />
+		<Description libraryItem="Electrocardiogram (ECGs)- Run-In Failure" type="visit-specific" />
+		<Description libraryItem="Electorcardiogram (ECGs)- End of Study Visit" type="visit-specific" />
+	</Task>
+	<Task name="Average Pain over the Past 14 Days" >
+		<Description libraryItem="Average Pain over the Past 14 Days" type="default" />
+	</Task>
+	<Task name="Inclusion/Exclusion Criteria" >
+		<Description libraryItem="Incl./Excl. Criteria" type="default" />
+	</Task>
+	<Task name="Distribution of Subject Diary" >
+		<Description libraryItem="Distribution of Subject Diary" type="default" />
+	</Task>
+	<Task name="Review of Subject Diary" >	
+		<Description libraryItem="Review of Subject Diary" type="default" />
+		<Description libraryItem="Review of Subject Diary Weeks 1 and 2" type="visit-specific" />
+		<Description libraryItem="Review of Subject Diary Visit 2" type="visit-specific" />
+	</Task>
+	<Task name="Completion of Diary by Subjects" >
+		<Description libraryItem="Completion of Diary by Subjects" type="default" />
+	</Task>
+	<Task name="Average Pain over the Last 24 Hours" >
+		<Description libraryItem="Average Pain over the Last 24 Hours" type="default" />
+	</Task>
+	<Task name="Adverse Events" >
+		<Description libraryItem="Adverse Events" type="default" />
+	</Task>
+	<Task name="Dispense of study drug" >
+		<Description libraryItem="Dispense of study drug" type="default" />
+	</Task>
+	<Task name="Evaluation of study drug" >
+		<Description libraryItem="Evaluation of study drug (Run-in Period)" type="visit-specific" />
+	</Task>
+	<Task name="Incoming Analgesic Medication" >
+		<Description libraryItem="Incoming Analgesic Medication - Visit 1" type="visit-specific" />
+		<Description libraryItem="Incoming Analgesic Medication - Visit 2" type="visit-specific" />
+		<Description libraryItem="Incoming Analgesic Medication" type="default" />
+	</Task>
+	<Task name="Dispense of Rescue" >
+		<Description libraryItem="Dispense of Rescue" type="default" />
+	</Task>
+	<Task name="Instruction of Rescue" >
+		<Description libraryItem="Instruction of Rescue" type="default" />
+	</Task>
+	<Task name="Remind subject abstained from Rescue" >
+		<Description libraryItem="Remind subject abstained from Rescue" type="default" />
+	</Task>
+	<Task name="Confirm subject abstained from Rescue" >
+		<Description libraryItem="Confirm subject abstained from Rescue" type="default" />
+	</Task>
+	<Task name="SOWS" >
+		<Description libraryItem="SOWS" type="default" />
+	</Task>
+	<Task name="Oswestry Disability Index" >
+		<Description libraryItem="Oswestry Disability Index" type="default" />
+	</Task>
+	<Task name="BPI SF" >
+		<Description libraryItem="BPI SF" type="default" />
+	</Task>
+	<Task name="MOS Sleep Scale" >
+		<Description libraryItem="MOS Sleep Scale" type="default" />
+	</Task>
+	<Task name="SF-36" >
+		<Description libraryItem="SF- 36" type="default" />
+	</Task>
+	<Task name="PGIC" >
+		<Description libraryItem="PGIC" type="default" />
+	</Task>
+	<Task name="Conduct drug accountability / Review for CSPCs" >
+		<Description libraryItem="Conduct drug accountability/ Review for CSPCs" type="default" />
+	</Task>
+	<Task name="Collect the subject's diary" >
+		<Description libraryItem="Collect the subjects Diary" type="default" />
+	</Task>
+	<Task name="Study Discontinuation / Completion" >
+		<Description libraryItem="Study Discontinuation /Completion" type="default" />
+	</Task>
+	<Task name="Schedule next visit" >
+		<Description libraryItem="Schedule next visit" type="default" />
+	</Task>
+	<Task name="Randomization Procedures" >
+		<Description libraryItem="Randomization Procedures" type="default" />
+	</Task>
+</Tasks>

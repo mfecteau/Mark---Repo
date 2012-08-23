@@ -1,0 +1,274 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementType="AdvancedStats" file="StatMapping2.xml" systemName="AdvancedStats" tabColor="#ED6A36" tabLabel="Statistics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" toolTip="" hidden="false" cdiscIdentifier="">
+  <ElementBucket bucketLabel="Analysis Sets" elementType="AnalysisSets" hidden="false" systemName="AnalysisSets" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementLabel="Population Set" elementPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" ftElementType="Template" toolTip="A subset of the population for analysis" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" toolTip="Instructions pertaining to the population set" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="[For Internal System Use]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" toolTip="Label given to the population set for reference within the document" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Set Type" elementPath="setType" enumList="AnalysisSetTypes" ftElementType="Element" toolTip="Type of population set" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" toolTip="Rationale for inclusion or analysis of the population set" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" elementLabel="Set Criteria" elementPath="criteria" ftElementType="Element" toolTip="The criteria for the Analysis Set" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Endpoints" elementPath="classVariables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used to filter for this set" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Analyses" elementType="Analyses" hidden="false" systemName="Analyses" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementLabel="Analysis" elementPath="/FTICP/StatisticsFull/Analyses/Analysis" ftElementType="Template" toolTip="An Analysis, HypothesisTest, or Sample Size Calculation" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" toolTip="Instructions pertaining to the analysis being conducted" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" toolTip="Full name for the analysis" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" toolTip="Short label for reference within the document" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" toolTip="Rationale for conducting the analysis" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Analysis Role" elementPath="analysisRole" enumList="AnalysisRoles" ftElementType="Element" toolTip="Role of the analysis in the study" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Analysis Class" elementPath="analysisClass" enumList="AnalysisClassTypes" ftElementType="Element" toolTip="Type of analysis being conducted (such as Hypothesis Test, Sample Size Calculation or Other)" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Number" elementLabel="Significance Level" elementPath="significanceLevel" ftElementType="Element" toolTip="The criterion used for rejecting the null hypothesis" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Number" elementLabel="Power" elementPath="power" ftElementType="Element" toolTip="The probability that the test will reject a false null hypothesis" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Alpha Tail" elementPath="alphaTails" enumList="AlphaTailTypes" ftElementType="Element" toolTip="An area at the extreme of a randomization distribution in terms of Alpha" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Number" elementLabel="Rejection Region" elementPath="lowerRejectionLimit" ftElementType="Element" toolTip="Critical region or set of values of the test statistic for which the null hypothesis is rejected in a hypothesis test" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Number" elementLabel="Lower  -  Upper" elementPath="upperRejectionLimit" ftElementType="Element" toolTip="lower and upper limits of the confidence level" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Comparison Types" elementPath="comparisonType" enumList="AnalyticComparisonTypes" ftElementType="Element" toolTip="Type of statistical comparison (e.g. Superiority, Inferiority, Non Inferiority, etc)" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Comparisons Adjustment" elementPath="multipleComparisonsAdjustment" ftElementType="Element" toolTip="Any adjustments needed for comparison" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="End Points" elementPath="compositeEndpoints" ftElementType="Element" toolTip="A point at which a definite effect is observed" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Missing Data Procedures" elementPath="missingDataProcedures" ftElementType="Element" toolTip="Procedures for handling missing data" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Number" elementLabel="Variability" elementPath="variability" ftElementType="Element" toolTip="The quality of being subject to variation" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" assocClass="Tspd.Businessobject.StatisticalModel" elementLabel="StatisticalModels" elementPath="StatisticalModels/StatisticalModel" ftElementType="Collection" toolTip="The StatisticalModel(s) this Analysis is used to establish" dataType="String" cdiscIdentifier="" hidden="true" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="SampleSizes" elementPath="SampleSizeAnalyses/sampleSizeAnalysis" ftElementType="Collection" toolTip="The SampleSize(s) this Analysis is used to establish" dataType="String" cdiscIdentifier="" hidden="true" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" assocClass="Tspd.Businessobject.AnalysisPopulationSet" elementLabel="AnalysisSets" elementPath="AnalysisSets/analysisSet" ftElementType="Collection" toolTip="The AnalysisSet(s) this Analysis is used to establish" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Hypotheses" elementType="Hypotheses" hidden="false" systemName="Hypotheses" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementLabel="Hypothesis" elementPath="/FTICP/StatisticsFull/Hypotheses/Hypothesis" ftElementType="Template" toolTip="A postulate leading to a study objective" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" toolTip="Explanation of the hypothesis" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" toolTip="[For Internal System Use Only]" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" toolTip="Label or short description for reference to the hypothesis within the document" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Significant Difference" elementPath="clinicallySignificantDifference" ftElementType="Element" toolTip="Discussion of the statistical significance required to prove or disprove the hypothesis" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective" elementLabel="Objectives" elementPath="AssociatedObjectives/associatedObjective" ftElementType="Collection" toolTip="The objective(s) this Hypothesis is used to establish" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="Analyses" elementPath="AssociatedAnalyses/associatedAnalysis" ftElementType="Collection" toolTip="The analysis/es this Hypothesis is used to establish" dataType="String" cdiscIdentifier="" hidden="true" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Type" elementPath="hypothesisType" enumList="HypothesisTypes" ftElementType="Element" toolTip="Type of hypothesis (e.g. Null)" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Test Statistic" elementPath="TestStatistics/StudyVarRef" ftElementType="Collection" toolTip="Test Statistics associated with this hypothesis" dataType="String" cdiscIdentifier="" hidden="true" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <!--xs:element name="testStatistic" ref="StudyVarRef" /-->
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Interim Analyses" elementType="InterimAnalyses" hidden="true" systemName="InterimAnalyses" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementLabel="Interim Analysis" elementPath="InterimAnalyses/InterimAnalysis" ftElementType="Template" toolTip="tooltip to be defined" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" toolTip="Name or short description for reference to the interim analysis within the document" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Adjustment Rule" elementPath="trialAdjustmentRule" ftElementType="Element" toolTip="" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Timing Adjustment" elementPath="timingAdjustment" ftElementType="Element" toolTip="" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Spending Function" elementPath="alphaSpendingFunction" ftElementType="Element" toolTip="" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Sequence Type" elementPath="interimType" enumList="InterimAnalysisTypes" ftElementType="Element" toolTip="" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Statistical Models" elementType="StatisticalModels" hidden="false" systemName="StatisticalModels">
+    <ChooserEntry elementLabel="StatisticalModel" elementPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" ftElementType="Template" toolTip="Statistical Model" hidden="false" stickyCase="false">
+      <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" toolTip="Full description of the statistical model" hidden="false" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Comp Name" elementPath="description/brief" ftElementType="Element" toolTip="Brief Description of the statistical model" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" toolTip="Label of the statistical model" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Proc Signature" elementPath="procSignature" ftElementType="Element" toolTip="prolog code to invoke an analysis procedure" hidden="true" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.EquationMacro.EquationDisplay,FTProtocolDTs.dll" dataType="MathML" elementLabel="Method" elementPath="methodFunc" ftElementType="Element" hidden="true" toolTip="MathML expression for the procedure" />
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" elementLabel="Assumptions" elementPath="Assumptions" ftElementType="Element" hidden="false" toolTip="Assumptions under which this model will function" />
+        <ChooserEntry dataType="Coded" elementLabel="Model Type" elementPath="analysisType" enumList="AnalysisTypes" ftElementType="Element" toolTip="The role this analysis plays in the study" hidden="false" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <!--xs:element name="Computation" type="Computation" /-->
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Parameter" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The parameters for this Statistical Model" hidden="true">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="AnalysisVariableMap" elementPath="/FTICP/StatisticsFull/ModelMappings/AnalysisToModel" ftElementType="Template" hidden="true" toolTip="Mapping between Statistical Models and Analyses">
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Last Element" elementPath="fromID" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Analysis Variables" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used by this analysis" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Study Variables" elementType="StudyVariables" hidden="false" systemName="StudyVariables" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementLabel="Study Variable" elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" ftElementType="Template" toolTip="Study Variable Definition" dataType="String" cdiscIdentifier="" hidden="false" stickyCase="false" default="false">
+      <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="Brief description of this variable" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Symbol" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="Variable's accepted Symbol" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Definition" elementPath="definition" ftElementType="Element" hidden="false" toolTip="Variable Definition" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Unit" elementPath="unitOfMeasureString" ftElementType="Element" hidden="false" toolTip="Unit of Measure" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Unit ID" elementPath="unitOfMeasureID" ftElementType="Element" hidden="true" toolTip="FT Id for this unit of measure" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Valid Min" elementPath="minValid" ftElementType="Element" hidden="false" toolTip="Minimum valid value for this unit of measure" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Valid Max" elementPath="maxValid" ftElementType="Element" hidden="false" toolTip="Maximum valid value for this unit of measure" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Normal Min" elementPath="studyMin" ftElementType="Element" hidden="false" toolTip="Normal minimum for this study population" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Normal Max" elementPath="studyMax" ftElementType="Element" hidden="false" toolTip="Normal maximum for this study population" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Panic Low" elementPath="panicLow" ftElementType="Element" hidden="false" toolTip="Minimum threshhold needing attention by investigator" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Panic High" elementPath="panicHigh" ftElementType="Element" hidden="false" toolTip="Maximum threshhold needed attention by investigator" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="SAS Name" elementPath="alias1" ftElementType="Element" hidden="false" toolTip="Reference to a Statistical Analysis Software (SAS) variable" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="CRF Form" elementPath="alias2" ftElementType="Element" hidden="false" toolTip="Clinical Report Form" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Code List" elementPath="alias3" ftElementType="Element" hidden="true" toolTip="Code List or Dictionary" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="SAScodesys" elementPath="alias1CodeSys" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Unused" elementPath="alias2CodeSys" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Unused" elementPath="alias3CodeSys" ftElementType="Element" hidden="true" toolTip="[For Internal System Use Only]" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Data Type" elementPath="dataType" enumList="VariableDataTypes" ftElementType="Element" hidden="false" toolTip="Value data type for this variable" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Keys" elementPath="dimension" ftElementType="Element" hidden="false" toolTip="Variables defining the axes of a multi dimensional variable" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Origin" elementPath="originType" enumList="StudyVariableOrigins" ftElementType="Element" hidden="false" toolTip="Method of instantiation for this variable" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Imputation Func" elementPath="imputationFunc" ftElementType="Element" hidden="true" toolTip="Math expression of the manner in which data is imputed for this variable, if missing" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Imputation Method" elementPath="imputationMethod" ftElementType="Element" hidden="true" toolTip="Description of method by which data is imputed for this variable, if missing" stickyCase="false">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

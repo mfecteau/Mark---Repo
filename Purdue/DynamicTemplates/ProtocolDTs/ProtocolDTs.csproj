@@ -1,0 +1,425 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{79FEFEC2-BE72-42FA-B7CF-3752E11FB942}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>
+    </ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>ProtocolDTs</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>Library</OutputType>
+    <RootNamespace>TspdCfg.Purdue.DynTmplts</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\ProtocolDTs.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <BaseAddress>285212672</BaseAddress>
+    <Optimize>true</Optimize>
+    <FileAlignment>4096</FileAlignment>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\ProtocolDTs.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Businessobject">
+      <HintPath>..\..\..\..\Designer\source\FastTrack\Tspd\Businessobject\bin\Debug\Businessobject.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Designer\source\FastTrack\Tspd\ThirdParty\Microsoft.Office.Interop.Word.dll</HintPath>
+    </Reference>
+    <Reference Include="MSXML2">
+      <Name>MSXML2</Name>
+      <HintPath>..\..\..\..\Designer\source\FastTrack\Tspd\ThirdParty\MSXML2.dll</HintPath>
+    </Reference>
+    <Reference Include="Office, Version=11.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Designer\source\FastTrack\Tspd\ThirdParty\Office.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Design">
+      <Name>System.Design</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Bridge\NavBridge.csproj">
+      <Name>NavBridge</Name>
+      <Project>{FE8004FB-081E-44E4-84FD-176587790140}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Controller\Controller.csproj">
+      <Name>Controller</Name>
+      <Project>{4F9F1559-36EC-4FDD-9FD5-75302DCB4EB0}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\DocDiff\DocDiff.csproj">
+      <Name>DocDiff</Name>
+      <Project>{4CE72E72-7B3C-4541-AC60-0058766650CB}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\FormBase\FormBase.csproj">
+      <Name>FormBase</Name>
+      <Project>{37FD300E-9DE5-4E45-AA37-94F84876BAAF}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\IcdMgr\IcdMgr.csproj">
+      <Project>{67D8A0CE-4D40-4961-B554-A167173DBF34}</Project>
+      <Name>IcdMgr</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Icp\Icpmgr\IcpMgrs.csproj">
+      <Name>IcpMgrs</Name>
+      <Project>{A0BB22E6-FF39-4788-8902-23F940984E5A}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Janetstubs\Janetstubs.csproj">
+      <Name>Janetstubs</Name>
+      <Project>{2C5485FC-CAA4-458A-B6BF-7E501BAF51F5}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\MacroBase\MacroBase.csproj">
+      <Name>MacroBase</Name>
+      <Project>{F533257C-8695-40E8-9EAF-4A37163F6643}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Macros\Macros.csproj">
+      <Name>Macros</Name>
+      <Project>{88A134A3-91EE-4131-A05B-BB8C813B6C00}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Rules\Rules.csproj">
+      <Name>Rules</Name>
+      <Project>{A28FAE24-AA45-48FD-A961-5ECD9F792425}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Tspddoc\Tspddoc.csproj">
+      <Name>Tspddoc</Name>
+      <Project>{57B0AD2C-2F67-45A1-AFC6-82CA77D60240}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\Utilities\Utilities.csproj">
+      <Name>Utilities</Name>
+      <Project>{04445F88-CA61-42DC-9105-0ABE930486CA}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\WinUtilities\WinUtilities.csproj">
+      <Project>{AD373B4A-A26B-4837-B3BE-973746FD524A}</Project>
+      <Name>WinUtilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\Designer\source\FastTrack\Tspd\WordReports\WordReports.csproj">
+      <Name>WordReports</Name>
+      <Project>{256AFCDE-8579-480B-B8AD-C57196B7A5CE}</Project>
+      <Package>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</Package>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ARConvention.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ARConventionMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlindingUnblindingMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ComparatorRegimenMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ContainerListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ContactDetailsMacro.cs" />
+    <Compile Include="InsertDocSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertDocSection.designer.cs">
+      <DependentUpon>InsertDocSection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Section6Macro.cs" />
+    <Compile Include="SectionInsertMethods.cs" />
+    <Compile Include="SectionMappingConfig.cs" />
+    <Compile Include="TaskListClass.cs" />
+    <Compile Include="TreatmentDurationMacro.cs" />
+    <Compile Include="CriteriaSelect1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CriteriaMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="HelperTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LibraryItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LibraryItemMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MacrosConfig.cs" />
+    <Compile Include="ObjectiveMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Outcome1Macro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OutcomeMacro.cs" />
+    <Compile Include="OutcomeSelection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestTreatmentMacro.cs" />
+    <Compile Include="PurdueUtil.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StringTools.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudyDesignMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="StudyDesignOverviewMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TableofContentMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\BlindedSOATableMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\CellRenderers.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\PurdueFootnoter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\PurdueSOATableDisplayMgr.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\PurdueSOATableView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\PurdueTableHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Table\SOATableMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProcedureList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TemplateMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TestSubstituteMacro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ProcedureListMacro.cs" />
+    <Compile Include="WordListHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Wrapper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <EmbeddedResource Include="ARConvention.resx">
+      <DependentUpon>ARConvention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CriteriaSelect1.resx">
+      <DependentUpon>CriteriaSelect1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertDocSection.resx">
+      <DependentUpon>InsertDocSection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LibraryItem.resx">
+      <DependentUpon>LibraryItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutcomeSelection.resx">
+      <DependentUpon>OutcomeSelection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProcedureList.resx">
+      <DependentUpon>ProcedureList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskOrVisit.resx" />
+    <EmbeddedResource Include="tv_minus.bmp" />
+    <EmbeddedResource Include="tv_plus.bmp" />
+    <Content Include="rochedt.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>set TSDIR=dyntmplts
+
+set TID=5148
+
+REM  Copy to cache
+mkdir "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+copy $(TargetDir)$(TargetFileName) "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+copy $(TargetDir)$(TargetName).pdb "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+
+set TID=5158
+
+REM  Copy to cache
+mkdir "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+copy $(TargetDir)$(TargetFileName) "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+copy $(TargetDir)$(TargetName).pdb "C:\fasttrack\cache\TSPDTemplates\%25TID%25\%25TSDIR%25"
+</PostBuildEvent>
+  </PropertyGroup>
+</Project>

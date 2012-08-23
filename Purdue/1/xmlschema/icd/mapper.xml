@@ -1,0 +1,34 @@
+<ElementChooser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/echooser.xsd">
+  <ElementTab file="AdminMapping.xml" />
+  <ElementTab file="CTMaterialMapping.xml" />
+  <ElementTab file="TreatmentMapping.xml" />
+  <ElementTab file="DesignMapping.xml" />
+  <ElementTab file="StatMapping2.xml" />
+  <ElementTab file="StatMapping.xml" />
+  <ElementTab file="PopulationMapping.xml" />
+  <ElementTab file="ScheduleMapping.xml" />
+  <ElementTab file="TaskMapping.xml" />
+  <ElementTab file="MetricsMapping.xml" />
+  <ElementTab file="StudyConductMapping.xml" />
+  <ElementTab file="../../doctypes/DocumentElements.xml" />
+  <ElementTab file="DynamicTemplates.xml" />
+  <ElementTab systemName="Library" tabColor="#F8CF59" tabLabel="Library" isConfigModeOnly="false">
+    <ElementBucket bucketLabel="Library Items" elementType="Library">
+      <ChooserEntry elementLabel="Dummy" elementPath="Dummy" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab editorClass="PDG.Schedule of Activities" systemName="Footnotes" tabColor="#83A49D" tabLabel="SOA Footnotes">
+    <ElementBucket bucketLabel="Used Footnotes" elementType="UsedFootnote" hidden="false">
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="footnote name" elementPath="usedFootnote" ftElementType="Element" toolTip="footnote text" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Unused Footnotes" elementType="UnusedFootnote" hidden="false">
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="footnote name" elementPath="unusedFootnote" ftElementType="Element" toolTip="footnote text" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab file="CustomVariables.xml" />
+  <ElementTab file="CustomReports.xml" />
+  <ConceptAuditPolicies>
+    <AuditLock systemName="StageBased" userLabel="StageBased" lockType="StageLockReasons" unlockType="StageUnlockReasons" lockCommentRequired="false" unlockCommentRequired="true" lockReasonRequired="false" unlockReasonRequired="false" />
+    <AuditLock systemName="SMEBased" userLabel="SMEBased" lockType="SMELockReasons" unlockType="SMEUnlockReasons" lockCommentRequired="false" unlockCommentRequired="true" lockReasonRequired="false" unlockReasonRequired="false" />
+  </ConceptAuditPolicies>
+</ElementChooser>

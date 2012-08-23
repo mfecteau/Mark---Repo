@@ -1,0 +1,58 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Dynamic Content Objects" tabColor="#F9A038" file="DynamicTemplates.xml" elementType="Macros" systemName="Macros" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" toolTip="" hidden="false" isConfigModeOnly="false">
+  <ElementBucket bucketLabel="Administration" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SponsorMacro.SponsorCoSponsorList,FTProtocolDTs.dll" elementLabel="Sponsor/Cosponsor" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates a list of sponsors/cosponsors." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ContactDetailsMacro.Details1,ProtocolDTs.dll" elementLabel="Notification of Pregnancy" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Outputs the Medical Monitor Fax details" shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ContactDetailsMacro.Details2,ProtocolDTs.dll" elementLabel="Reporting SAE's" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates a list of sponsors/cosponsors." shouldRun="true" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="Test Treatment" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.TestTreatment,ProtocolDTs.dll" elementLabel="Test Treatments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" shouldRun="true" toolTip="Generate a table of all test treatments" />
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.RefTreatment,ProtocolDTs.dll" elementLabel="Reference Treatments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" shouldRun="true" toolTip="Generate a table of all reference treatments" />
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.OtherTreatment,ProtocolDTs.dll" elementLabel="Other Treatments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" shouldRun="true" toolTip="Generate a table of all other treatments" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ClinicalTrialMaterialsMacros.TAAdministration,FTProtocolDTs.dll" elementLabel="Test Treatment Administration" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" shouldRun="true" toolTip="Prints name, dose, dose form, route, schedule and duration of administration for each test article, including placebo." />
+  </ElementBucket>
+  <ElementBucket bucketLabel="Design" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.PrimaryObjectives,FTProtocolDTs.dll" elementLabel="Primary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists primary objectives." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.SecondaryObjectives,FTProtocolDTs.dll" elementLabel="Secondary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists secondary objectives." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.TertiaryObjectives,FTProtocolDTs.dll" elementLabel="Tertiary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists tertiary objectives." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.SafetyObjectives,FTProtocolDTs.dll" elementLabel="Safety Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists safety objectives." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.OtherObjectives,FTProtocolDTs.dll" elementLabel="Other Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists other objectives." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.DesignABMacro.TrialDesignSummary,FTProtocolDTs.dll" elementLabel="Trial Design Summary" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Describes overall study design features." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.OutcomeMacro.Outcomes,ProtocolDTs.dll" elementLabel="Variables" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="List of variables by type selected." shouldRun="true" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="Population" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.Criteria,ProtocolDTs.dll" elementLabel="Population Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists population inclusion criteria." shouldRun="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.CriteriaABMacros.EligibilityCriteriaRationale,FTProtocolDTs.dll" elementLabel="Eligibility Criteria Rationale" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Lists text of Rationale field (Swp-02) for each I&amp;E criteria, sorted in the same order as in PDG." shouldRun="true" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="Study Schedule" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ProcedureListMacro.ProcedureList,ProtocolDTs.dll" elementLabel="SOA Narrative" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Insert study narrative based on period/subperiod selection" shouldRun="true">
+      <Complex>
+        <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementPath="TspdCfg.CommonDCO.DynTmplts.Table.SOATableMacro.SOATable,CommonDCO.dll" elementLabel="SOA Tables" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates table for Study Schedule." shouldRun="true" specialShading="true" />
+    <ChooserEntry elementPath="TspdCfg.CommonDCO.DynTmplts.SOPMacro.SOP,CommonDCO.dll" elementLabel="SOP" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Creates SOP." shouldRun="true">
+      <Complex>
+        <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.Table.SOATableMacro.SOATable,ProtocolDTs.dll" elementLabel="SOA Tables" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates table for Study Schedule." shouldRun="true" specialShading="true" hidden="true">
+      <Complex>
+        <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.TreatmentDurationMacro.ShowDuration,ProtocolDTs.dll" elementLabel="Study Durations" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="" shouldRun="true">
+      <Complex>
+        <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Reference" elementType="Macros">
+    <ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.LibraryItemMacro.LibraryItem,ProtocolDTs.dll" elementLabel="Read-Only Library Item" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Add library item into document as read-only text." shouldRun="true" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="String List Hidden Macro" elementType="Macros" hidden="true">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" elementLabel="StringList" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="" shouldRun="true" hidden="true" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="String List Hidden Macro" elementType="Macros" hidden="true">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.EquationMacro.EquationDisplay,FTProtocolDTs.dll" elementLabel="Equation" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="" shouldRun="true" hidden="true" />
+  </ElementBucket>
+</ElementTab>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rulescfg>
+
+	<category id="document" labelKey="Document"/>
+
+	<rule id="TOCReferenceCheckRule" type="CSHARP" displayName="TOC Reference" source="TspdCfg.FastTrack.Rules.TOCReferenceCheckRule,Rules.dll" categories="document" debug="false">Please make sure that all sections have been created using the Designer Document Section Manager and that the table of contents has been updated to include any changes made to the document.</rule>
+	<rule id="StyleCheckRule" type="CSHARP" displayName="Style Check" source="TspdCfg.FastTrack.Rules.StyleCheckRule,Rules.dll" categories="document" debug="false">Changing document styles is not permitted.  Changes to the default template style could result in a protocol which does not meet FDA Submission guidelines.  Update the style to be in accordance with approved template styles.</rule>
+	<rule id="Advisory01" type="CSHARP" displayName="Missing Document Section" source="TspdCfg.FastTrack.Rules.Advisory01,Rules.dll" categories="document" debug="false">A Document Section is missing from the document as defined in the document Template. Use the Protocol Document Sections dialog window to add the section back into the document.</rule>
+	<rule id="Advisory03" type="CSHARP" displayName="Custom Document Section" source="TspdCfg.FastTrack.Rules.Advisory03,Rules.dll" categories="document" debug="false">A custom Document Section has been created by an Author and used in the Protocol Document. Use the Protocol Document Sections dialog window to remove this section from the document.</rule>
+	<rule id="Advisory04" type="CSHARP" displayName="Exceeds 4 Levels Document Section" source="TspdCfg.FastTrack.Rules.Advisory04,Rules.dll" categories="document" debug="false">A Document Section exceeds the 4th level of outline numbering (e.g. 1.5.2.1.1 Example Section Name). Use the Protocol Document Sections dialog window to remove this section from the document or change its depth in the section outline.</rule>
+	<rule id="ModDocSection" type="CSHARP" displayName="Modified Document Section" source="TspdCfg.FastTrack.Rules.ModDocSection,Rules.dll" categories="document" debug="false">The content of a standardized Document Section has been modified from the approved text.</rule>
+</rulescfg>

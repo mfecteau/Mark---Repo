@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:complexType name="PlannedMetricsDomain">
+		<xs:all>
+			<xs:element name="PMG">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:all>
+								<xs:element name="plannedEnrollmentTotal" type="xs:integer" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedEnrollmentPerSite" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedFirstSubjEnrollDate" type="xs:string" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedLastSubjEnrollDate" type="xs:string" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedLastSubjCompleteDate" type="xs:string" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedRecruitmentPeriod" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedRecruitmentPeriodTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedNumDropouts" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedNumScreeningFailures" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedSubjectParticipationDuration" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedSubjectParticipationDurationTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedStudyDuration" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedStudyDurationTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedScreeningDuration" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedScreeningDurationTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedTreatmentDuration" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedTreatmentDurationTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedFollowUpDuration" type="xs:string" minOccurs="0"/>
+								<xs:element name="plannedFollowUpDurationTimeUnit" type="xs:string" minOccurs="0"/>
+								<xs:element name="totalNumVisits" type="xs:integer" minOccurs="0"/>
+								<xs:element name="plannedNumScreeningVisits" type="xs:integer" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedNumTxVisits" type="xs:integer" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedNumFollowupVisits" type="xs:integer" nillable="true" minOccurs="0"/>
+								<xs:element name="plannedEvaluableSubjCount" type="xs:integer" nillable="true" minOccurs="0"/>
+							</xs:all>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

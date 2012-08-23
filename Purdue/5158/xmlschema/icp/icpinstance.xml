@@ -1,0 +1,1806 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FTICP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fticp.xsd" lastLocalSaveDate="634377817431688009" lastDataCenterSaveDate="634377817431688009" lastModifiedTime="634377817431688009" versionID="3.0" soaLicense="true" statsLicense="true">
+  <Administrative>
+    <ProtocolSkeleton SystemName="TrialDetails" InstanceLabel="SystemName">
+      <Organizations>
+        <Organization SystemName="Associated Organization" InstanceLabel="name" ObjID="18510803212">
+          <organizationType dataType="Coded" codeSystem="OrganizationTypes" otherText="" codeValue="sponsor">sponsor</organizationType>
+          <Address>
+            <address1 dataType="String">One Stamford Forum</address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">Stamford</city>
+            <stateprov dataType="String">CT</stateprov>
+            <postalCode dataType="String">06901-3431</postalCode>
+            <country dataType="String">USA</country>
+            <telephone dataType="String">
+            </telephone>
+            <fax dataType="String">
+            </fax>
+          </Address>
+          <name dataType="String">Purdue Pharma L.P.
+</name>
+          <sequence>1</sequence>
+        </Organization>
+        <Organization SystemName="Associated Organization" InstanceLabel="name" ObjID="18856612189">
+          <organizationType dataType="Coded" codeSystem="OrganizationTypes" otherText="" codeValue="cro">cro</organizationType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">
+            </telephone>
+            <fax dataType="String">
+            </fax>
+          </Address>
+          <name dataType="String">PRA</name>
+          <sequence>2</sequence>
+        </Organization>
+        <Organization SystemName="Associated Organization" InstanceLabel="name" ObjID="19418041573">
+          <organizationType dataType="Coded" codeSystem="OrganizationTypes" otherText="" codeValue="cro">cro</organizationType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">
+            </telephone>
+            <fax dataType="String">
+            </fax>
+          </Address>
+          <name dataType="String">PRA Early Development</name>
+          <sequence>3</sequence>
+        </Organization>
+        <Organization SystemName="Associated Organization" InstanceLabel="name" ObjID="19418041574">
+          <organizationType dataType="Coded" codeSystem="OrganizationTypes" otherText="" codeValue="cro">cro</organizationType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">
+            </telephone>
+            <fax dataType="String">
+            </fax>
+          </Address>
+          <name dataType="String">Covance</name>
+          <sequence>4</sequence>
+        </Organization>
+        <Organization SystemName="Associated Organization" InstanceLabel="name" ObjID="19418041575">
+          <organizationType dataType="Coded" codeSystem="OrganizationTypes" otherText="" codeValue="cro">cro</organizationType>
+          <Address>
+            <address1 dataType="String">720 King Street West, Suite 700</address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">Toronto</city>
+            <stateprov dataType="String">Ontario</stateprov>
+            <postalCode dataType="String">M5V 2T3</postalCode>
+            <country dataType="String">Canada</country>
+            <telephone dataType="String">
+            </telephone>
+            <fax dataType="String">
+            </fax>
+          </Address>
+          <name dataType="String">Kendle Early Stage - Toronto</name>
+          <sequence>5</sequence>
+        </Organization>
+      </Organizations>
+      <Contacts>
+        <Contact SystemName="Contact" InstanceLabel="personName" ObjID="19418041576">
+          <associatedOrganizations />
+          <roleType dataType="Coded" codeSystem="ContactRoleTypes" otherText="" codeValue="medicalMonitor">medicalMonitor</roleType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">1-800-722-2215</telephone>
+            <fax dataType="String">1-888-772-6919</fax>
+            <email dataType="String">CHOSafety@praintl.com</email>
+          </Address>
+          <personName dataType="String">PRA Safety (Americas)</personName>
+          <roleComment dataType="String">
+          </roleComment>
+          <sequence>1</sequence>
+        </Contact>
+        <Contact SystemName="Contact" InstanceLabel="personName" ObjID="19418041577">
+          <associatedOrganizations />
+          <roleType dataType="Coded" codeSystem="ContactRoleTypes" otherText="" codeValue="medicalMonitor">medicalMonitor</roleType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">(+49) 621 8782 154</telephone>
+            <fax dataType="String">(+49) 621 8782 181</fax>
+            <email dataType="String">MHGSafety@praintl.com</email>
+          </Address>
+          <personName dataType="String">PRA Safety (all other regions)</personName>
+          <roleComment dataType="String">
+          </roleComment>
+          <sequence>2</sequence>
+        </Contact>
+        <Contact SystemName="Contact" InstanceLabel="personName" ObjID="19418041578">
+          <associatedOrganizations />
+          <roleType dataType="Coded" codeSystem="ContactRoleTypes" otherText="" codeValue="medicalMonitor">medicalMonitor</roleType>
+          <Address>
+            <address1 dataType="String">
+            </address1>
+            <address2 dataType="String">
+            </address2>
+            <city dataType="String">
+            </city>
+            <stateprov dataType="String">
+            </stateprov>
+            <postalCode dataType="String">
+            </postalCode>
+            <country dataType="String">
+            </country>
+            <telephone dataType="String">1-608-310-4050</telephone>
+            <fax dataType="String">1-608-310-8297</fax>
+            <email dataType="String">
+            </email>
+          </Address>
+          <personName dataType="String">Covance</personName>
+          <roleComment dataType="String">
+          </roleComment>
+          <sequence>3</sequence>
+        </Contact>
+      </Contacts>
+      <title>
+        <brief />
+        <full dataType="String">
+        </full>
+      </title>
+      <protocolID>Phase 3 Configuration</protocolID>
+      <phase />
+      <indication dataType="String">
+      </indication>
+      <versionName />
+      <versionType />
+      <versionDate />
+      <externalRegulatoryNumber dataType="String" />
+      <externalRegulatoryGrantor />
+      <otherExternalRegulatoryNumber />
+      <otherExternalRegulatoryGrantor />
+      <description>
+        <brief />
+        <full />
+      </description>
+      <plannedNumberStudyCenters />
+      <conditionKeywords>
+        <value />
+      </conditionKeywords>
+      <codedConditions dataType="Composite">
+      </codedConditions>
+      <countries />
+      <phaseCoded SystemName="Phase Code" InstanceLabel="codeValue" dataType="Coded" codeSystem="FastTrack" otherText="" codeValue="3">3</phaseCoded>
+      <isMultiCentered ObjID="" dataType="Coded" />
+      <codedCountries dataType="Composite">
+        <value code="24">United States</value>
+      </codedCountries>
+    </ProtocolSkeleton>
+  </Administrative>
+  <StudyDesign>
+    <Design SystemName="Study Design">
+      <Objectives />
+      <Outcomes />
+      <Arms />
+      <masking SystemName="Blinding Type" InstanceLabel="codeValue" codeValue="" />
+      <controlType SystemName="Control Type" InstanceLabel="codeValue" codeValue="" />
+      <methodOfAllocation SystemName="Allocation Method" InstanceLabel="codeValue" codeValue="" />
+      <studyConfiguration SystemName="Configuration" InstanceLabel="codeValue" type="l" />
+      <natureOfInvestigation SystemName="Investigation Type" InstanceLabel="codeValue" codeValue="" />
+      <overallStudyOutcomeType SystemName="Study Outcome Type" InstanceLabel="codeValue" codeValue="" />
+      <studyPurpose SystemName="Study Purpose" InstanceLabel="codeValue" codeValue="" />
+      <subjectUnblindingProcedure />
+      <maintainingBlindProcedure />
+      <comparator />
+      <numberOfArms>0</numberOfArms>
+    </Design>
+  </StudyDesign>
+  <StudyPopulation>
+    <Population SystemName="Population" InstanceLabel="entranceCriteriaSummary">
+      <EligibilityCriteria>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736279">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Inclusion">Inclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Female subjects who are premenopausal or postmenopausal less than 1 year or who have not had surgical sterilization (ie, tubal ligation, partial or complete hysterectomy) must have a negative serum pregnancy test, be nonlactating, and willing to use adequate and reliable contraception throughout the study (eg, barrier with additional spermicidal foam or jelly, intra-uterine device, hormonal contraception)</full>
+            <brief dataType="String">Female subjects who are premenopausal or postmenopausal</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>1</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736280">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Inclusion">Inclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects must have a serum potassium level within the normal range (defined by the testing laboratory)</full>
+            <brief dataType="String">Serum potassium</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>2</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736281">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Inclusion">Inclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Are deemed by the investigator to be appropriate candidates for the protocol-specified therapeutic regimen.</full>
+            <brief dataType="String">Appropriate candidates</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>3</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736282">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Inclusion">Inclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects who are willing and able to be compliant with the protocol, are capable of subjective evaluation, are able to read and understand questionnaires, are willing and able to use an electronic diary, and are able to read, understand, and sign the written informed consent in English</full>
+            <brief dataType="String">Willing and able to be compliant</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>4</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736283">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Inclusion">Inclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Male or female subjects at least 18 years or older</full>
+            <brief dataType="String">Subject Age</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>5</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736284">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects who have used any investigational medication within 30 days prior to the first dose of study medication</full>
+            <brief dataType="String">Used any investigational medication</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>6</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736285">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects who, in the opinion of the Investigator, are unsuitable to participate in this study for any other reason</full>
+            <brief dataType="String">Unsuitable to participate</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>7</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736286">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with a history of alcohol, medication, or illicit drug abuse or addiction and/or history of opioid abuse or addiction at any time</full>
+            <brief dataType="String">History of alcohol, medication, or illicit drug abuse</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>8</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736287">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with clinically unstable cardiac disease, including: unstable atrial fibrillation, symptomatic bradycardia, unstable congestive heart failure, or active myocardial ischemia</full>
+            <brief dataType="String">Clinically unstable cardiac disease</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>9</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736288">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with evidence of impaired kidney function upon entry into the study (ie, serum creatinine  ≥ 2.5 mg/dL) should not participate in this study</full>
+            <brief dataType="String">Impaired kidney function</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>10</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736289">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with evidence of impaired liver function upon entry into the study (laboratory test values ≥ 3 times the upper limit of the laboratory reference (normal) range (ULN) for aspartate transaminase [AST/SGOT] or alanine transaminase [ALT/SGPT], or values &gt; 2 times the ULN for alkaline phosphatase), or total bilirubin level &gt; 1.5 times the ULN or, in the opinion of the investigator/medically qualified designee (must be MD or DO), liver function impairment to the extent that the subject should not participate in this study</full>
+            <brief dataType="String">Impaired liver function</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>11</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736290">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with history of malignancy within past 2 years, with exception of basal cell carcinoma that has been successfully treated</full>
+            <brief dataType="String">History of malignancy</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>12</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736291">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects who had surgical procedures directed towards the source of the disease within X months of screening or scheduled for surgery of the disease site (ie, major XXX surgery) or any other major surgery during the study conduct period</full>
+            <brief dataType="String">Surgical procedures</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>13</sequence>
+        </EligibilityCriterion>
+        <EligibilityCriterion SystemName="Eligibility Criterion" InstanceLabel="description/full" ObjID="18380736292">
+          <criterionType dataType="Coded" codeSystem="EntranceCriterionTypes" otherText="" codeValue="Exclusion">Exclusion</criterionType>
+          <classifierType dataType="Coded" codeSystem="EntranceCriterionClassifierTypes" otherText="" codeValue="">
+          </classifierType>
+          <description>
+            <full dataType="String">Subjects with medical condition that in the Investigators opinion is inadequately treated and precludes entry into the study</full>
+            <brief dataType="String">Inadequately treated medical condition</brief>
+          </description>
+          <rationale dataType="String">
+          </rationale>
+          <sequence>14</sequence>
+        </EligibilityCriterion>
+      </EligibilityCriteria>
+      <gender SystemName="Gender" InstanceLabel="codeValue" otherText="" codeValue="" />
+      <entranceCriteriaSummary />
+      <acceptsHealthyVolunteersType codeValue="" InstanceLabel="codeValue" SystemName="Accepts Healthy Volunteers" />
+      <minSubjectAge />
+      <maxSubjectAge />
+      <subjectAgeTimeUnit />
+    </Population>
+  </StudyPopulation>
+  <StudySchedule>
+    <Schedules>
+      <Schedule SystemName="Schedule Of Activities" InstanceLabel="soaName" ObjID="600000000">
+        <Periods>
+          <Period SystemName="Period" InstanceLabel="description/brief" isDivider="false" ObjID="18606589498">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+            </scheduleItemType>
+            <Children>
+              <SubPeriod SystemName="SubPeriod" InstanceLabel="description/brief" isDivider="false" ObjID="18606589502" parentID="18606589498">
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children>
+                  <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18606589504" parentID="18606589502">
+                    <sequence>1</sequence>
+                    <NegationRules />
+                    <SOADetail>
+                      <LibraryReference />
+                      <Footnotes />
+                    </SOADetail>
+                    <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                    </scheduleItemType>
+                    <Children />
+                    <SDTMDomain dataType="String">TV</SDTMDomain>
+                    <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                    <description>
+                      <brief dataType="String">Visit 1</brief>
+                      <label dataType="String">V1</label>
+                      <full dataType="String">
+                      </full>
+                    </description>
+                    <duration dataType="TimeSpan">
+                    </duration>
+                    <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                    </durationTimeUnit>
+                    <effectiveTime dataType="String">
+                    </effectiveTime>
+                    <permittedTimeWindow dataType="String">
+                    </permittedTimeWindow>
+                  </ProtocolEvent>
+                </Children>
+                <SDTMDomain>TE</SDTMDomain>
+                <sequence>1</sequence>
+                <description>
+                  <brief dataType="String">Screening</brief>
+                  <label dataType="String">S</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </SubPeriod>
+              <SubPeriod SystemName="SubPeriod" InstanceLabel="description/brief" isDivider="false" ObjID="18606589503" parentID="18606589498">
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children>
+                  <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18606589505" parentID="18606589503">
+                    <sequence>1</sequence>
+                    <NegationRules />
+                    <SOADetail>
+                      <LibraryReference />
+                      <Footnotes />
+                    </SOADetail>
+                    <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                    </scheduleItemType>
+                    <Children />
+                    <SDTMDomain dataType="String">TV</SDTMDomain>
+                    <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                    <description>
+                      <brief dataType="String">Visit 2</brief>
+                      <label dataType="String">V2</label>
+                      <full dataType="String">
+                      </full>
+                    </description>
+                    <duration dataType="TimeSpan">
+                    </duration>
+                    <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                    </durationTimeUnit>
+                    <effectiveTime dataType="String">
+                    </effectiveTime>
+                    <permittedTimeWindow dataType="String">
+                    </permittedTimeWindow>
+                  </ProtocolEvent>
+                  <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063730" parentID="18606589503">
+                    <sequence>2</sequence>
+                    <NegationRules />
+                    <SOADetail>
+                      <LibraryReference />
+                      <Footnotes />
+                    </SOADetail>
+                    <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                    </scheduleItemType>
+                    <Children />
+                    <SDTMDomain dataType="String">TV</SDTMDomain>
+                    <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                    <description>
+                      <brief dataType="String">Phone Calls/Visit 3</brief>
+                      <label dataType="String">Phone Calls/V3</label>
+                      <full dataType="String">
+                      </full>
+                    </description>
+                    <duration dataType="TimeSpan">
+                    </duration>
+                    <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                    </durationTimeUnit>
+                    <effectiveTime dataType="String">
+                    </effectiveTime>
+                    <permittedTimeWindow dataType="String">
+                    </permittedTimeWindow>
+                  </ProtocolEvent>
+                  <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063731" parentID="18606589503">
+                    <sequence>3</sequence>
+                    <NegationRules />
+                    <SOADetail>
+                      <LibraryReference />
+                      <Footnotes />
+                    </SOADetail>
+                    <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                    </scheduleItemType>
+                    <Children />
+                    <SDTMDomain dataType="String">TV</SDTMDomain>
+                    <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                    <description>
+                      <brief dataType="String">Visit 4</brief>
+                      <label dataType="String">V4</label>
+                      <full dataType="String">
+                      </full>
+                    </description>
+                    <duration dataType="TimeSpan">
+                    </duration>
+                    <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                    </durationTimeUnit>
+                    <effectiveTime dataType="String">
+                    </effectiveTime>
+                    <permittedTimeWindow dataType="String">
+                    </permittedTimeWindow>
+                  </ProtocolEvent>
+                  <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063732" parentID="18606589503">
+                    <sequence>4</sequence>
+                    <NegationRules />
+                    <SOADetail>
+                      <LibraryReference />
+                      <Footnotes />
+                    </SOADetail>
+                    <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                    </scheduleItemType>
+                    <Children />
+                    <SDTMDomain dataType="String">TV</SDTMDomain>
+                    <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                    <description>
+                      <brief dataType="String">Visit 5</brief>
+                      <label dataType="String">V5</label>
+                      <full dataType="String">
+                      </full>
+                    </description>
+                    <duration dataType="TimeSpan">
+                    </duration>
+                    <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                    </durationTimeUnit>
+                    <effectiveTime dataType="String">
+                    </effectiveTime>
+                    <permittedTimeWindow dataType="String">
+                    </permittedTimeWindow>
+                  </ProtocolEvent>
+                </Children>
+                <SDTMDomain>TE</SDTMDomain>
+                <sequence>2</sequence>
+                <description>
+                  <brief dataType="String">Run-in</brief>
+                  <label dataType="String">RI</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </SubPeriod>
+            </Children>
+            <SDTMDomain>TE</SDTMDomain>
+            <sequence>1</sequence>
+            <description>
+              <brief dataType="String">Pre-Randomization</brief>
+              <label dataType="String">P-R</label>
+              <full dataType="String">
+              </full>
+            </description>
+            <duration dataType="TimeSpan">
+            </duration>
+            <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+            </durationTimeUnit>
+            <effectiveTime dataType="String">
+            </effectiveTime>
+            <permittedTimeWindow dataType="String">
+            </permittedTimeWindow>
+          </Period>
+          <Period SystemName="Period" InstanceLabel="description/brief" isDivider="false" ObjID="18606589507">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+            </scheduleItemType>
+            <Children>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18606589508" parentID="18606589507">
+                <sequence>1</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Randomization</brief>
+                  <label dataType="String">R</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+            </Children>
+            <SDTMDomain>TE</SDTMDomain>
+            <sequence>2</sequence>
+            <description>
+              <brief dataType="String">Randomization</brief>
+              <label dataType="String">R</label>
+              <full dataType="String">
+              </full>
+            </description>
+            <duration dataType="TimeSpan">
+            </duration>
+            <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+            </durationTimeUnit>
+            <effectiveTime dataType="String">
+            </effectiveTime>
+            <permittedTimeWindow dataType="String">
+            </permittedTimeWindow>
+          </Period>
+          <Period SystemName="Period" InstanceLabel="description/brief" isDivider="false" ObjID="18606589499">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+            </scheduleItemType>
+            <Children>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18606589509" parentID="18606589499">
+                <sequence>1</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Visit 6</brief>
+                  <label dataType="String">V6</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063733" parentID="18606589499">
+                <sequence>2</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Visit 7</brief>
+                  <label dataType="String">V7</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063734" parentID="18606589499">
+                <sequence>3</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Visit 8</brief>
+                  <label dataType="String">V8</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="19262063735" parentID="18606589499">
+                <sequence>4</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Visit 9</brief>
+                  <label dataType="String">V9</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+            </Children>
+            <SDTMDomain>TE</SDTMDomain>
+            <sequence>3</sequence>
+            <description>
+              <brief dataType="String">Treatment</brief>
+              <label dataType="String">T</label>
+              <full dataType="String">
+              </full>
+            </description>
+            <duration dataType="TimeSpan">
+            </duration>
+            <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+            </durationTimeUnit>
+            <effectiveTime dataType="String">
+            </effectiveTime>
+            <permittedTimeWindow dataType="String">
+            </permittedTimeWindow>
+          </Period>
+          <Period SystemName="Period" InstanceLabel="description/brief" isDivider="false" ObjID="18874619596">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+            </scheduleItemType>
+            <Children>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18874619597" parentID="18874619596">
+                <sequence>1</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">End of Study</brief>
+                  <label dataType="String">EOS</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+            </Children>
+            <SDTMDomain>TE</SDTMDomain>
+            <sequence>4</sequence>
+            <description>
+              <brief dataType="String">End of Study</brief>
+              <label dataType="String">EOS</label>
+              <full dataType="String">
+              </full>
+            </description>
+            <duration dataType="TimeSpan">
+            </duration>
+            <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+            </durationTimeUnit>
+            <effectiveTime dataType="String">
+            </effectiveTime>
+            <permittedTimeWindow dataType="String">
+            </permittedTimeWindow>
+          </Period>
+          <Period SystemName="Period" InstanceLabel="description/brief" isDivider="false" ObjID="18606589506">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+            </scheduleItemType>
+            <Children>
+              <ProtocolEvent SystemName="Event" InstanceLabel="description/brief" ObjID="18606589510" parentID="18606589506">
+                <sequence>1</sequence>
+                <NegationRules />
+                <SOADetail>
+                  <LibraryReference />
+                  <Footnotes />
+                </SOADetail>
+                <scheduleItemType InstanceLabel="type" SystemName="type" dataType="Coded" codeSystem="ScheduleItemTypes" otherText="" codeValue="">
+                </scheduleItemType>
+                <Children />
+                <SDTMDomain dataType="String">TV</SDTMDomain>
+                <eventType dataType="Coded" codeSystem="EventTypes" otherText="" codeValue="Visit">Visit</eventType>
+                <description>
+                  <brief dataType="String">Follow-Up</brief>
+                  <label dataType="String">FU</label>
+                  <full dataType="String">
+                  </full>
+                </description>
+                <duration dataType="TimeSpan">
+                </duration>
+                <durationTimeUnit dataType="Coded" codeSystem="RestrictedTimeUnit" otherText="" codeValue="">
+                </durationTimeUnit>
+                <effectiveTime dataType="String">
+                </effectiveTime>
+                <permittedTimeWindow dataType="String">
+                </permittedTimeWindow>
+              </ProtocolEvent>
+            </Children>
+            <SDTMDomain>TE</SDTMDomain>
+            <sequence>5</sequence>
+            <description>
+              <brief dataType="String">Follow-Up</brief>
+              <label dataType="String">FU</label>
+              <full dataType="String">
+              </full>
+            </description>
+            <duration dataType="TimeSpan">
+            </duration>
+            <durationTimeUnit dataType="Coded" codeSystem="TimeUnit" otherText="" codeValue="">
+            </durationTimeUnit>
+            <effectiveTime dataType="String">
+            </effectiveTime>
+            <permittedTimeWindow dataType="String">
+            </permittedTimeWindow>
+          </Period>
+        </Periods>
+        <Tasks>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="19262063749">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Review of Subject Diary</brief>
+              <full dataType="String">Review the subject's Diary including for "Average Pain over the Last 24 Hours" score (0 to 10 scale) for the low back pain, supplemental analgesic medication use (time/date/amount of analgesics taken for low back pain), and "Pain Right Now" scores.</full>
+            </description>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <procdefID dataType="String">2789</procdefID>
+            <costAmount dataType="String">0</costAmount>
+            <sourceText dataType="String">Review the subject's Diary including for "Average Pain over the Last 24 Hours" score (0 to 10 scale) for the low back pain, supplemental analgesic medication use (time/date/amount of analgesics taken for low back pain), and "Pain Right Now" scores.</sourceText>
+            <sequence>20</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="19262063752">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Collect the subject's diary</brief>
+              <full dataType="String">Collect the subject's diary.</full>
+            </description>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <procdefID dataType="String">2810</procdefID>
+            <costAmount dataType="String">0</costAmount>
+            <sourceText dataType="String">Collect the subject's diary.</sourceText>
+            <sequence>17</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="19262063753">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Distribution of Subject Diary</brief>
+              <full dataType="String">Distribute subject diary.</full>
+            </description>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <procdefID dataType="String">2788</procdefID>
+            <costAmount dataType="String">0</costAmount>
+            <sourceText dataType="String">Distribute subject diary.</sourceText>
+            <sequence>16</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="19262063768">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Conduct drug accountability / Review for CSPCs</brief>
+              <full dataType="String">Conduct drug accountability of all clinical supplies. Evaluate subject and clinical supplies usage for Clinical Supply Product Complaints.</full>
+            </description>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <procdefID dataType="String">2809</procdefID>
+            <costAmount dataType="String">0</costAmount>
+            <sourceText dataType="String">Conduct drug accountability of all clinical supplies. Evaluate subject and clinical supplies usage for Clinical Supply Product Complaints.</sourceText>
+            <sequence>21</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="20359665632">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Incoming Analgesic Medication</brief>
+              <full dataType="String">Remind the subject to continue to forgo all nonstudy opiod analgesics, nonopiod analgesics used for chronic pain (if applicable), except those specified.</full>
+            </description>
+            <procdefID dataType="String">2798</procdefID>
+            <costAmount dataType="String">0</costAmount>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <sourceText dataType="String">Remind the subject to continue to forgo all nonstudy opiod analgesics, nonopiod analgesics used for chronic pain (if applicable), except those specified.</sourceText>
+            <taskCode dataType="String">Incoming Analgesic Medication</taskCode>
+            <sequence>23</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="20359665633">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Dispense Supplemental Medication</brief>
+              <full dataType="String">
+              </full>
+            </description>
+            <procdefID dataType="String">20359665633</procdefID>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <sourceText dataType="String">
+            </sourceText>
+            <sequence>24</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="20359665634">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Dispenseof Study Drug</brief>
+              <full dataType="String">
+              </full>
+            </description>
+            <procdefID dataType="String">20359665634</procdefID>
+            <isUnlisted dataType="String">True</isUnlisted>
+            <sourceText dataType="String">
+            </sourceText>
+            <sequence>25</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418710">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Informed Consent Form (ICF)</brief>
+              <full dataType="String">Obtain the subject's written consent before performing any study-specific procedures.</full>
+            </description>
+            <procdefID dataType="String">3824</procdefID>
+            <costAmount dataType="Number">100</costAmount>
+            <complexity dataType="Number">0.2</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Obtain the subject's written consent before performing any study-specific procedures.</sourceText>
+            <taskCode dataType="String">*INCO</taskCode>
+            <sequence>1</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418711">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Inclusion/Exclusion Criteria</brief>
+              <full dataType="String">Review the subject's eligibility against all inclusion/exclusion criteria.</full>
+            </description>
+            <procdefID dataType="String">3825</procdefID>
+            <costAmount dataType="Number">50</costAmount>
+            <complexity dataType="Number">0.2</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Review the subject's eligibility against all inclusion/exclusion criteria.</sourceText>
+            <taskCode dataType="String">*INEX</taskCode>
+            <sequence>2</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418712">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Demography, Medical History &amp; Physical Examination</brief>
+              <full dataType="String">Obtain and record the subject's demographic information, the subject's medical history, and medical conditions.  If the subject is a referral, the site should make every effort to obtain subject's previous medical records to verify eligibility.  Perform a physical examination. The physical examination must be performed by the investigator/medically qualified designee (must be MD or DO).</full>
+            </description>
+            <procdefID dataType="String">304</procdefID>
+            <costAmount dataType="Number">225</costAmount>
+            <complexity dataType="Number">3.17</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Obtain and record the subject's demographic information, the subject's medical history, and medical conditions.  If the subject is a referral, the site should make every effort to obtain subject's previous medical records to verify eligibility.  Perform a physical examination. The physical examination must be performed by the investigator/medically qualified designee (must be MD or DO).</sourceText>
+            <taskCode dataType="String">99205</taskCode>
+            <sequence>3</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418713">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Electrocardiogram</brief>
+              <full dataType="String">Electrocardiogram, ECG/EKG With at Least 12 Leads; With Interpretation and Report, Routine</full>
+            </description>
+            <procdefID dataType="String">29</procdefID>
+            <costAmount dataType="Number">100</costAmount>
+            <complexity dataType="Number">0.17</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Electrocardiogram, ECG/EKG With at Least 12 Leads; With Interpretation and Report, Routine</sourceText>
+            <taskCode dataType="String">93000</taskCode>
+            <sequence>4</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418714">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Serum Pregnancy Test</brief>
+              <full dataType="String">Draw blood for serum pregnancy testing for female subjects who are premenopausal or postmenopausal for less than 1 year and who have not had surgical sterilization.</full>
+            </description>
+            <procdefID dataType="String">44</procdefID>
+            <costAmount dataType="Number">20</costAmount>
+            <complexity dataType="Number">0.22</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Draw blood for serum pregnancy testing for female subjects who are premenopausal or postmenopausal for less than 1 year and who have not had surgical sterilization.</sourceText>
+            <taskCode dataType="String">84702</taskCode>
+            <sequence>5</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418715">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Laboratory Evaluations</brief>
+              <full dataType="String">Draw blood for clinical laboratory evaluations for all subjects. 
+For any subject who has an aspartate transaminase [AST/SGOT] or alanine transaminase [ALT/SGPT] values greater than or equal to 3 time upper limit of normal (ULN), alkaline phosphatase values &gt; 2 times ULN, total bilirubin levels &gt; 1.5 times ULN, serum potassium level &lt; 4 mmol/L or greater than ULN (defined by the testing laboratory), serum calcium level outside the reference range (defined by the testing laboratory), and/or serum magnesium level outside the reference range (defined by the testing laboratory) at any visit other than visit 1, the subject must return to the study site for a repeat Complete Blood Count (CBC) with differential (for decreased ANC values), comprehensive metabolic panel (for elevated Liver Function Tests [LFTs]), or serum potassium/calcium/magnesium 5 to 7 days after that visit.
+
+Collect urine for laboratory evaluations.</full>
+            </description>
+            <procdefID dataType="String">91</procdefID>
+            <costAmount dataType="Number">40</costAmount>
+            <complexity dataType="Number">0.14</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Draw blood for clinical laboratory evaluations for all subjects. 
+For any subject who has an aspartate transaminase [AST/SGOT] or alanine transaminase [ALT/SGPT] values greater than or equal to 3 time upper limit of normal (ULN), alkaline phosphatase values &gt; 2 times ULN, total bilirubin levels &gt; 1.5 times ULN, serum potassium level &lt; 4 mmol/L or greater than ULN (defined by the testing laboratory), serum calcium level outside the reference range (defined by the testing laboratory), and/or serum magnesium level outside the reference range (defined by the testing laboratory) at any visit other than visit 1, the subject must return to the study site for a repeat Complete Blood Count (CBC) with differential (for decreased ANC values), comprehensive metabolic panel (for elevated Liver Function Tests [LFTs]), or serum potassium/calcium/magnesium 5 to 7 days after that visit.
+
+Collect urine for laboratory evaluations.</sourceText>
+            <taskCode dataType="String">36415</taskCode>
+            <sequence>6</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418716">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Adverse Events</brief>
+              <full dataType="String">Record all adverse events.</full>
+            </description>
+            <procdefID dataType="String">3823</procdefID>
+            <costAmount dataType="Number">33</costAmount>
+            <complexity dataType="Number">0.2</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Record all adverse events.</sourceText>
+            <taskCode dataType="String">*ADVE</taskCode>
+            <sequence>8</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418717">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Concomitant Therapies</brief>
+              <full dataType="String">Obtain and record all concomitant medications and nondrug therapies.</full>
+            </description>
+            <procdefID dataType="String">3834</procdefID>
+            <costAmount dataType="Number">25</costAmount>
+            <complexity dataType="Number">0.2</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Obtain and record all concomitant medications and nondrug therapies.</sourceText>
+            <taskCode dataType="String">*RCM*</taskCode>
+            <sequence>9</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418718">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">SOWS</brief>
+              <full dataType="String">Instruct the subject to record SOWS daily at approximately 8:00 PM each evening for the first x weeks of xx period.</full>
+            </description>
+            <procdefID dataType="String">3872</procdefID>
+            <costAmount dataType="Number">63</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Instruct the subject to record SOWS daily at approximately 8:00 PM each evening for the first x weeks of xx period.</sourceText>
+            <taskCode dataType="String">*SOWS</taskCode>
+            <sequence>10</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418719">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Oswestry Disability Index</brief>
+              <full dataType="String">Have the subject record his/her responses to the following questionnaire: Oswestry Disability Index.</full>
+            </description>
+            <procdefID dataType="String">1437</procdefID>
+            <costAmount dataType="Number">24</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Have the subject record his/her responses to the following questionnaire: Oswestry Disability Index.</sourceText>
+            <taskCode dataType="String">*ODQ*</taskCode>
+            <sequence>11</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418720">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">BPI SF</brief>
+              <full dataType="String">Have the subject record his/her responses to the following questionnaire: Brief Pain Inventory (BPI) Short Form.</full>
+            </description>
+            <procdefID dataType="String">4264</procdefID>
+            <costAmount dataType="Number">26</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Have the subject record his/her responses to the following questionnaire: Brief Pain Inventory (BPI) Short Form.</sourceText>
+            <taskCode dataType="String">*BPIS</taskCode>
+            <sequence>12</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418721">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">MOS Sleep Scale</brief>
+              <full dataType="String">Have the subject record his/her responses to the following questionnaire: Medical Outcomes Study (MOS) Sleep Scale.</full>
+            </description>
+            <procdefID dataType="String">3506</procdefID>
+            <costAmount dataType="Number">15</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Have the subject record his/her responses to the following questionnaire: Medical Outcomes Study (MOS) Sleep Scale.</sourceText>
+            <taskCode dataType="String">*MOSS</taskCode>
+            <sequence>13</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418722">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">SF-36</brief>
+              <full dataType="String">Have the subject record his/her responses to the following questionnaire: Short Form 36 (SF-36).</full>
+            </description>
+            <procdefID dataType="String">4423</procdefID>
+            <costAmount dataType="Number">25</costAmount>
+            <complexity dataType="Number">0.35</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Have the subject record his/her responses to the following questionnaire: Short Form 36 (SF-36).</sourceText>
+            <taskCode dataType="String">*SF36</taskCode>
+            <sequence>14</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418723">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">PGIC</brief>
+              <full dataType="String">Have the subject record his/her responses to the following questionnaire: Patient's Global Impression of Change (PGIC).</full>
+            </description>
+            <procdefID dataType="String">3860</procdefID>
+            <costAmount dataType="Number">50</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Have the subject record his/her responses to the following questionnaire: Patient's Global Impression of Change (PGIC).</sourceText>
+            <taskCode dataType="String">*PGIC</taskCode>
+            <sequence>15</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418724">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Average Pain Over the Last 24 Hours</brief>
+              <full dataType="String">Instruct the subject to record daily "Average Pain over the Last 24 Hours" scores (on an 11-point numerical pain scale where 0 = no pain and 10 = worst pain imaginable).</full>
+            </description>
+            <procdefID dataType="String">3874</procdefID>
+            <costAmount dataType="Number">10</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Instruct the subject to record daily "Average Pain over the Last 24 Hours" scores (on an 11-point numerical pain scale where 0 = no pain and 10 = worst pain imaginable).</sourceText>
+            <taskCode dataType="String">*APOL</taskCode>
+            <sequence>19</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418725">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Contact IVRS/IWRS</brief>
+              <full dataType="String">Contact the Interactive Voice Response System (IVRS)/Interactive Web Response System (IWRS) to obtain subject number, which will be retained throughout the study.  Instructions for contacting the IVRS/IWRS are provided in the study manual.</full>
+            </description>
+            <procdefID dataType="String">3836</procdefID>
+            <costAmount dataType="Number">25</costAmount>
+            <complexity dataType="Number">0</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Contact the Interactive Voice Response System (IVRS)/Interactive Web Response System (IWRS) to obtain subject number, which will be retained throughout the study.  Instructions for contacting the IVRS/IWRS are provided in the study manual.</sourceText>
+            <taskCode dataType="String">*IVRS</taskCode>
+            <sequence>22</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418726">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">COWS</brief>
+              <full dataType="String">Clinical Opiate Withdrawal Scale; COWS (5 min, Clinical Assessment, 11-Item) [SELECT CODE *SOWS for Patient's Assessment]</full>
+            </description>
+            <procdefID dataType="String">3713</procdefID>
+            <costAmount dataType="Number">88</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Clinical Opiate Withdrawal Scale; COWS (5 min, Clinical Assessment, 11-Item) [SELECT CODE *SOWS for Patient's Assessment]</sourceText>
+            <taskCode dataType="String">*COWS</taskCode>
+            <sequence>26</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418727">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Brief Visit w/ Vitals</brief>
+              <full dataType="String">Brief Visit with Vital Signs (Visit w Blood Pressure and Weight), Routine</full>
+            </description>
+            <procdefID dataType="String">305</procdefID>
+            <costAmount dataType="Number">40</costAmount>
+            <complexity dataType="Number">0.18</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Brief Visit with Vital Signs (Visit w Blood Pressure and Weight), Routine</sourceText>
+            <taskCode dataType="String">99211</taskCode>
+            <sequence>7</sequence>
+          </TSPDTask>
+          <TSPDTask SystemName="Task" InstanceLabel="description/brief" isDivider="false" ObjID="17275418728">
+            <NegationRules />
+            <SOADetail>
+              <LibraryReference />
+              <Footnotes />
+            </SOADetail>
+            <varMapping />
+            <SDTMDomain>PA</SDTMDomain>
+            <description>
+              <brief dataType="String">Average Pain Over the Last 14 Days</brief>
+              <full dataType="String">Obtain subject's "Average Low Back Pain over the Last 14 Days" score (on an 11-point numerical pain scale where 0 = no pain and 10 = worst pain imaginable).</full>
+            </description>
+            <procdefID dataType="String">3874</procdefID>
+            <costAmount dataType="Number">10</costAmount>
+            <complexity dataType="Number">0.15</complexity>
+            <isUnlisted dataType="String">False</isUnlisted>
+            <sourceText dataType="String">Instruct the subject to record daily "Average Pain over the Last 24 Hours" scores (on an 11-point numerical pain scale where 0 = no pain and 10 = worst pain imaginable).</sourceText>
+            <taskCode dataType="String">*APOL</taskCode>
+            <sequence>18</sequence>
+          </TSPDTask>
+        </Tasks>
+        <TaskVisits />
+        <AssociatedArms />
+        <soaName>SOA1</soaName>
+        <ArmRules />
+        <TemporalRules />
+        <ClinicalRules />
+        <NegationRules />
+        <CycleRules />
+        <TriggerRules />
+        <sequence>1</sequence>
+        <ContinuousEvents />
+        <UnplannedEvents />
+      </Schedule>
+    </Schedules>
+    <Footnotes>
+      <Footnote ObjID="18380736294" footnoteText="Applicable only to subjects who received study drug (dose) for XX-XX days." />
+      <Footnote ObjID="18380736295" footnoteText="Study drug (XXX) will be evaluated by investigator/medically qualified designee (must be MD or DO) for tolerability." />
+      <Footnote ObjID="18380736296" footnoteText="CSPCs = Clinical Supply Product Complaints; ET = early termination; F/U = follow up; Hx = history; PGIC = Patient’s Global Impression of Change." />
+      <Footnote ObjID="18380736297" footnoteText="During the prerandomization and double-blind phases, “Average Pain over the Last 24 Hours” scores will be recorded by subjects daily in the eDiary at around 8:00 pm.  During the double blind phase, “Average Pain over the Last 24 Hours” scores will be recorded at the study visits, except when the subject decides to discontinue the study drug, in which case the subject should record his/her “Average Pain over the Last 24 Hours” score in the eDiary at the time of discontinuation of study drug.  " />
+      <Footnote ObjID="18380736298" footnoteText="During the Pre-Randomization Phase, &quot;average pain over the last 24 hours&quot; scores will be recorded daily in the diary at around 8pm.  During the Double-blind Phase, &quot;average pain over the last 24 hours&quot; scores will be recorded at the study visits." />
+      <Footnote ObjID="18380736299" footnoteText="Electronic diary (eDiary) will be completed on all days during prerandomization phase and during double-blind phase." />
+      <Footnote ObjID="18380736300" footnoteText="Follow up phone call is required 5 to 7 days after the removal of the last study drug (XXX) for those subjects who DO NOT enroll in the open label extension phase according to instructions in section XX." />
+      <Footnote ObjID="18380736301" footnoteText="Follow-up phone calls will be conducted following dose adjustment (down-titration) according to instructions in section XX." />
+      <Footnote ObjID="18380736302" footnoteText="Height is included in vital signs only at visit 1." />
+      <Footnote ObjID="18380736303" footnoteText="If after XX days, the subject responded to and tolerated study drug (dose 1), he/she will proceed to Vx Randomization on the same day. If the subject did not tolerate study drug (dose 1), he/she will proceed to Vx Run-in Failure on the same day.  If the subject tolerated study drug (dose 1) but did not respond to treatment, he/she will receive study drug (dose 2) for another X days." />
+      <Footnote ObjID="18380736304" footnoteText="If the subject does not tolerate study drug (dose 2) and/or his/her pain is controlled by study drug (dose 2), refer to section XX.  If the subject tolerates and does not respond to study drug (dose 2), he/she will receive study drug (dose 3) for another XX (+2) days." />
+      <Footnote ObjID="18380736305" footnoteText="In addition to being recorded at each visit, “pain over the last 24 hours” will be recorded daily, using the eDiary, during the open-label titration and the double-blind periods." />
+      <Footnote ObjID="18380736306" footnoteText="In addition to being recorded at each visit, “pain right now” will be recorded before each dose of rescue supplemental medication taken, using the eDiary, for XXX pain during the open-label titration and the double-blind periods." />
+      <Footnote ObjID="18380736307" footnoteText="Once all Inclusion/Exclusion criteria (with exception of the daily pain scores) are met, the Investigator or site staff will call the subject and instruct him/her to stop all incoming analgesic medications and other medications used for chronic pain. Starting 2 days after the subject discontinued all pain medications used for chronic pain, the Investigator or the site staff will contact to the subject daily to assess the subject’s pain scores for qualification to enter the Run-in Period." />
+      <Footnote ObjID="18380736308" footnoteText="Only applicable to subjects not entering the extension phase." />
+      <Footnote ObjID="18380736309" footnoteText="Only applicable to subjects who are non-screen failures." />
+      <Footnote ObjID="18380736310" footnoteText="Patch removal and application (date/time/dose/site of application/patch adhesion) will be recorded in the eDiary, as needed, ie, whenever the subject changes the patch.  Patch adhesion information should be collected after the subject has been titrated and only if a given study drug patch has been worn for less than the required 7 days.  Pain scores will also be recorded in the eDiary as follows: During the screening period, “average pain over the last 24 hours” scores will be recorded daily in the eDiary at around 8 pm.  During the open-label maintenance period “average pain over the last 24 hours” scores will be recorded once weekly in the eDiary at around 8 pm on the same day of the week the first patch was applied.  During the dose-titration period, “pain right now” scores will be recorded in the eDiary immediately before a subject takes rescue as supplemental chronic pain medication (to be used for compliance/diversion purposes).  During open-label maintenance period, supplemental analgesic medication use and “pain relief” will be recorded daily at around 8 pm in the eDiary." />
+      <Footnote ObjID="18380736311" footnoteText="Phone call by investigator/medically qualified designee (must be MD or DO, or for this evaluation, an RN may make the phone call to the subject) 5-7 days after discontinuation of study drug." />
+      <Footnote ObjID="18380736312" footnoteText="Physical examinations must be performed by investigator/medically qualified designee (must be MD or DO)." />
+      <Footnote ObjID="18380736313" footnoteText="Procedures must be performed by a MD or DO." />
+      <Footnote ObjID="18380736314" footnoteText="SOWS will be conducted daily during weeks X to XX of the double blind phase." />
+      <Footnote ObjID="18380736315" footnoteText="SOWS will be conducted daily on Post-randomization Days X through XX." />
+      <Footnote ObjID="18380736316" footnoteText="Study Drug Discontinuation procedures should be performed for subjects that discontinue study-drug for any reason prior to completing all XX days of the Double-blind Phase and choose to continue to complete all remaining clinic visits and procedures. The Study Drug Discontinuation procedures should be completed as soon as possible after discontinuing study-drug. Importantly, the subject should record his/her “average pain over last 24 hours” score on his/her diary &lt;ft:u&gt;at the time of discontinuation of study-drug&lt;/ft:u&gt;." />
+      <Footnote ObjID="18380736317" footnoteText="Subjects may be required to have a repeat complete blood count (CBC) with differential (for decreased ANC), comprehensive metabolic panel (for elevated liver function tests [LFTs]), and/or serum potassium/calcium/magnesium (for values outside ranges specified per protocol inclusion criterion No. XX 5 to 7 days after the visit as referenced per protocol visit procedures. " />
+      <Footnote ObjID="18380736318" footnoteText="Subjects will also complete the modified SOWS on each of the first X days of the double-blind period (using the eDiary)." />
+      <Footnote ObjID="18380736319" footnoteText="The PGIC will be conducted at the end of weeks XX, XX and XX or ET." />
+      <Footnote ObjID="18380736320" footnoteText="The site personnel will contact the subject 2 days before the scheduled visits according to instructions in section XX." />
+      <Footnote ObjID="18380736321" footnoteText="The site personnel will contact the subject two days before the scheduled visits to remind him/her NOT to take any supplemental analgesic medications during the 30 hour period prior to the clinic visit." />
+      <Footnote ObjID="18380736322" footnoteText="There will be a phone contact to assess the tolerability/safety of study drug (dose 1) and daily phone call(s) will occur to assess pain responses to study drug (dose 2) according to instructions in section XX." />
+      <Footnote ObjID="18380736323" footnoteText="Two readings a minimum of 10 minutes apart.  Subjects may be required to have a repeat ECG after the visit at which ECG shows prolongation of QTc interval as referenced per protocol visit procedures. " />
+      <Footnote ObjID="18380736324" footnoteText="Visit X/end of study evaluations should be performed for subjects that (a) complete all XX days of the Double-blind Phase or (b) discontinue study-drug prior to completing XX days and choose NOT to continue to complete all remaining clinic visits and procedures. The Visit X/End of Study procedures should be completed as soon as possible after discontinuing study-drug. Importantly, the subject should record his/her average pain. " />
+      <Footnote ObjID="18380736325" footnoteText="Visit X/end of double-blind evaluations should be performed for subjects who (a) complete all XX ± 3 days of the double blind phase or (b) discontinue study drug prior to completing XX ± 3 days." />
+    </Footnotes>
+  </StudySchedule>
+  <Statistical>
+    <Statistics SystemName="Statistics" InstanceLabel="SystemName">
+      <AnalyticMethods />
+      <evaluableSubjectDef />
+      <intentToTreatPopulation />
+      <clinicallyMeaningfulDifference />
+      <missingDataProcedures />
+      <interimAnalysisInfo />
+      <multipleComparisonsAdjustment />
+      <compositeEndpoints />
+      <statSoftware />
+      <methodForMinimizingBias />
+      <subgroupAnalyses />
+      <subjectReplacementStrategy />
+      <randAndStratDetails />
+      <sampleSizeCalculation SystemName="Sample Size Calculation" InstanceLabel="SystemName">
+        <sampleSize />
+        <sampleSizeCalcMethod />
+        <power />
+        <anticipatedEffectSize />
+        <primaryStudyOutcomeID />
+      </sampleSizeCalculation>
+    </Statistics>
+  </Statistical>
+  <ClinicalTrialMaterials>
+    <ClinicalTrialMaterials>
+      <ClinicalTrialMaterial SystemName="Clinical Trial Material" InstanceLabel="CTMaterialName" ObjID="18174059469">
+        <MaterialsInArms />
+        <associatedCTMaterials />
+        <CTMaterialType dataType="Coded" codeSystem="CTMaterialTypes" otherText="" codeValue="">
+        </CTMaterialType>
+        <routeOfAdministration dataType="Coded" codeSystem="RouteOfAdminTypes" otherText="" codeValue="">
+        </routeOfAdministration>
+        <formulation dataType="Coded" codeSystem="FormulationTypes" otherText="" codeValue="">
+        </formulation>
+        <primaryRoleInStudy dataType="Coded" codeSystem="CTMaterialRoleTypes" otherText="" codeValue="investigationalProduct">investigationalProduct</primaryRoleInStudy>
+        <CTMaterialName dataType="String">&lt;&lt;Treatment&gt;&gt;</CTMaterialName>
+        <strength dataType="String">
+        </strength>
+        <dose dataType="String">
+        </dose>
+        <accountabilityProcedures dataType="String">
+        </accountabilityProcedures>
+        <sequence>1</sequence>
+        <developmentID />
+      </ClinicalTrialMaterial>
+      <ClinicalTrialMaterial SystemName="Clinical Trial Material" InstanceLabel="CTMaterialName" ObjID="18174059470">
+        <MaterialsInArms />
+        <associatedCTMaterials />
+        <CTMaterialType dataType="Coded" codeSystem="CTMaterialTypes" otherText="" codeValue="">
+        </CTMaterialType>
+        <routeOfAdministration dataType="Coded" codeSystem="RouteOfAdminTypes" otherText="" codeValue="">
+        </routeOfAdministration>
+        <formulation dataType="Coded" codeSystem="FormulationTypes" otherText="" codeValue="">
+        </formulation>
+        <primaryRoleInStudy dataType="Coded" codeSystem="CTMaterialRoleTypes" otherText="" codeValue="comparator">comparator</primaryRoleInStudy>
+        <CTMaterialName dataType="String">&lt;&lt;Reference Treatment&gt;&gt;</CTMaterialName>
+        <strength dataType="String">
+        </strength>
+        <dose dataType="String">
+        </dose>
+        <accountabilityProcedures dataType="String">
+        </accountabilityProcedures>
+        <sequence>2</sequence>
+        <Supplier1280944755000 dataType="String">
+        </Supplier1280944755000>
+        <developmentID />
+      </ClinicalTrialMaterial>
+    </ClinicalTrialMaterials>
+    <MaterialsInArms />
+  </ClinicalTrialMaterials>
+  <StudyConduct>
+    <SCG SystemName="Study Conduct" InstanceLabel="SystemName">
+      <criteriaForDiscontinuationFromTestArticle dataType="Composite" />
+      <criteriaForWithdrawalFromStudy dataType="Composite" />
+      <subjectHandlingAfterDiscontinuationFromTestArticle />
+      <subjectHandlingAfterWithdrawalFromStudy />
+      <disallowedMedsPrior dataType="Composite" />
+      <disallowedMedsConcomitant dataType="Composite" />
+      <stoppingRulesForStudy />
+      <restrictionRulesDuringStudy />
+      <definitionOfSAE />
+      <subjectComplianceMeasures />
+      <anticipatedInteractions />
+      <usesIVRSType SystemName="Uses IVRS" InstanceLabel="codeValue" codeValue="" />
+      <subjectPayment />
+    </SCG>
+  </StudyConduct>
+  <Metrics>
+    <PMG SystemName="Planned Metrics" InstanceLabel="SystemName">
+      <description />
+      <plannedEnrollmentTotal dataType="Integer" />
+      <plannedEnrollmentPerSite />
+      <plannedFirstSubjEnrollDate dataType="Date" />
+      <plannedLastSubjEnrollDate />
+      <plannedLastSubjCompleteDate />
+      <plannedRecruitmentPeriod />
+      <plannedNumDropouts />
+      <plannedNumScreeningFailures />
+      <plannedStudyDuration dataType="Integer" />
+      <plannedScreeningDuration />
+      <plannedTreatmentDuration dataType="Integer" />
+      <plannedFollowUpDuration />
+      <plannedSubjectParticipationDuration />
+      <totalNumVisits />
+      <plannedNumScreeningVisits />
+      <plannedNumTxVisits />
+      <plannedNumFollowupVisits />
+      <plannedEvaluableSubjCount />
+      <plannedTreatmentDurationTimeUnit dataType="Coded" />
+      <plannedStudyDurationTimeUnit dataType="Coded" />
+    </PMG>
+  </Metrics>
+  <StatisticsFull>
+    <VariableDictionary />
+    <AnalysisSets />
+    <Analyses />
+    <Hypotheses />
+    <StatisticalModels />
+  </StatisticsFull>
+  <CustomVars SystemName="Custom Vars" InstanceLabel="SystemName" />
+  <RefCounts>
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" docType="Protocol" refCount="4" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" docType="Protocol" refCount="3" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059469]/CTMaterialName" docType="Protocol" refCount="7" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059469]/dose" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059469]/routeOfAdministration" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059470]/CTMaterialName" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059470]/dose" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059470]/routeOfAdministration" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/Children/ProtocolEvent[@ObjID=18606589504]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=18606589505]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063730]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063731]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063732]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/Children/ProtocolEvent[@ObjID=18606589508]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=18606589509]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063733]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063734]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063735]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/Children/ProtocolEvent[@ObjID=18874619597]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/Children/ProtocolEvent[@ObjID=18606589510]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063736]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063750]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063739]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063771]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063744]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063741]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063745]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063742]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063754]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063743]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063761]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063760]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063762]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063763]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063764]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063765]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063766]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063767]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063753]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063752]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063747]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063746]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063749]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063768]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063737]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665632]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665633]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665634]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665635]/description/brief" docType="Protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/name" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/address1" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/city" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/stateprov" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/postalCode" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/country" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/indication" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/isMultiCentered[@ObjID=]" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18856612189]/name" docType="Protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059469]/CTMaterialName" docType="StudyDesignDoc" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/Children/ProtocolEvent[@ObjID=18606589504]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=18606589505]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063730]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063731]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063732]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/Children/ProtocolEvent[@ObjID=18606589508]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=18606589509]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063733]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063734]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063735]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/Children/ProtocolEvent[@ObjID=18874619597]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/Children/ProtocolEvent[@ObjID=18606589510]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418710]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418711]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418712]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418713]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418714]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418715]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418727]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418716]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418717]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418718]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418719]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418720]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418721]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418722]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418723]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063753]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063752]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418728]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418724]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063749]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063768]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418725]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665632]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665633]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665634]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418726]/description/brief" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/title/full" docType="StudyDesignDoc" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" docType="protocol" refCount="3" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/title/full" docType="protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/name" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/address1" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/city" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/stateprov" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/postalCode" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18510803212]/Address/country" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" docType="protocol" refCount="2" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial[@ObjID=18174059469]/CTMaterialName" docType="protocol" refCount="3" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/isMultiCentered[@ObjID=]" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization[@ObjID=18856612189]/name" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589502]/Children/ProtocolEvent[@ObjID=18606589504]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=18606589505]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063730]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063731]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589498]/Children/SubPeriod[@ObjID=18606589503]/Children/ProtocolEvent[@ObjID=19262063732]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589507]/Children/ProtocolEvent[@ObjID=18606589508]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=18606589509]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063733]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063734]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589499]/Children/ProtocolEvent[@ObjID=19262063735]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18874619596]/Children/ProtocolEvent[@ObjID=18874619597]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Periods/Period[@ObjID=18606589506]/Children/ProtocolEvent[@ObjID=18606589510]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418710]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418711]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418712]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418713]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418714]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418715]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418727]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418716]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418717]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418718]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418719]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418720]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418721]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418722]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418723]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063753]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063752]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418728]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418724]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063749]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=19262063768]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418725]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665632]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665633]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=20359665634]/description/brief" docType="protocol" refCount="1" />
+    <ElementRefCount elementPath="/FTICP/StudySchedule/Schedules/Schedule[@ObjID=600000000]/Tasks/TSPDTask[@ObjID=17275418726]/description/brief" docType="protocol" refCount="1" />
+  </RefCounts>
+</FTICP>

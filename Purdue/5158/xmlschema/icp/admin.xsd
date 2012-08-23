@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<!-- COPYRIGHT 2002-2005 FastTrack Systems INC -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="AdministrativeDomain">
+		<xs:all>
+			<xs:element name="ProtocolSkeleton" nillable="true">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:sequence>
+								<xs:element ref="indicationCoded" nillable="true" minOccurs="0"/>
+								<xs:element name="Organizations" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Organization" type="Organization" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Contacts" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element name="Contact" type="ContactRole" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="title" type="DescriptorSet"/>
+								<xs:element name="protocolID" type="xs:string"/>
+								<xs:element name="phase" type="xs:string"/>
+								<xs:element name="indication" type="xs:string"/>
+								<xs:element name="versionName" type="xs:string" minOccurs="0"/>
+								<xs:element name="versionType" type="xs:string" minOccurs="0"/>
+								<xs:element name="versionDate" type="xs:string" nillable="true" minOccurs="0"/>
+								<xs:element name="externalRegulatoryNumber" type="xs:string" minOccurs="0"/>
+								<xs:element name="externalRegulatoryGrantor" type="xs:string" minOccurs="0"/>
+								<xs:element name="otherExternalRegulatoryNumber" type="xs:string" minOccurs="0"/>
+								<xs:element name="otherExternalRegulatoryGrantor" type="xs:string" minOccurs="0"/>
+								<xs:element name="description" type="DescriptorSet" minOccurs="0"/>
+								<xs:element name="plannedNumberStudyCenters" type="xs:integer" nillable="true" minOccurs="0"/>
+								<xs:element name="conditionKeywords" type="StringList" minOccurs="0"/>
+								<xs:element name="codedConditions" type="StringList" minOccurs="0"/>
+								<xs:element name="countries" type="xs:string" minOccurs="0"/>
+								<xs:element name="phaseCoded" type="CodedPhaseTypes"/>
+								<xs:element name="isMultiCentered" type="MultiCenteredTypes" minOccurs="0"/>
+								<!-- next two need more definition -->
+							</xs:sequence>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="indicationCoded" type="StringList" nillable="true"/>
+	<!--  ORGANIZATION  -->
+	<xs:complexType name="Organization">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="organizationType" type="OrganizationTypes"/>
+					<xs:element ref="Address" nillable="true"/>
+					<xs:element name="name" type="xs:string"/>
+					<xs:element name="sequence" type="xs:positiveInteger"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- CONTACT TYPE -->
+	<xs:complexType name="ContactRole">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="associatedOrganizations">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedOrganization" type="FTObjectLink" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="roleType" type="ContactRoleTypes"/>
+					<xs:element ref="Address" nillable="true" minOccurs="0"/>
+					<xs:element name="personName" type="xs:string"/>
+					<xs:element name="roleComment" type="xs:string"/>
+					<xs:element name="sequence" type="xs:positiveInteger"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- ADDRESS -->
+	<xs:element name="Address">
+		<xs:complexType>
+			<xs:all>
+				<xs:element name="address1" type="xs:string"/>
+				<xs:element name="address2" type="xs:string"/>
+				<xs:element name="city" type="xs:string"/>
+				<xs:element name="stateprov" type="xs:string"/>
+				<xs:element name="country" type="xs:string"/>
+				<xs:element name="postalCode" type="xs:string"/>
+				<xs:element name="telephone" type="xs:string"/>
+				<xs:element name="fax" type="xs:string" minOccurs="0"/>
+				<xs:element name="email" type="xs:string" minOccurs="0"/>
+			</xs:all>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

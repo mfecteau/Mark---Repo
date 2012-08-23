@@ -1,0 +1,65 @@
+			// Dump spanned tasks
+			if (_dumpSpannedTasks) 
+			{
+				// Pass 1 collect them in task order
+				Hashtable htt = new Hashtable();
+
+				foreach (Task t1 in usedTasks) 
+				{
+					foreach (RocheUtil.TCWrapper tcw in tcSpannedList) 
+					{
+						foreach (TaskVisit tv in tcw.tc.TaskVisitsInOrder)
+						{
+							Task t2 = bom_.getTaskByPath(tv.pathToAssociatedTask());
+							if (t1.getObjID() == t2.getObjID()) 
+							{
+								ArrayList a1 = htt[t1.getObjID()] as ArrayList;
+								if (a1 == null) 
+								{
+									a1 = new ArrayList();
+									htt[t1.getObjID()] = a1;
+								}
+
+								a1.Add(tcw);
+							}
+						}
+					}
+				}
+
+				// Pass 2, Dump out
+				for (int taskRow = 0; taskRow < usedTasks.Count; taskRow++)
+				{
+					Task t1 = usedTasks[taskRow] as Task;
+
+					ArrayList a1 = htt[t1.getObjID()] as ArrayList;
+					if (a1 == null) 
+					{
+						continue;
+					}
+
+					wrkRng.InsertAfter(t1.getBriefDescription() + ": ");
+
+					for (int tcwCol = 0; tcwCol < a1.Count; tcwCol++)
+					{
+						RocheUtil.TCWrapper tcw = a1[tcwCol] as RocheUtil.TCWrapper;
+
+						wrkRng.InsertAfter(tcw.Label);
+
+						wrkRng.InsertAfter(" " + tcw.Unit);
+
+						if (tcwCol < a1.Count-1) 
+						{
+							wrkRng.InsertAfter(", ");
+						}
+					}
+
+					wrkRng.InsertParagraphAfter();
+					oStyle = tspdDoc_.getStyleHelper().setNamedStyle(RocheUtil.ROCHE_STYLE_TABLETEXT_10, wrkRng);
+
+					targetFont = wrkRng.Font;
+					setTaskHeaderFont(ref targetFont, tblFmt);
+
+					wrkRng.Collapse(ref WordHelper.COLLAPSE_END);
+					wdDoc_.UndoClear();
+				}
+			}

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created by Larry Peterson -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="TreatmentDomain">
+		<xs:complexContent>
+			<xs:extension base="ConceptLocking">
+				<xs:all>
+					<xs:element name="Treatments" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Treatment" type="TreatmentType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Components" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="Component" type="ComponentType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="TestArticles" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="TestArticle" type="TestArticleType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DosingSchedules" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="DosingSchedule" type="DosingScheduleType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DosingScheduleMappings" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="DosingScheduleMapping" type="DosingScheduleMappingType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="DosingScheduleFootnotes" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="DosingScheduleFootnote" type="DosingScheduleFootnoteType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TreatmentType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="associatedComponents ">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedComponent" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="Name" type="xs:string"/>
+					<xs:element name="DeliveryInstruction" type="xs:string"/>
+					<xs:element name="DeliveryMethod" type="RouteOfAdminTypes"/>
+					<xs:element name="Dose" type="xs:string"/>
+					<xs:element name="DoseUnit" type="WeightTypes"/>
+					<xs:element name="FoodFastingInstructions" type="xs:string"/>
+					<xs:element name="FoodFastingRequirements" type="FoodFastingTypes"/>
+					<xs:element name="Frequency" type="xs:string"/>
+					<xs:element name="FrequencyUnit" type="TimeIntervalTypes"/>
+					<xs:element name="TotalDailyDose" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ComponentType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="associatedComponents ">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedComponent" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="TestArticleID" type="FTObjectLink" nillable="true"/>
+					<xs:element name="Name" type="xs:string"/>
+					<xs:element name="DevelopmentID" type="xs:string"/>
+					<xs:element name="Formulation" type="FormulationTypes"/>
+					<xs:element name="Manufacturer" type="xs:string"/>
+					<xs:element name="Strength" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="TestArticleType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="Name" type="xs:string"/>
+					<xs:element name="MaterialType" type="CTMaterialTypes"/>
+					<xs:element name="PrimaryRole" type="CTMaterialRoleTypes"/>
+					<xs:element name="sequence" type="xs:integer"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DosingScheduleType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="ArmID" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="ScheduleID" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="associatedDosingScheduleMappings">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedDosingScheduleMapping" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DosingScheduleMappingType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="associatedTreatments">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedTreatment" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="associatedFootnotes">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="associatedFootnote" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+					<xs:element name="ActivityID" type="FTObjectLink" nillable="true"/>
+					<xs:element name="RoleInArm" type="CTMaterialRoleTypes"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="DosingScheduleFootnoteType">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="Text" type="xs:string"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

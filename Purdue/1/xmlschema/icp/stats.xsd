@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="StatisticalDomain">
+		<xs:all>
+			<xs:element name="Statistics">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:all>
+								<xs:element name="AnalyticMethods" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="AnalyticMethod" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="sampleSizeCalculation" type="SampleSizeCalculation"/>
+								<xs:element name="intentToTreatPopulation" type="xs:string"/>
+								<xs:element name="clinicallyMeaningfulDifference" type="xs:string"/>
+								<xs:element name="missingDataProcedures" type="xs:string"/>
+								<xs:element name="interimAnalysisInfo" type="xs:string"/>
+								<xs:element name="multipleComparisonsAdjustment" type="xs:string"/>
+								<xs:element name="compositeEndpoints" type="xs:string"/>
+								<xs:element name="statSoftware" type="xs:string"/>
+								<xs:element name="methodForMinimizingBias" type="xs:string"/>
+								<xs:element name="subgroupAnalyses" type="xs:string"/>
+								<xs:element name="subjectReplacementStrategy" type="xs:string"/>
+								<xs:element name="randAndStratDetails" type="xs:string"/>
+							</xs:all>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="AnalyticMethod">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="alphaTails" type="AlphaTailTypes"/>
+						<xs:element name="associatedOutcomes">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="associatedOutcome" type="FTObjectLink" nillable="true" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="description" type="xs:string"/>
+						<xs:element name="alphaValue" type="xs:positiveInteger"/>
+						<xs:element name="analysisSetPopulation" type="xs:string"/>
+						<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="SampleSizeCalculation">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="sampleSize" type="xs:integer"/>
+					<xs:element name="sampleSizeCalcMethod" type="xs:string"/>
+					<xs:element name="power" type="xs:integer"/>
+					<xs:element name="anticipatedEffectSize" type="xs:string"/>
+					<xs:element name="primaryStudyOutcomeID" type="xs:integer"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

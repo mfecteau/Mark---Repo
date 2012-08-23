@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Macros xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" >
+	<Macro name="Ethical Conduct of the Study" hidden="false">
+		<TaskLists/>
+		<DocumentSections>
+			<LibraryContent category="__readonly" libraryItem="Phase 3 - Ethical Conduct" isprint="false">
+				<Conditions>
+					<Condition elementPath="Administrative/ProtocolSkeleton/codedCountries/value[1]" comparator="isNull" value=""/>
+				</Conditions>
+			</LibraryContent>
+			<LibraryContent category="__readonly" libraryItem="Phase 3 - Ethical Conduct" isprint="false">
+				<Conditions>
+					<Condition elementPath="Administrative/ProtocolSkeleton/codedCountries/value[@code='24']" comparator="isNotNull" value=""/>
+					<Condition elementPath="Administrative/ProtocolSkeleton/codedCountries/value[2]" comparator="isNull" value=""/>
+				</Conditions>
+			</LibraryContent>
+			<LibraryContent category="__readonly" libraryItem="Phase 3 - Ethical Conduct (International)" isprint="false">
+				<Conditions>
+					<Condition elementPath="Administrative/ProtocolSkeleton/codedCountries/value[@code!='24']" comparator="isNotNull" value=""/>
+				</Conditions>
+			</LibraryContent>
+		</DocumentSections>
+		<TaskStyles/>
+	</Macro>
+</Macros>

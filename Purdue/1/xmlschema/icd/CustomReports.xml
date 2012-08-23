@@ -1,0 +1,16 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Custom Reports" tabColor="#F9A038" file="CustomReports.xml" elementType="Reports" systemName="CustomReports" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" hidden="true">
+  <ElementBucket bucketLabel="Custom Reports Not For Element Panel consumption" elementType="Reports" hidden="false">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.TestReport.SeeHowItWorksAsACustomReport,FTCustomReports.dll" elementLabel="Custom Report" ftElementType="Macro" funcType="CSHARP" toolTip="Custom Report function put here" hidden="true" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.TestReport.AnotherCustomReport,FTCustomReports.dll" elementLabel="Custom Report Two" ftElementType="Macro" funcType="CSHARP" toolTip="Custom Report function put here" hidden="true" />
+    <!-- the dll is installed in <template>/reports folder, try it copying it over and printing testreportt as a custom report-->
+    <!-- your custom printing function needs to be declared as
+		    public static CustomReportExecutor.CustomReportRetCd YourPrintFunction(object crp)
+		    {
+				...
+				return CustomReportExecutor.CustomReportRetCd.Succeeded;
+		    }
+		    //crp is of type CustomReportExecutor.CustomReportParameters but it is not as yet enabled (April 2006)
+		    //see ReportBase.cs Test report for an example		
+		-->
+  </ElementBucket>
+</ElementTab>

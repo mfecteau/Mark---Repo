@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><WorXRTDSI DocTypeName="MDDesigner" version="1.20">
+	<RootElement>Protocol</RootElement>
+	<DefaultMarkup/>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="Protocol" XY_Object="no">
+		<DisplayName>Protocol</DisplayName>
+		<StrctDisplayPattern>Protocol</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="Macro" XY_Object="no">
+		<DisplayName>Macro</DisplayName>
+		<StrctDisplayPattern>Macro</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="DiffResultsTable" XY_Object="no">
+		<DisplayName>DiffResultsTable</DisplayName>
+		<StrctDisplayPattern>DiffResultsTable</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="DiffTable" XY_Object="no">
+		<DisplayName>DiffTable</DisplayName>
+		<StrctDisplayPattern>DiffTable</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="Reference" XY_Object="no">
+		<DisplayName>Reference</DisplayName>
+		<StrctDisplayPattern>Reference</StrctDisplayPattern>
+		<NormalElement extent="fragment">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="SectionText" XY_Object="no">
+		<DisplayName>SectionText</DisplayName>
+		<StrctDisplayPattern>SectionText</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="Endnote" XY_Object="no">
+		<DisplayName>Endnote</DisplayName>
+		<StrctDisplayPattern>Endnote</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="DocSection" XY_Object="no">
+		<DisplayName>DocSection</DisplayName>
+		<StrctDisplayPattern>DocSection</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+	<ElementRTDSI AllowGeneralUse="yes" ContentObjectType="elem" ElementType="Footnote" XY_Object="no">
+		<DisplayName>Footnote</DisplayName>
+		<StrctDisplayPattern>Footnote</StrctDisplayPattern>
+		<NormalElement extent="para">
+			<DefaultContent UseFormField="yes"/>
+		</NormalElement>
+	</ElementRTDSI>
+</WorXRTDSI>

@@ -1,0 +1,106 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Statistics" tabColor="#ED6A36" editorClass="PDG.Statistics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="StatMapping.xml" systemName="Statistical" elementType="Statistical">
+  <ElementBucket elementType="Statistical" bucketLabel="Statistical Info" systemName="Statistical">
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/evaluableSubjectDef" elementLabel="Evaluable Subject Definition" ftElementType="Element" toolTip="A definition of the evaluable subject subset">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/intentToTreatPopulation" elementLabel="Intent to Treat Population" ftElementType="Element" toolTip="A definition of the intent to treat population">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/clinicallyMeaningfulDifference" elementLabel="Clinically Meaningful Difference" ftElementType="Element" toolTip="A definition of the clinically meaningful difference for planned statistical analyses">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/missingDataProcedures" elementLabel="Missing Data Procedures" ftElementType="Element" toolTip="The procedures for addressing missing data in the planned statistical analyses">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/interimAnalysisInfo" elementLabel="Interim Analysis Plan" ftElementType="Element" toolTip="The details for all planned interim analyses">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/subgroupAnalyses" elementLabel="Planned Sub-group Analyses" ftElementType="Element" toolTip="Description of planned sub-group analyses">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/multipleComparisonsAdjustment" elementLabel="Multiple Comparisons Adjustment" ftElementType="Element" toolTip="The description of adjustments in order to make multiple comparisons">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/methodForMinimizingBias" elementLabel="Bias Issues" ftElementType="Element" toolTip="The method of minimizing bias">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/statSoftware" elementLabel="Statistical Software / Version" ftElementType="Element" toolTip="The statistical software to be used for data analysis" stickyCase="true" />
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/compositeEndpoints" elementLabel="Composite Endpoints" ftElementType="Element" toolTip="The planned composite endpoints of the study, if any">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="Mixed" bucketLabel="Sample Size Calculation" systemName="Statistical">
+    <!-- this mechanism is not supported to map an object id to an object so it is commented out 
+			<ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/@primaryStudyOutcomeID" elementLabel="Primary Study Outcome" ftElementType="Collection" toolTip="The primary study outcome"
+					assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry>
+			 -->
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/power" elementLabel="Power" ftElementType="Element" toolTip="The probability of detecting a true difference between groups">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/sampleSize" elementLabel="Sample Size" ftElementType="Element" toolTip="The sample size of the study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/sampleSizeCalcMethod" elementLabel="Calculation Method" ftElementType="Element" toolTip="The method used to calculate the sample size of the study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/anticipatedEffectSize" elementLabel="Expected Effect" ftElementType="Element" toolTip="The expected change in the primary analysis based on intervention">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="AnalyticMethods" bucketLabel="Analytic Method" systemName="AnalyticMethods">
+    <ChooserEntry elementPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" elementLabel="Analytical Method" ftElementType="Template" toolTip="An analytical methods used to analyze data from the study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Description" ftElementType="Element" toolTip="The description of the analytical method">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <!--ChooserEntry elementPath="description/brief" elementLabel="Description" ftElementType="Element" toolTip="The description of the analytical method">
+						<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+					</ChooserEntry-->
+        <ChooserEntry elementPath="alphaValue" elementLabel="Alpha Value" ftElementType="Element" toolTip="The alpha value associated with a specific analytical method">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="alphaTails" elementLabel="Alpha Tails" ftElementType="Element" toolTip="Either one-tailed or two-tailed" enumList="AlphaTailTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="analysisSetPopulation" elementLabel="Population" ftElementType="Element" toolTip="The set of subjects to be uused for a given analysis (ITT, evaluable, per protocol)">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedOutcomes/associatedOutcome" elementLabel="Outcome" ftElementType="Collection" toolTip="The outcome associated with an analysis method" assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Study Variables" elementType="StudyVariables" hidden="false">
+    <ChooserEntry elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" elementLabel="Study Variable" ftElementType="Template" toolTip="Study Variable Definition" editorClass="WP_VARIABLE_DETAIL_FORM_ELD02" detEditorClass="WP_VARIABLE_DETAIL_FORM_ELD02">
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Instructions" ftElementType="Element" toolTip="" hidden="false" />
+        <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="Brief description of this variable" hidden="false" />
+        <ChooserEntry elementPath="description/label" elementLabel="Symbol" ftElementType="Element" toolTip="Variable's accepted Symbol" hidden="false" />
+        <ChooserEntry elementPath="definition" elementLabel="Definition" ftElementType="Element" toolTip="Variable Definition" hidden="false" />
+        <ChooserEntry elementPath="unitOfMeasureString" elementLabel="Unit" ftElementType="Element" toolTip="Unit of Measure" hidden="false" />
+        <ChooserEntry elementPath="unitOfMeasureID" elementLabel="Unit ID" ftElementType="Element" toolTip="FT Id for this unit of measure" hidden="true" />
+        <ChooserEntry elementPath="minValid" elementLabel="Valid Min" ftElementType="Element" toolTip="Minimum valid value for this unit of measure" hidden="false" />
+        <ChooserEntry elementPath="maxValid" elementLabel="Valid Max" ftElementType="Element" toolTip="Maximum valid value for this unit of measure" hidden="false" />
+        <ChooserEntry elementPath="studyMin" elementLabel="Normal Min" ftElementType="Element" toolTip="Normal minimum for this study population" hidden="false" />
+        <ChooserEntry elementPath="studyMax" elementLabel="Normal Max" ftElementType="Element" toolTip="Normal maximum for this study population" hidden="false" />
+        <ChooserEntry elementPath="panicLow" elementLabel="Panic Low" ftElementType="Element" toolTip="Minimum threshhold needing attention by investigator" hidden="false" />
+        <ChooserEntry elementPath="panicHigh" elementLabel="Panic High" ftElementType="Element" toolTip="Maximum threshhold needed attention by investigator" hidden="false" />
+        <ChooserEntry elementPath="alias1" elementLabel="SAS Name" ftElementType="Element" toolTip="" hidden="false" />
+        <ChooserEntry elementPath="alias2" elementLabel="CRF Form" ftElementType="Element" toolTip="" hidden="false" />
+        <ChooserEntry elementPath="alias3" elementLabel="Unused" ftElementType="Element" toolTip="" hidden="true" />
+        <ChooserEntry elementPath="alias1CodeSys" elementLabel="SAScodesys" ftElementType="Element" toolTip="" hidden="true" />
+        <ChooserEntry elementPath="alias2CodeSys" elementLabel="CRFcodesys" ftElementType="Element" toolTip="" hidden="true" />
+        <ChooserEntry elementPath="alias3CodeSys" elementLabel="Unused" ftElementType="Element" toolTip="" hidden="true" />
+        <ChooserEntry elementPath="dataType" elementLabel="Data Type" ftElementType="Element" toolTip="Value data type for this variable" hidden="false" enumList="VariableDataTypes" dataType="Coded" />
+        <ChooserEntry elementPath="dimension" elementLabel="Keys" ftElementType="Element" toolTip="Variables defining the axes of a multi dimensional variable" hidden="false" />
+        <ChooserEntry elementPath="originType" elementLabel="Origin" ftElementType="Element" toolTip="Method of instantiation for this variable" hidden="false" enumList="StudyVariableOrigins" dataType="Coded" />
+        <ChooserEntry elementPath="imputationFunc" elementLabel="Imputation Func" ftElementType="Element" toolTip="Math expression of the manner in which data is imputed for this variable, if missing" hidden="true" />
+        <ChooserEntry elementPath="imputationMethod" elementLabel="Imputation Method" ftElementType="Element" toolTip="Description of method by which data is imputed for this variable, if missing" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

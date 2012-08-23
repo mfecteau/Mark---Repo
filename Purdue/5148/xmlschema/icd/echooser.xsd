@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="../icp/icpbase.xsd"/>
+	<xs:include schemaLocation="../icd/enmapper.xsd"/>
+	<xs:element name="ElementChooser">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" name="ElementTab">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" minOccurs="0" name="ElementBucket">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element maxOccurs="unbounded" minOccurs="0" ref="ChooserEntry"/>
+									</xs:sequence>
+									<xs:attribute name="bucketLabel" type="xs:string" use="required"/>
+									<xs:attribute name="elementType" type="ElementEnum" use="required"/>
+									<xs:attribute name="hidden" type="xs:boolean"/>
+									<xs:attribute name="systemName" type="ElementEnum" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="editorClass" type="WorkPaneTypes"/>
+						<xs:attribute name="tabLabel" type="xs:string" use="required"/>
+						<xs:attribute name="tabColor" type="xs:string"/>
+						<xs:attribute name="elementType" type="ElementEnum" use="optional"/>
+						<xs:attribute name="file" type="xs:string" use="optional"/>
+						<xs:attribute name="systemName" type="ElementEnum" use="optional"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element maxOccurs="unbounded" minOccurs="0" name="ConceptGroup">
+					<xs:complexType mixed="true">
+						<xs:attribute name="systemName" type="xs:string"/>
+						<xs:attribute name="userLabel" type="xs:string"/>
+						<xs:attribute name="policyType" type="ConceptPolicyTypes"/>
+						<xs:attribute name="accessType" type="ConceptOwnerTypes"/>
+						<xs:attribute name="toolTip" type="xs:string"/>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ChooserEntry">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="5" minOccurs="0" name="ElementStatus">
+					<xs:complexType>
+						<xs:attribute name="docType" type="DocType"/>
+						<xs:attribute name="required" type="xs:boolean"/>
+						<xs:attribute name="default" type="xs:boolean"/>
+						<xs:attribute name="mfu" type="xs:boolean"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element minOccurs="0" name="Complex">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" ref="ChooserEntry"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="toolTip" type="xs:string"/>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute name="elementLabel" type="xs:string" use="required"/>
+			<xs:attribute name="editorClass" type="WorkPaneTypes"/>
+			<xs:attribute name="detEditorClass" type="WorkPaneTypes"/>
+			<xs:attribute name="assocClass" type="xs:string"/>
+			<xs:attribute name="assocChooserPath" type="xs:string"/>
+			<xs:attribute name="associatedMacro" type="xs:string"/>
+			<xs:attribute name="ftElementType" type="FTElementType"/>
+			<xs:attribute name="funcType" type="FTMacroType"/>
+			<xs:attribute name="sectionLevel" type="xs:positiveInteger"/>
+			<xs:attribute name="protected" type="xs:boolean"/>
+			<xs:attribute name="autogenerates" type="xs:boolean"/>
+			<xs:attribute name="shouldRun" type="xs:boolean"/>
+			<xs:attribute name="enumList" type="Enumerations"/>
+			<xs:attribute name="docHeaderStyle" type="xs:string"/>
+			<xs:attribute name="hidden" type="xs:boolean"/>
+			<xs:attribute name="customvar" type="xs:boolean"/>
+			<xs:attribute name="dataType" type="DataType"/>
+			<xs:attribute name="dataMask" type="xs:string"/>
+			<xs:attribute name="isDivider" type="xs:boolean"/>
+			<xs:attribute name="isDose" type="xs:boolean"/>
+			<xs:attribute name="stickyCase" type="xs:boolean"/>
+			<xs:attribute name="SMELockGroup" type="xs:string"/>
+			<xs:attribute name="StageBasedLockGroup" type="xs:string"/>
+			<xs:attribute name="DeepLock" type="xs:boolean"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="FTElementType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Element"/>
+			<xs:enumeration value="CreateNew"/>
+			<xs:enumeration value="Collection"/>
+			<xs:enumeration value="DocSection"/>
+			<xs:enumeration value="Macro"/>
+			<xs:enumeration value="Template"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="DataType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="String"/>
+			<xs:enumeration value="Integer"/>
+			<xs:enumeration value="Number"/>
+			<xs:enumeration value="Date"/>
+			<xs:enumeration value="Coded"/>
+			<xs:enumeration value="Composite"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="FTMacroType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="VBA"/>
+			<xs:enumeration value="XSLT"/>
+			<xs:enumeration value="CSHARP"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ElementEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Administrative"/>
+			<xs:enumeration value="StudyDesign"/>
+			<xs:enumeration value="StudyPopulation"/>
+			<xs:enumeration value="EligibilityCriteria"/>
+			<xs:enumeration value="Metrics"/>
+			<xs:enumeration value="Statistical"/>
+			<xs:enumeration value="TrialMaterials"/>
+			<xs:enumeration value="StudyConduct"/>
+			<xs:enumeration value="Arms"/>
+			<xs:enumeration value="Periods"/>
+			<xs:enumeration value="SubPeriods"/>
+			<xs:enumeration value="Tasks"/>
+			<xs:enumeration value="Visits"/>
+			<xs:enumeration value="PriOutcomes"/>
+			<xs:enumeration value="SecOutcomes"/>
+			<xs:enumeration value="TerOutcomes"/>
+			<xs:enumeration value="Macros"/>
+			<xs:enumeration value="TOC"/>
+			<xs:enumeration value="Library"/>
+			<xs:enumeration value="Schedule"/>
+			<xs:enumeration value="Objectives"/>
+			<xs:enumeration value="Organizations"/>
+			<xs:enumeration value="Contacts"/>
+			<xs:enumeration value="AnalyticMethods"/>
+			<xs:enumeration value="CustomVars"/>
+			<xs:enumeration value="Mixed"/>
+			<xs:enumeration value="StudyConductCompliance"/>
+			<xs:enumeration value="StudyConductTermination"/>
+			<xs:enumeration value="UsedFootnote"/>
+			<xs:enumeration value="UnusedFootnote"/>
+			<xs:enumeration value="StudyVariables"/>
+			<xs:enumeration value="AdvancedStats"/>
+			<xs:enumeration value="Analyses"/>
+			<xs:enumeration value="AnalysisSets"/>
+			<xs:enumeration value="Hypotheses"/>
+			<xs:enumeration value="InterimAnalyses"/>
+			<xs:enumeration value="Computations"/>
+			<xs:enumeration value="AnalysisVariables"/>
+			<xs:enumeration value="StatisticalModels"/>
+			<xs:enumeration value="Reports"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="WorkPaneTypes">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="PDG.Administration"/>
+			<xs:enumeration value="PDG.Test Article"/>
+			<xs:enumeration value="PDG.Statistics"/>
+			<xs:enumeration value="PDG.Design"/>
+			<xs:enumeration value="PDG.Population"/>
+			<xs:enumeration value="PDG.Schedule"/>
+			<xs:enumeration value="PDG.Planned Metrics"/>
+			<xs:enumeration value="PDG.Study Conduct"/>
+			<xs:enumeration value="PDG.Identification"/>
+			<xs:enumeration value="PDG.Contacts"/>
+			<xs:enumeration value="PDG.Organizations"/>
+			<xs:enumeration value="PDG.Objectives"/>
+			<xs:enumeration value="PDG.Outcomes"/>
+			<xs:enumeration value="PDG.Concept"/>
+			<xs:enumeration value="PDG.Study Arms"/>
+			<xs:enumeration value="PDG.Design.Schedule of Activities"/>
+			<xs:enumeration value="PDG.Statistical Info"/>
+			<xs:enumeration value="PDG.Statistical Info 2"/>
+			<xs:enumeration value="PDG.Analytic Method"/>
+			<xs:enumeration value="PDG.Eligibility Criteria"/>
+			<xs:enumeration value="PDG.Population Info"/>
+			<xs:enumeration value="PDG.Compliance"/>
+			<xs:enumeration value="PDG.Termination"/>
+			<xs:enumeration value="PDG.Tasks"/>
+			<xs:enumeration value="PDG.Schedule of Activities"/>
+			<xs:enumeration value="PDG.CustomElements"/>
+			<xs:enumeration value="WP_ADVISORY_ADV01"/>
+			<xs:enumeration value="WP_ADVISORY_ADV02"/>
+			<xs:enumeration value="WP_EVENT_DETAIL_FORM_ELD06"/>
+			<xs:enumeration value="WP_SOA_CELL_DETAIL_FORM_ELD07"/>
+			<xs:enumeration value="WP_PERIOD_DETAIL_ELD04"/>
+			<xs:enumeration value="WP_SUBPERIOD_DETAIL_ELD05"/>
+			<xs:enumeration value="WP_VISITS_SCHEDULE_WKP04"/>
+			<xs:enumeration value="RES_STRINGLIST_EDIT"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TabColors">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="#C64908"/>
+			<xs:enumeration value="#2F619C"/>
+			<xs:enumeration value="#92278F"/>
+			<xs:enumeration value="#00746B"/>
+			<xs:enumeration value="#CC8000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ConceptPolicyTypes">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="StageBased"/>
+			<xs:enumeration value="SMEBased"/>
+			<xs:enumeration value="DocTypeBased"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ConceptOwnerTypes">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Owner"/>
+			<xs:enumeration value="OwnerAuthor"/>
+			<xs:enumeration value="Admin"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

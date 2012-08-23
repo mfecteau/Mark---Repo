@@ -1,0 +1,91 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="TreatmentStrategies" tabColor="#FCCD63" editorClass="PDG.TreatmentStrategies" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="TreatmentMapping.xml" systemName="TreatmentStrategies">
+  <ElementBucket elementType="TestArticles" bucketLabel="Test Articles" hidden="false" systemName="TestArticles">
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/TestArticles/TestArticle" elementLabel="TestArticle" ftElementType="Template" toolTip="A material used in a clinical trial." stickyCase="true">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="Name" elementLabel="Test Article Name" ftElementType="Element" toolTip="The name of the clinical trial material" stickyCase="true" />
+        <ChooserEntry elementPath="MaterialType" elementLabel="Type" ftElementType="Element" toolTip="The type of the clinical trial material" enumList="CTMaterialTypes" dataType="Coded" />
+        <ChooserEntry elementPath="PrimaryRole" elementLabel="Primary Role" ftElementType="Element" toolTip="The primary role for this clinical trial material in the study" enumList="CTMaterialRoleTypes" dataType="Coded" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="Components" bucketLabel="Components" hidden="false" systemName="Components">
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/Components/Component" elementLabel="Component" ftElementType="Template" toolTip="A treatment component" stickyCase="true">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="Name" elementLabel="Component Name" ftElementType="Element" toolTip="The name of the component" stickyCase="true" />
+        <ChooserEntry elementPath="DevelopmentID" elementLabel="ID" ftElementType="Element" toolTip="The development ID of the component">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Formulation" elementLabel="Formulation" ftElementType="Element" toolTip="The formulation of the component" enumList="FormulationTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Manufacturer" elementLabel="Manufacturer" ftElementType="Element" toolTip="The manufacturer of the component">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Strength" elementLabel="Strength" ftElementType="Element" toolTip="The strength of the formulation of the component">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="StrengthUnit" elementLabel="Strength Unit" ftElementType="Element" toolTip="The strength of the formulation of the dosing component" enumList="WeightTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="Treatments" bucketLabel="Treatments" hidden="false" systemName="Treatments">
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/Treatments/Treatment" elementLabel="Treatment" ftElementType="Template" toolTip="A treatment strategy." stickyCase="true">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="Name" elementLabel="Treatment Name" ftElementType="Element" toolTip="The name of the clinical trial material" stickyCase="true" />
+        <ChooserEntry elementPath="DeliveryInstruction" elementLabel="Delivery Instruction" ftElementType="Element" toolTip="The delivery instruction for this treatment">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="DeliveryMethod" elementLabel="Delivery Method" ftElementType="Element" toolTip="The route of administration for the trial material" enumList="RouteOfAdminTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Dose" elementLabel="Dose" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="DoseUnit" elementLabel="Dosing Unit" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material" enumList="WeightTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="FoodFastingInstructions" elementLabel="Food/Fasting Instructions" ftElementType="Element" toolTip="The food and fasting instructions for this treatment">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="FoodFastingRequirements" elementLabel="Food/Fasting Requirements" ftElementType="Element" toolTip="The food and fasting requirements for this treatment" enumList="FoodFastingTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Frequency" elementLabel="Frequency" ftElementType="Element" toolTip="The frequency of the dose">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="FrequencyUnit" elementLabel="Frequency" ftElementType="Element" toolTip="The frequency of the dose" enumList="TimeIntervalTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="TotalDailyDose" elementLabel="Total Daily Dose" ftElementType="Element" toolTip="The total daily dose for this treatment">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="DosingSchedules" bucketLabel="DosingSchedules" hidden="false" systemName="DosingSchedules">	
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/DosingSchedules/DosingSchedule" elementLabel="DosingSchedules" ftElementType="Template" toolTip="treatment - arm mapping">
+      <Complex>
+        <ChooserEntry elementPath="ActivityType" elementLabel="Activity Type" ftElementType="Element" toolTip="The activity type" stickyCase="true" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="DosingScheduleMappings" bucketLabel="DosingScheduleMappings" hidden="false" systemName="DosingScheduleMappings">	
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/DosingScheduleMappings/DosingScheduleMapping" elementLabel="DosingScheduleMappings" ftElementType="Template" toolTip="treatment - arm mapping">
+      <Complex>
+        <ChooserEntry elementPath="RoleInArm" elementLabel="Role In Arm" ftElementType="Element" toolTip="The role for this clinical trial material in the arm" enumList="CTMaterialRoleTypes" dataType="Coded" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="DosingScheduleFootnotes" bucketLabel="DosingScheduleFootnotes" hidden="false" systemName="DosingScheduleFootnotes">	
+    <ChooserEntry elementPath="/FTICP/TreatmentStrategies/DosingScheduleFootnotes/DosingScheduleFootnote" elementLabel="DosingScheduleFootnotes" ftElementType="Template" toolTip="treatment - arm mapping">
+      <Complex>
+        <ChooserEntry elementPath="Text" elementLabel="Footnote" ftElementType="Element" toolTip="A footnote" stickyCase="true" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

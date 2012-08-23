@@ -1,0 +1,46 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Population" tabColor="#68BED9" editorClass="PDG.Population" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="PopulationMapping.xml" systemName="StudyPopulation">
+  <ElementBucket elementType="StudyPopulation" bucketLabel="Population Info" systemName="StudyPopulation">
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/entranceCriteriaSummary" elementLabel="Summary of Entrance Criteria" ftElementType="Element" toolTip="A brief summary of the entrance criteria">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/evaluableSubjectDef" elementLabel="Evaluable Subject Definition" ftElementType="Element" toolTip="A definition of the evaluable subject subset">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/acceptsHealthyVolunteersType" elementLabel="This study accepts healthy volunteers" ftElementType="Element" toolTip="Whether or not this study accepts healthy volunteers." enumList="AcceptsHealthyVolunteersTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/minSubjectAge" elementLabel="Min Subject Age" ftElementType="Element" toolTip="The minimum allowable age for a subject to enter into study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/maxSubjectAge" elementLabel="Max Subject Age" ftElementType="Element" toolTip="The maximum age for subjects to enter into study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/subjectAgeTimeUnit" elementLabel="Subject Age Time Unit" ftElementType="Element" toolTip="The subject age time unit" enumList="TimeUnit" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/gender" elementLabel="Gender" ftElementType="Element" toolTip="The gender of subjects who can enter this study" enumList="GenderTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket elementType="EligibilityCriteria" bucketLabel="Eligibility Criteria" systemName="EligibilityCriteria">
+    <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/EligibilityCriteria/EligibilityCriterion" elementLabel="Eligibility Criterion" ftElementType="Template" toolTip="A single eligibility criterion">
+      <Complex>
+        <ChooserEntry elementPath="description/brief" elementLabel="Short Description" ftElementType="Element" toolTip="A short name for this eligibility criterion">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="criterionType" elementLabel="Type" ftElementType="Element" toolTip="Whether a criterion is used to include or exclude a subject from study" enumList="EntranceCriterionTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="description/full" elementLabel="Long Description" ftElementType="Element" toolTip="The full text of an eligibility criterion">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="rationale" elementLabel="Rationale" ftElementType="Element" toolTip="The rationale for this eligibility criterion">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="classifierType" elementLabel="Sub-type" ftElementType="Element" toolTip="criteria sub-type" enumList="EntranceCriterionClassifierTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

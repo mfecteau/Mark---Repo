@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<Project>
+	<Folder FolderName="XML Files" ExtStr="xml;cml;math;mtx;rdf;smil;svg;wml">
+		<File FilePath="..\icd\AdminMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\CTMaterialMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\CustomVariables.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\DesignMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\DocumentElements.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\DynamicTemplates.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\enmapper.xml" HomeFolder="Yes"/>
+		<File FilePath=".\icpinstance.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\mapper.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\MetricsMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\PopulationMapping.xml" HomeFolder="Yes"/>
+		<File FilePath=".\sampleinstance.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\samplemapper.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\ScheduleMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\StatMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\StatMapping2.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\StudyConductMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\TaskMapping.xml" HomeFolder="Yes"/>
+		<File FilePath="..\icd\CustomReports.xml" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="XSL Files" ExtStr="xsl;xslt"/>
+	<Folder FolderName="HTML Files" ExtStr="html;htm;xhtml;asp"/>
+	<Folder FolderName="DTD/Schemas" ExtStr="dtd;dcd;xdr;biz;xsd">
+		<File FilePath=".\admin.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\customvars.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\design.xsd" HomeFolder="Yes"/>
+		<File FilePath="..\icd\echooser.xsd" HomeFolder="Yes"/>
+		<File FilePath="..\icd\echoosersect.xsd" HomeFolder="Yes"/>
+		<File FilePath="..\icd\enmapper.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\enumtype.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\fticp.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\icpbase.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\metrics.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\population.xsd" HomeFolder="Yes"/>
+		<File FilePath="..\icd\protocol.xdr" HomeFolder="Yes"/>
+		<File FilePath=".\schedule.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\stats.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\stats2.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\studyconduct.xsd" HomeFolder="Yes"/>
+		<File FilePath=".\trialmaterials.xsd" HomeFolder="Yes"/>
+	</Folder>
+	<Folder FolderName="Entities" ExtStr="ent"/>
+</Project>

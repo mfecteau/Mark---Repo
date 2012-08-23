@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:include schemaLocation="stats.xsd"/>
+	<xs:complexType name="ScheduleDomain">
+		<xs:sequence>
+			<xs:element name="Schedules" nillable="true">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" minOccurs="0" name="Schedule">
+									<xs:complexType>
+										<xs:complexContent>
+											<xs:extension base="ElementBase">
+												<xs:all>
+													<xs:element name="Periods" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="Period"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="Tasks" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="TSPDTask"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="TaskVisits" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="TaskVisit"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="AssociatedArms" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" name="AssociatedArm" type="FTObjectLink"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="AssociatedDosingSchedules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" name="AssociatedDosingSchedule" type="FTObjectLink"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ArmRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="ArmRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="TemporalRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="TemporalRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="ClinicalRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="ClinicalRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="NegationRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="NegationRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="CycleRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="CycleRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="TriggerRules" nillable="true">
+														<xs:complexType>
+															<xs:sequence>
+																<xs:element maxOccurs="unbounded" minOccurs="0" ref="TriggerRule"/>
+															</xs:sequence>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="soaName" type="xs:string"/>
+													<xs:element name="sequence" type="xs:positiveInteger"/>
+													<xs:element name="DosingScheduleActivityType" type="xs:string"/>
+												</xs:all>
+												<xs:attribute name="InstanceLabel" type="xs:string"/>
+												<xs:attribute name="schemaEditor" type="xs:string"/>
+												<xs:attribute name="armInFocus" type="xs:positiveInteger"/>
+												<xs:attribute name="ctMaterialAlias" type="xs:string"/>
+												<xs:attribute name="ActivityTypectMaterialID" type="xs:string"/>
+											</xs:extension>
+										</xs:complexContent>
+									</xs:complexType>
+								</xs:element>
+							</xs:sequence>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+			<xs:element name="Footnotes" nillable="true">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element maxOccurs="unbounded" minOccurs="0" ref="Footnote"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+<!-- GLOBALS -->
+	<xs:element name="Period" substitutionGroup="ProtocolEvent">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="BaseScheduleItem">
+					<xs:sequence>
+						<xs:element name="ProtocolEvent" nillable="true">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" ref="SubPeriod"/>
+								</xs:sequence>
+								<xs:attribute name="isDivider" type="xs:boolean" use="optional"/>
+							</xs:complexType>
+						</xs:element>
+<!-- note that we use SubPeriod as a SubstitutionGroup so that we can have a 
+						polymorphic collection here -->
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SubPeriod" substitutionGroup="ProtocolEvent">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="BaseScheduleItem">
+					<xs:sequence>
+						<xs:element name="Children" nillable="true">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" ref="ProtocolEvent"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ProtocolEvent">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="BaseScheduleItem">
+					<xs:all>
+						<xs:element minOccurs="0" name="Children" nillable="true">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" ref="ProtocolEvent"/>
+								</xs:sequence>
+							</xs:complexType>
+<!-- children of protocol events must be zero duration events-->
+						</xs:element>
+						<xs:element name="eventType" type="EventTypes"/>
+						<xs:element minOccurs="0" name="permittedTimeWindow" type="FtTimeSpan"/>
+						<xs:element minOccurs="0" name="studyDayOrTime" type="FtTimeSpan"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="BaseScheduleItem">
+		<xs:complexContent>
+			<xs:extension base="AbstractActivity">
+				<xs:all>
+					<xs:element ref="SOADetail"/>
+					<xs:element minOccurs="0" name="scheduleItemType" type="ScheduleItemTypes"/>
+					<xs:element name="workpaneLabel" type="xs:string"/>
+					<xs:element name="displayName" type="xs:string"/>
+					<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+					<xs:element name="parentID" type="xs:positiveInteger"/>
+					<xs:element minOccurs="0" name="NegationRules" nillable="true">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element maxOccurs="unbounded" minOccurs="0" ref="NegationRule"/>
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="TSPDTask">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element ref="SOADetail"/>
+						<xs:element name="displayName" type="xs:string"/>
+						<xs:element name="whoPerforms" type="xs:string"/>
+						<xs:element minOccurs="0" name="costAmount" type="xs:nonNegativeInteger"/>
+						<xs:element minOccurs="0" name="costCurrency" type="xs:string"/>
+						<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+						<xs:element name="procDefID" type="xs:positiveInteger"/>
+						<xs:element name="isUnlisted" type="xs:boolean"/>
+						<xs:element name="sourceText" type="xs:string"/>
+						<xs:element name="varMapping">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" ref="StudyVarRef"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+					<xs:attribute name="isDivider" type="xs:boolean"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskVisit">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="AbstractActivity">
+					<xs:all>
+						<xs:element ref="SOADetail"/>
+						<xs:element name="Purposes" nillable="true">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" ref="TaskVisitPurpose"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="visitID" nillable="true" type="FTObjectLink"/>
+						<xs:element name="taskID" nillable="true" type="FTObjectLink"/>
+						<xs:element name="localFacilityType" type="LocalFacilityTypes"/>
+						<xs:element name="centralFacilityType" type="CentralFacilityTypes"/>
+						<xs:element name="repeatInterval" type="TimeIntervalTypes"/>
+						<xs:element name="repeatMin" type="xs:positiveInteger"/>
+						<xs:element name="repeatMax" type="xs:positiveInteger"/>
+						<xs:element name="window" type="xs:string"/>
+						<xs:element name="windowUnit" type="RestrictedTimeUnit"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="TaskVisitPurpose">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:sequence>
+						<xs:element name="purposeType" type="PurposeTypes"/>
+						<xs:element minOccurs="0" name="associatedOutcome" type="FTObjectLink"/>
+					</xs:sequence>
+					<xs:attribute name="isBaseline" type="xs:boolean"/>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SOADetail">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" ref="LibraryReference"/>
+				<xs:element minOccurs="0" name="Footnotes" nillable="true">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element maxOccurs="unbounded" minOccurs="0" name="Footnote" nillable="true" type="FTObjectLink"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="miscDetail" type="xs:string"/>
+			<xs:attribute name="duration" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="ArmRule">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActivityRule">
+					<xs:all>
+						<xs:element name="armID" type="xs:string"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+<!-- note that the duration and durationTimeUnit of ActivityRelationship do what we need here-->
+	<xs:element name="TemporalRule">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActivityRule">
+					<xs:all>
+						<xs:element name="isNegative" type="xs:string"/>
+						<xs:element name="anchorPosition" type="xs:string"/>
+						<xs:element name="window" type="xs:string"/>
+						<xs:element name="windowUnit" type="xs:string"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+<!-- note that description of ActivityRelationship will suffice for this implementation -->
+	<xs:element name="ClinicalRule" type="ActivityRule"/>
+	<xs:element name="NegationRule" type="ActivityRule"/>
+	<xs:element name="TriggerRule" type="ActivityRule"/>
+	<xs:element name="CycleRule">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ActivityRule">
+					<xs:all>
+						<xs:element name="repeatInterval" type="TimeIntervalTypes"/>
+						<xs:element name="repeatMin" type="xs:positiveInteger"/>
+						<xs:element name="repeatMax" type="xs:positiveInteger"/>
+						<xs:element minOccurs="0" name="current" type="xs:string"/>
+						<xs:element name="window" type="xs:string"/>
+						<xs:element name="windowUnit" type="RestrictedTimeUnit"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

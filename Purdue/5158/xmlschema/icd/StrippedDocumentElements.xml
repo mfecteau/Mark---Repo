@@ -1,0 +1,5 @@
+<ElementTab tabLabel="DocumentElements" systemName="TOC" elementType="TOC" file="DocumentElements.xml">
+  <ElementBucket elementType="TOC" systemName="TOC" bucketLabel="Protocol" docType="protocol">
+    <ChooserEntry elementLabel="" sectionLevel="1" ftElementType="DocSection" docHeaderStyle="Normal" elementPath="" />
+  </ElementBucket>
+</ElementTab>

@@ -1,0 +1,179 @@
+<ElementTab tabLabel="Document Elements" elementType="TOC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\icd\echoosersect.xsd" systemName="TOC" file="../../doctypes/DocumentElements.xml">
+  <ElementBucket docType="StudyDesignDoc" elementType="TOC" startType="false" bucketLabel="Study Design Document" />
+  <ElementBucket docType="protocol" elementType="TOC" startType="false" bucketLabel="Protocol">
+    <ChooserEntry elementLabel="TITLE PAGE" elementPath="/TitlePage" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.TITLEPAGE_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="SYNOPSIS" elementPath="/SYNOPSIS" docHeaderStyle="Heading 1" required="false" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="TABLE OF CONTENTS" elementPath="/TABLEOFCONTENTS" docHeaderStyle="Heading 1" required="false" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="LIST OF ABBREVIATIONS AND DEFINITION OF TERMS" elementPath="/LISTOFABBREVIATIONSANDDEFINITIONOFTERMS" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.LISTOFABBREVIATIONSANDDEFINITIONOFTERMS_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="ETHICS" elementPath="/ETHICS" docHeaderStyle="Heading 1" required="false">
+      <Complex>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Institutional Review Board (IRB) or Independent Ethics Committee (IEC)" elementPath="/ETHICS/InstitutionalReviewBoardIRBorIndependentEthicsCommitteeIEC" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.InstitutionalReviewBoardIRBorIndependent_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Ethical Conduct of the Study" elementPath="/ETHICS/EthicalConductoftheStudy" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.EthicalConductoftheStudy_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Subject Information and Consent" elementPath="/ETHICS/SubjectInformationandConsent" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.SubjectInformationandConsent_5148" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="INVESTIGATORS AND STUDY PERSONNEL" elementPath="/INVESTIGATORSANDSTUDYPERSONNEL" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.INVESTIGATORSANDSTUDYPERSONNEL_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="INTRODUCTION" elementPath="/INTRODUCTION" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.INTRODUCTION_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="STUDY OBJECTIVES" elementPath="/STUDYOBJECTIVES" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.STUDYOBJECTIVES_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="INVESTIGATIONAL PLAN" elementPath="/INVESTIGATIONALPLAN" docHeaderStyle="Heading 1" required="false">
+      <Complex>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Overall Study Design and Plan-Description" elementPath="/INVESTIGATIONALPLAN/OverallStudyDesignandPlanDescription" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.OverallStudyDesignandPlanDescription_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Discussion of Study Design, Including the Choice of Treatment Groups" elementPath="/INVESTIGATIONALPLAN/DiscussionofStudyDesignIncludingtheChoiceofTreatmentGroups" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.DiscussionofStudyDesignIncludingtheChoic_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Selection of Study Population" elementPath="/INVESTIGATIONALPLAN/SelectionofStudyPopulation" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.SelectionofStudyPopulation_5148">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Inclusion Criteria" elementPath="/INVESTIGATIONALPLAN/SelectionofStudyPopulation/Inclusioncriteria" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Inclusioncriteria_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Exclusion Criteria" elementPath="/INVESTIGATIONALPLAN/SelectionofStudyPopulation/Exclusioncriteria" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Exclusioncriteria_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Removal of Subject from Study Participation" elementPath="/INVESTIGATIONALPLAN/SelectionofStudyPopulation/RemovalofSubjectfromStudyParticipation" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.RemovalofSubjectfromStudyParticipation_5148" />
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Treatments" elementPath="/INVESTIGATIONALPLAN/Treatments" docHeaderStyle="Heading 2" required="false">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Treatments Administered" elementPath="/INVESTIGATIONALPLAN/Treatments/Treatmentsadministered" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Treatmentsadministered_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Identity of Investigational Product(s)" elementPath="/INVESTIGATIONALPLAN/Treatments/Identityofinvestigationalproducts" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Identityofinvestigationalproducts_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Drug Accountability" elementPath="/INVESTIGATIONALPLAN/Treatments/DrugAccountability" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.DrugAccountability_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Method of Assigning Subjects to Treatment Groups" elementPath="/INVESTIGATIONALPLAN/Treatments/Methodofassigningsubjectstotreatmentgroups" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Methodofassigningsubjectstotreatmentgrou_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Selection of Doses in the Study" elementPath="/INVESTIGATIONALPLAN/Treatments/Selectionofdosesinthestudy" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Selectionofdosesinthestudy_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Selection and Timing of Dose For Each Subject" elementPath="/INVESTIGATIONALPLAN/Treatments/Selectionandtimingofdoseforeachpatient" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Selectionandtimingofdoseforeachpatient_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Blinding" elementPath="/INVESTIGATIONALPLAN/Treatments/Blinding" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Blinding_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Prior and Concomitant Therapy" elementPath="/INVESTIGATIONALPLAN/Treatments/Priorandconcomitanttherapy" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Priorandconcomitanttherapy_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Treatment Compliance" elementPath="/INVESTIGATIONALPLAN/Treatments/TreatmentCompliance" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.TreatmentCompliance_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Diet, Fluid, and Activity Control" elementPath="/INVESTIGATIONALPLAN/Treatments/DietFluidandActivityControl" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.DietFluidandActivityControl_5148" />
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Study Procedures" elementPath="/INVESTIGATIONALPLAN/StudyProcedures" docHeaderStyle="Heading 2" required="false">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Schedule of Activities" elementPath="/INVESTIGATIONALPLAN/StudyProcedures/ScheduleofActivities" docHeaderStyle="Heading 3" required="false" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Screening" elementPath="/INVESTIGATIONALPLAN/StudyProcedures/Screening" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Screening_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Check-In" elementPath="/INVESTIGATIONALPLAN/StudyProcedures/CheckIn" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.CheckIn_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Treatment Period" elementPath="/INVESTIGATIONALPLAN/StudyProcedures/TreatmentPeriod" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.TreatmentPeriod_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="End of Study or Early Discontinuation" elementPath="/INVESTIGATIONALPLAN/StudyProcedures/EndofStudyorEarlyDiscontinuation" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.EndofStudyorEarlyDiscontinuation_5148" />
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Efficacy Variables, Drug Concentration, Safety and Other Variables" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables" docHeaderStyle="Heading 2" required="false">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Appropriateness of Measurements" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/Appropriatenessofmeasurements" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Appropriatenessofmeasurements_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Efficacy Variables" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/EfficacyVariables" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.EfficacyVariables_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Drug Concentration Measurements" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/Drugconcentrationmeasurements" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Drugconcentrationmeasurements_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Safety Variable(s)" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Adverse Events" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/AdverseEvents" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.AdverseEvents_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Clinical Laboratory Evaluations" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/ClinicalLaboratoryEvaluations" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.ClinicalLaboratoryEvaluations_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Vital Signs and Pulse Oximetry (SPO2)" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/VitalSignsandPulseOximetrySpO2" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.VitalSignsandPulseOximetrySpO2_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Electrocardiograms" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/Electrocardiograms" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.Electrocardiograms_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="HDYF? Inquiry" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/HDYFInquiry" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.HDYFInquiry_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Physical Examination" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/SafetyVariables/PhysicalExamination" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.PhysicalExamination_5148" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry elementLabel="Other Variables" elementPath="OtherVariables" ftElementType="DocSection" sectionLevel="3" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry elementLabel="Pharmacogenomics" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyAndOtherVatriables/OtherVariables/Pharmacogenomics" ftElementType="DocSection" sectionLevel="4" docHeaderStyle="Heading 4" required="false" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Clinical Supplies Product Complaints (CSPCs)" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/ClinicalSuppliesProductComplaintsCSPCs" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Types of CSPCs" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/ClinicalSuppliesProductComplaintsCSPCs/TypesofCSPCs" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.TypesofCSPCs_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Reporting of CSPCs to Sponsor or Designee" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/ClinicalSuppliesProductComplaintsCSPCs/ReportingofCSPCstoSponsororDesignee" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.ReportingofCSPCstoSponsororDesignee_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Reporting of CSPCs to Drug Enforcement Administration (DEA)" elementPath="/INVESTIGATIONALPLAN/EfficacyVariablesDrugConcentrationSafetyandOtherVariables/ClinicalSuppliesProductComplaintsCSPCs/ReportingofCSPCstoDrugEnforcementAdministrationDEA" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.ReportingofCSPCstoDrugEnforcementAdminis_5148" />
+              </Complex>
+            </ChooserEntry>
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Quality Assurance" elementPath="/INVESTIGATIONALPLAN/QualityAssurance" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.QualityAssurance_5148">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Data Collection" elementPath="/INVESTIGATIONALPLAN/QualityAssurance/DataCollection" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.DataCollection_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Clinical Data Management" elementPath="/INVESTIGATIONALPLAN/QualityAssurance/ClinicalDataManagement" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.ClinicalDataManagement_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Data Quality Assurance" elementPath="/INVESTIGATIONALPLAN/QualityAssurance/DataQualityAssurance" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.DataQualityAssurance_5148" />
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Statistical Methods Planned in the Protocol and Determination of Sample Size" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.StatisticalMethodsPlannedintheProtocolan_5148">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Analysis Populations" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/AnalysisPopulations" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.AnalysisPopulations_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Summary of Study Population Characteristics" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Demographics and Baseline Characteristics" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics/DemographicsandBaselineCharacteristics" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.DemographicsandBaselineCharacteristics_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Subject Disposition" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics/SubjectDisposition" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.SubjectDisposition_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Dosing and Extent of Exposure" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics/DosingandExtentofExposure" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.DosingandExtentofExposure_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Prior and Concomitant Therapy" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics/PriorandConcomitantTherapy" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.PriorandConcomitantTherapy1_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Medical History" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SummaryofStudyPopulationCharacteristics/MedicalHistory" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.MedicalHistory_5148" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Efficacy Analysis" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/EfficacyAnalysis" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.EfficacyAnalysis_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Pharmacokinetic Analysis" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/PharmacokineticAnalysis" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Pharmacokinetic Variable(s)" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/PharmacokineticAnalysis/PharmacokineticVariables" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.PharmacokineticVariables_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Pharmacokinetic Statistical Analysis" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/PharmacokineticAnalysis/PharmacokineticStatisticalAnalysis" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.PharmacokineticStatisticalAnalysis_5148" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Statistical / Analytical Issues" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues" docHeaderStyle="Heading 3" required="false">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Adjustments for Covariates" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/AdjustmentsforCovariates" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.AdjustmentsforCovariates_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Handling of Dropouts or Missing Data" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/HandlingofDropoutsorMissingData" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.HandlingofDropoutsorMissingData_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Interim Analyses and Data Monitoring" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/InterimAnalysesandDataMonitoring" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.InterimAnalysesandDataMonitoring_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Homogeneity Across Clinical Sites" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/HomogeneityAcrossClinicalSites" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.HomogeneityAcrossClinicalSites_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Multiple Comparisons / Multiplicity" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/MultipleComparisonsMultiplicity" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.MultipleComparisonsMultiplicity_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Examination of Subgroups" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/StatisticalAnalyticalIssues/ExaminationofSubgroups" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.ExaminationofSubgroups_5148" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Safety Analyses" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.SafetyAnalyses_5148">
+              <Complex>
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Adverse Events" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/AdverseEvents" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.AdverseEvents1_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Laboratory Values" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/LaboratoryValues" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.LaboratoryValues_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Vital Signs and Pulse Oximetry (SPO2)" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/VitalSignsandPulseOximetrySpO2" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.VitalSignsandPulseOximetrySpO2_5148" />
+                <ChooserEntry ftElementType="DocSection" sectionLevel="4" elementLabel="Electrocardiograms" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/Electrocardiograms" docHeaderStyle="Heading 4" required="false" toolTip="$library/__guide.Electrocardiograms_5148" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Other Variable Analyses" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/OtherAnalyses" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.OtherAnalyses_5148">
+              <Complex>
+                <ChooserEntry elementLabel="Pharmacogenomics" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/OtherAnalyses/Pharmacogenomics" ftElementType="DocSection" sectionLevel="4" docHeaderStyle="Heading 4" required="false" />
+                <ChooserEntry elementLabel="Hair Sampling" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/SafetyAnalyses/OtherAnalyses/HairSampling" ftElementType="DocSection" sectionLevel="4" docHeaderStyle="Heading 4" required="false" />
+              </Complex>
+            </ChooserEntry>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Determination of Sample Size" elementPath="/INVESTIGATIONALPLAN/StatisticalMethodsPlannedintheProtocolandDeterminationofSampleSize/Determinationofsamplesize" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.Determinationofsamplesize_5148" />
+          </Complex>
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="ADVERSE EVENTS" elementPath="/ADVERSEEVENTS" docHeaderStyle="Heading 1" required="false">
+      <Complex>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Definition" elementPath="/ADVERSEEVENTS/Definition" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.Definition_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Assessment" elementPath="/ADVERSEEVENTS/Assessment" docHeaderStyle="Heading 2" required="false">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Criteria for Assessing Intensity" elementPath="/ADVERSEEVENTS/Assessment/CriteriaforAssessingSeverity" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.CriteriaforAssessingSeverity_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Criteria for Assessing Causality" elementPath="/ADVERSEEVENTS/Assessment/CriteriaforAssessingCausality" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.CriteriaforAssessingCausality_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Criteria for Assessing Seriousness" elementPath="/ADVERSEEVENTS/Assessment/CriteriaforAssessingSeriousness" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.CriteriaforAssessingSeriousness_5148" />
+          </Complex>
+        </ChooserEntry>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Adverse Events - Reporting" elementPath="/ADVERSEEVENTS/AdverseEventsReporting" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.AdverseEventsReporting_5148">
+          <Complex>
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Additional Reporting Requirements for Pregnancies" elementPath="/ADVERSEEVENTS/AdverseEventsReporting/AdditionalReportingRequirementsforPregnancies" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.AdditionalReportingRequirementsforPregna_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Additional Reporting Requirements for Adverse Events of Special Interest" elementPath="/ADVERSEEVENTS/AdverseEventsReporting/AdditionalReportingRequirementsforAdverseEventsofSpecialInterest" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.AdditionalReportingRequirementsforAdvers_5148" />
+            <ChooserEntry ftElementType="DocSection" sectionLevel="3" elementLabel="Additional Reporting Requirements for Serious Adverse Events" elementPath="/ADVERSEEVENTS/AdverseEventsReporting/AdditionalReportingRequirementsforSeriousAdverseEvents" docHeaderStyle="Heading 3" required="false" toolTip="$library/__guide.AdditionalReportingRequirementsforSeriou_5148" />
+          </Complex>
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="ADMINISTRATIVE ASPECTS" elementPath="/ADMINISTRATIVEASPECTS" docHeaderStyle="Heading 1" required="false">
+      <Complex>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Changes to Protocol" elementPath="/ADMINISTRATIVEASPECTS/ChangestoProtocol" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.ChangestoProtocol_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Discontinuation of Study" elementPath="/ADMINISTRATIVEASPECTS/DiscontinuationofStudy" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.DiscontinuationofStudy_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Disclosure and Confidentiality" elementPath="/ADMINISTRATIVEASPECTS/DisclosureandConfidentiality" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.DisclosureandConfidentiality_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Monitoring Procedures" elementPath="/ADMINISTRATIVEASPECTS/MonitoringProcedures" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.MonitoringProcedures_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Records Retention" elementPath="/ADMINISTRATIVEASPECTS/RecordsRetention" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.RecordsRetention_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Inspection Procedures" elementPath="/ADMINISTRATIVEASPECTS/AuditingProcedures" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.AuditingProcedures_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="Publication of Results" elementPath="/ADMINISTRATIVEASPECTS/PublicationofResults" docHeaderStyle="Heading 2" required="false" toolTip="$library/__guide.PublicationofResults_5148" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="SIGNATURE PAGE FOR INVESTIGATORS" elementPath="/SIGNATUREPAGEFORINVESTIGATORS" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.SIGNATUREPAGEFORINVESTIGATORS_5148" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="REFERENCE LIST" elementPath="/REFERENCELIST" docHeaderStyle="Heading 1" required="false" />
+    <ChooserEntry ftElementType="DocSection" sectionLevel="1" elementLabel="APPENDICES" elementPath="/APPENDICES" docHeaderStyle="Heading 1" required="false">
+      <Complex>
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX A - Clinical Laboratory Evaluations" elementPath="/APPENDICES/APPENDIXAClinicalLaboratoryEvaluations" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXAClinicalLaboratoryEvaluations_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX B - Sample Unit Dose Study Drug Labels" elementPath="/APPENDICES/APPENDIXBSampleUnitDoseStudyDrugLabels" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXBSampleUnitDoseStudyDrugLabels_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX C - Pharmacokinetic Sample Collection, Processing, Storage, and Shipment" elementPath="/APPENDICES/APPENDIXCPharmacokineticSampleCollectionProcessingStorageandShipment" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXCPharmacokineticSampleCollection_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX D - Naloxone HCl Challenge Test Procedure" elementPath="/APPENDICES/APPENDIXDNaloxoneHClChallengeTestProcedure" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXDNaloxoneHClChallengeTestProcedu_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX E - Laboratory Ranges Used to Identify Clinically Notable Laboratory Values in Healthy Adults" elementPath="/APPENDICES/APPENDIXELaboratoryRangesUsedtoIdentifyClinicallyNotableLaboratoryValuesinHealthyAdults" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXELaboratoryRangesUsedtoIdentifyC_5148" />
+        <ChooserEntry ftElementType="DocSection" sectionLevel="2" elementLabel="APPENDIX F - Standard High-Fat Meal" elementPath="/APPENDICES/APPENDIXFStandardHighFatMeal" docHeaderStyle="Appendix" required="false" toolTip="$library/__guide.APPENDIXFStandardHighFatMeal_5148" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="CTMaterialsConceptCollection">
+		<xs:all>
+			<xs:element name="ClinicalTrialMaterials">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="ClinicalTrialMaterial" type="ClinicalTrialMaterialType" nillable="true" maxOccurs="unbounded"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:complexType name="ClinicalTrialMaterialType">
+		<xs:complexContent>
+			<xs:extension base="AuditedElementBase">
+				<xs:sequence>
+					<xs:element name="studyArmID" type="xs:positiveInteger" minOccurs="0" maxOccurs="unbounded"/>
+					<xs:element name="CTMaterialType" type="CTMaterialTypes"/>
+					<xs:element name="routeOfAdministration" type="RouteOfAdminTypes"/>
+					<xs:element name="formulation" type="FormulationTypes"/>
+					<xs:element name="primaryRoleInStudy" type="CTMaterialRoleTypes"/>
+					<xs:element name="materialInArms" type="CTMaterialInStudyArmType" minOccurs="1" maxOccurs="unbounded"/>
+				</xs:sequence>
+				<xs:attribute name="sequence" type="xs:integer" use="required"/>
+				<xs:attribute name="CTMaterialName" type="xs:string"/>
+				<xs:attribute name="strength" type="xs:string"/>
+				<xs:attribute name="accountabilityProcedures" type="xs:string"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="CTMaterialInStudyArmType">
+		<xs:complexContent>
+			<xs:extension base="AuditedElementBase">
+				<xs:sequence>
+					<xs:element name="roleOfMaterialInArm" type="CTMaterialRoleTypes"/>
+					<xs:element name="armID">
+							<xs:complexType>
+								<xs:attribute name="ID" type="xs:positiveInteger" use="required"/>
+								<xs:attribute name="IDVar" type="xs:string" use="required" fixed="@ObjID"/>
+								<xs:attribute name="pathToIDVar" type="xs:string" use="required" fixed="//XXXXXXX"/>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="ClinicalTrialMaterialID">
+							<xs:complexType>
+								<xs:attribute name="ID" type="xs:positiveInteger" use="required"/>
+								<xs:attribute name="IDVar" type="xs:string" use="required" fixed="@ObjID"/>
+								<xs:attribute name="pathToIDVar" type="xs:string" use="required" fixed="//ClinicalTrialMaterials/ClinicalTrialMaterial"/>
+							</xs:complexType>
+						</xs:element>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+</xs:schema>

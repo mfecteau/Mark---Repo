@@ -1,0 +1,138 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Study Design" tabColor="#83A49D" editorClass="PDG.Design" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="DesignMapping.xml" systemName="StudyDesign">
+  <ElementBucket bucketLabel="Objectives" elementType="Objectives" systemName="Objectives">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Objectives/Objective" elementLabel="Objective" ftElementType="Template" toolTip="An objective or goal of this study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Objective Text" ftElementType="Element" toolTip="A statement of a planned objective of the study">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="objectiveType" elementLabel="Objective Type" ftElementType="Element" toolTip="The type of objective: primary, secondary, etc." enumList="ObjectiveTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedOutcomes/associatedOutcome" elementLabel="Assoc. Outcomes" ftElementType="Collection" toolTip="The outcomes used to establish this objective" assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Outcomes" elementType="PriOutcomes" systemName="PriOutcomes">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Primary Outcome" ftElementType="Template" toolTip="A measurable outcome or endpoint used to establish an objective for this study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="Variables/StudyVarRef" elementLabel="Endpoint" ftElementType="Collection" toolTip="The Endpoint Variables for this Outcome" assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Secondary Outcomes" elementType="SecOutcomes" systemName="SecOutcomes">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Secondary Outcome" ftElementType="Template" toolTip="An endpoint or outcome used in this study to establish an objective">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Tertiary Outcomes" elementType="TerOutcomes" systemName="TerOutcomes">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Tertiary Outcome" ftElementType="Template" toolTip="The tertiary outcomes or endpoints defined in this study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Design Concepts" elementType="StudyDesign" systemName="StudyDesign">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/masking" elementLabel="Blinding" ftElementType="Element" toolTip="Information regarding blinding of the study" enumList="BlindingTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/maintainingBlindProcedure" elementLabel="Study Blinding" ftElementType="Element" toolTip="The process for maintaining the blind of the study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/subjectUnblindingProcedure" elementLabel="Unblinding Procedure" ftElementType="Element" toolTip="The process for unblinding treatment assignment">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/controlType" elementLabel="Control Type" ftElementType="Element" toolTip="The type of control, if any, used in the study" enumList="ControlTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/comparator" elementLabel="Comparator" ftElementType="Element" toolTip="The comparative product used in studies involving a control group" hidden="True" />
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/methodOfAllocation" elementLabel="Randomization" ftElementType="Element" toolTip="The method of assigning treatment or randomizing a subject to a study arm" enumList="AllocationTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/randAndStratDetails" elementLabel="Randomization / Stratification" ftElementType="Element" toolTip="The statistical details regarding any randomization and stratification">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/studyConfiguration" elementLabel="Study Configuration" ftElementType="Element" toolTip="The configuration of the study (single group, parallel, etc.)" enumList="ConfigurationTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/natureOfInvestigation" elementLabel="Investigation Type" ftElementType="Element" toolTip="The nature of the investigation of the study (observational, interventional)" enumList="InvestigationTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/overallStudyOutcomeType" elementLabel="Overall Study Outcome" ftElementType="Element" toolTip="The planned overall outcome of the study (safety, efficacy, etc)" enumList="OverallStudyOutcomeTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/studyPurpose" elementLabel="Study Purpose" ftElementType="Element" toolTip="The purpose of the study (treatment, prevention, etc.)" enumList="StudyPurposeTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/numberOfArms" elementLabel="# Study Arms" ftElementType="Element" toolTip="" hidden="true">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Study Arms" elementType="Arms" systemName="Arms">
+    <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Arms/Arm" elementLabel="Arm" ftElementType="Template" toolTip="Independent study arms">
+      <Complex>
+        <!--until we have a way of displaying schedules-->
+        <!--ChooserEntry elementPath="associatedScheduleID" elementLabel="" ftElementType="Collection"/-->
+        <ChooserEntry elementPath="description/brief" elementLabel="Arm Name" ftElementType="Element" toolTip="Name of the study arm as it appears in the protocol." />
+        <ChooserEntry elementPath="plannedEnrollmentPerArm" elementLabel="# of Subjects" ftElementType="Element" toolTip="Planned number of subjects in this arm." />
+        <ChooserEntry elementPath="randomizationWeightForArm" elementLabel="Randomization Weight this Arm" ftElementType="Element" toolTip="Relative weight for randomization of patients for this arm." />
+        <ChooserEntry elementPath="SDTMDomain" elementLabel="Tag for SDTM output" ftElementType="Element" toolTip="" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

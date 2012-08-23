@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="GuideTextList">
+    <xs:annotation>
+      <xs:documentation>
+        very banal tree
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="GuideText"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GuideText">
+    <xs:annotation>
+      <xs:documentation>
+        each guide text may contain the guide text 
+        and have either the id or the name, or both 
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType mixed="true">
+      <!-->xs:sequence>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="Image"/>
+        <xs:element maxOccurs="unbounded" minOccurs="0" ref="Audio"/>
+      </xs:sequence-->
+      <xs:attribute  name="HelpName" type="xs:string" use="optional"/>
+      <xs:attribute name="HelpID" type="xs:integer" use="optional"/>
+      <xs:attribute name="Note" type="xs:string" use="optional"/>      
+    </xs:complexType>
+  </xs:element>
+  <!--xs:element name="Image">
+    <xs:annotation>
+      <xs:documentation>
+        each guide text may contain the guide text
+        and have either the id or the name, or both
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType >
+      <xs:attribute name="ImagePath" type="xs:string" use="optional"/>
+      <xs:attribute name="ImageText" type="xs:string" use="optional"/>
+      <xs:attribute name="location" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Audio">
+    <xs:annotation>
+      <xs:documentation>
+        each guide text may contain the guide text
+        and have either the id or the name, or both
+      </xs:documentation>
+    </xs:annotation>
+    <xs:complexType >
+      <xs:attribute  name="AudioPath" type="xs:string" use="optional"/>
+      <xs:attribute name="AudioText" type="xs:string" use="optional"/>
+      <xs:attribute name="location" type="xs:string" use="optional"/>
+    </xs:complexType>
+  </xs:element-->
+</xs:schema>

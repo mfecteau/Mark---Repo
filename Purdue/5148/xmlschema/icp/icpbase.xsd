@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<!-- All Protocol elements must derive from element base -->
+	<xs:complexType name="ElementBase" mixed="true">
+		<xs:sequence minOccurs="0">
+			<xs:element name="description" type="DescriptorSet" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="SystemName" use="optional"/>
+		<xs:attribute name="ObjID" type="xs:positiveInteger" use="optional"/>
+		<xs:attribute name="InstanceLabel" use="optional"/>
+		<xs:attribute name="isFixed" type="xs:boolean" use="optional"/>
+		<xs:attribute name="dataType" type="xs:string" use="optional"/>
+	</xs:complexType>
+	<!-- This is where we define what doument types this ICP instance will support -->
+	<xs:simpleType name="DocType">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Protocol"/>
+			<xs:enumeration value="CSR"/>
+			<xs:enumeration value="Blank"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="DescriptorSet">
+		<xs:sequence>
+			<xs:element name="label" minOccurs="0"/>
+			<xs:element name="brief" minOccurs="0"/>
+			<xs:element name="full" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!-- All protocol elements which are audited derive from this element type (practically all of them) -->
+	<xs:complexType name="ConceptLocking">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:attribute name="lockingUserID" type="xs:positiveInteger" use="optional"/>
+				<xs:attribute name="lockingUserDate" type="xs:dateTime" use="optional"/>
+				<xs:attribute name="lockedInSnapshotID" type="xs:positiveInteger" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- Other common types -->
+	<xs:complexType name="StringList">
+		<xs:sequence>
+			<xs:element name="value" type="xs:string" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FTObjectLink">
+		<xs:attribute name="ID" type="xs:positiveInteger" use="required"/>
+		<xs:attribute name="IDVar" type="xs:string" use="required" fixed="@ObjID"/>
+		<xs:attribute name="pathToIDVar" type="xs:string" use="required"/>
+	</xs:complexType>
+	<xs:element name="Footnote">
+		<xs:complexType>
+			<xs:attribute name="footnoteID" type="xs:positiveInteger"/>
+			<xs:attribute name="footnoteText"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="LibraryReference">
+		<xs:complexType>
+			<xs:attribute name="referenceID" type="xs:positiveInteger"/>
+			<xs:attribute name="referenceName"/>
+			<xs:attribute name="expandImmediate" type="xs:boolean"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="AbstractActivity" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="sequence" type="xs:positiveInteger" minOccurs="0"/>
+					<xs:element name="effectiveTime" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="actualStartTime" type="xs:dateTime" minOccurs="0"/>
+					<xs:element name="negationIndicator" type="xs:string" minOccurs="0"/>
+					<xs:element name="permittedTimeWindow" type="xs:string" minOccurs="0"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ActivityRelationship" abstract="true">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="sequence" type="xs:positiveInteger"/>
+					<xs:element name="processMode" type="xs:string" minOccurs="0"/>
+					<xs:element name="qualifier" type="xs:string" minOccurs="0"/>
+					<xs:element name="fromID" type="FTObjectLink"/>
+					<xs:element name="toID" type="FTObjectLink"/>
+					<xs:element name="position" type="xs:string"/>
+					<xs:element name="durationTimeUnit" type="xs:string" minOccurs="0"/>
+					<xs:element name="duration" type="xs:positiveInteger" minOccurs="0"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="ActivityRule">
+		<xs:complexContent>
+			<xs:extension base="ActivityRelationship">
+				<xs:all>
+					<xs:element name="concurrent" type="xs:string"/>
+					<xs:element name="termEVID" type="xs:integer"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:element name="StudyVarRef">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="varID" type="xs:positiveInteger"/>
+						<xs:element name="paramID" type="xs:positiveInteger"/>
+						<xs:element name="hidden" type="xs:string"/>
+						<xs:element name="sequence" type="xs:positiveInteger"/>
+						<xs:element name="methodCode" type="xs:string" minOccurs="0"/>
+						<xs:element name="methodCodeSystemID" type="xs:positiveInteger" minOccurs="0"/>
+						<xs:element name="role" type="xs:string"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="StudyVarDef">
+		<xs:complexContent>
+			<xs:extension base="ElementBase">
+				<xs:all>
+					<xs:element name="sourceID" type="xs:positiveInteger"/>
+					<xs:element name="sourceDomain" type="xs:string"/>
+					<xs:element name="unitOfMeasureID" type="xs:integer" minOccurs="0"/>
+					<xs:element name="unitOfMeasureString" type="xs:string" minOccurs="0"/>
+					<xs:element name="definition" type="xs:string" minOccurs="0"/>
+					<xs:element name="acronym" type="xs:string" minOccurs="0"/>
+					<xs:element name="minValid" type="xs:integer" minOccurs="0"/>
+					<xs:element name="maxValid" type="xs:integer" minOccurs="0"/>
+					<xs:element name="studyMin" type="xs:integer" minOccurs="0"/>
+					<xs:element name="studyMax" type="xs:integer" minOccurs="0"/>
+					<xs:element name="panicMin" type="xs:integer" minOccurs="0"/>
+					<xs:element name="panicMax" type="xs:integer" minOccurs="0"/>
+					<xs:element name="alias1" type="xs:integer" minOccurs="0"/>
+					<xs:element name="alias2" type="xs:integer" minOccurs="0"/>
+					<xs:element name="alias3" type="xs:integer" minOccurs="0"/>
+					<xs:element name="originFunc" type="xs:string" minOccurs="0"/>
+					<xs:element name="originMethod" type="xs:string" minOccurs="0"/>
+				</xs:all>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="FtTimeSpan">
+		<xs:all>
+			<xs:element name="tmUnits" type="xs:integer" minOccurs="0"/>
+			<xs:element name="tmUOM" type="xs:string" minOccurs="0"/>
+			<xs:element name="tmText" type="xs:string" minOccurs="0"/>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

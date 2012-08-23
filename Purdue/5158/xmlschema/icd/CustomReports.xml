@@ -1,0 +1,7 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Custom Reports" tabColor="#F9A038" file="CustomReports.xml" elementType="Reports" systemName="CustomReports" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" hidden="true" toolTip="">
+  <ElementBucket bucketLabel="Custom Reports Not For Element Panel consumption" elementType="Reports" hidden="false">
+    <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.CRFWorksheet.CRFWorksheetReport,FTCustomReports.dll" elementLabel="CRF Worksheet Report" ftElementType="Macro" funcType="CSHARP" toolTip="CRF Worksheet Report" hidden="false" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.DocumentComments.DocumentCommentsReport,FTCustomReports.dll" elementLabel="Review Comments Report" ftElementType="Macro" funcType="CSHARP" toolTip="Review Comments Report" hidden="false" />
+    <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.StudyOutline.SectionPrinting1,CustomReports.dll" elementLabel="Study Design Document" ftElementType="Macro" funcType="CSHARP" toolTip="Exports the Study Design Document" hidden="false" />
+  </ElementBucket>
+</ElementTab>

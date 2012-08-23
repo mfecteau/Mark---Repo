@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<!-- COPYRIGHT 2002-2005 FastTrack Systems INC -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="DesignDomain">
+		<xs:all>
+			<xs:element name="Design">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:all>
+								<xs:element name="Objectives" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="Objective" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Outcomes" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="Outcome" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="Arms" nillable="true">
+									<xs:complexType>
+										<xs:sequence>
+											<xs:element ref="Arm" minOccurs="0" maxOccurs="unbounded"/>
+										</xs:sequence>
+									</xs:complexType>
+								</xs:element>
+								<xs:element name="masking" type="BlindingTypes"/>
+								<xs:element name="controlType" type="ControlTypes"/>
+								<xs:element name="methodOfAllocation" type="AllocationTypes"/>
+								<xs:element name="studyConfiguration" type="ConfigurationTypes"/>
+								<xs:element name="natureOfInvestigation" type="InvestigationTypes"/>
+								<xs:element name="overallStudyOutcomeType" type="OverallStudyOutcomeTypes"/>
+								<xs:element name="studyPurpose" type="StudyPurposeTypes"/>
+								<xs:element name="subjectUnblindingProcedure" type="xs:string"/>
+								<xs:element name="maintainingBlindProcedure" type="xs:string"/>
+								<xs:element name="comparator" type="xs:string"/>
+								<xs:element name="numberOfArms" type="xs:nonNegativeInteger" nillable="true" minOccurs="0"/>
+								<!-- push down into own containers -->
+							</xs:all>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+	<xs:element name="Outcome">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="associatedObjectives">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="associatedObjective" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="outcomeType" type="OutcomeTypes"/>
+						<xs:element name="analyticMethods">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="analyticMethod" type="FTObjectLink" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="asMeasuredBy">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="measurement" type="FTObjectLink" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="setIndex" type="xs:integer"/>
+						<xs:element name="description" type="DescriptorSet"/>
+						<xs:element name="sequence" type="xs:integer"/>
+						<xs:element name="isPrimary" type="xs:boolean" minOccurs="0"/>
+						<xs:element name="Variables">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="StudyVarRef"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Objective">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="associatedOutcomes">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="associatedOutcome" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="objectiveType" type="ObjectiveTypes" nillable="true"/>
+						<xs:element name="description" type="DescriptorSet"/>
+						<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="Arm">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="ElementBase">
+					<xs:all>
+						<xs:element name="MaterialsInArms">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="MaterialInArmID" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="associatedSchedules">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="associatedSchedule" type="FTObjectLink" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						<xs:element name="plannedEnrollmentPerArm" type="xs:string"/>
+						<xs:element name="randomizationWeightForArm" type="xs:string" nillable="true"/>
+						<xs:element name="sequence" type="xs:nonNegativeInteger"/>
+					</xs:all>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

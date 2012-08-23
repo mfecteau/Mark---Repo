@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<GuideTextList>
+  <GuideText HelpName="Task_Detail" HelpID="2001">    
+  </GuideText>
+  <GuideText HelpName="Task_Mappings" HelpID="2002">    
+  </GuideText>
+  <GuideText HelpName="Task_Footnotes" HelpID="2003">    
+  </GuideText>
+  <GuideText HelpName="Event_Detail" HelpID="2010">    
+  </GuideText>
+  <GuideText HelpName="Event_Sequence" HelpID="2011">    
+  </GuideText>
+  <GuideText HelpName="Event_Footnote" HelpID="2012">    
+  </GuideText>
+  <GuideText HelpName="Event_Rules" HelpID="2013">    
+  </GuideText>
+  <GuideText HelpName="Event_Milestones" HelpID="2014">    
+  </GuideText>
+  <GuideText HelpName="Event_ZeroDuration" HelpID="2015">    
+  </GuideText>
+  <GuideText HelpName="Period_Details" HelpID="2020">    
+  </GuideText>
+  <GuideText HelpName="Period_Footnotes" HelpID="2021">
+  </GuideText>
+  <GuideText HelpName="Period_Rules" HelpID="2022">    
+  </GuideText>
+  <GuideText HelpName="Period_Visits" HelpID="2023">    
+  </GuideText>
+  <GuideText HelpName="Subperiod_Details" HelpID="2030">    
+  </GuideText>
+  <GuideText HelpName="Subperiod_Footnotes" HelpID="2031">    
+  </GuideText>
+  <GuideText HelpName="Subperiod_Visits" HelpID="2032">    
+  </GuideText>
+  <GuideText HelpName="PDG_Stats_Hypotheses" HelpID="2040">    
+  </GuideText>
+  <GuideText HelpName="PDG_Stats_Analyses" HelpID="2041">    
+  </GuideText>
+  <GuideText HelpName="PDG_Stats_PopulationSets" HelpID="2042">    
+  </GuideText>
+  <GuideText HelpName="PDG_Stats_Models" HelpID="2043">    
+  </GuideText>
+  <GuideText HelpName="PDG_Stats_Variables" HelpID="2044">    
+  </GuideText>
+  <GuideText HelpName="PDG_Sched_Mapping" HelpID="2045">    
+  </GuideText>
+  <GuideText HelpName="PDG_Schema_Designer" HelpID="2046">    
+  </GuideText>
+  <GuideText HelpName="Analysis_Var" HelpID="2060">    
+  </GuideText>
+  <GuideText HelpName="Computation" HelpID="2061">    
+  </GuideText>
+  <GuideText HelpName="Computation_Derived" HelpID="2062">    
+  </GuideText>
+  <GuideText HelpName="Interim_Analysis" HelpID="2063">    
+  </GuideText>
+  <GuideText HelpName="Analysis_Details" HelpID="2064">    
+  </GuideText>
+  <GuideText HelpName="Study_Var_Details" HelpID="2065">    
+  </GuideText>
+  <GuideText HelpName="Var_Admin_Upload" HelpID="2066">    
+  </GuideText>
+  <GuideText HelpName="MappingDetail" HelpID="2067">    
+  </GuideText>
+  <GuideText HelpName="Variable_Admin" HelpID="2068">    
+  </GuideText>
+  <GuideText HelpName="VariableMapping_AnalysisToMapping" HelpID="2069">    
+  </GuideText>
+  <GuideText HelpName="Dlg15" HelpID="2070" Note="replace element">    
+  </GuideText>
+  <GuideText HelpName="PDG_VariableUsage" HelpID="2071">   
+  </GuideText>
+  <GuideText HelpName="GenerateTaskVisits" HelpID="2072">    
+  </GuideText>
+  <GuideText HelpName="Comments" HelpID="2073">    
+  </GuideText>
+  <GuideText HelpName="FindTag" HelpID="2074">    
+  </GuideText>
+  <GuideText HelpName="MatchVariables" HelpID="2075">    
+  </GuideText>
+  <GuideText HelpName="CopyPasteICP" HelpID="2076">    
+  </GuideText>
+  <GuideText HelpName="CopyPasteLog" HelpID="2077">    
+  </GuideText>
+  <GuideText HelpName="PasteICP" HelpID="2078">    
+  </GuideText>
+  <GuideText HelpName="Event_TaskSelection" HelpID="2079">    
+  </GuideText>
+  <GuideText HelpName="ProcDefRename" HelpID="2080">    
+  </GuideText>
+  <GuideText HelpName="CountryLookup" HelpID="2081"> 
+  </GuideText>
+  <GuideText HelpName="StatisticalModelUpload" HelpID="2082">    
+  </GuideText>
+  <GuideText HelpName="PDG_Tasks" HelpID="2083"> 
+  </GuideText>
+  <GuideText HelpName="PDG_TaskSets" HelpID="2084">    
+  </GuideText>
+  <GuideText HelpName="PDG_Benchmarks" HelpID="2085">    
+  </GuideText>
+  <GuideText HelpName="PDG_EditTask" HelpID="2086">    
+  </GuideText>
+  <GuideText HelpName="PDG_EditPeriod" HelpID="2087">
+  </GuideText>
+  <GuideText HelpName="PDG_PlacementHeader">
+  </GuideText>
+  <GuideText HelpName="PDG_EditSubPeriod" HelpID="2088">    
+  </GuideText>
+  <GuideText HelpName="PDG_EditEvent" HelpID="2089">    
+  </GuideText>
+  <GuideText HelpName="PDG_PeriodPlacement" HelpID="2090">    
+  </GuideText>
+  <GuideText HelpName="PDG_SubPeriodPlacement" HelpID="2091">
+  </GuideText>
+  <GuideText HelpName="PDG_PurposeTab" HelpID="2092">
+  </GuideText>
+  <GuideText HelpName="PDG_TimePointWizard" HelpID="2093">
+  </GuideText>
+<GuideText HelpName="Additional_Identification" HelpID="2094">
+  </GuideText>
+  <GuideText HelpName="PDG_Identification" HelpID="2095" Note="Identification">
+  identification guide text goes here
+  </GuideText>
+<GuideText HelpName="PDG_0rganization" HelpID="2096" Note="organization">
+  </GuideText>
+ <GuideText HelpName="PDG_Contacts" HelpID="2097" Note="contacts">
+  </GuideText>
+<GuideText HelpName="PDG_TestArticles" HelpID="2098" Note="test article">
+  </GuideText>
+<GuideText HelpName="PDG_Objectives" HelpID="2099" Note="Objectives">
+  </GuideText>
+<GuideText HelpName="PDG_Outcomes" HelpID="2100" Note="outcomes">
+  </GuideText>
+<GuideText HelpName="PDG_CriteriaSet" HelpID="2101" Note="view criteria set">
+  </GuideText>
+<GuideText HelpName="PDG_StudyArms" HelpID="2102" Note="study arms">
+  </GuideText>
+<GuideText HelpName="PDG_SOA" HelpID="2103" Note="SOA (design)">
+  </GuideText>
+<GuideText HelpName="PDG_Population" HelpID="2104" Note="population">
+  </GuideText>
+<GuideText HelpName="PDG_Concepts" HelpID="2105" Note="concepts">
+  </GuideText>
+<GuideText HelpName="PDG_Restrictions" HelpID="2106" Note="restrictions">
+  </GuideText>  
+  <GuideText HelpName="Metrics/SiteHeader" Note="planned metrics">
+    planned metric guide text goes here
+  </GuideText>
+  <GuideText HelpName="Metrics" >
+  </GuideText>
+  <GuideText HelpName="Metrics/CustomElements" >
+  </GuideText>
+  <GuideText HelpName="/FTICP/StudyDesign/Design/Outcomes/Outcome/CustomElements" >
+  </GuideText>
+  <GuideText HelpName="EligibilityCriteria/SearchHeader" >
+  </GuideText>
+  <GuideText HelpName="EligibilityCriteria/SearchCriteriaHeader" >
+  </GuideText>
+  <GuideText HelpName="IndicationLookup" >
+    Indication lookup: another example
+    of guide text
+    on multi lines
+  </GuideText>
+</GuideTextList>
+<!-- other possible GUIDETEXT >
+		<GuideText HelpName="SDO_StudyDesignMetrics" HelpID="2107" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Identification" HelpID="2108" >
+		</GuideText>
+        <GuideText HelpName="PAGE_StudyConductCompliance" HelpID="2109" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Organizations" HelpID="2110" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Contacts" HelpID="2111" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Objectives" HelpID="2112" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Endpoints" HelpID="2113" >
+		</GuideText>
+        <GuideText HelpName="PAGE_EligibilityCriteria" HelpID="2114" >
+		</GuideText>
+        <GuideText HelpName="PAGE_StudyRestrictions" HelpID="2115" >
+		</GuideText>
+        <GuideText HelpName="PAGE_StudyPopulation" HelpID="2116" >
+		</GuideText>
+        <GuideText HelpName="PAGE_TrialMaterials" HelpID="2117" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Schedule" HelpID="2118" Notes="he schedule screen, (SOA / SOE)" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Arms" HelpID="2119" Notes="The schedule/arm definition screen" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Hypotheses" HelpID="2120" >
+		</GuideText>
+        <GuideText HelpName="PAGE_Analyses" HelpID="2121" >
+		</GuideText>
+        <GuideText HelpName="PAGE_AnalysisSets" HelpID="2122" >
+		</GuideText>
+        <GuideText HelpName="PAGE_InterimAnalyses" HelpID="2123" >
+		</GuideText>
+        <GuideText HelpName="PAGE_StatisticalModels" HelpID="2124" >
+		</GuideText>
+        <GuideText HelpName="PAGE_StudyVariables" HelpID="2125" >
+		</GuideText>
+        <GuideText HelpName="PAGE_PlannedMetrics" HelpID="2126" >
+		</GuideText>
+        <GuideText HelpName="Accoridian_DesignGuide" HelpID="2127" >
+        <GuideText HelpName="Accoridian_DesignOverview" HelpID="2128" >
+		</GuideText>
+        <GuideText HelpName="Accoridian_DesignAlerts" HelpID="2129" >
+		</GuideText>
+        <GuideText HelpName="DesignGuideHelp" HelpID="2130" >
+        <GuideText HelpName="DesignGuideHelpTOC" HelpID="1" >
+		</GuideText>
+        <GuideText HelpName="IndicationLookup" HelpID="2132" >
+		</GuideText>
+        <GuideText HelpName="PAGE_PlannedMetrics_Enrollment" HelpID="2133" >
+		</GuideText>
+        <GuideText HelpName="PAGE_PlannedMetrics_Milestones" HelpID="2134" >
+		</GuideText>
+        <GuideText HelpName="PAGE_CriteriaSearch" HelpID="2135" >
+		</GuideText>
+        <GuideText HelpName="PAGE_CriteriaSet" HelpID="2136" >
+		</GuideText>
+        <GuideText HelpName="DETL_AssociatedOrganization" HelpID="2137" >
+		</GuideText>
+        <GuideText HelpName="DETL_Contact" HelpID="2138" >
+		</GuideText>
+        <GuideText HelpName="DETL_Objective" HelpID="2139" >
+		</GuideText>
+        <GuideText HelpName="DETL_Outcome" HelpID="2140" >
+		</GuideText>
+        <GuideText HelpName="DETL_EligibilityCriteria" HelpID="2141" >
+		</GuideText>
+        <GuideText HelpName="DETL_StudyRestriction" HelpID="2142" >
+		</GuideText>
+        <GuideText HelpName="DETL_TestArticle" HelpID="2143" >
+		</GuideText>
+        <GuideText HelpName="DETL_Dose" HelpID="2144" >
+		</GuideText>
+        <GuideText HelpName="DETL_Schedule" HelpID="2145" >
+		</GuideText>
+        <GuideText HelpName="DETL_Arm" HelpID="2146" >
+		</GuideText>
+        <GuideText HelpName="DETL_Hypothesis" HelpID="2147" >
+		</GuideText>
+        <GuideText HelpName="DETL_Analysis" HelpID="2148" >
+		</GuideText>
+        <GuideText HelpName="DETL_PopulationSet" HelpID="2149" >
+		</GuideText>
+        <GuideText HelpName="DETL_StatModels" HelpID="2150" >
+		</GuideText>
+        <GuideText HelpName="TaskGroup_Ass" HelpID="2151" >
+		</GuideText>
+        <GuideText HelpName="SDO_ProcedureBenchmark" HelpID="2152" >
+		</GuideText>
+        <GuideText HelpName="VariableSearch" HelpID="2153" >
+		</GuideText>
+        <GuideText HelpName="PAGE_ObjectiveSetSearch" HelpID="2154" >
+		</GuideText>
+        <GuideText HelpName="PAGE_ObjectiveSet" HelpID="2155" >
+		</GuideText>
+        <GuideText HelpName="PAGE_OutcomeSetSearch" HelpID="2156" >
+		</GuideText>
+        <GuideText HelpName="PAGE_OutcomeSet" HelpID="2157" >
+		</GuideText>
+        <GuideText HelpName="PDG_VariableMappings" HelpID="2158" >
+		</GuideText>
+        <GuideText HelpName="PDG_TaskDetails" HelpID="2159" >
+		</GuideText>
+        <GuideText HelpName="PDG_PeriodDetails" HelpID="2160" >
+		</GuideText>
+        <GuideText HelpName="PDG_SubPeriodDetails" HelpID="2161" >
+		</GuideText>
+        <GuideText HelpName="PDG_VisitDetails" HelpID="2162" >
+		</GuideText>
+        <GuideText HelpName="PDG_FootnoteDetails" HelpID="2163" >
+		</GuideText>
+        <GuideText HelpName="PDG_TimingDetails" HelpID="2164" >
+		</GuideText>
+        <GuideText HelpName="PDG_TaskVisitDetails" HelpID="2165" >
+		</GuideText>
+		</GuideText>
+        <GuideText HelpName="PDG_ContinuousEventDetails" HelpID="2166" >
+		</GuideText>
+        <GuideText HelpName="PDG_FrequencyDetails" HelpID="2167" >
+		</GuideText>
+        <GuideText HelpName="PDG_SOPDetails" HelpID="2168" >
+		</GuideText>
+        <GuideText HelpName="PDG_TimepointsDetails" HelpID="2169" >
+		</GuideText>
+        <GuideText HelpName="PDG_TimepointsWizard" HelpID="2170" >
+		</GuideText>
+        <GuideText HelpName="PDG_TaskVisitTmepointsDetails" HelpID="2171" >
+		</GuideText>
+        <GuideText HelpName="Dlg24" HelpID="2171" >
+		</GuideText>
+        <GuideText HelpName="Sss01" HelpID="2172" >
+		</GuideText>
+        <GuideText HelpName="CustomReports" HelpID="2173" >
+		</GuideText>
+        <GuideText HelpName="PDG_Stats_Variables_Details" HelpID="2174" >
+		</GuideText>
+        <GuideText HelpName="SDO_StudyBenchmark" HelpID="2175" >
+		</GuideText>
+        <GuideText HelpName="CommentReview_HeaderReviewer" HelpID="2178" >
+		</GuideText>
+        <GuideText HelpName="CommentReview_HeaderAuthor" HelpID="2177" >
+		</GuideText>
+        <GuideText HelpName="CommentDesigner_HeaderAuthor" HelpID="2178" >
+		</GuideText>
+        <GuideText HelpName="CommentReview_PanelReviewer" HelpID="2179" >
+		</GuideText>
+        <GuideText HelpName="CommentReview_PanelAuthor" HelpID="2180" >
+		</GuideText>
+        <GuideText HelpName="CommentDesigner_PanelAuthor" HelpID="2181" >
+		</GuideText>
+        <GuideText HelpName="Comment_Edit" HelpID="2182" >
+		</GuideText>
+        <GuideText HelpName="Comment_View" HelpID="2183" >
+		</GuideText>
+        <GuideText HelpName="CommentReply_Edit" HelpID="2184" >
+		</GuideText>
+        <GuideText HelpName="CommentReply_View" HelpID="2185" >
+		</GuideText>
+        <GuideText HelpName="DosingSchedule_PlanView" HelpID="2186" >
+		</GuideText>
+        <GuideText HelpName="DosingMapping_Details" HelpID="2187" >
+		</GuideText>
+        <GuideText HelpName="DosingMapping_Footnote" HelpID="2188" >
+		</GuideText>
+        <GuideText HelpName="DosingSchedule_Arm" HelpID="2189" >
+		</GuideText>
+        <GuideText HelpName="Treatments_TestArticle" HelpID="2190" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Component" HelpID="2191" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Treatment" HelpID="2192" >
+		</GuideText>
+        <GuideText HelpName="Treatments_TestArticle_Details" HelpID="2193" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Component_Details" HelpID="2194" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Treatment_Details" HelpID="2195" >
+		</GuideText>
+        <GuideText HelpName="Treatments_TestArticle_Page" HelpID="2196" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Component_Page" HelpID="2197" >
+		</GuideText>
+        <GuideText HelpName="Treatments_Treatment_Page" HelpID="2198" >
+		</GuideText>
+<    -->

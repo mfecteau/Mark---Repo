@@ -1,0 +1,621 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Fiammetta Castaldi (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:complexType name="BaseEnum" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="ElementBase">
+				<xs:attribute name="otherText" type="xs:string" use="optional"/>
+				<xs:attribute name="codeSystem" type="xs:string" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- Phase -->
+	<xs:complexType name="CodedPhaseTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CodedPhaseEnum" use="required"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CodedPhaseEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="I"/>
+			<xs:enumeration value="II"/>
+			<xs:enumeration value="III"/>
+			<xs:enumeration value="IV"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="PurposeTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="PurposeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="PurposeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Efficacy"/>
+			<xs:enumeration value="Safety"/>
+			<xs:enumeration value="Regulatory"/>
+			<xs:enumeration value="Screening"/>
+			<xs:enumeration value="Treatment"/>
+			<xs:enumeration value="StandardOfCare"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="StudyPurposeTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="StudyPurposeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="StudyPurposeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Prevention"/>
+			<xs:enumeration value="Treatment"/>
+			<xs:enumeration value="Diagnosis"/>
+			<xs:enumeration value="EducCouncilTrain"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="BlindingTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="BlindingEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="BlindingEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Single-blinded"/>
+			<xs:enumeration value="Double-blinded"/>
+			<xs:enumeration value="Triple-blinded"/>
+			<xs:enumeration value="Open-label"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ControlTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ControlEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ControlEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Active"/>
+			<xs:enumeration value="Placebo"/>
+			<xs:enumeration value="Uncontrolled"/>
+			<xs:enumeration value="Historical"/>
+			<xs:enumeration value="DoseComparison"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AllocationTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AllocationEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AllocationEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Randomized"/>
+			<xs:enumeration value="Unrandomized"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ConfigurationTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ConfigurationEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ConfigurationEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Parallel"/>
+			<xs:enumeration value="Single-group"/>
+			<xs:enumeration value="Cross-over"/>
+			<xs:enumeration value="Factorial"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="OverallStudyOutcomeTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="OverallStudyOutcomeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="OverallStudyOutcomeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Safety"/>
+			<xs:enumeration value="Efficacy"/>
+			<xs:enumeration value="Safety-efficacy"/>
+			<xs:enumeration value="Bio-equivalence"/>
+			<xs:enumeration value="Bio-availability"/>
+			<xs:enumeration value="Pharmacokinetics"/>
+			<xs:enumeration value="Pharmacodynamics"/>
+			<xs:enumeration value="PkPd"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="InvestigationTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="InvestigationEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="InvestigationEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Observational"/>
+			<xs:enumeration value="Interventional"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="OutcomeTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="OutcomeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="OutcomeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="PrimaryEfficacy"/>
+			<xs:enumeration value="SecondaryEfficacy"/>
+			<xs:enumeration value="TertiaryEfficacy"/>
+			<xs:enumeration value="Safety"/>
+			<xs:enumeration value="Pharmacoeconomic"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ObjectiveTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ObjectiveEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ObjectiveEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Primary"/>
+			<xs:enumeration value="Secondary"/>
+			<xs:enumeration value="Tertiary"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CTMaterialTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CTMaterialEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CTMaterialEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Drug"/>
+			<xs:enumeration value="GeneTransfer"/>
+			<xs:enumeration value="Device"/>
+			<xs:enumeration value="Vaccine"/>
+			<xs:enumeration value="Behavior"/>
+			<xs:enumeration value="Procedure"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="RouteOfAdminTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="RouteOfAdminEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="RouteOfAdminEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Intravenous"/>
+			<xs:enumeration value="Topical"/>
+			<xs:enumeration value="Oral"/>
+			<xs:enumeration value="Intramuscular"/>
+			<xs:enumeration value="Subcutaneous"/>
+			<xs:enumeration value="Sublingual"/>
+			<xs:enumeration value="Rectal"/>
+			<xs:enumeration value="Inhalation"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="FormulationTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="FormulationEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="FormulationEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Tablet"/>
+			<xs:enumeration value="Capsule"/>
+			<xs:enumeration value="Liquid"/>
+			<xs:enumeration value="Suspension"/>
+			<xs:enumeration value="Powder"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="EntranceCriterionTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="EntranceCriterionEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="EntranceCriterionEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Inclusion"/>
+			<xs:enumeration value="Exclusion"/>
+			<xs:enumeration value="Undifferentiated"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="EntranceCriterionClassifierTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="EntranceCriterionClassifierEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="EntranceCriterionClassifierEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="GenderTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="GenderEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="GenderEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Male"/>
+			<xs:enumeration value="Female"/>
+			<xs:enumeration value="Both"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AlphaTailTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AlphaTailEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AlphaTailEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="OneTailed"/>
+			<xs:enumeration value="TwoTailed"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CTMaterialRoleTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CTMaterialRoleEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CTMaterialRoleEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="investigationalProduct"/>
+			<xs:enumeration value="comparator"/>
+			<xs:enumeration value="supportiveCare"/>
+			<xs:enumeration value="adjunctTx"/>
+			<xs:enumeration value="placebo"/>
+			<xs:enumeration value="rescue"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ScheduleItemTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ScheduleItemEnum" use="optional"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ScheduleItemEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="screening"/>
+			<xs:enumeration value="treatment"/>
+			<xs:enumeration value="followUp"/>
+			<xs:enumeration value="discontinuationFromIntervention"/>
+			<xs:enumeration value="withdrawalFromStudy"/>
+			<xs:enumeration value="baseline"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="MultiCenteredTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="MultiCenteredEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="MultiCenteredEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="multipleCentered"/>
+			<xs:enumeration value="singleCentered"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CurrencyTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CurrencyEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CurrencyEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="US dollars"/>
+			<xs:enumeration value="Japanese yen"/>
+			<xs:enumeration value="EURO dollars"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CountryCodes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CountryEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CountryEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="US"/>
+			<xs:enumeration value="UK"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ContactRoleTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ContactRoleEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ContactRoleEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="statistician"/>
+			<xs:enumeration value="safetyMonitor"/>
+			<xs:enumeration value="medicalMonitor"/>
+			<xs:enumeration value="projectManagerOrLead"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="OrganizationTypes" mixed="true">
+		<xs:complexContent mixed="true">
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="OrganizationTypeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="OrganizationTypeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="sponsor"/>
+			<xs:enumeration value="cosponsor"/>
+			<xs:enumeration value="cro"/>
+			<xs:enumeration value="centrallab"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="CentralFacilityTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="CentralFacilityEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="CentralFacilityEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="true"/>
+			<xs:enumeration value="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="LocalFacilityTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="LocalFacilityEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="LocalFacilityEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="true"/>
+			<xs:enumeration value="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AcceptsHealthyVolunteersTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AcceptsHealthyVolunteersEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AcceptsHealthyVolunteersEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="true"/>
+			<xs:enumeration value="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="UsesIVRSTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="UsesIVRSEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="UsesIVRSEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="true"/>
+			<xs:enumeration value="false"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="ProcessModes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="ProcessModeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="ProcessModeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="planning"/>
+			<xs:enumeration value="recruiting"/>
+			<xs:enumeration value="execution"/>
+			<xs:enumeration value="analysis"/>
+			<xs:enumeration value="publication"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="EventTypes">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="visit"/>
+			<xs:enumeration value="milestone"/>
+			<xs:enumeration value="randomization"/>
+			<xs:enumeration value="stratification"/>
+			<xs:enumeration value="phoneEncounter"/>
+			<xs:enumeration value="inPatientEncounter"/>
+			<xs:enumeration value="selfTreatment"/>
+			<xs:enumeration value="subjectDiary"/>
+			<xs:enumeration value="continuous"/>
+			<xs:enumeration value="waitingForSAE"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PositionRoles">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="entrance"/>
+			<xs:enumeration value="event"/>
+			<xs:enumeration value="exit"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="TimeUnit">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="weeks"/>
+			<xs:enumeration value="months"/>
+			<xs:enumeration value="years"/>
+			<xs:enumeration value="cycles"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="RestrictedTimeUnit">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="minutes"/>
+			<xs:enumeration value="hours"/>
+			<xs:enumeration value="days"/>
+			<xs:enumeration value="weeks"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnalysisTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AnalysisTypeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AnalysisTypeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="inferential"/>
+			<xs:enumeration value="estimational"/>
+			<xs:enumeration value="descriptive"/>
+			<xs:enumeration value="inferential-estimational"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnalysisRoles">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AnalysisRolesEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AnalysisRolesEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="principal"/>
+			<xs:enumeration value="samplesize"/>
+			<xs:enumeration value="supportive-diagnostic"/>
+			<xs:enumeration value="supportive-sensitivity"/>
+			<xs:enumeration value="supportive-alt-method"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnalyticComparisonTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AnalyticComparisonEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AnalyticComparisonEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="superiority"/>
+			<xs:enumeration value="inferiority"/>
+			<xs:enumeration value="non-inferiority"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="AnalysisSetTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="AnalyticComparisonEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AnalyticSetEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="principal"/>
+			<xs:enumeration value="inferiority"/>
+			<xs:enumeration value="non-inferiority"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="StudyDatumStatus">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="measured"/>
+			<xs:enumeration value="calculated"/>
+			<xs:enumeration value="imputed"/>
+			<xs:enumeration value="incomplete"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="StudyVariableOrigins">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="measurement"/>
+			<xs:enumeration value="derivation"/>
+			<xs:enumeration value="recoding"/>
+			<xs:enumeration value="analysis"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="HypothesisTypeEnum">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="null"/>
+			<xs:enumeration value="alternative"/>
+			<xs:enumeration value="other"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:complexType name="HypothesisTypes">
+		<xs:complexContent>
+			<xs:extension base="BaseEnum">
+				<xs:attribute name="type" type="HypothesisTypeEnum"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:simpleType name="AnalysisClassTypes">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="HypothesisTest"/>
+			<xs:enumeration value="SampleSizeCalc"/>
+			<xs:enumeration value="OtherAnalysis"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

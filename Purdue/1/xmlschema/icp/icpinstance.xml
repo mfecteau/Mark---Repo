@@ -1,0 +1,2438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FTICP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="fticp.xsd" lastLocalSaveDate="0" lastDataCenterSaveDate="0" lastModifiedTime="0" versionID="2.7" soaLicense="true" statsLicense="true">
+  <Administrative>
+    <ProtocolSkeleton SystemName="TrialDetails" InstanceLabel="SystemName">
+      <Organizations />
+      <Contacts />
+      <title>
+        <brief />
+        <full />
+      </title>
+      <protocolID>SystemConfig</protocolID>
+      <phase />
+      <indication />
+      <versionName />
+      <versionType />
+      <versionDate />
+      <externalRegulatoryNumber />
+      <externalRegulatoryGrantor />
+      <otherExternalRegulatoryNumber />
+      <otherExternalRegulatoryGrantor />
+      <description>
+        <brief />
+        <full />
+      </description>
+      <plannedNumberStudyCenters />
+      <conditionKeywords>
+        <value />
+      </conditionKeywords>
+      <codedConditions>
+        <value>""</value>
+      </codedConditions>
+      <countries />
+      <phaseCoded SystemName="Phase Code" InstanceLabel="codeValue" />
+      <isMultiCentered ObjID="" />
+    </ProtocolSkeleton>
+  </Administrative>
+  <StudyDesign>
+    <Design SystemName="Study Design">
+      <Objectives />
+      <Outcomes />
+      <Arms />
+      <masking SystemName="Blinding Type" InstanceLabel="codeValue" codeValue="" />
+      <controlType SystemName="Control Type" InstanceLabel="codeValue" codeValue="" />
+      <methodOfAllocation SystemName="Allocation Method" InstanceLabel="codeValue" codeValue="" />
+      <studyConfiguration SystemName="Configuration" InstanceLabel="codeValue" type="l" />
+      <natureOfInvestigation SystemName="Investigation Type" InstanceLabel="codeValue" codeValue="" />
+      <overallStudyOutcomeType SystemName="Study Outcome Type" InstanceLabel="codeValue" codeValue="" />
+      <studyPurpose SystemName="Study Purpose" InstanceLabel="codeValue" codeValue="" />
+      <subjectUnblindingProcedure />
+      <maintainingBlindProcedure />
+      <comparator />
+      <numberOfArms>0</numberOfArms>
+    </Design>
+  </StudyDesign>
+  <StudyPopulation>
+    <Population SystemName="Population" InstanceLabel="entranceCriteriaSummary">
+      <EligibilityCriteria />
+      <gender SystemName="Gender" InstanceLabel="codeValue" otherText="" codeValue="" />
+      <entranceCriteriaSummary />
+      <acceptsHealthyVolunteersType codeValue="" InstanceLabel="codeValue" SystemName="Accepts Healthy Volunteers" />
+      <minSubjectAge />
+      <maxSubjectAge />
+      <subjectAgeTimeUnit />
+    </Population>
+  </StudyPopulation>
+  <StudySchedule>
+    <Schedules>
+      <Schedule SystemName="Schedule Of Activities" InstanceLabel="soaName" ObjID="600000000">
+        <Periods />
+        <Tasks />
+        <TaskVisits />
+        <AssociatedArms />
+        <soaName>SOA1</soaName>
+        <ArmRules />
+        <TemporalRules />
+        <ClinicalRules />
+        <NegationRules />
+        <CycleRules />
+        <TriggerRules />
+        <sequence>1</sequence>
+        <ContinuousEvents />
+        <UnplannedEvents />
+      </Schedule>
+    </Schedules>
+    <Footnotes />
+  </StudySchedule>
+  <Statistical>
+    <Statistics SystemName="Statistics" InstanceLabel="SystemName">
+      <AnalyticMethods />
+      <evaluableSubjectDef />
+      <intentToTreatPopulation />
+      <clinicallyMeaningfulDifference />
+      <missingDataProcedures />
+      <interimAnalysisInfo />
+      <multipleComparisonsAdjustment />
+      <compositeEndpoints />
+      <statSoftware />
+      <methodForMinimizingBias />
+      <subgroupAnalyses />
+      <subjectReplacementStrategy />
+      <randAndStratDetails />
+      <sampleSizeCalculation SystemName="Sample Size Calculation" InstanceLabel="SystemName">
+        <sampleSize />
+        <sampleSizeCalcMethod />
+        <power />
+        <anticipatedEffectSize />
+        <primaryStudyOutcomeID />
+      </sampleSizeCalculation>
+    </Statistics>
+  </Statistical>
+  <ClinicalTrialMaterials>
+    <ClinicalTrialMaterials />
+    <MaterialsInArms />
+  </ClinicalTrialMaterials>
+  <StudyConduct>
+    <SCG SystemName="Study Conduct" InstanceLabel="SystemName">
+      <criteriaForDiscontinuationFromTestArticle dataType="Composite" />
+      <criteriaForWithdrawalFromStudy dataType="Composite" />
+      <subjectHandlingAfterDiscontinuationFromTestArticle />
+      <subjectHandlingAfterWithdrawalFromStudy />
+      <disallowedMedsPrior dataType="Composite" />
+      <disallowedMedsConcomitant dataType="Composite" />
+      <stoppingRulesForStudy />
+      <restrictionRulesDuringStudy />
+      <definitionOfSAE />
+      <subjectComplianceMeasures />
+      <anticipatedInteractions />
+      <usesIVRSType SystemName="Uses IVRS" InstanceLabel="codeValue" codeValue="" />
+      <subjectPayment />
+    </SCG>
+  </StudyConduct>
+  <Metrics>
+    <PMG SystemName="Planned Metrics" InstanceLabel="SystemName">
+      <description />
+      <plannedEnrollmentTotal />
+      <plannedEnrollmentPerSite />
+      <plannedFirstSubjEnrollDate />
+      <plannedLastSubjEnrollDate />
+      <plannedLastSubjCompleteDate />
+      <plannedRecruitmentPeriod />
+      <plannedNumDropouts />
+      <plannedNumScreeningFailures />
+      <plannedStudyDuration />
+      <plannedScreeningDuration />
+      <plannedTreatmentDuration />
+      <plannedFollowUpDuration />
+      <plannedSubjectParticipationDuration />
+      <totalNumVisits />
+      <plannedNumScreeningVisits />
+      <plannedNumTxVisits />
+      <plannedNumFollowupVisits />
+      <plannedEvaluableSubjCount />
+    </PMG>
+  </Metrics>
+  <StatisticsFull>
+    <VariableDictionary>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751179">
+        <sourceID dataType="String">825</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">LocalParam2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">LP2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">LocalParam2</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">LP2</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751180">
+        <sourceID dataType="String">824</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">LocalParam1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">LP1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">LP1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">LP1</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751181">
+        <sourceID dataType="String">803</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">expected</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">exp</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Expected value (from null hypothesis)</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">exp</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751182">
+        <sourceID dataType="String">860</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">April Param</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">AprilParam</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">April Param</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">AprilParam</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751183">
+        <sourceID dataType="String">839</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">F statistic</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">F</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Group Mean Squares / Error Mean Squares</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">F</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751184">
+        <sourceID dataType="String">838</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Input Vector</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">INVECT</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Input Vector</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Vector">Vector</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">INVECT</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751185">
+        <sourceID dataType="String">796</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">p-value</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">p</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">probability of Type I error</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">p</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751186">
+        <sourceID dataType="String">792</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Prev Deaths</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PrevDeaths</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Deaths up to previous time point</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PrevDeaths</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751187">
+        <sourceID dataType="String">791</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Prev AtRisk</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PrvAtRisk</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Patients at risk at previous time point</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PrvAtRisk</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751188">
+        <sourceID dataType="String">767</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">uno</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">tre</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">due</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">tre</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751189">
+        <sourceID dataType="String">795</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Timepoints</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">TPoints</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Number temporal samples</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">TPoints</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751190">
+        <sourceID dataType="String">794</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">AtRisk</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">AtRisk</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Patients At Risk</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">AtRisk</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751191">
+        <sourceID dataType="String">793</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Prev Censored</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PrevCensor</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Subjects removed up to previous time point</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PrevCensor</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751192">
+        <sourceID dataType="String">864</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Factor 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">F1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">First factor variable used in ANOVA and ANCOVA models. Type of model determines which type of effects (random/fixed) is calculated.</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Coded">Coded</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">F1</oid>
+        <precision dataType="String">500</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751193">
+        <sourceID dataType="String">1391</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">With groups degrees of freedom</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">df error</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">N-k</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">df error</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751194">
+        <sourceID dataType="String">1390</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">F statistic - Factor 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">F fact1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Factor A MS / Error MS</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">F fact1</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751195">
+        <sourceID dataType="String">1389</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">F-statistic Covar1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">F-covar1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">The F-statistics for covariate 1 in ANCOVA model</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">F-covar1</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751196">
+        <sourceID dataType="String">1545</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Probability</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">P</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Probability</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">P</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751197">
+        <sourceID dataType="String">1393</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Covariate 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Covar1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">A continuous variable used as a covariate in ANCOVA or regression</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Covar1</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751198">
+        <sourceID dataType="String">1392</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Covariate 2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Covar2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">A continuous variable used as in an ANCOVA or regression</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Covar2</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751199">
+        <sourceID dataType="String">1388</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">F-statistic Covar2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">F-covar2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">F statistic for Covariate 2 in ANCOVA model</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">F-covar2</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751200">
+        <sourceID dataType="String">867</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Total degrees of freedom</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">df tot</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">N-1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">df tot</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751201">
+        <sourceID dataType="String">866</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Total Sum of Squares</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">SS tot</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Total[Xij - Xbar bar]     
+i indexes groups, j indexes observations in group i</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">SS tot</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751202">
+        <sourceID dataType="String">865</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Response 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">R1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Response variable used in ANOVA/ANCOVA models</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">R1</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751203">
+        <sourceID dataType="String">870</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Within groups sum of squares</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">SS error</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Xij - X bar i     
+
+
+
+
+i indexes groups</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">SS error</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751204">
+        <sourceID dataType="String">869</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Between groups degrees of freedom</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">df groups</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">k-1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">df groups</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751205">
+        <sourceID dataType="String">868</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Between Groups Sum of Squares</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">SS groups</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">X-bar i - X bar bar     
+i indexes groups</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">SS groups</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751206">
+        <sourceID dataType="String">713</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Likelihood-</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Likelihood-</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Negative Likelihood</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Likelihood-</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751207">
+        <sourceID dataType="String">664</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Personal Output</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PO 1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Personal Output</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PO 1</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751208">
+        <sourceID dataType="String">663</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Personal Input</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PI 1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Personal Input</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PI 1</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751209">
+        <sourceID dataType="String">452</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Final Out</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">TestStat</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Final Out</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">TestStat</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751210">
+        <sourceID dataType="String">670</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">ParentParam1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">ParentParam1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">ParentParam1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">ParentParam1</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751211">
+        <sourceID dataType="String">669</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">This is what I want</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">H2 Out</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">wewewe</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">H2 Out</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751212">
+        <sourceID dataType="String">665</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">The Third Man</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">THREEM</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Third Man</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">THREEM</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751213">
+        <sourceID dataType="String">451</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Raw</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">RAW1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">RAW</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Number">Number</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">RAW1</oid>
+        <precision dataType="String">20.10</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751214">
+        <sourceID dataType="String">427</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">observed</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">obs</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Value of Observed</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">3</maxValid>
+        <minValid dataType="String">1</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">obs</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751215">
+        <sourceID dataType="String">345</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Categorical Variable 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Cat Var 1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Dummy variable for any categorical variable</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Coded">Coded</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Cat Var 1</oid>
+        <precision dataType="String">500</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751216">
+        <sourceID dataType="String">804</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">X2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">X2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Chi squared output parameter</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">X2</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751217">
+        <sourceID dataType="String">450</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Out 1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Out 1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Out 1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Out 1</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751218">
+        <sourceID dataType="String">449</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">P2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">P2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">P2  I updated this</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">P2</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751219">
+        <sourceID dataType="String">448</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">P1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">P1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">P1  I updated this</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">P1</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751220">
+        <sourceID dataType="String">673</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">WHERES PARAM 2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">PARAM 2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">PARAM2</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">PARAM 2</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751221">
+        <sourceID dataType="String">709</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">False Negative</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">FN</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">False Negative</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">FN</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751222">
+        <sourceID dataType="String">708</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">True Positive</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">TP</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">True Positive</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">TP</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751223">
+        <sourceID dataType="String">707</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Specificity</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">SPEC</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Specificity</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">SPEC</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751224">
+        <sourceID dataType="String">712</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Likelihood+</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Likelihood</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Positive Likelihood</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Likelihood</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751225">
+        <sourceID dataType="String">711</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Prevalence</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">Prevalence</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Prevalence</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">Prevalence</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751226">
+        <sourceID dataType="String">710</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Sensitivity</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">SENS</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Sensitivity</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">SENS</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751227">
+        <sourceID dataType="String">706</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">False Positive</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">FP</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">False Positive</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">FP</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751228">
+        <sourceID dataType="String">695</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Name V3</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">V3</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Def V3</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">V3</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751229">
+        <sourceID dataType="String">694</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Name V2</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">V2</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Def V2</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">V2</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751230">
+        <sourceID dataType="String">693</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Name V1</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">V1</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Def V1</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">V1</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751231">
+        <sourceID dataType="String">705</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">True Negative</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">TN</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">True Negative</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">0</maxValid>
+        <minValid dataType="String">0</minValid>
+        <studyMax dataType="String">0</studyMax>
+        <studyMin dataType="String">0</studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="Integer">Integer</dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">TN</oid>
+        <precision dataType="String">20</precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751232">
+        <sourceID dataType="String">697</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Name V5</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">V5</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Def V5</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">V5</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+      <StudyVarDef SystemName="Study Variable" InstanceLabel="description/label" ObjID="1342751233">
+        <sourceID dataType="String">696</sourceID>
+        <sourceDomain dataType="String">3</sourceDomain>
+        <description>
+          <brief dataType="String">Name V4</brief>
+          <full dataType="String">
+          </full>
+          <label dataType="String">V4</label>
+        </description>
+        <originType dataType="Coded" codeSystem="StudyVariableOrigins" otherText="" codeValue="parameter">parameter</originType>
+        <definition dataType="String">Def V4</definition>
+        <alias1 dataType="String">
+        </alias1>
+        <alias1CodeSys dataType="String">0</alias1CodeSys>
+        <alias2 dataType="String">
+        </alias2>
+        <alias2CodeSys dataType="String">0</alias2CodeSys>
+        <alias3 dataType="String">
+        </alias3>
+        <alias3CodeSys dataType="String">0</alias3CodeSys>
+        <maxValid dataType="String">
+        </maxValid>
+        <minValid dataType="String">
+        </minValid>
+        <studyMax dataType="String">
+        </studyMax>
+        <studyMin dataType="String">
+        </studyMin>
+        <unitOfMeasureID dataType="String">0</unitOfMeasureID>
+        <unitOfMeasureString dataType="String">
+        </unitOfMeasureString>
+        <isObsolete dataType="String">False</isObsolete>
+        <dataType dataType="Coded" codeSystem="VariableDataTypes" otherText="" codeValue="">
+        </dataType>
+        <dimension dataType="String">
+        </dimension>
+        <imputationMethod dataType="String">
+        </imputationMethod>
+        <imputationFunc dataType="String">
+        </imputationFunc>
+        <oid dataType="String">V4</oid>
+        <precision dataType="String">
+        </precision>
+        <lastRefresh dataType="String">2010-06-20T09:35:25</lastRefresh>
+      </StudyVarDef>
+    </VariableDictionary>
+  </StatisticsFull>
+  <CustomVars SystemName="Custom Vars" InstanceLabel="SystemName" />
+  <RefCounts />
+</FTICP>

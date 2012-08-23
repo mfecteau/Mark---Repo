@@ -1,0 +1,59 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Test Treatment" tabColor="#FCCD63" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="CTMaterialMapping.xml" systemName="TrialMaterials" toolTip="" hidden="false" cdiscIdentifier="">
+  <ElementBucket elementType="TrialMaterials" bucketLabel="Test Treatment" hidden="true" systemName="TrialMaterials" toolTip="" cdiscIdentifier="">
+    <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" elementLabel="Clinical Trial Material" ftElementType="Template" toolTip="A material used in a clinical trial." stickyCase="true" hidden="false" dataType="String" cdiscIdentifier="" default="false">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="CTMaterialName" elementLabel="Name" ftElementType="Element" toolTip="The name of the test/reference treatment" stickyCase="true" hidden="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="CTMaterialType" elementLabel="Type" ftElementType="Element" toolTip="The type of the test/reference treatment" enumList="CTMaterialTypes" dataType="Coded" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="primaryRoleInStudy" elementLabel="Primary Role" ftElementType="Element" toolTip="The primary role for the test/reference treatment in the study" enumList="CTMaterialRoleTypes" dataType="Coded" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="routeOfAdministration" elementLabel="Route" ftElementType="Element" toolTip="The route of administration for the  test/reference treatment" enumList="RouteOfAdminTypes" dataType="Coded" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="formulation" elementLabel="Dosage Form" ftElementType="Element" toolTip="The dosage form of the test/reference treatment" enumList="FormulationTypes" dataType="Coded" hidden="false" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="dose" elementLabel="Dose regimen" ftElementType="Element" toolTip="The dose regimen of the formulation of the test/reference treatment" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="doseUnit" elementLabel="Dosing Unit" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material" hidden="false" stickyCase="false" enumList="WeightTypes" dataType="Coded" cdiscIdentifier="">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="strength" elementLabel="Formulation Strength" ftElementType="Element" toolTip="The strength of the formulation of the  test/reference treatment" hidden="false" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="developmentID" elementLabel="ID" ftElementType="Element" toolTip="The development ID of the clinical trial material" stickyCase="true" hidden="false" cdiscIdentifier="">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="frequencyUnit" elementLabel="Frequency" ftElementType="Element" toolTip="The frequency of the dose" hidden="false" stickyCase="false" enumList="TimeIntervalTypes" dataType="Coded" cdiscIdentifier="">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="accountabilityProcedures" elementLabel="Accountability Procedures" ftElementType="Element" toolTip="The accountability procedures for a particular  test/reference treatment" hidden="true" stickyCase="false" dataType="String" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedCTMaterials/associatedCTMaterial" elementLabel="Assoc. CTMaterial" ftElementType="Collection" toolTip="The ClinicalTrialMaterial(s) this ClinicalTrialMaterial is linked to" assocChooserPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" assocClass="Tspd.Businessobject.ClinicalTrialMaterial" dataType="String" cdiscIdentifier="" hidden="true" stickyCase="false" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="SDTMDomain" elementLabel="Tag for SDTM output" ftElementType="Element" toolTip="[For Internal System Use]" hidden="true" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementLabel="Supplier" elementPath="Supplier" ftElementType="Element" customvar="true" toolTip="" cdiscIdentifier="" dataType="String" hidden="false" stickyCase="false" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/MaterialsInArms/MaterialInArm" elementLabel="clinical trial material" ftElementType="Template" toolTip="The clinical trial material used in a particular study arm" hidden="false" dataType="String" cdiscIdentifier="" stickyCase="false" default="false">
+      <Complex>
+        <ChooserEntry elementPath="roleOfMaterialInArm" elementLabel="Role in Arm" ftElementType="Element" toolTip="The role of the test/reference treatment in a particular arm" enumList="CTMaterialRoleTypes" dataType="Coded" hidden="true" stickyCase="false" cdiscIdentifier="" default="false">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+      </Complex>
+      <ElementStatus mfu="false" docType="Protocol" default="false" required="false" />
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

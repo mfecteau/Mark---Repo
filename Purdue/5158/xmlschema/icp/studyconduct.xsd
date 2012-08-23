@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="enumtype.xsd"/>
+	<xs:complexType name="StudyConductDomain">
+		<xs:all>
+			<xs:element name="SCG">
+				<xs:complexType>
+					<xs:complexContent>
+						<xs:extension base="ConceptLocking">
+							<xs:all>
+								<xs:element name="criteriaForDiscontinuationFromTestArticle" type="xs:string"/>
+								<xs:element name="criteriaForWithdrawalFromStudy" type="xs:string"/>
+								<xs:element name="subjectHandlingAfterDiscontinuationFromTestArticle" type="xs:string"/>
+								<xs:element name="subjectHandlingAfterWithdrawalFromStudy" type="xs:string"/>
+								<xs:element name="disallowedMedsPrior" type="xs:string"/>
+								<xs:element name="disallowedMedsConcomitant" type="xs:string"/>
+								<xs:element name="stoppingRulesForStudy" type="xs:string"/>
+								<xs:element name="restrictionRulesDuringStudy" type="xs:string"/>
+								<xs:element name="definitionOfSAE" type="xs:string"/>
+								<xs:element name="subjectComplianceMeasures" type="xs:string"/>
+								<xs:element name="anticipatedInteractions" type="xs:string"/>
+								<xs:element name="usesIVRSType" type="UsesIVRSTypes"/>
+								<xs:element name="subjectPayment" type="xs:string"/>
+							</xs:all>
+						</xs:extension>
+					</xs:complexContent>
+				</xs:complexType>
+			</xs:element>
+		</xs:all>
+	</xs:complexType>
+</xs:schema>

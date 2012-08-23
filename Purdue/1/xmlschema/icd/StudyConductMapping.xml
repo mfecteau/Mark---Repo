@@ -1,0 +1,57 @@
+<ElementTab editorClass="PDG.Study Conduct" elementType="StudyConduct" file="StudyConductMapping.xml" systemName="StudyConduct" tabColor="#E9CA78" tabLabel="Study Conduct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+	<ElementBucket bucketLabel="Compliance" elementType="StudyConductCompliance" systemName="StudyConductCompliance">
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Disallowed Meds Prior to Study" elementPath="/FTICP/StudyConduct/SCG/disallowedMedsPrior" ftElementType="Element" toolTip="A description of disallowed pre-study medications">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Disallowed Concomitant Meds" elementPath="/FTICP/StudyConduct/SCG/disallowedMedsConcomitant" ftElementType="Element" toolTip="A description of disallowed treatments during the course of the study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Subject Compliance Measures" elementPath="/FTICP/StudyConduct/SCG/subjectComplianceMeasures" ftElementType="Element" toolTip="A description of the steps taken to ensure and document subject compliance">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Anticipated Interactions" elementPath="/FTICP/StudyConduct/SCG/anticipatedInteractions" ftElementType="Element" toolTip="A description of anticipated test article interactions">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry elementLabel="Definition of SAE" elementPath="/FTICP/StudyConduct/SCG/definitionOfSAE" ftElementType="Element" toolTip="A definition of serious adverse event">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="true"/>
+		</ChooserEntry>
+		<ChooserEntry elementLabel="Subject Payment" elementPath="/FTICP/StudyConduct/SCG/subjectPayment" ftElementType="Element" toolTip="Description of payment or compensation to patient for participation in study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry dataType="Coded" elementLabel="This study uses an IVRS" elementPath="/FTICP/StudyConduct/SCG/usesIVRSType" enumList="UsesIVRSTypes" ftElementType="Element" toolTip="Whether or not external automated systems for subject randomization or treatment assignment are used">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+	</ElementBucket>
+	<ElementBucket bucketLabel="Termination" elementType="StudyConductTermination" systemName="StudyConductTermination">
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Criteria for D/C from Test Article" elementPath="/FTICP/StudyConduct/SCG/criteriaForDiscontinuationFromTestArticle" ftElementType="Element" toolTip="The criteria leading to discontinuation of treatment for a subject">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="true"/>
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Criteria for Withdrawal from Study" elementPath="/FTICP/StudyConduct/SCG/criteriaForWithdrawalFromStudy" ftElementType="Element" toolTip="The criteria for withdrawing a subject from the study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="true"/>
+		</ChooserEntry>
+		<ChooserEntry elementLabel="Subject Handling After D/C from Test Article" elementPath="/FTICP/StudyConduct/SCG/subjectHandlingAfterDiscontinuationFromTestArticle" ftElementType="Element" toolTip="The procedures for handling subjects to be discontinued from the study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="true"/>
+		</ChooserEntry>
+		<ChooserEntry elementLabel="Subject Handling After Withdrawal from Study" elementPath="/FTICP/StudyConduct/SCG/subjectHandlingAfterWithdrawalFromStudy" ftElementType="Element" toolTip="The procedures for handling subjects withdrawn from the study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="true"/>
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Stopping Rules for Study" elementPath="/FTICP/StudyConduct/SCG/stoppingRulesForStudy" ftElementType="Element" toolTip="A description of the criteria for discontinuation of the entire study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+<!--ElementStatus docType="StudyGuide" required="false" default="false" mfu="false"/-->
+		</ChooserEntry>
+		<ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Restriction Rules During Study" elementPath="/FTICP/StudyConduct/SCG/restrictionRulesDuringStudy" ftElementType="Element" toolTip="Description of other restriction rules pertaining to subjects during study">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+		<ChooserEntry elementLabel="Subject Replacement Plan" elementPath="/FTICP/StudyConduct/SCG/subjectReplacementStrategy" ftElementType="Element" toolTip="A description of if and how subjects can be replaced">
+			<ElementStatus default="false" docType="Protocol" mfu="false" required="false"/>
+		</ChooserEntry>
+	</ElementBucket>
+	<ElementBucket bucketLabel="Study Restrictions" elementType="StudyRestrictions">
+		<ChooserEntry elementLabel="Study Restriction" elementPath="/FTICP/StudyConduct/SCG/StudyRestrictions/StudyRestriction" ftElementType="Template" toolTip="Study Restrictions">
+			<Complex>
+				<ChooserEntry elementLabel="Text" elementPath="description/full" ftElementType="Element" toolTip="Description of the Restriction"/>
+				<ChooserEntry dataType="Coded" elementLabel="RestrictionType" elementPath="type" enumList="StudyRestrictionTypes" ftElementType="Element" toolTip="Category of the Restriction"/>
+			</Complex>
+		</ChooserEntry>
+	</ElementBucket>
+</ElementTab>

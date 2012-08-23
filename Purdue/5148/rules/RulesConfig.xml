@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Advisory name="">
+	<section path="/ADVERSEEVENTS/AdverseEventsReporting" libraryItem="Phase 1 - Adverse Event Reporting" category ="__readonly" />
+	<section path="/ADVERSEEVENTS/Assessment/CriteriaforAssessingCausality" libraryItem="Phase 1 - Criteria for Assessing Causality" category ="__readonly" />
+	<section path="/INVESTIGATIONALPLAN/Treatments/DietFluidandActivityControl" libraryItem="Phase 1 - Diet and Fluids" category ="__readonly" />
+	<section path="/ADMINISTRATIVEASPECTS/DisclosureandConfidentiality" libraryItem="Phase 1 - Disclosure" category ="__readonly"/>
+	<section path="/ADMINISTRATIVEASPECTS/DiscontinuationofStudy" libraryItem="Phase 1 - Discontinuation of Study" category ="__readonly" />
+	<section path="/ETHICS/EthicalConductoftheStudy" libraryItem="Phase 1 - Ethical Conduct" category ="__readonly" />
+	<section path="/ADMINISTRATIVEASPECTS/AuditingProcedures" libraryItem="Phase 1 - Inspection Procedures" category ="__readonly"/>
+	<section path="/ETHICS/InstitutionalReviewBoardIRBorIndependentEthicsCommitteeIEC" libraryItem="Phase 1 - IRB" category ="__readonly"/>
+	<section path="/ADMINISTRATIVEASPECTS/MonitoringProcedures" libraryItem="Phase 1 - Monitoring Procedures" category ="__readonly"/>
+	<section path="/INVESTIGATIONALPLAN/Treatments/Priorandconcomitanttherapy" libraryItem="Phase 1 - Prior and Concomitant Therapies" category ="__readonly"/>
+	<section path="/ADMINISTRATIVEASPECTS/PublicationofResults" libraryItem="Phase 1 - Publication of Results" category ="__readonly"/>
+	<section path="/ADMINISTRATIVEASPECTS/RecordsRetention" libraryItem="Phase 1 - Records Retention" category ="__readonly"/>
+	<section path="/ETHICS/SubjectInformationandConsent" libraryItem="Phase 1 - Subject Information and Consent" category ="__readonly" />
+	<section path="/INVESTIGATIONALPLAN/Treatments/TreatmentCompliance" libraryItem="Phase 1 - Treatment Compliance" category ="__readonly"/>
+</Advisory>

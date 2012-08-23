@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*******************************************************IMPORTANT NOTE*****************************************************************
+
+Each message below is required by the system. DO NOT DELETE any of the message below.  Text contained within the 
+double brackets [[text]] refer to element values.  Changing or removing these element references will break the macro. 
+Only the formatting and the text surrounding these element references should be configured.  Any other changes will 
+require a change to the logic of the Dynamic Content Object.
+
+**********************************************************************************************************************************************
+ -->
+<Macros>
+
+	
+	**********************************************************************************************************************************************
+	Narrative Macro: 
+		Maps procedure details for a Task Visits
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="MenuTVMapper.Task-Event Details Mapping">
+		<Messages>		
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Text which is displayed in the caption or title bar of the dialog -->
+			<Message name="captiontext">
+				<Text>Period/Sub-Period Narrative</Text>
+			</Message>
+			<!-- Label which appears just above the drop down in the dialog -->
+			<Message name="label1">
+				<Text>Select schedule:</Text>
+			</Message>
+			<!-- Label which appears next to the Task radio button in the dialog -->
+			<Message name="grpbox1">
+				<Text>Task-Events to be Mapped</Text>
+			</Message>
+			<!-- Label which appears next to the Visit radio button in the dialog -->
+			<Message name="currdetails">
+				<Text>Current details</Text>
+			</Message>
+			<Message name="coltext">
+				<Text>Task-Events:</Text>
+			</Message>
+			<Message name="grpbox2">
+				<Text>Standard Text Options</Text>
+			</Message>
+			<Message name="linklabel">
+				<Text>Restore Original text</Text>
+			</Message>
+			<Message name="lsttaskeventdesc">
+				<Text>Options associated with selected Task:</Text>
+			</Message>			
+			<Message name="previewlabel">
+				<Text>Preview</Text>
+			</Message>
+			<!-- Message displayed when the DCO is inserted without any parameters (i.e. as a placeholder) -->
+			<Message name="exception1">
+				<Text>You have unsaved changed. Are you sure you wish to continue without saving?</Text>
+			</Message>
+			<!-- Message displayed when the stored parameter refers to a task or visit which has been deleted from the schedule -->
+			<Message name="exception2">
+				<Text>You have made some selections without appending. Do you wish to append to the current details before proceeding?</Text>
+			</Message>
+			<!-- Message displayed when a visit has been selected which does not have any task events 
+				May include the following element reference(s):
+				[[visit]]
+			-->
+			<Message name="exception3">
+				<Text>No changes have been made to the original text.</Text>
+			</Message>
+			<Message name="exception4">
+				<Text>Are you sure you wish to discard changes?</Text>
+			</Message>
+			
+	</Messages>
+	</Macro>
+	
+	<Macro elementPath="TaskSequence.Task Sequencing">
+		<Messages>		
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Text which is displayed in the caption or title bar of the dialog -->
+			<Message name="captiontext">
+				<Text>Period/Sub-Period Narrative</Text>
+			</Message>
+			<!-- Label which appears just above the drop down in the dialog -->
+			<Message name="soalabel">
+				<Text>Select schedule:</Text>
+			</Message>
+			<Message name="visitlabel">
+				<Text>Select visit:</Text>
+			</Message>
+			<!-- Label which appears next to the Task radio button in the dialog -->
+			<Message name="grpbox1">
+				<Text></Text>
+			</Message>
+				<!-- Label which appears next to the Task radio button in the dialog -->
+			<Message name="grpbox2">
+				<Text></Text>
+			</Message>
+			
+			<!-- Label which appears next to the Visit radio button in the dialog -->
+			<Message name="btnreset">
+				<Text>Reset Numbering</Text>
+			</Message>
+			<Message name="btnsave">
+				<Text>Save</Text>
+			</Message>
+			<Message name="btnclose">
+				<Text>Close</Text>
+			</Message>
+			<Message name="col1text">
+				<Text>Seq</Text>
+			</Message>
+			<Message name="col2text">
+				<Text>Task</Text>
+			</Message>
+			<Message name="lsttaskeventdesc">
+				<Text>Options associated with selected Task:</Text>
+			</Message>			
+			<Message name="previewlabel">
+				<Text>Preview</Text>
+			</Message>
+			<!-- Message displayed when the DCO is inserted without any parameters (i.e. as a placeholder) -->
+			<Message name="exception1">
+				<Text>You have unsaved changed. Are you sure you wish to continue without saving?</Text>
+			</Message>
+	</Messages>
+	</Macro>
+	
+</Macros>

@@ -1,0 +1,1403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Styles>
+    <Style>
+      <Name>1 / 1.1 / 1.1.1</Name>
+      <Description>Indent: Left:  0", Hanging:  0.25", Outline numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Indent at:  0.25", Based on: No List</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>1 / a / i</Name>
+      <Description>Indent: Left:  0", Hanging:  0.25", Outline numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Indent at:  0.25", Based on: No List</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Appendix</Name>
+      <Description>Font: 12 pt, Bold, Page break before, Keep with next, Level 2, Style: Quick Style, Based on: tspdHDR</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>Article / Section</Name>
+      <Description>Outline numbered + Level: 1 + Numbering Style: I, II, III, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Indent at:  0", Based on: No List</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Balloon Text</Name>
+      <Description>Font: (Default) Tahoma, 8 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Bibliography</Name>
+      <Description>Style: Hide until used, Priority: 38, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Block Text</Name>
+      <Description>Indent: Left:  1", Right:  1", Space After:  6 pt, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text</Name>
+      <Description>Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text 2</Name>
+      <Description>Line spacing:  Double, Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text 3</Name>
+      <Description>Font: 8 pt, Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text First Indent</Name>
+      <Description>Indent: First line:  0.15", Style: Linked, Based on: Body Text</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text First Indent 2</Name>
+      <Description>Indent: First line:  0.15", Style: Linked, Based on: Body Text Indent</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text Indent</Name>
+      <Description>Indent: Left:  0.25", Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text Indent 2</Name>
+      <Description>Indent: Left:  0.25", Line spacing:  Double, Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Body Text Indent 3</Name>
+      <Description>Font: 8 pt, Indent: Left:  0.25", Space After:  6 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Book Title</Name>
+      <Description>Font: Bold, Small caps, Expanded by  0.25 pt, Style: Quick Style, Priority: 34, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Caption</Name>
+      <Description>Font: Bold, Indent: Left:  0", Hanging:  0.5", Justified, Line spacing:  Multiple 1.2 li, Space Before:  6 pt, After:  6 pt, Tab stops:  0.25", Left +  0.5", Left +  1", Left +  1.5", Left +  2", Left +  6", Right, Style: Quick Style, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Closing</Name>
+      <Description>Indent: Left:  3", Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Text 1), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 1</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 1), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 2</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 2), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 3</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 3), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 4</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 4), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 5</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 5), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Grid - Accent 6</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 6), Priority: 74, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Text 1), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 1</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 1), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 2</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 2), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 3</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 3), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 4</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 4), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 5</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 5), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful List - Accent 6</Name>
+      <Description>Font color: Text 1, Pattern: Clear (Accent 6), Priority: 73, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Text 1), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 1</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 1), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 2</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 2), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 3</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 3), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 4</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 4), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 5</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 5), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Colorful Shading - Accent 6</Name>
+      <Description>Font color: Text 1, Top: (Single solid line, Background 1,  0.5 pt Line width), Bottom: (Single solid line, Background 1,  0.5 pt Line width), Pattern: Clear (Accent 6), Priority: 72, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Comment Reference</Name>
+      <Description>Font: 8 pt, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Comment Subject</Name>
+      <Description>Font: Bold, Style: Linked, Based on: Comment Text, Following style: Comment Text</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Comment Text</Name>
+      <Description>Font: 10 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Text 1), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 1</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 1), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 2</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 2), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 3</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 3), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 4</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 4), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 5</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 5), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Dark List - Accent 6</Name>
+      <Description>Font color: Background 1, Pattern: Clear (Accent 6), Priority: 71, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Date</Name>
+      <Description>Style: Linked, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Default Paragraph Font</Name>
+      <Description>Style: Hidden</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Document Map</Name>
+      <Description>Font: (Default) Tahoma, Pattern: Clear (Dark Blue), Style: Hidden, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>E-mail Signature</Name>
+      <Description>Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Emphasis</Name>
+      <Description>Font: Italic, Style: Quick Style, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Endnote Reference</Name>
+      <Description>Superscript, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Endnote Text</Name>
+      <Description>Font: 10 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Envelope Address</Name>
+      <Description>Font: (Default) +Headings, 12 pt, Indent: Left:  2", Position: Horizontal: Center, Relative to: Page, Horizontal:  0.13", Vertical: Bottom, Relative to: Margin, Width: Exactly  5.5", Height: Exactly  1.38", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Envelope Return</Name>
+      <Description>Font: (Default) +Headings, 10 pt, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>FollowedHyperlink</Name>
+      <Description>Underline, Font color: Followed Hyperlink, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Footer</Name>
+      <Description>Tab stops:  3.25", Centered +  6.5", Right, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Footnote Reference</Name>
+      <Description>Font: 10 pt, Superscript, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Footnote Text</Name>
+      <Description>Font: 10 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Header</Name>
+      <Description>Tab stops:  3.25", Centered +  6.5", Right, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 1</Name>
+      <Description>Font: 12 pt, Bold, All caps, Kern at 16 pt, Indent: Left:  0", Hanging:  0.3", Space Before:  12 pt, Keep with next, Level 1, Tab stops:  0.3", List tab, Outline numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.3" + Indent at:  0.3", Style: Linked, Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 2</Name>
+      <Description>Font: 12 pt, Bold, Indent: Left:  0", Hanging:  0.4", Keep with next, Level 2, Tab stops:  0.4", List tab, Outline numbered + Level: 2 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.4" + Indent at:  0.4", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 3</Name>
+      <Description>Font: 12 pt, Bold, Indent: Left:  0", Hanging:  0.5", Keep with next, Level 3, Tab stops:  0.5", List tab, Outline numbered + Level: 3 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.5" + Indent at:  0.5", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 4</Name>
+      <Description>Font: 12 pt, Bold, Indent: Left:  0", Hanging:  0.6", Keep with next, Level 4, Tab stops:  0.6", List tab, Outline numbered + Level: 4 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.6" + Indent at:  0.6", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 5</Name>
+      <Description>Font: 12 pt, Indent: Left:  0", Hanging:  0.7", Level 5, Tab stops:  0.7", List tab, Outline numbered + Level: 5 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.7" + Indent at:  0.7", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 6</Name>
+      <Description>Font: 12 pt, Bold, Indent: Left:  0", Hanging:  0.8", Level 6, Tab stops:  0.8", List tab, Outline numbered + Level: 6 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.8" + Indent at:  0.8", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 7</Name>
+      <Description>Font: 12 pt, Indent: Left:  0", Hanging:  0.9", Level 7, Tab stops:  0.9", List tab, Outline numbered + Level: 7 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.9" + Indent at:  0.9", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 8</Name>
+      <Description>Font: 12 pt, Indent: Left:  0", Hanging:  1", Level 8, Tab stops:  1", List tab, Outline numbered + Level: 8 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  1" + Indent at:  1", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading 9</Name>
+      <Description>Font: 12 pt, Indent: Left:  0", Hanging:  1.1", Level 9, Tab stops:  1.1", List tab, Outline numbered + Level: 9 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  1.1" + Indent at:  1.1", Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Heading No TOC</Name>
+      <Description>Font: 12 pt, Bold, Style: Quick Style, Based on: tspdHDR, Following style: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Acronym</Name>
+      <Description>Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Address</Name>
+      <Description>Font: Italic, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Cite</Name>
+      <Description>Font: Italic, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Code</Name>
+      <Description>Font: (Default) Courier New, 10 pt, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Definition</Name>
+      <Description>Font: Italic, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Keyboard</Name>
+      <Description>Font: (Default) Courier New, 10 pt, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Preformatted</Name>
+      <Description>Font: (Default) Courier New, 10 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Sample</Name>
+      <Description>Font: (Default) Courier New, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Typewriter</Name>
+      <Description>Font: (Default) Courier New, 10 pt, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>HTML Variable</Name>
+      <Description>Font: Italic, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Hyperlink</Name>
+      <Description>Underline, Font color: Blue, Style: Hide until used, Priority: 100, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 1</Name>
+      <Description>Indent: Left:  0", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 2</Name>
+      <Description>Indent: Left:  0.15", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 3</Name>
+      <Description>Indent: Left:  0.31", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 4</Name>
+      <Description>Indent: Left:  0.46", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 5</Name>
+      <Description>Indent: Left:  0.61", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 6</Name>
+      <Description>Indent: Left:  0.76", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 7</Name>
+      <Description>Indent: Left:  0.92", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 8</Name>
+      <Description>Indent: Left:  1.07", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index 9</Name>
+      <Description>Indent: Left:  1.22", Hanging:  0.15", Style: Automatically update, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Index Heading</Name>
+      <Description>Font: (Default) +Headings, Bold, Based on: Normal, Following style: Index 1</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Intense Emphasis</Name>
+      <Description>Font: Bold, Italic, Font color: Accent 1, Style: Quick Style, Priority: 22, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Intense Quote</Name>
+      <Description>Font: Bold, Italic, Font color: Accent 1, Indent: Left:  0.65", Right:  0.65", Space Before:  10 pt, After:  14 pt, Border: Bottom: (Single solid line, Accent 1,  0.5 pt Line width, From text:  4 pt Border spacing: ), Style: Linked, Quick Style, Priority: 31, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Intense Reference</Name>
+      <Description>Font: Bold, Underline, Font color: Accent 2, Small caps, Expanded by  0.25 pt, Style: Quick Style, Priority: 33, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid</Name>
+      <Description>Box: (Single solid line, Text 1,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 1</Name>
+      <Description>Box: (Single solid line, Accent 1,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 2</Name>
+      <Description>Box: (Single solid line, Accent 2,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 3</Name>
+      <Description>Box: (Single solid line, Accent 3,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 4</Name>
+      <Description>Box: (Single solid line, Accent 4,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 5</Name>
+      <Description>Box: (Single solid line, Accent 5,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Grid - Accent 6</Name>
+      <Description>Box: (Single solid line, Accent 6,  1 pt Line width), Priority: 63, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List</Name>
+      <Description>Left: (Single solid line, Text 1,  1 pt Line width), Right: (Single solid line, Text 1,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 1</Name>
+      <Description>Left: (Single solid line, Accent 1,  1 pt Line width), Right: (Single solid line, Accent 1,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 2</Name>
+      <Description>Left: (Single solid line, Accent 2,  1 pt Line width), Right: (Single solid line, Accent 2,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 3</Name>
+      <Description>Left: (Single solid line, Accent 3,  1 pt Line width), Right: (Single solid line, Accent 3,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 4</Name>
+      <Description>Left: (Single solid line, Accent 4,  1 pt Line width), Right: (Single solid line, Accent 4,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 5</Name>
+      <Description>Left: (Single solid line, Accent 5,  1 pt Line width), Right: (Single solid line, Accent 5,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light List - Accent 6</Name>
+      <Description>Left: (Single solid line, Accent 6,  1 pt Line width), Right: (Single solid line, Accent 6,  1 pt Line width), Priority: 62, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading</Name>
+      <Description>Font color: Text 1, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 1</Name>
+      <Description>Font color: Accent 1, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 2</Name>
+      <Description>Font color: Accent 2, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 3</Name>
+      <Description>Font color: Accent 3, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 4</Name>
+      <Description>Font color: Accent 4, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 5</Name>
+      <Description>Font color: Accent 5, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Light Shading - Accent 6</Name>
+      <Description>Font color: Accent 6, Priority: 61, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Line Number</Name>
+      <Description>Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List</Name>
+      <Description>Indent: Left:  0", Hanging:  0.25", Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List 2</Name>
+      <Description>Indent: Left:  0.25", Hanging:  0.25", Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List 3</Name>
+      <Description>Indent: Left:  0.5", Hanging:  0.25", Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List 4</Name>
+      <Description>Indent: Left:  0.75", Hanging:  0.25", Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List 5</Name>
+      <Description>Indent: Left:  1", Hanging:  0.25", Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Bullet</Name>
+      <Description>Indent: Left:  0", Hanging:  0.25", Line spacing:  single, Space After:  11 pt, Tab stops:  0.25", List tab, Bulleted + Level: 1 + Aligned at:  0" + Tab after:  0.25" + Indent at:  0.25", Style: Automatically update, Priority: 100, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Bullet 2</Name>
+      <Description>Indent: Left:  1", Line spacing:  single, Space After:  6 pt, Add space between paragraphs of the same style, Tab stops: Not at  1", Bulleted + Level: 1 + Aligned at:  1" + Indent at:  1.25", Priority: 100, Based on: List Bullet 4</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Bullet 3</Name>
+      <Description>Indent: Left:  0.5", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  0.75", List tab, Bulleted + Level: 1 + Aligned at:  0.5" + Tab after:  0.75" + Indent at:  0.75", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Bullet 4</Name>
+      <Description>Indent: Left:  0.75", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  1", List tab, Bulleted + Level: 1 + Aligned at:  0.75" + Tab after:  1" + Indent at:  1", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Bullet 5</Name>
+      <Description>Indent: Left:  1", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  1.25", List tab, Bulleted + Level: 1 + Aligned at:  1" + Tab after:  1.25" + Indent at:  1.25", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Continue</Name>
+      <Description>Indent: Left:  0.25", Space After:  6 pt, Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Continue 2</Name>
+      <Description>Indent: Left:  0.5", Space After:  6 pt, Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Continue 3</Name>
+      <Description>Indent: Left:  0.75", Space After:  6 pt, Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Continue 4</Name>
+      <Description>Indent: Left:  1", Space After:  6 pt, Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Continue 5</Name>
+      <Description>Indent: Left:  1.25", Space After:  6 pt, Don't add space between paragraphs of the same style, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Number</Name>
+      <Description>Indent: Left:  0", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  0.25", List tab, Numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0" + Tab after:  0.25" + Indent at:  0.25", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Number 2</Name>
+      <Description>Indent: Left:  0.25", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  0.5", List tab, Numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0.25" + Tab after:  0.5" + Indent at:  0.5", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Number 3</Name>
+      <Description>Indent: Left:  0.5", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  0.75", List tab, Numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0.5" + Tab after:  0.75" + Indent at:  0.75", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Number 4</Name>
+      <Description>Indent: Left:  0.75", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  1", List tab, Numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  0.75" + Tab after:  1" + Indent at:  1", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Number 5</Name>
+      <Description>Indent: Left:  1", Hanging:  0.25", Don't add space between paragraphs of the same style, Tab stops:  1.25", List tab, Numbered + Level: 1 + Numbering Style: 1, 2, 3, … + Start at: 1 + Alignment: Left + Aligned at:  1" + Tab after:  1.25" + Indent at:  1.25", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>List Paragraph</Name>
+      <Description>Indent: Left:  0.5", Style: Quick Style, Priority: 35, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Macro Text</Name>
+      <Description>Font: (Default) Courier New, Left, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Widow/Orphan control, Tab stops:  0.33", Left +  0.67", Left +  1", Left +  1.33", Left +  1.67", Left +  2", Left +  2.33", Left +  2.67", Left +  3", Left, Style: Linked</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1</Name>
+      <Description>Box: (Single solid line, Text 1,  1 pt Line width), Pattern: Clear (Text 1), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 1</Name>
+      <Description>Box: (Single solid line, Accent 1,  1 pt Line width), Pattern: Clear (Accent 1), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 2</Name>
+      <Description>Box: (Single solid line, Accent 2,  1 pt Line width), Pattern: Clear (Accent 2), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 3</Name>
+      <Description>Box: (Single solid line, Accent 3,  1 pt Line width), Pattern: Clear (Accent 3), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 4</Name>
+      <Description>Box: (Single solid line, Accent 4,  1 pt Line width), Pattern: Clear (Accent 4), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 5</Name>
+      <Description>Box: (Single solid line, Accent 5,  1 pt Line width), Pattern: Clear (Accent 5), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 1 - Accent 6</Name>
+      <Description>Box: (Single solid line, Accent 6,  1 pt Line width), Pattern: Clear (Accent 6), Priority: 68, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Text 1,  1 pt Line width), Pattern: Clear (Text 1), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 1</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 1,  1 pt Line width), Pattern: Clear (Accent 1), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 2</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 2,  1 pt Line width), Pattern: Clear (Accent 2), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 3</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 3,  1 pt Line width), Pattern: Clear (Accent 3), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 4</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 4,  1 pt Line width), Pattern: Clear (Accent 4), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 5</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 5,  1 pt Line width), Pattern: Clear (Accent 5), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 2 - Accent 6</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Box: (Single solid line, Accent 6,  1 pt Line width), Pattern: Clear (Accent 6), Priority: 69, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Text 1), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 1</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 1), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 2</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 2), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 3</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 3), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 4</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 4), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 5</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 5), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Grid 3 - Accent 6</Name>
+      <Description>Top: (Single solid line, Background 1,  0.75 pt Line width), Bottom: (Single solid line, Background 1,  0.75 pt Line width), Pattern: Clear (Accent 6), Priority: 70, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 1</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 2</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 3</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 4</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 5</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 1 - Accent 6</Name>
+      <Description>Font color: Text 1, Priority: 66, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Text 1,  1 pt Line width), Right: (Single solid line, Text 1,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 1</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 1,  1 pt Line width), Right: (Single solid line, Accent 1,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 2</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 2,  1 pt Line width), Right: (Single solid line, Accent 2,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 3</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 3,  1 pt Line width), Right: (Single solid line, Accent 3,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 4</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 4,  1 pt Line width), Right: (Single solid line, Accent 4,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 5</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 5,  1 pt Line width), Right: (Single solid line, Accent 5,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium List 2 - Accent 6</Name>
+      <Description>Font: (Default) +Headings, Font color: Text 1, Left: (Single solid line, Accent 6,  1 pt Line width), Right: (Single solid line, Accent 6,  1 pt Line width), Priority: 67, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1</Name>
+      <Description>Box: (Single solid line, Text 1,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 1</Name>
+      <Description>Box: (Single solid line, Accent 1,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 2</Name>
+      <Description>Box: (Single solid line, Accent 2,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 3</Name>
+      <Description>Box: (Single solid line, Accent 3,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 4</Name>
+      <Description>Box: (Single solid line, Accent 4,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 5</Name>
+      <Description>Box: (Single solid line, Accent 5,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 1 - Accent 6</Name>
+      <Description>Box: (Single solid line, Accent 6,  1 pt Line width), Priority: 64, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 1</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 2</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 3</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 4</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 5</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Medium Shading 2 - Accent 6</Name>
+      <Description>Priority: 65, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Message Header</Name>
+      <Description>Font: (Default) +Headings, 12 pt, Indent: Left:  0", Hanging:  0.75", Border: Top: (Single solid line, Auto,  0.75 pt Line width), Bottom: (Single solid line, Auto,  0.75 pt Line width), Left: (Single solid line, Auto,  0.75 pt Line width, From text:  1 pt Border spacing: ), Right: (Single solid line, Auto,  0.75 pt Line width, From text:  1 pt Border spacing: ), Pattern: 20%, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>MR Body Text</Name>
+      <Description>Space After:  11 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>No List</Name>
+      <Description />
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>No Spacing</Name>
+      <Description>Font: (Default) Arial, 11 pt, Left, Line spacing:  single, Widow/Orphan control, Style: Quick Style, Priority: 2</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Normal</Name>
+      <Description>Font: (Default) Arial, 11 pt, Left, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Widow/Orphan control, Style: Quick Style</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Normal (Web)</Name>
+      <Description>Font: Times New Roman, 12 pt, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Normal Indent</Name>
+      <Description>Indent: Left:  0.5", Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Note Heading</Name>
+      <Description>Style: Linked, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Page Number</Name>
+      <Description>Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Placeholder Text</Name>
+      <Description>Font color: Gray-50%, Style: Hidden, Priority: 100, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Plain Text</Name>
+      <Description>Font: (Default) Courier New, 10 pt, Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Protocol Id</Name>
+      <Description>Style: Quick Style, Based on: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>Quote</Name>
+      <Description>Font: Italic, Font color: Text 1, Style: Linked, Quick Style, Priority: 30, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Salutation</Name>
+      <Description>Style: Linked, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Signature</Name>
+      <Description>Indent: Left:  3", Style: Linked, Based on: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Strong</Name>
+      <Description>Font: Bold, Style: Quick Style, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Style Table Footnote + 7 pt</Name>
+      <Description>Based on: Table Footnote</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>Subtitle</Name>
+      <Description>Font: (Default) +Headings, 12 pt, Centered, Space After:  3 pt, Level 2, Style: Linked, Quick Style, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Subtle Emphasis</Name>
+      <Description>Font: Italic, Font color: Text 1, Style: Quick Style, Priority: 20, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Subtle Reference</Name>
+      <Description>Underline, Font color: Accent 2, Small caps, Style: Quick Style, Priority: 32, Based on: Default Paragraph Font</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table 3D effects 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: Solid (100%) (Gray-25%), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table 3D effects 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: Solid (100%) (Gray-25%), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table 3D effects 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Classic 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Classic 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Classic 3</Name>
+      <Description>Font color: Dark Blue, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  1.5 pt Line width), Right: (Single solid line,  1.5 pt Line width), Pattern: Solid (100%) (Gray-25%), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Classic 4</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  0.75 pt Line width), Right: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Colorful 1</Name>
+      <Description>Font color: White, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line, Turquoise,  0.75 pt Line width), Bottom: (Single solid line, Turquoise,  0.75 pt Line width), Pattern: Solid (100%) (Teal), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Colorful 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: 20% (Yellow Foreground, White Background), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Colorful 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line, Gray-25%,  0.75 pt Line width), Bottom: (Single solid line, Gray-25%,  0.75 pt Line width), Pattern: 25% (Teal Foreground, White Background), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Columns 1</Name>
+      <Description>Font: Bold, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  1.5 pt Line width), Right: (Single solid line,  1.5 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Columns 2</Name>
+      <Description>Font: Bold, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Columns 3</Name>
+      <Description>Font: Bold, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line, Dark Blue,  0.75 pt Line width), Right: (Single solid line, Dark Blue,  0.75 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Columns 4</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Columns 5</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line, Gray-50%,  1.5 pt Line width), Right: (Single solid line, Gray-50%,  1.5 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Contemporary</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line, White,  2.25 pt Line width), Bottom: (Single solid line, White,  2.25 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Elegant</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Footnote</Name>
+      <Description>Font: 9 pt, Keep with next, Keep lines together, Style: Quick Style, Based on: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid</Name>
+      <Description>Box: (Single solid line,  0.5 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Box: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  1.5 pt Line width), Right: (Single solid line,  1.5 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 4</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 5</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 6</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  1.5 pt Line width), Right: (Single solid line,  1.5 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 7</Name>
+      <Description>Font: Bold, Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Grid 8</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Box: (Single solid line, Dark Blue,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line, Teal,  0.75 pt Line width), Right: (Single solid line, Teal,  0.75 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 4</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 5</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Box: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 6</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  0.75 pt Line width), Right: (Single solid line,  0.75 pt Line width), Pattern: 50% (Black Foreground, White Background), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 7</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top: (Single solid line,  0.75 pt Line width), Bottom: (Single solid line,  0.75 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table List 8</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  0.75 pt Line width), Right: (Single solid line,  0.75 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Normal</Name>
+      <Description>Font: (Default) Times New Roman, Left, Line spacing:  single, Widow/Orphan control</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table of Authorities</Name>
+      <Description>Indent: Left:  0", Hanging:  0.15", Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table of Figures</Name>
+      <Description>Priority: 100, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Professional</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Box: (Single solid line,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Simple 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Simple 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Simple 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  1.5 pt Line width), Right: (Single solid line,  1.5 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Subtle 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Subtle 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Left: (Single solid line,  0.75 pt Line width), Right: (Single solid line,  0.75 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Text</Name>
+      <Description>Font: 9 pt, Based on: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>Table Theme</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Box: (Single solid line, Auto,  0.5 pt Line width), Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Web 1</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top:  0.01" + Bottom:  0.01" + Left:  0.01" + Right:  0.01", Box: (Outset, Auto,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Web 2</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top:  0.01" + Bottom:  0.01" + Left:  0.01" + Right:  0.01", Box: (Inset, Auto,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Table Web 3</Name>
+      <Description>Line spacing:  Multiple 1.15 li, Space After:  10 pt, Top:  0.01" + Bottom:  0.01" + Left:  0.01" + Right:  0.01", Top: (Outset, Auto,  0.75 pt Line width), Bottom: (Outset, Auto,  0.75 pt Line width), Pattern: Clear, Based on: Table Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>Title</Name>
+      <Description>Font: (Default) +Headings, 16 pt, Bold, Kern at 14 pt, Centered, Space Before:  12 pt, After:  3 pt, Level 1, Style: Linked, Quick Style, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOA Heading</Name>
+      <Description>Font: (Default) +Headings, 12 pt, Bold, Space Before:  6 pt, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 1</Name>
+      <Description>Style: Automatically update, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 2</Name>
+      <Description>Indent: Left:  0.15", Style: Automatically update, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 3</Name>
+      <Description>Indent: Left:  0.31", Style: Automatically update, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 4</Name>
+      <Description>Indent: Left:  0.46", Style: Automatically update, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 5</Name>
+      <Description>Font: Calibri, Indent: Left:  0.61", Space After:  5 pt, Style: Automatically update, Hide until used, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 6</Name>
+      <Description>Font: Calibri, Indent: Left:  0.76", Space After:  5 pt, Style: Automatically update, Hide until used, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 7</Name>
+      <Description>Font: Calibri, Indent: Left:  0.92", Space After:  5 pt, Style: Automatically update, Hide until used, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 8</Name>
+      <Description>Font: Calibri, Indent: Left:  1.07", Space After:  5 pt, Style: Automatically update, Hide until used, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC 9</Name>
+      <Description>Font: Calibri, Indent: Left:  1.22", Space After:  5 pt, Style: Automatically update, Hide until used, Priority: 40, Based on: Normal, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>TOC Heading</Name>
+      <Description>Font: (Default) +Headings, 16 pt, Not All caps, Indent: Left:  0", First line:  0", Space After:  3 pt, None, Border: Top: (No border), Bottom: (No border), Left: (No border), Right: (No border), Tab stops: Not at  0.3",  No bullets or numbering, Style: Hide until used, Quick Style, Priority: 40, Based on: Heading 1, Following style: Normal</Description>
+      <UseType>Built In</UseType>
+    </Style>
+    <Style>
+      <Name>tspdD</Name>
+      <Description>Font: Not Italic, Border: : (Single solid line,  0.5 pt Line width), Pattern: Clear (Gray-10%)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdDR</Name>
+      <Description>Font: Not Italic, Border: : (Double solid lines,  0.5 pt Line width), Pattern: Clear (Gray-10%)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdHDR</Name>
+      <Description>Border: Top: (Single solid line, Gray-60%,  0.5 pt Line width), Bottom: (Single solid line, Gray-60%,  0.5 pt Line width), Left: (Single solid line, Gray-60%,  3 pt Line width), Right: (Single solid line, Gray-60%,  3 pt Line width), Style: Linked, Based on: Normal</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdHV</Name>
+      <Description>Font: Not Italic, Border: : (Dotted,  0.5 pt Line width)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdNull</Name>
+      <Description>Border: : (No border)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdNV</Name>
+      <Description>Font: Italic, Border: : (Single solid line, Red,  0.5 pt Line width)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdRHV</Name>
+      <Description>Font: Not Italic, Border: : (Double solid lines,  0.5 pt Line width)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdRNV</Name>
+      <Description>Font: Italic, Border: : (Double solid lines, Red,  0.5 pt Line width)</Description>
+      <UseType>In Use</UseType>
+    </Style>
+    <Style>
+      <Name>tspdUndo</Name>
+      <Description>Border: : (No border), Pattern: Clear (Custom Color(RGB(204,236,255)))</Description>
+      <UseType>In Use</UseType>
+    </Style>
+  </Styles>

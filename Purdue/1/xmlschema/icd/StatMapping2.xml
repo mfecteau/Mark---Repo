@@ -1,0 +1,140 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Statistics" elementType="AdvancedStats" file="StatMapping2.xml" systemName="AdvancedStats" tabColor="#ED6A36" tabLabel="Statistics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+  <ElementBucket bucketLabel="Anaysis Sets" elementType="AnalysisSets" hidden="false" systemName="AnalysisSets">
+    <ChooserEntry elementLabel="Population Set" elementPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" ftElementType="Template" toolTip="A subset of the population for analysis">
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Set Type" elementPath="setType" enumList="AnalysisSetTypes" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Set Criteria" elementPath="criteria" ftElementType="Element" toolTip="The criteria for the Analysis Set">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Endpoints" elementPath="classVariables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used to filter for this set">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Analyses" elementType="Analyses" hidden="false" systemName="Analyses">
+    <ChooserEntry elementLabel="Analysis" elementPath="/FTICP/StatisticsFull/Analyses/Analysis" ftElementType="Template" toolTip="An Analysis, HypothesisTest, or Sample Size Calculation">
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Analysis Role" elementPath="analysisRole" enumList="AnalysisRoles" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Analysis Class" elementPath="analysisClass" enumList="AnalysisClassTypes" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Number" elementLabel="Significance Level" elementPath="significanceLevel" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Number" elementLabel="Power" elementPath="power" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Alpha Tail" elementPath="alphaTails" enumList="AlphaTailTypes" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Number" elementLabel="Rejection Region" elementPath="lowerRejectionLimit" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Number" elementLabel="Lower  -  Upper" elementPath="upperRejectionLimit" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Comparison Types" elementPath="comparisonType" enumList="AnalyticComparisonTypes" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Comparisons Adjustment" elementPath="multipleComparisonsAdjustment" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="End Points" elementPath="compositeEndpoints" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Missing Data Procedures" elementPath="missingDataProcedures" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Number" elementLabel="Variability" elementPath="variability" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" assocClass="Tspd.Businessobject.StatisticalModel" elementLabel="StatisticalModels" elementPath="StatisticalModels/StatisticalModel" ftElementType="Collection" toolTip="The StatisticalModel(s) this Analysis is used to establish">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="SampleSizes" elementPath="SampleSizeAnalyses/sampleSizeAnalysis" ftElementType="Collection" toolTip="The SampleSize(s) this Analysis is used to establish">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" assocClass="Tspd.Businessobject.AnalysisPopulationSet" elementLabel="AnalysisSets" elementPath="AnalysisSets/analysisSet" ftElementType="Collection" toolTip="The AnalysisSet(s) this Analysis is used to establish">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Hypotheses" elementType="Hypotheses" hidden="false" systemName="Hypotheses">
+    <ChooserEntry elementLabel="Hypothesis" elementPath="/FTICP/StatisticsFull/Hypotheses/Hypothesis" ftElementType="Template" toolTip="A postulate leading to a study objective">
+      <Complex>
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Significant Difference" elementPath="clinicallySignificantDifference" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective" elementLabel="Objectives" elementPath="AssociatedObjectives/associatedObjective" ftElementType="Collection" toolTip="The objective(s) this Hypothesis is used to establish">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="Analyses" elementPath="AssociatedAnalyses/associatedAnalysis" ftElementType="Collection" toolTip="The analysis/es this Hypothesis is used to establish">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <ChooserEntry dataType="Coded" elementLabel="Type" elementPath="hypothesisType" enumList="HypothesisTypes" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Test Statistic" elementPath="TestStatistics/StudyVarRef" ftElementType="Collection" toolTip="Test Statistics associated with this hypothesis">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+        <!--xs:element name="testStatistic" ref="StudyVarRef" /-->
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Interim Analyses" elementType="InterimAnalyses" hidden="true" systemName="InterimAnalyses">
+    <ChooserEntry elementLabel="Interim Analysis" elementPath="InterimAnalyses/InterimAnalysis" ftElementType="Template" toolTip="tooltip to be defined">
+      <Complex>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Adjustment Rule" elementPath="trialAdjustmentRule" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Timing Adjustment" elementPath="timingAdjustment" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Spending Function" elementPath="alphaSpendingFunction" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Sequence Type" elementPath="interimType" enumList="InterimAnalysisTypes" ftElementType="Element" hidden="true" toolTip="" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Statistical Models" elementType="StatisticalModels" hidden="false" systemName="StatisticalModels">
+    <ChooserEntry elementLabel="StatisticalModel" elementPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" ftElementType="Template" toolTip="Statistical Model">
+      <Complex>
+        <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="Full description of the statistical model" />
+        <ChooserEntry elementLabel="Comp Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="Brief Description of the statistical model" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="Label of the statistical model" />
+        <ChooserEntry elementLabel="Proc Signature" elementPath="procSignature" ftElementType="Element" hidden="false" toolTip="prolog code to invoke an analysis procedure" />
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.EquationMacro.EquationDisplay,FTProtocolDTs.dll" dataType="MathML" elementLabel="Method" elementPath="methodFunc" ftElementType="Element" hidden="false" toolTip="MathML expression for the procedure" />
+        <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Assumptions" elementPath="Assumptions" ftElementType="Element" hidden="false" toolTip="Assumptions under which this model will function" />
+        <ChooserEntry dataType="Coded" elementLabel="Model Type" elementPath="analysisType" enumList="AnalysisTypes" ftElementType="Element" hidden="false" toolTip="The role this analysis plays in the study" />
+        <!--xs:element name="Computation" type="Computation" /-->
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Parameter" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The parameters for this Statistical Model">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementLabel="AnalysisVariableMap" elementPath="/FTICP/StatisticsFull/ModelMappings/AnalysisToModel" ftElementType="Template" hidden="true" toolTip="Mapping between Statistical Models and Analyses">
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Last Element" elementPath="fromID" ftElementType="Element" hidden="true" />
+        <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" />
+        <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Analysis Variables" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used by this analysis">
+          <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        </ChooserEntry>
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Study Variables" elementType="StudyVariables" hidden="false" systemName="StudyVariables">
+    <ChooserEntry detEditorClass="WP_VARIABLE_DETAIL_FORM_ELD02" editorClass="WP_VARIABLE_DETAIL_FORM_ELD02" elementLabel="Study Variable" elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" ftElementType="Template" toolTip="Study Variable Definition">
+      <Complex>
+        <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="Brief description of this variable" />
+        <ChooserEntry elementLabel="Symbol" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="Variable's accepted Symbol" />
+        <ChooserEntry elementLabel="Definition" elementPath="definition" ftElementType="Element" hidden="false" toolTip="Variable Definition" />
+        <ChooserEntry elementLabel="Unit" elementPath="unitOfMeasureString" ftElementType="Element" hidden="false" toolTip="Unit of Measure" />
+        <ChooserEntry elementLabel="Unit ID" elementPath="unitOfMeasureID" ftElementType="Element" hidden="true" toolTip="FT Id for this unit of measure" />
+        <ChooserEntry elementLabel="Valid Min" elementPath="minValid" ftElementType="Element" hidden="false" toolTip="Minimum valid value for this unit of measure" />
+        <ChooserEntry elementLabel="Valid Max" elementPath="maxValid" ftElementType="Element" hidden="false" toolTip="Maximum valid value for this unit of measure" />
+        <ChooserEntry elementLabel="Normal Min" elementPath="studyMin" ftElementType="Element" hidden="false" toolTip="Normal minimum for this study population" />
+        <ChooserEntry elementLabel="Normal Max" elementPath="studyMax" ftElementType="Element" hidden="false" toolTip="Normal maximum for this study population" />
+        <ChooserEntry elementLabel="Panic Low" elementPath="panicLow" ftElementType="Element" hidden="false" toolTip="Minimum threshhold needing attention by investigator" />
+        <ChooserEntry elementLabel="Panic High" elementPath="panicHigh" ftElementType="Element" hidden="false" toolTip="Maximum threshhold needed attention by investigator" />
+        <ChooserEntry elementLabel="SAS Name" elementPath="alias1" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Unused" elementPath="alias2" ftElementType="Element" hidden="false" toolTip="" />
+        <ChooserEntry elementLabel="Unused" elementPath="alias3" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="SAScodesys" elementPath="alias1CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Unused" elementPath="alias2CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Unused" elementPath="alias3CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry dataType="Coded" elementLabel="Data Type" elementPath="dataType" enumList="VariableDataTypes" ftElementType="Element" hidden="false" toolTip="Value data type for this variable" />
+        <ChooserEntry elementLabel="Keys" elementPath="dimension" ftElementType="Element" hidden="false" toolTip="Variables defining the axes of a multi dimensional variable" />
+        <ChooserEntry dataType="Coded" elementLabel="Origin" elementPath="originType" enumList="StudyVariableOrigins" ftElementType="Element" hidden="false" toolTip="Method of instantiation for this variable" />
+        <ChooserEntry elementLabel="Imputation Func" elementPath="imputationFunc" ftElementType="Element" hidden="true" toolTip="Math expression of the manner in which data is imputed for this variable, if missing" />
+        <ChooserEntry elementLabel="Imputation Method" elementPath="imputationMethod" ftElementType="Element" hidden="true" toolTip="Description of method by which data is imputed for this variable, if missing" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

@@ -1,0 +1,7 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Custom Elements" elementType="CustomVars" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="CustomVariables.xml" systemName="CustomVars">
+  <ElementBucket bucketLabel="Custom Elements Tab One" elementType="CustomVars" hidden="true" systemName="CustomVars">
+    <ChooserEntry elementPath="/FTICP/CustomVars/uno" elementLabel="Custom Element Placeholder One" ftElementType="Element" customvar="true" hidden="False" toolTip="Custom Element Placeholder" />
+    <ChooserEntry elementPath="/FTICP/CustomVars/due" elementLabel="Custom Element Placeholder Two" ftElementType="Element" customvar="true" hidden="False" toolTip="Custom Element Placeholder" />
+  </ElementBucket>
+  <ElementBucket bucketLabel="Custom Elements Tab Two" elementType="CustomVars" hidden="true" />
+</ElementTab>

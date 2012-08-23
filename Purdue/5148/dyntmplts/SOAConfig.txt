@@ -1,0 +1,8 @@
+TID = 5148
+headerrow=false
+periodrow=true
+subperiodrow=true
+visitrow= true
+studyday=true
+window=true
+Etid

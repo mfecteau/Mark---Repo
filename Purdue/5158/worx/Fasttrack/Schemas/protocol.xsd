@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:include schemaLocation="ftdesigner.xsd"/>
+	<xs:element name="Protocol">
+		<xs:complexType mixed="true">
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element type="ReferenceType" name="Reference" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element type="PictureReferenceType" name="PictureReference" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="Macro" minOccurs="0" maxOccurs="unbounded"/>
+				<xs:element ref="DocSection" minOccurs="0" maxOccurs="unbounded"/>
+			</xs:choice>
+			<xs:attribute name="sectionLevel" type="xs:int" default="0"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

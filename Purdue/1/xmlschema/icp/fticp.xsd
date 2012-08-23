@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.0 U (http://www.xmlspy.com) by Peter Abramowitsch (Fast Track Systems Inc.) -->
+<!-- COPYRIGHT 2002-2005 FastTrack Systems INC -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:include schemaLocation="icpbase.xsd"/>
+	<xs:include schemaLocation="admin.xsd"/>
+	<xs:include schemaLocation="metrics.xsd"/>
+	<xs:include schemaLocation="design.xsd"/>
+	<xs:include schemaLocation="population.xsd"/>
+	<xs:include schemaLocation="schedule.xsd"/>
+	<xs:include schemaLocation="stats.xsd"/>
+	<xs:include schemaLocation="trialmaterials.xsd"/>
+	<xs:include schemaLocation="treatments.xsd"/>
+	<xs:include schemaLocation="studyconduct.xsd"/>
+	<xs:include schemaLocation="stats2.xsd"/>
+	<xs:include schemaLocation="customvars.xsd"/>
+	<xs:element name="FTICP">
+		<xs:annotation>
+			<xs:documentation>Top Level container for the ICP</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Administrative" type="AdministrativeDomain"/>
+				<xs:element name="StudyDesign" type="DesignDomain"/>
+				<xs:element name="StudyPopulation" type="PopulationDomain"/>
+				<xs:element name="StudySchedule" type="ScheduleDomain"/>
+				<xs:element name="Statistical" type="StatisticalDomain"/>
+				<xs:element name="ClinicalTrialMaterials" type="CTMaterialsConceptCollection"/>
+				<xs:element name="TreatmentStrategies" type="TreatmentDomain"/>
+				<xs:element name="StudyConduct" type="StudyConductDomain"/>
+				<xs:element name="Metrics" type="PlannedMetricsDomain"/>
+				<xs:element name="StatisticsFull" type="StatisticsFullDomain"/>
+				<xs:element name="CustomVars" type="CustomVarsGroup"/>
+				<xs:element name="RefCounts">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="ElementRefCount" nillable="true" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:attribute name="docType" type="xs:string"/>
+									<xs:attribute name="elementPath" type="xs:string"/>
+									<xs:attribute name="refCount" type="xs:integer"/>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="modified" type="xs:boolean"/>
+			<xs:attribute name="lastLocalSaveDate" type="xs:date"/>
+			<xs:attribute name="lastDataCenterSaveDate" type="xs:date"/>
+			<xs:attribute name="lastModifiedTime" type="xs:date"/>
+			<xs:attribute name="versionID" type="xs:positiveInteger"/>
+			<xs:attribute name="soaLicense" type="xs:string"/>
+			<xs:attribute name="statsLicense" type="xs:string"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

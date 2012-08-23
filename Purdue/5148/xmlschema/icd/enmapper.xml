@@ -1,0 +1,428 @@
+<EnumMapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/enmapper.xsd">
+  <EnumType enumName="AcceptsHealthyVolunteersTypes" enumLabel="AcceptsHealthyVolunteersTypes" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="true" userLabel="accepts healthy volunteers" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="false" userLabel="does not accept healthy volunteers" />
+  </EnumType>
+  <EnumType enumName="AdvisoryList" enumLabel="AdvisoryList" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Open" userLabel="open" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Closed" userLabel="closed" />
+  </EnumType>
+  <EnumType enumName="AllocationTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Randomized" userLabel="randomized" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Unrandomized" userLabel="non-randomized" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AlphaTailTypes" enumLabel="AlphaTailTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="OneTailed" userLabel="one-tailed" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="TwoTailed" userLabel="two-tailed" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalysisClassTypes" enumLabel="AnalysisClassTypes" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="HypothesisTest" userLabel="Hypothesis Test" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="SampleSizeCalc" userLabel="Sample Size Calculation" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="OtherAnalysis" userLabel="Other Analysis" />
+  </EnumType>
+  <EnumType enumName="AnalysisRoles">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="principal" userLabel="Principal" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="supportive-diagnostic" userLabel="Diagnostic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="supportive-sensitivity" userLabel="Sensitivity" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="supportive-alt-method" userLabel="AlternateMethod" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="samplesize" userLabel="SampleSize" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalysisTypes" enumLabel="AnalysisTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="inferential" userLabel="Inferential" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="estimational" userLabel="Estimational" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="inferential-estimational" userLabel="InferentialEstimational" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="descriptive" userLabel="Descriptive" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalysisSetTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="principal" userLabel="Principal" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="intenttotreat" userLabel="Intent To Treat" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalyticComparisonTypes" enumLabel="AnalyticComparisonTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="superiority" userLabel="Superiority" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="inferiority" userLabel="Inferiority" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="non-inferiority" userLabel="Non Inferiority" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="BlindingTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Single-blinded" userLabel="single-blinded" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Double-blinded" userLabel="double-blinded" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Triple-blinded" userLabel="triple-blinded" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Open-label" userLabel="open label" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Third-partyblinded" userLabel="third-party blinded" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CentralFacilityTypes" enumLabel="CentralFacilityTypes" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="true" userLabel="central facility" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="false" userLabel="non central facility" />
+  </EnumType>
+  <EnumType enumName="CodedPhaseTypes" enumLabel="CodedPhaseTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="1" userLabel="phase 1" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="1-2" userLabel="phase 1/2" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="2" userLabel="phase 2" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="2-3" userLabel="phase 2/3" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="3" userLabel="phase 3" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="3a" userLabel="phase 3a" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="3b" userLabel="phase 3b" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="4" userLabel="phase 4" />
+  </EnumType>
+  <EnumType enumLabel="Comments Filter Enum" enumName="CommentsFilterEnum" toolTip="Custom enum must match any of the CommentsStateEnum.SystemNames to be a valid filter">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="all" userLabel="All" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="0" userLabel="All Unresolved" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="1" userLabel="All Resolved" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="2" userLabel="All Modified" />
+  </EnumType>
+  <EnumType enumLabel="Comments State Enum" enumName="CommentsStateEnum" toolTip="Custom enum SystemName must start with either 0 or 1 to support the 'unresolved/resolved' binary info">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="0-unresolved" userLabel="Unresolved" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="1-resolved" userLabel="Resolved" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="2-modified" userLabel="Modified" />
+  </EnumType>
+  <EnumType enumName="ConceptOwnerTypes" enumLabel="Concept Owner Types" toolTip="Define the type of lock ownership applicable to the protocol.">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Owner" userLabel="Owner" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="OwnerAuthor" userLabel="Owner Author" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Admin" userLabel="Admin" />
+  </EnumType>
+  <EnumType enumName="ConceptPolicyTypes" enumLabel="Concept Policy Types" toolTip="Define the type of lock applicable to the protocol.">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="StageBased" userLabel="Stage Based" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="SMEBased" userLabel="SME Based" />
+  </EnumType>
+  <EnumType enumName="ConfigurationTypes" enumLabel="ConfigurationTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Parallel" userLabel="parallel-group" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Single-group" userLabel="single-group" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Cross-over" userLabel="cross-over" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Factorial" userLabel="factorial" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Cohort" userLabel="cohort" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="titration" userLabel="dose titration" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="up-titration" userLabel="up-titration" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="down-titration" userLabel="down-titration" />
+    <EnumPair systemName="enriched" userLabel="enriched" customValue="true" preserve="false" hidden="false" />
+    <EnumPair systemName="enrichedparallel" userLabel="enriched parallel" customValue="true" preserve="false" hidden="false" />
+    <EnumPair systemName="escalatingsingledose" userLabel="escalating single dose" customValue="true" preserve="false" hidden="false" />
+    <EnumPair systemName="escalatingmultipledose" userLabel="escalating multiple dose" customValue="true" preserve="false" hidden="false" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ContactRoleTypes" enumLabel="ContactRoleTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="statistician" userLabel="Statistician" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="medicalMonitor" userLabel="Medical Monitor" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="CRA" userLabel="Clinical Research Associate" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="AffiliatePhysician" userLabel="Affiliate Physician" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="DataManager" userLabel="Data Management Coordinator" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="ProjectManagerOrLead" userLabel="Project Manager" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="emergencyContact" userLabel="Emergency Contact" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="clinicalpharmacologist" userLabel="Clinical Pharmacologist" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ControlTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Active" userLabel="active-controlled" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Placebo" userLabel="placebo-controlled" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Uncontrolled" userLabel="non-controlled" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Historical" userLabel="retrospectively-controlled" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="DoseComparison" userLabel="dose-comparison" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="DoubleDummy" userLabel="double-dummy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="ActivePlacebo" userLabel="active-placebo" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CTMaterialRoleTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="investigationalProduct" userLabel="investigational product" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="comparator" userLabel="comparator" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="supportiveCare" userLabel="supportive measures" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="adjunctTx" userLabel="adjunct treatment" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="placebo" userLabel="placebo" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="rescue" userLabel="rescue measures" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="postStudyTreatment" userLabel="post-study treatment" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Palliation" userLabel="palliation" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Prevention" userLabel="prevention" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Activecontrol" userLabel="active control" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CTMaterialTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Drug" userLabel="drug" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="GeneTransfer" userLabel="gene transfer" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Device" userLabel="device" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Vaccine" userLabel="vaccine" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Behavior" userLabel="behavior" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Procedure" userLabel="procedure" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Radiation" userLabel="radiation" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CurrencyTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="USDollars" userLabel="US dollars" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="UKPounds" userLabel="pounds" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Euros" userLabel="euros" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="SwissFrancs" userLabel="Swiss francs" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Yen" userLabel="yen" />
+  </EnumType>
+  <EnumType enumName="DGPurposeTypes">
+    <EnumPair systemName="Regulatory" userLabel="Other regulatory" />
+    <EnumPair preserve="true" systemName="OtherScreening" userLabel="screening" />
+    <EnumPair preserve="true" systemName="OtherTreatment" userLabel="treatment" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="EntranceCriterionClassifierTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Safety" userLabel="safety" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="EntranceCriterionTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Inclusion" userLabel="inclusion" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Exclusion" userLabel="exclusion" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="EventTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="milestone" userLabel="Milestone" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="randomization" userLabel="Randomization" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="stratification" userLabel="Stratification" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="phoneEncounter" userLabel="Telephone Encounter" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="inPatientEncounter" userLabel="In-Patient Encounter" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="selfTreatment" userLabel="Home Treatment" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="subjectDiary" userLabel="Subject Diary" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="continuous" userLabel="Continuous" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="visit" userLabel="Visit" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="SAE" userLabel="SAE" />
+  </EnumType>
+  <EnumType enumName="FoodFastingTypes" enumLabel="Food/Fasting Types" toolTip="Define the food and fasting requirement">
+    <EnumPair systemName="none" userLabel="None" preserve="true" hidden="false" />
+    <EnumPair systemName="withFood" userLabel="With food" preserve="true" hidden="false" />
+    <EnumPair systemName="emptyStomach" userLabel="On an empty stomach" preserve="true" hidden="false" />
+    <EnumPair systemName="fast12Hours" userLabel="Fast for 12 hours" preserve="true" hidden="false" />
+    <EnumPair systemName="fast24hours" userLabel="Fast for 24 hours" preserve="true" hidden="false" />
+  </EnumType>
+  <EnumType enumName="FormulationTypes" enumLabel="FormulationTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Tablet" userLabel="tablet" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Capsule" userLabel="capsule" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Liquid" userLabel="liquid" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Suspension" userLabel="suspension" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Powder" userLabel="powder" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Patch" userLabel="patch" />
+    <EnumPair systemName="solution" userLabel="solution" customValue="true" preserve="false" hidden="false" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumLabel="Frequency Types" enumName="TimeIntervalTypes" toolTip="Clinical names of  time intervals or frequencies">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="QD" userLabel="QD" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="BID" userLabel="BID" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="TID" userLabel="TID" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="PRN" userLabel="PRN" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="q30m" userLabel="q30m" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="q1h" userLabel="q1h" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="q2h" userLabel="q2h" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="q3h" userLabel="q3h" />
+  </EnumType>
+  <EnumType enumName="GenderTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Male" userLabel="male" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Female" userLabel="female" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Both" userLabel="male and female" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="HypothesisTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="nullhypothesis" userLabel="Null" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="alternative" userLabel="Alternative" />
+  </EnumType>
+  <EnumType enumName="InterimAnalysisTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="formal" userLabel="Formal" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="safety" userLabel="Safety" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="adhoc" userLabel="Ad Hoc" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="InvestigationTypes">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="observational" userLabel="observational" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="interventional" userLabel="interventional" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="LocalFacilityTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="true" userLabel="local facility" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="false" userLabel="non-local facility" />
+  </EnumType>
+  <EnumType enumName="MultiCenteredTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="multiplecenters" userLabel="multi center" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="singlecenter" userLabel="single center" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ObjectiveTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Primary" userLabel="primary" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Secondary" userLabel="secondary" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Tertiary" userLabel="tertiary" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Safety" userLabel="safety" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OrganizationTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="sponsor" userLabel="sponsor" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="cosponsor" userLabel="co-sponsor" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="cro" userLabel="CRO" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="centrallab" userLabel="central laboratory" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="governmentalagency" userLabel="governmental agency" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="aro" userLabel="academic research organization" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="cooperativegroup" userLabel="cooperative group" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="datamonitoring" userLabel="data monitoring committee" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="steeringcommittee" userLabel="steering committee" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="centralizedtesting" userLabel="centralized testing center" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="locallab" userLabel="local laboratory" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OutcomeTypes" enumLabel="OutcomeTypes" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="PrimaryEfficacy" userLabel="primary efficacy" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="SecondaryEfficacy" userLabel="secondary efficacy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="TertiaryEfficacy" userLabel="tertiary efficacy" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Safety" userLabel="safety" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacoeconomic" userLabel="pharmacoeconomic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacogenomic" userLabel="pharmacogenomic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacodynamic" userLabel="pharmacodynamic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacokinetic" userLabel="pharmacokinetic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Quality of Life" userLabel="quality of life" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Exploratory" userLabel="exploratory" />
+    <EnumPair systemName="otherEfficacy" userLabel="Other Efficacy" customValue="true" preserve="false" hidden="false" />
+    <EnumPair systemName="otherSafety" userLabel="Other Safety" customValue="true" preserve="false" hidden="false" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OverallStudyOutcomeTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Safety" userLabel="safety" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Safety-efficacy" userLabel="safety and efficacy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Bio-equivalence" userLabel="bioequivalence" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Bio-availability" userLabel="bioavailability" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacokinetics" userLabel="pharmacokinetic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacodynamics" userLabel="pharmacodynamic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="PkPd" userLabel="pharmacokinetic/pharmacodynamic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="PopPk" userLabel="population pharmacokinetic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacoeconomic" userLabel="pharmacoeconomic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacogenomic" userLabel="pharmacogenomic" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="QOL" userLabel="quality of life" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="HealthEcon" userLabel="health economics" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="PositionRoles">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="entrance" userLabel="at event start" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="event" userLabel="at event" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="exit" userLabel="at event end" />
+  </EnumType>
+  <EnumType enumName="PurposeTypes">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Safety" userLabel="safety" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Regulatory" userLabel="regulatory" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Screening" userLabel="screening" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Treatment" userLabel="treatment" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="StandardOfCare" userLabel="standard of care" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacokinetic" userLabel="pharmacokinetics" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacodynamic" userLabel="pharmacodynamics" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacogenomic" userLabel="pharmacogenomics" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Pharmacoeconomic" userLabel="pharmacoeconomics" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="HealthOutcome" userLabel="health outcomes" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="QualityofLife" userLabel="quality of life" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="RestrictedTimeUnit">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="minutes" userLabel="minutes" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="hours" userLabel="hours" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="days" userLabel="days" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="weeks" userLabel="weeks" />
+  </EnumType>
+  <EnumType enumName="RouteOfAdminTypes" enumLabel="RouteOfAdminTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Topical" userLabel="topical" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Oral" userLabel="oral" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Intramuscular" userLabel="intramuscular" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Intravenous" userLabel="intravenous" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Subcutaneous" userLabel="subcutaneous" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Sublingual" userLabel="sublingual" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Rectal" userLabel="rectal" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Inhalation" userLabel="inhalation" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Transdermal" userLabel="transdermal" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ScheduleItemTypes" enumLabel="ScheduleItemTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="screening" userLabel="screening" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="prestudy" userLabel="pre-study" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Baseline" userLabel="baseline" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedbaseline" userLabel="blinded baseline" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="treatment" userLabel="treatment" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedtreatment" userLabel="blinded treatment" />
+    <EnumPair systemName="dosingtreatment" userLabel="dosing-treatment" customValue="true" preserve="false" hidden="false" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Transition" userLabel="transition" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedtransition" userLabel="blinded transition" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Taper" userLabel="taper" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedtaper" userLabel="blinded taper" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="OnTherapy" userLabel="on-therapy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedtherapy" userLabel="blinded on-therapy" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Washout" userLabel="wash-out" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="blindedwashout" userLabel="blinded wash-out" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="followUp" userLabel="follow up" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="DiscontinuationFromIntervention" userLabel="discontinuation from intervention" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="withdrawalFromStudy" userLabel="withdrawal from study" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="StageUnlockReasons" enumLabel="Stage Unlock Reasons" toolTip="Reasons for disengaging a Stage Based lock">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="StageUnlockReason" userLabel="Unlock Required" />
+  </EnumType>
+  <EnumType enumName="StageLockReasons" enumLabel="Stage Lock Reasons" toolTip="Reasons for engaging a Stage Based lock">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="StageLockReason" userLabel="Lock Required" />
+  </EnumType>
+  <EnumType enumName="SMEUnlockReasons" enumLabel="SME Unlock Reasons" toolTip="Reasons for disengaging an SME Based lock">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="SMEUnlockReason" userLabel="Unlock Required" />
+  </EnumType>
+  <EnumType enumName="SMELockReasons" enumLabel="SME Lock Reasons" toolTip="Reasons for engaging an SME Based lock">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="SMELockReason" userLabel="Lock Required" />
+  </EnumType>
+  <EnumType enumName="StudyDatumStatus">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="calculated" userLabel="Calculated" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="imputed" userLabel="Imputed" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="measured" userLabel="Measured" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="incomplete" userLabel="Incomplete" />
+  </EnumType>
+  <EnumType enumName="StudyPurposeTypes" enumLabel="StudyPurposeTypes" toolTip="">
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Prevention" userLabel="prevention" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Treatment" userLabel="treatment" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Diagnosis" userLabel="diagnosis" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="LongTermSafety" userLabel="long-term safety" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="ProofOfConcept" userLabel="proof of concept" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="EducCouncilTrain" userLabel="educational/counseling/training" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="Conception" userLabel="conception" />
+    <EnumPair systemName="pk" userLabel="pharmacokinetic" customValue="true" preserve="false" hidden="false" />
+    <EnumPair systemName="firstinhuman" userLabel="first in human" customValue="true" preserve="false" hidden="false" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="StudyRestrictionTypes" enumLabel="Study Restrictions" toolTip="Types of Restrictions and Conduct Policies of the study">
+    <EnumPair systemName="disallowedMedPrior" userLabel="Disallowed Med Prior" preserve="true" />
+    <EnumPair systemName="disallowedMedsConcomitant" userLabel="Disallowed Med Concomitant" preserve="true" />
+    <EnumPair systemName="criteriaForDiscontinuationFromTestArticle" userLabel="Discontinuation from Test Article" preserve="true" />
+    <EnumPair systemName="criteriaForWithdrawalFromStudy" userLabel="Discontinuation from Study" preserve="true" />
+  </EnumType>
+  <EnumType enumLabel="StudyVariableOrigins" enumName="StudyVariableOrigins" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="analysis" userLabel="Analysis" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="derivation" userLabel="Derivation" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="imputed" userLabel="Imputed" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="measurement" userLabel="Measurement" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="recoded" userLabel="Recoded" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="parameter" userLabel="Parameter" />
+  </EnumType>
+  <!-- do not change system values or remove items -->
+  <EnumType enumName="TimeUnit" enumLabel="TimeUnit" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="hours" userLabel="hours" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="days" userLabel="days" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="weeks" userLabel="weeks" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="years" userLabel="years" />
+    <EnumPair systemName="months" userLabel="months" customValue="true" preserve="false" hidden="false" />
+  </EnumType>
+  <!-- do not change system values or remove items -->
+  <EnumType enumName="UsesIVRSTypes">
+    <EnumPair customValue="false" preserve="true" systemName="true" userLabel="this study uses an IVRS" />
+    <EnumPair customValue="false" preserve="true" systemName="false" userLabel="this study does not use an IVRS" />
+  </EnumType>
+  <!-- do not change system values or remove items -->
+  <EnumType enumLabel="VariableDataTypes" enumName="VariableDataTypes" toolTip="">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Integer" userLabel="Integer" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Number" userLabel="Real" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Coded" userLabel="Coded" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="String" userLabel="Text" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Date" userLabel="Date" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Vector" userLabel="Vector" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Matrix" userLabel="Matrix" />
+    <EnumPair customValue="true" preserve="false" hidden="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="WeightTypes" enumLabel="Weights" toolTip="Define the unit.">
+    <EnumPair systemName="mg" userLabel="mg" preserve="true" hidden="false" />
+    <EnumPair systemName="g" userLabel="g" preserve="true" hidden="false" />
+    <EnumPair systemName="oz" userLabel="oz" preserve="true" hidden="false" />
+  </EnumType>
+</EnumMapper>

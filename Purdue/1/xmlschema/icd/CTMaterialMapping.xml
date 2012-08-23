@@ -1,0 +1,42 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Test Article" tabColor="#FCCD63" editorClass="PDG.Test Article" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="CTMaterialMapping.xml" systemName="TrialMaterials">
+  <ElementBucket elementType="TrialMaterials" bucketLabel="Test Article" hidden="true" systemName="TrialMaterials">
+    <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" elementLabel="Clinical Trial Material" ftElementType="Template" toolTip="A material used in a clinical trial." stickyCase="true">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      <Complex>
+        <ChooserEntry elementPath="CTMaterialName" elementLabel="Test Article Name" ftElementType="Element" toolTip="The name of the clinical trial material" stickyCase="true" />
+        <ChooserEntry elementPath="CTMaterialType" elementLabel="Type" ftElementType="Element" toolTip="The type of the clinical trial material" enumList="CTMaterialTypes" dataType="Coded" />
+        <ChooserEntry elementPath="primaryRoleInStudy" elementLabel="Primary Role" ftElementType="Element" toolTip="The primary role for this clinical trial material in the study" enumList="CTMaterialRoleTypes" dataType="Coded" />
+        <ChooserEntry elementPath="routeOfAdministration" elementLabel="Route" ftElementType="Element" toolTip="The route of administration for the trial material" enumList="RouteOfAdminTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="formulation" elementLabel="Formulation" ftElementType="Element" toolTip="The formulation of the trial material" enumList="FormulationTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="dose" elementLabel="Dose" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+         <ChooserEntry elementPath="doseUnit" elementLabel="Dosing Unit" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material" enumList="WeightTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="frequencyUnit" elementLabel="Frequency" ftElementType="Element" toolTip="The frequency of the dose" enumList="TimeIntervalTypes" dataType="Coded">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="strength" elementLabel="Strength" ftElementType="Element" toolTip="The strength of the formulation of the clinical trial material">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="accountabilityProcedures" elementLabel="Accountability Procedures" ftElementType="Element" toolTip="The accountability procedures for a particular clinical trial material">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="associatedCTMaterials/associatedCTMaterial" elementLabel="Assoc. CTMaterial" ftElementType="Collection" toolTip="The ClinicalTrialMaterial(s) this ClinicalTrialMaterial is linked to" assocChooserPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" assocClass="Tspd.Businessobject.ClinicalTrialMaterial">
+          <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        </ChooserEntry>
+        <ChooserEntry elementPath="SDTMDomain" elementLabel="Tag for SDTM output" ftElementType="Element" toolTip="" hidden="true" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/MaterialsInArms/MaterialInArm" elementLabel="clinical trial material" ftElementType="Template" toolTip="The clinical trial material used in a particular study arm">
+      <Complex>
+        <ChooserEntry elementPath="roleOfMaterialInArm" elementLabel="Role in Arm" ftElementType="Element" toolTip="The role of the trial material in a particular arm" enumList="CTMaterialRoleTypes" dataType="Coded" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

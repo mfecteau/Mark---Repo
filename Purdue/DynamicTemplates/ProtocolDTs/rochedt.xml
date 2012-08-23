@@ -1,0 +1,193 @@
+<ElementBucket bucketLabel="Development Testing" elementType="Macros">
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.PregnancyMacro.Pregnancy,ProtocolDTs.dll" elementLabel="Pregnancy"
+		ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Population" autogenerates="true"
+		toolTip="Pregnancy." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ObjectiveMacro.PrimaryObjective,ProtocolDTs.dll"
+		elementLabel="Primary Objective" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists primary objective." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ObjectiveMacro.SecondaryObjective,ProtocolDTs.dll"
+		elementLabel="Secondary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists secondary objectives." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.BlindingUnblindingMacro.BlindingUnblinding,ProtocolDTs.dll"
+		elementLabel="Blinding and Unblinding" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Concept" autogenerates="true" toolTip="Blinding and Unblinding." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.LabAssessmentsMacro.LabAssessments,ProtocolDTs.dll"
+		elementLabel="Laboratory Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Schedule" autogenerates="true" toolTip="Laboratory Assessments." shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.LabAssessmentsMacro.LabAssessmentsSynopsis,ProtocolDTs.dll"
+		elementLabel="Laboratory Assessments Synopsis" ftElementType="Macro" ftMacroType="CSHARP"
+		protected="true" editorClass="PDG.Schedule" autogenerates="true" toolTip="Laboratory Assessments for Synopsis."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.RandomizationProcsMacro.RandomizationProcs,ProtocolDTs.dll"
+		elementLabel="Randomization Procedures" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Concept" autogenerates="true" toolTip="Creates randomization text based on study blind."
+		shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.RegimenTablesMacro.IPRegimenTable,ProtocolDTs.dll"
+		elementLabel="IP Dose Route Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Table of Dosing per Arm." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.RegimenTablesMacro.PlaceboRegimenTable,ProtocolDTs.dll"
+		elementLabel="Placebo Dose Route Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Table of Dosing per Arm." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.RegimenTablesMacro.ComparatorRegimenTable,ProtocolDTs.dll"
+		elementLabel="Comparator Dose Route Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Table of Dosing per Arm." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.StudyDesignMacro.StudyDesign,ProtocolDTs.dll"
+		elementLabel="Study Design" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule"
+		autogenerates="true" toolTip="Creates text for Study Design - Overview of Study Design Section."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.InclusionCriteria,ProtocolDTs.dll"
+		elementLabel="Inclusion Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Eligibility Criteria" autogenerates="true" toolTip="Lists inclusion criteria."
+		shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.InclusionCriteriaSynopsis,ProtocolDTs.dll"
+		elementLabel="Inclusion Criteria Synopsis" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Eligibility Criteria" autogenerates="true" toolTip="Lists Inclusion Criteria Synopsis."
+		shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.ExclusionCriteria,ProtocolDTs.dll"
+		elementLabel="Exclusion Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Eligibility Criteria" autogenerates="true" toolTip="Lists exclusion criteria."
+		shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.ExclusionCriteriaSynopsis,ProtocolDTs.dll"
+		elementLabel="Exclusion Criteria Synopsis" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Eligibility Criteria" autogenerates="true" toolTip="Lists Exclusion Criteria Synopsis."
+		shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.DrugDispensingLogMacro.DrugDispensingLog,ProtocolDTs.dll"
+		elementLabel="Drug Dispensing Log" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Drug dispensing log." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.CRFMacro.CRF,ProtocolDTs.dll" elementLabel="Case Report Form"
+		ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Identification"
+		autogenerates="true" toolTip="Creates text based on use of EDC." shouldRun="true" />
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.Table.SOATableMacro.SOATable,ProtocolDTs.dll"
+		elementLabel="Study Schedule" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Schedule" autogenerates="true" toolTip="Creates Study Schedule." shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.StudyDesignMacro.StudyDesign,ProtocolDTs.dll"
+		elementLabel="Study Design" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule"
+		autogenerates="true" toolTip="Creates text for Study Design - Overview of Study Design Section."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.InvMedProductMacro.InvMedProduct,ProtocolDTs.dll"
+		elementLabel="Investigational Medicial Product" ftElementType="Macro" ftMacroType="CSHARP"
+		protected="true" editorClass="PDG.Schedule" autogenerates="true" toolTip="Description of administration of Test Articles."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.LengthOfStudyMacro.LengthOfStudy,ProtocolDTs.dll"
+		elementLabel="Length Of Study" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Schedule" autogenerates="true" toolTip="Narrative Study Schedule Study Length."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ScheduleOfProceduresMacro.ScheduleOfProcedures,ProtocolDTs.dll"
+		elementLabel="SOP By Dosing Day" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Schedule" autogenerates="true" toolTip="Prints table of Schedule of Procedures for every Dosing Day"
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ScheduleOfProceduresByPeriodMacro.ScheduleOfProceduresByPeriod,ProtocolDTs.dll"
+		elementLabel="SOP By Treatment Period" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Schedule" autogenerates="true" 
+		toolTip="Prints table of Schedule of Procedures for Every Treatment Period"
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ScheduleOfProceduresByPeriodMacro.BlindedScheduleOfProceduresByPeriod,ProtocolDTs.dll"
+		elementLabel="Blinded SOP By Treatment Period" ftElementType="Macro" ftMacroType="CSHARP"
+		protected="true" editorClass="PDG.Schedule" autogenerates="true" 
+		toolTip="Prints a Blinded Schedule of Procedures Prints table of Schedule of Procedures for Every Treatment Period."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.Table.BlindedSOATableMacro.BlindedSOATable,ProtocolDTs.dll"
+		elementLabel="Blinded Schedule of Assessments" ftElementType="Macro" ftMacroType="CSHARP"
+		protected="true" editorClass="PDG.Schedule" autogenerates="true" toolTip="Creates Blind Study Schedule."
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.TimesByTaskMacro.TimesByTask,ProtocolDTs.dll"
+		elementLabel="TimesByTask" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule"
+		autogenerates="true" toolTip="TimesByTask" shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.StudyDesignOverviewMacro.StudyDesignOverview,ProtocolDTs.dll"
+		elementLabel="Study Design Overview" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Concept" autogenerates="true" toolTip="Summary of the Study Design" shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.PlaceboRegimenMacro.PlaceboRegimen,ProtocolDTs.dll"
+		elementLabel="Placebo Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Dosing Regimenfor the placebo test article"
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ComparatorRegimenMacro.ComparatorRegimen,ProtocolDTs.dll"
+		elementLabel="Comparator Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true"
+		editorClass="PDG.Test Article" autogenerates="true" toolTip="Dosing Regimen for the comparator test article"
+		shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.IPMRegimenMacro.IPMRegimen,ProtocolDTs.dll"
+		elementLabel="IPM Regimen" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Test Article"
+		autogenerates="true" toolTip="Dosing Regimen for the investigational product" shouldRun="true">
+		<Complex>
+			<ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy"
+				elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+		</Complex>
+	</ChooserEntry>
+	
+	<ChooserEntry elementPath="TspdCfg.Purdue.DynTmplts.ICPXSLTMacro.ICPXSLT,ProtocolDTs.dll" elementLabel="ICPXSLT" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="" autogenerates="true" toolTip="ICPXSLT." shouldRun="true"/>
+	
+</ElementBucket>

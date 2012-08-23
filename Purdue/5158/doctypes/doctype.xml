@@ -1,0 +1,9 @@
+<DocTypes>
+  <Category systemName="Design" userName="Design" amendmentType="false" />
+  <Category systemName="studydesign" userName="Study Design Document" amendmentType="false">
+    <DocTypeEntry systemName="StudyDesignDoc" userName="Study Design Document" fileName="studydesigndoc.doc" description="" />
+  </Category>
+  <Category systemName="Protocol" userName="Protocol" amendmentType="true">
+    <DocTypeEntry systemName="protocol" userName="Protocol" description="The full protocol document" fileName="protocol.doc" />
+  </Category>
+</DocTypes>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+
+<rulescfg>
+
+	<category id="protocol_design" labelKey="Protocol Design"/>
+	<category id="regulatory" labelKey="Regulatory"/>
+	<category id="sop" labelKey="SOP"/>
+	<category id="unused_elements" labelKey="Unused Elements"/>
+
+
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Visit with no activities" 
+		id="r1" 
+		source="TspdCfg.FastTrack.Rules.ADV01_VisitWithNoActivities,FTRules.dll" 
+		type="CSHARP">
+		To close this advisory, use the Schedule panel of the PDG and make sure that there is at least one check for each Task/Visit.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Task without a Purpose" 
+		id="r2" 
+		source="TspdCfg.FastTrack.Rules.ADV02_TaskWithoutAPurpose,FTRules.dll" 
+		type="CSHARP">
+		Best Practice dictates that all performed observations and interventions must have a purpose.  Use the Task-Visit Detail Pane to specify a purpose for each activity at each visit.   Note:  You can copy properties and then paste them into a series of TaskVisits - see Help
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Unused Activity" 
+		id="r3" 
+		source="TspdCfg.FastTrack.Rules.ADV03_UnusedActivity,FTRules.dll" 
+		type="CSHARP">
+		If this activity is not being used at a visit or encounter, it should be deleted from the schedule.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Outcome Without a Measure" 
+		id="r4" 
+		source="TspdCfg.FastTrack.Rules.ADV04_OutcomeWithoutAMeasure,FTRules.dll" 
+		type="CSHARP">
+		TaskVisit Purposes on the TaskVisit Detail Pane are the way you establish the as-measured-by relationship with an Outcome.
+	</rule>
+	<rule categories="regulatory" 
+		debug="false" 
+		displayName="No Discontinuation Encounter" 
+		id="r5" 
+		source="TspdCfg.FastTrack.Rules.ADV05_NoDiscontinuationEncounter,FTRules.dll" 
+		type="CSHARP">
+		Your SOP requires a discontinuation visit.  Please use ScheduleItemType (Epoch) to indicate which visit is your discontinuation visit.
+	</rule>
+	<rule categories="regulatory" 
+		debug="false" 
+		displayName="No Withdrawal From Study Period" 
+		id="r6" 
+		source="TspdCfg.FastTrack.Rules.ADV06_NoWithdrawlFromStudyPeriod,FTRules.dll" 
+		type="CSHARP">
+		Your SOP should include a special visit column indicating the tasks that should be done for a subject who is withdrawing from the study. Please use ScheduleItemType (Epoch) to set this attribute.
+	</rule>
+	<rule categories="unused_elements" 
+		debug="false" 
+		displayName="Missing or Unreferenced Protocol Elements" 
+		id="r7" 
+		source="TspdCfg.FastTrack.Rules.ADV07_MissingOrUnreferencedProtocolElements,FTRules.dll" 
+		type="CSHARP">
+		A required element is not being used in the Protocol either because it has no value or is not present in the document..  Each required element should be embedded into its appropriate location in the document and must be given a non-null value. This can be done by in-place editing, or through the Design Guide
+	</rule>
+
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="More Than One Site for a Single Center Study" 
+		id="or1" 
+		source="TspdCfg.FastTrack.Rules.OR01_MoreThanOneSiteForASingleCenteredStudy,FTRules.dll" 
+		type="CSHARP">
+		The Study Type has been defined as single center, but the planned number of sites is greater than one.  You can correct the number, or change the Study Type to muli-center.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Grantor is not Defined" 
+		id="or2" 
+		source="TspdCfg.FastTrack.Rules.OR02_GrantorIsNotDefined,FTRules.dll" 
+		type="CSHARP">
+		A Grantor Number is present, but a Grantor has not been defined.  You can add a Grantor or remove the Grantor number to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Other Grantor Requires an Other Grantor Number" 
+		id="or3" 
+		source="TspdCfg.FastTrack.Rules.OR03_OtherGrantorRequiresAnOtherGrantorNumber,FTRules.dll" 
+		type="CSHARP">
+		The Other Grantor Number has been defined, but the Other Grantor has not been defined.  You can define an Other Grantor or remove the Other Grantor number to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Healthy Volunteers Accepted" 
+		id="or4" 
+		source="TspdCfg.FastTrack.Rules.OR04_HealthyVolunteersAccepted,FTRules.dll" 
+		type="CSHARP">
+		The study is not a phase 1, 1a, or 1b, but accepts healthy volunteers.  If this information is not correct, you can change the phase to something beyond 1b or change the Accepts Healthy Volunteers value.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Primary Role of Investigational Product is Missing" 
+		id="or5" 
+		source="TspdCfg.FastTrack.Rules.OR05_PrimaryRoleOfInvestigationalProductIsMissing,FTRules.dll" 
+		type="CSHARP">
+		At least one Test Article must have the role of Investigational Product. You should change the appropriate Test Article&apos;s primary role to Investigational Product.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Placebo exists but it is not a Placebo Controlled Study" 
+		id="or6" 
+		source="TspdCfg.FastTrack.Rules.OR06_PlaceboExistsButItIsNotAPlaceboControlledStudy,FTRules.dll" 
+		type="CSHARP">
+		A test article is defined as a placebo, but the study is not a placebo controlled study.  You can change the primary role of the test article or modify the control type to be placebo-controlled to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Placebo-controlled study without a Placebo" 
+		id="or7" 
+		source="TspdCfg.FastTrack.Rules.OR07_PlaceboControlledStudyWithoutAPlacebo,FTRules.dll" 
+		type="CSHARP">
+		The control type of the study has been defined as placebo-controlled, but no TestArticle has been defined with the role: Placebo.  You can modify the primary role of the appropriate Test Article, or change the control type to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Outcome without Objective" 
+		id="or8" 
+		source="TspdCfg.FastTrack.Rules.OR08_OutcomeWithoutObjective,FTRules.dll" 
+		type="CSHARP">
+		This outcome appears to measure something that is never used to substantiate an objective.  If this is an error, please use the Outcomes Tab of the PDG to create associations with Objectives
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Open Label with Blinding or Unblinding Information" 
+		id="or9" 
+		source="TspdCfg.FastTrack.Rules.OR09_OpenLabelWithBlindingOrUnblindingInformation,FTRules.dll" 
+		type="CSHARP">
+		The blinding type for this study is Open Label, but information has been providing for Blinding or Unblinding.  You can modify the Blinding Type or remove the information regarding Blinding/Unblinding procedures to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Study Arm not assigned to an SOA" 
+		id="or10" 
+		source="TspdCfg.FastTrack.Rules.OR10_StudyArmNotAssignedToAnSOA,FTRules.dll" 
+		type="CSHARP">
+		A study arm has been defined for this study that has not been assigned to a Schedule of Activities.  You can assign the Study Arm  to the SOA in the Design tab, or remove the Study Arm to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="SOA Without a Study Arm" 
+		id="or11" 
+		source="TspdCfg.FastTrack.Rules.OR11_SOAWithoutAStudyARM,FTRules.dll" 
+		type="CSHARP">
+		An SOA has been defined, but it does not have a study arm assiged to it.  You can assign a study arm to the SOA in the Design tab, or remove the extra SOA to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Test Article Not Used In Arm" 
+		id="or12" 
+		source="TspdCfg.FastTrack.Rules.OR12_TestArticleNotUsedInArm,FTRules.dll" 
+		type="CSHARP">
+		In the Study Design tab, associate each TestArticle with one or more study Arms
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Enrolled subjects by Arm not equal to Total Enrolled Subjects" 
+		id="or13" 
+		source="TspdCfg.FastTrack.Rules.OR13_EnrolledSubjectsByArmNotEqualToTotalEnrolledSubjects,FTRules.dll" 
+		type="CSHARP">
+		The participants assigned to each arm of the study is not equal to the Planned Enrollment.  You can go to the Study Design tab to modify the participants for each arm, or you can go to the Planned Metrics tab to modify the Planned Enrollment.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Sample Size not equal to Evaluable Subjects" 
+		id="or14" 
+		source="TspdCfg.FastTrack.Rules.OR14_SampleSizeGreaterThanEvaluableSubjects,FTRules.dll" 
+		type="CSHARP">
+		The Sample Size for this study is greater than the # of Evaluable Subjects.  You can go to the PopulationSets tab of the Statistics section and correct the sample sizes in your Sample Size Analysis, or you can go the Planned Metrics tab to correct the # of Evaluable Subjects.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Evaluable Subjects not Equal to Planned Enrollment Minus Planned Withdrawals and Screening Failures" 
+		id="or15" 
+		source="TspdCfg.FastTrack.Rules.OR15_EvaluableSubjectsNotEqualToPlannedEnrollmentMinusPlannedWithdrawalsAndScreeningFailures,FTRules.dll" 
+		type="CSHARP">
+		The # of Evaluable Subjects should be consistent with Planned Enrollment minus Withdrawals and Screening Failures.  You can go the Planend Metrics tab to correct this issue.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Enrolled Subjects Not Equal to # of Sites Multipled by # of Subjects per  Site" 
+		id="or16" 
+		source="TspdCfg.FastTrack.Rules.OR16_EnrolledSubjectsNotEqualToNumberOfSitesMultipliedByNumberOfSubjectsPerSite,FTRules.dll" 
+		type="CSHARP">
+		The number of Enrolled Subjects does not equal the number of sites multipled by the number of subkects per site.  You can go the Planned Metrics tab to correct the Enrolled Subjects or Enrollement per site values.  You can also go the Administration tab and correct the Planned # of Sites.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Withdrawal Criteria Without Withdrawal Event" 
+		id="or17" 
+		source="TspdCfg.FastTrack.Rules.OR17_WithdrawalCriteriaWithoutWithdrawalEvent,FTRules.dll" 
+		type="CSHARP">
+		Withdrawal Criteria have been defined, but a Withdrawal from Study visit event has not been defined.  You can go to the Study Conduct tab and remove the Withdrawa Criteria, or you can go to the Schedule tab and define an Event with a Trial Epoch of Withdrawal From Study.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Withdrawal Event Without Withdrawal Criteria" 
+		id="or18" 
+		source="TspdCfg.FastTrack.Rules.OR18_WithdrawalEventWithoutWithdrawalCriteria,FTRules.dll" 
+		type="CSHARP">
+		A Withdrawal Event has been defined, but there are no Criteria for Withdrawal.  You can go to the Study Conduct tab to define the Withdrawal Criteria, or to the Schedule tab to remove or re-classify the Event with a Trial Epoch of Withdrawal From Study.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Objective without Outcome" 
+		id="or20" 
+		source="TspdCfg.FastTrack.Rules.OR20_ObjectiveWithoutOutcome,FTRules.dll" 
+		type="CSHARP">
+		In the Outcomes Tab of the Design area of the Design Guide, you can associate each Outcome with the Objectives it substantiates.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Schema Design Event Not Connected to Another Event" 
+		id="or21" 
+		source="TspdCfg.FastTrack.Rules.OR21_SchemaDesignEventNotConnectedToAnotherEvent,FTRules.dll" 
+		type="CSHARP">
+		In Schema Designer, it is expected that each defined Event or Period be connected to another Event in at least one arm.  Go to Schema Designer and review each arm to make sure all events are used in at least one arm.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Unused Variable" 
+		id="or22" 
+		source="TspdCfg.FastTrack.Rules.OR22_UnusedVariable,FTRules.dll" 
+		type="CSHARP">
+		Each variable must be generated  by a Task in the SOA, or is  generated as an output of a Statistical Model through an associated Analysis.
+	</rule>
+	<rule categories="protocol_design" 
+		debug="false" 
+		displayName="Variable associated with Hypothesis is not generated" 
+		id="or23" 
+		source="TspdCfg.FastTrack.Rules.OR23_VariableAssociatedWithHypothesisIsNotGenerated,FTRules.dll" 
+		type="CSHARP">
+		An Hypothesis refers to an Analysis variable that is not generated by any Analysis.  Check if you have assigned the variable to the appropriate analysis or if you have Linked the Hypothesis with the incorrect analysis variable
+	</rule>
+	<rule categories="unvar" 
+		debug="false" 
+		displayName="Unused Variable" 
+		id="unvar1" 
+		source="TspdCfg.FastTrack.Rules.UnusedVariables,FTRules.dll" 
+		type="CSHARP">
+		A variable has been defined with no role either as input or output or in association with any other object.  Perhaps it should be removed.  Use the Tools Panel of the Design Guide.
+	</rule>
+	<rule id="TrialEpoch" type="CSHARP" displayName="Trial Epoch" source="TspdCfg.FastTrack.Rules.TrialEpoch,FTRules.dll" categories="protocol_design" debug="false">In the schedule of activities it is expected that the Trial Epoch for a given event or sub-period would match the Trial Epoch for the period in which the event or sub-period belongs. Ensure that the correct Trial Epoch has been assigned to the corresponding period, sub-period and/or event.</rule>
+</rulescfg>

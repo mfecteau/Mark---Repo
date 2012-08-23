@@ -1,0 +1,8 @@
+ReportType=/5148
+DocSection=/TitlePage
+DocSection=/SYNOPSIS
+DocSection=/LISTOFABBREVIATIONSANDDEFINITIONOFTERMS
+DocSection=/INVESTIGATIONALPLAN/StudyProcedures/ScheduleofActivities
+LastSection=/SIGNATUREPAGEFORINVESTIGATORS
+EndReport
+

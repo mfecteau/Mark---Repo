@@ -1,0 +1,50 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Planned Metrics" tabColor="#88984F" editorClass="PDG.Planned Metrics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="MetricsMapping.xml" systemName="Metrics">
+  <ElementBucket bucketLabel="Planned Metrics" elementType="Metrics" systemName="Metrics">
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEnrollmentTotal" elementLabel="Enrolled" ftElementType="Element" toolTip="The total planned number of subjects enrolled in the study" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumScreeningFailures" elementLabel="Screen Failures" ftElementType="Element" toolTip="The anticipated number of subjects who will fail to meet eligibility criteria during screening" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumDropouts" elementLabel="Dropouts" ftElementType="Element" toolTip="The anticipated number of subjects who will drop out of the study" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEvaluableSubjCount" elementLabel="Evaluable" ftElementType="Element" toolTip="The anticipated number of evaluable subjects" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEnrollmentPerSite" elementLabel="Enrollment / Site" ftElementType="Element" toolTip="The anticipated number of subjects planned per site" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFirstSubjEnrollDate" elementLabel="First Enrolled" ftElementType="Element" toolTip="The anticipated date of enrollment of the first subject in the study" dataType="Date">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedLastSubjEnrollDate" elementLabel="Last Enrolled" ftElementType="Element" toolTip="The anticipated date of enrollment of the last subject in the study" dataType="Date">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedLastSubjCompleteDate" elementLabel="Last Complete" ftElementType="Element" toolTip="The anticipated date of the last visit for the last subject enrolled" dataType="Date">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedStudyDuration" elementLabel="Total Study Duration" ftElementType="Element" toolTip="The maximum time a study will run" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedStudyDurationTimeUnit" elementLabel="Study Duration Time Unit" ftElementType="Element" toolTip="Unit of time for Study Duration" enumList="TimeUnit" dataType="Coded" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedScreeningDuration" elementLabel="Screening Duration" ftElementType="Element" toolTip="The planned duration of the screening period" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedScreeningDurationTimeUnit" elementLabel="Screening Duration Time Unit" ftElementType="Element" toolTip="Unit of time for screening period" enumList="TimeUnit" dataType="Coded" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedTreatmentDuration" elementLabel="Treatment Duration" ftElementType="Element" toolTip="The planned duration of the treatment period" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedTreatmentDurationTimeUnit" elementLabel="Treat. Duration Time Unit" ftElementType="Element" toolTip="Unit of time for the treatment period" enumList="TimeUnit" dataType="Coded" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFollowUpDuration" elementLabel="F/U Duration" ftElementType="Element" toolTip="The planned duration of the follow up period" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFollowUpDurationTimeUnit" elementLabel="F/U Duration Time Unit" ftElementType="Element" toolTip="Unit of time for the follow up period" enumList="TimeUnit" dataType="Coded" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedRecruitmentPeriod" elementLabel="Recruitment Duration" ftElementType="Element" toolTip="The anticipated duration of the period for recruitment of subjects into the study" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedRecruitmentPeriodTimeUnit" elementLabel="Recruitment Duration Time Unit" ftElementType="Element" toolTip="Unit of time for recruitment period" enumList="TimeUnit" dataType="Coded" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/totalNumVisits" elementLabel="Total # of Visits" ftElementType="Element" toolTip="The total number of planned visits" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumScreeningVisits" elementLabel="# Screening Visits" ftElementType="Element" toolTip="The total number of planned screening visits" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumTxVisits" elementLabel="# Treatment Visits" ftElementType="Element" toolTip="The total number of planned treatment visits" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumFollowupVisits" elementLabel="# F/U Visits" ftElementType="Element" toolTip="The total number of planned follow up visits" dataType="Integer">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedSubjectParticipationDuration" elementLabel="Subject Participation" ftElementType="Element" toolTip="The maximum planned time a subject will be in the study" dataType="Integer" />
+    <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedSubjectParticipationDurationTimeUnit" elementLabel="Subj Particip. Time Unit" ftElementType="Element" toolTip="Unit of time for the subject participation duration" enumList="TimeUnit" dataType="Coded" />
+  </ElementBucket>
+</ElementTab>

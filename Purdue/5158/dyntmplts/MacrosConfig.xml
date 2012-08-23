@@ -1,0 +1,869 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+*******************************************************IMPORTANT NOTE*****************************************************************
+
+Each message below is required by the system. DO NOT DELETE any of the message below.  Text contained within the 
+double brackets [[text]] refer to element values.  Changing or removing these element references will break the macro. 
+Only the formatting and the text surrounding these element references should be configured.  Any other changes will 
+require a change to the logic of the Dynamic Content Object.
+
+**********************************************************************************************************************************************
+ -->
+<Macros>
+
+	<!-- 
+	**********************************************************************************************************************************************
+	Section Builder Macro: 
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.Section6Macro.DisplaySection,ProtocolDTs.dll">
+		<Messages>
+			<Message name="reference">
+				<Text>Referenced in </Text>
+			</Message>
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="liststyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>List Bullet</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="rowheader">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="colheader">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="datarow">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="statisticsheaderstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Heading 3</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="statsbodytextstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="footnoterow">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Footnote</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="tablecaptionstyle">
+				<Text>tab</Text>
+				<Formatting>
+					<ParagraphStyle>Caption</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="exception1">
+				<Text>No variables exist for this task.</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="exception2">
+				<Text>[[macroname]] has no content.</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>true</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="exception3">
+				<Text>[[libitemname]] library item is missing.</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>true</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+		</Messages>
+	</Macro>
+<!-- 
+	**********************************************************************************************************************************************
+		SOP Macro: 
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.CommonDCO.DynTmplts.SOPMacro.SOP,CommonDCO.dll">
+		<Messages>
+			<Message name="headerstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="datarowstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="footertablestyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Footnote</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+		</Messages>
+	</Macro>
+	<!-- 
+	**********************************************************************************************************************************************
+		SOA Macro: 
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.CommonDCO.DynTmplts.Table.SOATableMacro.SOATable,CommonDCO.dll">
+		<Messages>
+			<Message name="headerrow">
+				<Text>false</Text>
+			</Message>
+			<Message name="periodrow">
+				<Text>true</Text>
+			</Message>
+			<Message name="subperiodow">
+				<Text>true</Text>
+			</Message>
+			<Message name="visitrow">
+				<Text>true</Text>
+			</Message>
+			<Message name="studyrow">
+				<Text>true</Text>
+			</Message>
+			<Message name="window">
+				<Text>true</Text>
+			</Message>
+			<Message name="showtablecaption">
+				<Text>false</Text>
+			</Message>
+			<Message name="tablecaption">
+				<Text>tab</Text>
+			</Message>
+			<Message name="headerstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="headercellstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+
+			<Message name="datarowstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="grouprowstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Text</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>true</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="footertablestyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Table Footnote</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="tablecaptionstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Caption</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>0</FontSize>
+				</Formatting>
+			</Message>
+		</Messages>
+	</Macro>
+	<!--
+	**********************************************************************************************************************************************
+		Selection Criteria Macro: 
+		Outputs Populations Selection Criteria based on the criteria type selected
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.CriteriaMacro.Criteria,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text></Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="noclassifier">
+				<Text>Unclassified</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="subtypevisible">
+				<Text>false</Text>
+			</Message>
+			<Message name="grouping">
+				<Text>false</Text>
+			</Message>
+			<Message name="groupheadertext">
+				<Text>[[subcriteriatype]]</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Properties for the list of outcomes 
+				May include the following element reference(s):
+				[[criteria]]
+			-->
+			<Message name="bodytext">
+				<Text>[[criteria]]</Text>
+				<Formatting>
+					<ParagraphStyle>List Number</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- The style which should follow the macro -->
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Text which is displayed in the caption or title bar of the dialog -->
+			<Message name="captiontext">
+				<Text>Selection Critiera Chooser</Text>
+			</Message>
+			<!-- Label which appears just above the drop down in the dialog -->
+			<Message name="label1">
+				<Text>Select a type:</Text>
+			</Message>
+			<Message name="label2">
+				<Text>Select Sub-Type to be included:</Text>
+			</Message>
+			<!-- Message which is displayed when no criteria have been defined for the selected type 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="exception1">
+				<Text>No [[criteriatype]] criteria has been defined. Right click this DCO to delete it from the document or open the Population Criteria dialog in the Design Guide to add a criteria for this type.</Text>
+			</Message>
+			<!-- Message which is displayed when the DCO has been inserted into the document without a selected criteria type defined -->
+			<Message name="exception2">
+				<Text>This Population Criteria Dynamic Content Object (DCO) has been inserted into the document without parameters. Right click this DCO to delete it from the document or reset the parameters so that it corresponds to a criteria type contained within the protocol.</Text>
+			</Message>
+		</Messages>
+	</Macro>
+	<!-- 
+	**********************************************************************************************************************************************
+	Outcomes Chooser Macro: 
+		Outputs outcomes either by the selected outcome type or by the selected outcome associated objective type
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.OutcomeMacro.Outcomes,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of outcomes 
+				May include the following element reference(s):
+				[[outcome]]
+			-->
+			<Message name="firstline">
+				<Text>The [[outcome]] variable(s) are:</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Defines the source of type selection: 
+				outcometype = outcome type picklist values
+				objectivetype = associated objective type picklist values
+				optional = user has option to select either outcome type or associated objective type
+			-->
+			<Message name="selectiontype">
+				<Text>outcometype</Text>
+			</Message>
+			<!-- Properties for the list of outcomes 
+				May include the following element reference(s):
+				[[outcome]]
+			-->
+			<Message name="bodytext">
+				<Text>[[outcome]]</Text>
+				<Formatting>
+					<ParagraphStyle>List Bullet</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- The style which should follow the macro -->
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Text which is displayed in the caption or title bar of the dialog -->
+			<Message name="captiontext">
+				<Text>Variables Chooser</Text>
+			</Message>
+			<!-- Label which appears just above the drop down in the dialog -->
+			<Message name="label1">
+				<Text>Select a type:</Text>
+			</Message>
+			<!-- If selectiontype = optional
+				Label which appears next to the first radio button for loading the drop down with outcome types 
+			-->
+			<Message name="rdoutcome">
+				<Text>List by Variable  type</Text>
+			</Message>
+			<!-- If selectiontype = optional
+				Label which appears next to the second radio button for loading the drop down with associated objective types 
+			-->
+			<Message name="rdobjective">
+				<Text>List by associated Objective type</Text>
+			</Message>
+			<!-- If selectiontype = optional
+				Tooltip which appears when hovering over rdoutcome (defined above) 
+			-->
+			<Message name="tooltip1">
+				<Text>Select to view variable types</Text>
+			</Message>
+			<!-- If selectiontype = optional
+				Tooltip which appears when hovering over rdobjective (defined above) 
+			-->
+			<Message name="tooltip2">
+				<Text>Select to view associated objective types</Text>
+			</Message>
+			<!-- Message which is displayed when no outcomes have been defined for the selected type 
+				May include the following element reference(s):
+				[[outcome]]
+			-->
+			<Message name="exception1">
+				<Text>[[outcome]] variable has not been defined.  Add a variable for this type in the Design Guide.</Text>
+			</Message>
+			<!-- Message which is displayed when the DCO has been inserted into the document without a selected outcome type defined -->
+			<Message name="exception2">
+				<Text>This Variables Dynamic Content Object (DCO) has been inserted into the document without parameters. Right click this DCO to delete it from the document or reset the parameters so that it corresponds to a variable type contained within the protocol.</Text>
+			</Message>
+		</Messages>
+	</Macro>
+		<!-- 
+	**********************************************************************************************************************************************
+	Narrative Macro: 
+		Outputs procedure details for a selected period or subperiod
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.ProcedureListMacro.ProcedureList,ProtocolDTs.dll">
+		<Messages>
+		<Message name="firstline">
+				<Text></Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Properties for the output body text when a period/subperiod is selected 
+				May include the following element reference(s):
+				[[task]]
+				[[taskdesc]]
+			-->
+			<Message name="bodytext">
+				<Text>[[taskdesc]]</Text>
+				<Formatting>
+					<ParagraphStyle>List Bullet</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+				<!-- Properties for the output body text when a period/subperiod is selected 
+				May include the following element reference(s):
+				[[taskeventdesc]]
+				
+			-->
+			<Message name="level2">
+				<Text>[[taskeventdesc]]</Text>
+				<Formatting>
+					<ParagraphStyle>List Bullet 2</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>true</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- The style which should follow the macro -->
+			<Message name="normalstyle">
+				<Text/>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<!-- Text which is displayed in the caption or title bar of the dialog -->
+			<Message name="captiontext">
+				<Text>Period/Sub-Period Narrative</Text>
+			</Message>
+			<!-- Label which appears just above the drop down in the dialog -->
+			<Message name="label1">
+				<Text>Selection type:</Text>
+			</Message>
+			<!-- Label which appears next to the Task radio button in the dialog -->
+			<Message name="rdperiod">
+				<Text>Period</Text>
+			</Message>
+			<!-- Label which appears next to the Visit radio button in the dialog -->
+			<Message name="rdsubperiod">
+				<Text>Sub-period</Text>
+			</Message>
+			<Message name="rdvisit">
+				<Text>Visit</Text>
+			</Message>
+			<!-- Message displayed when the DCO is inserted without any parameters (i.e. as a placeholder) -->
+			<Message name="exception1">
+				<Text>This Narrative Dynamic Content Object (DCO) has been inserted into the document without parameters. Right click this DCO to delete it from the document or reset the parameters so that it corresponds to a period/sub-period contained within the schedule.</Text>
+			</Message>
+			<!-- Message displayed when the stored parameter refers to a task or visit which has been deleted from the schedule -->
+			<Message name="exception2">
+				<Text>The schedule that this Narrative Dynamic Content Object (DCO) refers to has been deleted from the document. Right click this DCO to delete it from the document and reinsert the DCO into the document by selecting the appropriate schedule..</Text>
+			</Message>
+			<!-- Message displayed when a visit has been selected which does not have any task events 
+				May include the following element reference(s):
+				[[visit]]
+			-->
+			<Message name="exception3">
+				<Text>Parameters for this Narrative Dynamic Content Object (DCO) refer to a period/sub-period which no longer appears within the Schedule of Activities. Right click this DCO to delete it from the document or reset the parameters so that it corresponds to a period/sub-period contained within the schedule.</Text>
+			</Message>
+			<Message name="exception4">
+				<Text>Narrative Dynamic Content Object (DCO):: There are no task events associated for the selected [[seltitle]] ([[selection]]).</Text>
+			</Message>
+			<Message name="exception5">
+				<Text>All selected tasks for the designated [[seltitle]] ([[selection]]) are no longer associated with this time event. Please clear the macro parameters or delete this Dynamic Content Object from the document.</Text>
+			</Message>
+			
+			<Message name="exception6">
+				<Text>No period, sub-period or visit exists for your selection. Please update the schedule of activities to contain at least one period before invoking this Dynamic Content Object.</Text>
+			</Message>
+			<Message name="exception7">
+				<Text>No event exists for your current selection. Please make another selection or click cancel to exit.</Text>
+			</Message>
+			<Message name="exception8">
+				<Text>You must select a period, sub-period or visit to continue.</Text>
+			</Message>
+			<Message name="exception9">
+				<Text>You must select atleast one task to continue.</Text>
+			</Message>
+	</Messages>
+	</Macro>
+	
+	<!--
+	**********************************************************************************************************************************************
+		Contact Details Macro: 
+		Outputs Contact Details based on the below configuration
+	**********************************************************************************************************************************************
+	-->
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.ContactDetailsMacro.Details1,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="maintext">
+				<Text> A pregnancy that occurs or becomes confirmed during a clinical study must be recorded as an AE and reported to the sponsor (or designee) using the Notification of Pregnancy Form via fax within 24 hours of first knowledge of the pregnancy to the following number:[[fax]].</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="contacttype">
+				<Text>medicalmonitor</Text>				
+			</Message>
+			
+			<Message name="exception1">
+				<Text>There is no contact having contact type "Medical Monitor".</Text>
+			</Message>
+		
+		</Messages>
+	</Macro>
+	
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.ContactDetailsMacro.Details2,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="maintext">
+				<Text>All SAEs must be reported to [[croname]] by FAX at the following number: [[fax]]. The [[croname]] Drug Safety group can also be contacted by phone at: [[phone]], email at: [[email]]</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="contacttype">
+				<Text>medicalmonitor</Text>				
+			</Message>
+			
+			<Message name="exception1">
+				<Text>There is no contact having contact type "Medical Monitor".</Text>
+			</Message>		
+		</Messages>
+	</Macro>
+	
+		<Macro elementPath="TspdCfg.Purdue.DynTmplts.TreatmentDurationMacro.ShowDuration,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text> Total study duration is approximately [[total]] weeks</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			
+			
+			<Message name="period">
+				<Text>[[period]] phase is [[duration]] [[unit]]</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="subperiod">
+				<Text>[[subperiod]] period is up to [[duration]] [[unit]]</Text>				
+			</Message>
+			<Message name="symbol1">
+				<Text>(</Text>				
+			</Message>
+			<Message name="symbol2">
+				<Text>)</Text>				
+			</Message>
+			<Message name="symbol3">
+				<Text>;</Text>				
+			</Message>
+			<Message name="symbol4">
+				<Text>.</Text>				
+			</Message>
+			
+			<Message name="null">
+				<Text>NULL</Text>				
+			</Message>
+
+			
+			<Message name="exception1">
+				<Text>The schedule that this Study Design (DCO) refers to has been deleted from the document. Right click this DCO to delete it from the document and reinsert the DCO into the document by selecting the appropriate schedule...</Text>
+			</Message>		
+			
+			<Message name="exception2">
+				<Text>There are no Period/Sub-Period associated with this schedule.</Text>
+			</Message>	
+			
+		</Messages>
+	</Macro>
+	
+		<Macro elementPath="TspdCfg.Purdue.DynTmplts.TreatmentDurationMacro.ShowDuration,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text> Total study duration is approximately [[total]] weeks</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			
+			
+			<Message name="period">
+				<Text>[[period]] phase is [[duration]] [[unit]]</Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>false</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="subperiod">
+				<Text>[[subperiod]] period is up to [[duration]] [[unit]]</Text>				
+			</Message>
+			<Message name="symbol1">
+				<Text>(</Text>				
+			</Message>
+			<Message name="symbol2">
+				<Text>)</Text>				
+			</Message>
+			<Message name="symbol3">
+				<Text>;</Text>				
+			</Message>
+			<Message name="symbol4">
+				<Text>.</Text>				
+			</Message>
+			
+			<Message name="null">
+				<Text>NULL</Text>				
+			</Message>
+			
+			<Message name="exception1">
+				<Text>The schedule that this Study Design (DCO) refers to has been deleted from the document. Right click this DCO to delete it from the document and reinsert the DCO into the document by selecting the appropriate schedule...</Text>
+			</Message>		
+			
+			<Message name="exception2">
+				<Text>There are no Period/Sub-Period associated with this schedule.</Text>
+			</Message>	
+			
+		</Messages>
+	</Macro>
+	
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.TestTreatment,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text></Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="roletypes"> <!-- Include all then Roletypes sepearted by "|" , If only one, then "|" is optional -->
+				<Text>investigationalProduct</Text>				
+			</Message>	
+			<Message name="colheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="rowheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="tabletext"> 
+				<Text>Normal</Text>				
+			</Message>
+			<Message name="exception1">
+				<Text>No Test Treatments have been defined.</Text>
+			</Message>		
+		</Messages>
+	</Macro>
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.RefTreatment,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text></Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="roletypes"> <!-- Include all then Roletypes sepearted by "|" , If only one, then "|" is optional -->
+				<Text>comparator | placebo | Activecontrol</Text>				
+			</Message>	
+			<Message name="colheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="rowheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="tabletext"> 
+				<Text>Normal</Text>				
+			</Message>
+			<Message name="exception1">
+				<Text>No Referenece Treatments have been defined.</Text>
+			</Message>		
+		</Messages>
+	</Macro>
+
+	<Macro elementPath="TspdCfg.Purdue.DynTmplts.TestTreatmentMacro.OtherTreatment,ProtocolDTs.dll">
+		<Messages>
+			<!-- Properties for the firstline of text to be displayed prior to the list of criteria 
+				May include the following element reference(s):
+				[[criteriatype]]
+			-->
+			<Message name="firstline">
+				<Text></Text>
+				<Formatting>
+					<ParagraphStyle>Normal</ParagraphStyle>
+					<Bold>true</Bold>
+					<Italics>false</Italics>
+					<Underline>false</Underline>
+					<FontSize>11</FontSize>
+				</Formatting>
+			</Message>
+			<Message name="roletypes"> <!-- Include all then Roletypes sepearted by "|" , If only one, then "|" is optional -->
+				<Text>other | adjunctTx | supportiveCare | rescue | postStudyTreatment | Palliation | Prevention</Text>				
+			</Message>	
+			<Message name="colheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="rowheader"> 
+				<Text>Normal</Text>				
+			</Message>	
+			<Message name="tabletext"> 
+				<Text>Normal</Text>				
+			</Message>
+			<Message name="exception1">
+				<Text>No Other Required Treatments have been defined.</Text>
+			</Message>		
+		</Messages>
+	</Macro>
+</Macros>

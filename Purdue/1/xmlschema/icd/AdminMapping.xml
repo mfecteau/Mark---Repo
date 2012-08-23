@@ -1,0 +1,112 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Administration" tabColor="#5299CC" elementType="" editorClass="PDG.Administration" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="AdminMapping.xml" systemName="Administrative" toolTip="" hidden="false" cdiscIdentifier="">
+  <ElementBucket bucketLabel="Identification" elementType="Administrative" systemName="Administrative" toolTip="" cdiscIdentifier="" hidden="false">
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" elementLabel="Protocol ID" ftElementType="Element" toolTip="The unique identifier for this study">
+      <ElementStatus docType="Protocol" required="true" default="true" mfu="false" />
+    </ChooserEntry>
+    <!-- DG Uncommented version, version name, and version type and made unrequired 6-7-04 -->
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionDate" elementLabel="Protocol Date" ftElementType="Element" toolTip="The date of the version of the protocol">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionName" elementLabel="Protocol Version" ftElementType="Element" toolTip="The name of the version or amendment of this protocol">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionType" elementLabel="Version Type" ftElementType="Element" toolTip="The type of version (draft, final, etc.)">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/title/brief" elementLabel="Short Title" ftElementType="Element" toolTip="A short title or label for this study">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/title/full" elementLabel="Full Title" ftElementType="Element" toolTip="The official title of the protocol">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" elementLabel="Phase" ftElementType="Element" toolTip="Coded study phase" enumList="CodedPhaseTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/@phase" elementLabel="Phase" ftElementType="Element" toolTip="The phase of investigation for this study">
+				<ElementStatus docType="Protocol" required="true" default="false" mfu="false"/>
+			</ChooserEntry-->
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/indication" elementLabel="Indication" ftElementType="Element" toolTip="The specific therapeutic indication for this study">
+      <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/description/brief" elementLabel="Brief Description" ftElementType="Element" toolTip="A brief description of the study design">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/description/full" elementLabel="Detailed Description" ftElementType="Element" toolTip="A detailed summary of the study design">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/isMultiCentered" elementLabel="Study Type" ftElementType="Element" toolTip="Whether the study will be conducted at a single center or multiple centers" enumList="MultiCenteredTypes" dataType="Coded">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/plannedNumberStudyCenters" elementLabel="Planned" ftElementType="Element" toolTip="The number of study centers anticipated">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/codedCountries" elementLabel="Countries" ftElementType="Element" toolTip="Countries where a study will be performed" stickyCase="true" hidden="false" editorClass="PDG.Administration" dataType="Composite">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" elementLabel="Coded Indications" ftElementType="Element" dataType="Composite" toolTip="tooltip here">
+	<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/countries" elementLabel="Countries" ftElementType="Element" toolTip="Countries where a study will be performed" stickyCase="true" />
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryGrantor" elementLabel="Grantor" ftElementType="Element" toolTip="The name of the regulatory authority granting permission to conduct a study in a particular country" stickyCase="true" />
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber" elementLabel="Grantor Number" ftElementType="Element" toolTip="The number assigned to a protocol by a regulatory authority">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryGrantor" elementLabel="Other Grantor" ftElementType="Element" toolTip="The name of other regulatory authority granting permission to conduct a study in a particular country; applicable for multi-national studies" stickyCase="true" />
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryNumber" elementLabel="Other Grantor Number" ftElementType="Element" toolTip="The number assigned to a protocol by a second regulatory authority">
+      <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+    </ChooserEntry>
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/@indicationCoded" elementLabel="ICD-9 Indication" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="true" default="false" mfu="false"/>
+			</ChooserEntry-->
+    <!--Removed TherapeuticArea-->
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/IndicationCode" elementLabel="IndicationCode" ftElementType="Collection" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/contacts" elementLabel="Contacts" ftElementType="Template" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/conditionKeywords" elementLabel="Condition Keywords" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+    <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" elementLabel="Coded Conditions" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+  </ElementBucket>
+  <ElementBucket bucketLabel="Organizations" elementType="Organizations" systemName="Organizations">
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization" elementLabel="Associated Organization" ftElementType="Template" toolTip="An organization associated with this study - role is defined in role type" stickyCase="true">
+      <Complex>
+        <ChooserEntry elementPath="name" elementLabel="Organization Name" ftElementType="Element" toolTip="The official organization name. Organizations may be sponsors, CROs, labs, etc." stickyCase="true" />
+        <ChooserEntry elementPath="organizationType" elementLabel="Type" ftElementType="Element" toolTip="Organization's role in this study" enumList="OrganizationTypes" dataType="Coded" />
+        <ChooserEntry elementPath="Address/address1" elementLabel="Address 1" ftElementType="Element" toolTip="Organization address line 1" stickyCase="true" />
+        <ChooserEntry elementPath="Address/address2" elementLabel="Address 2" ftElementType="Element" toolTip="Organization address line 2" stickyCase="true" />
+        <ChooserEntry elementPath="Address/city" elementLabel="City" ftElementType="Element" toolTip="City in which the organization ls located." stickyCase="true" />
+        <ChooserEntry elementPath="Address/stateprov" elementLabel="State / Province" ftElementType="Element" toolTip="State or province of the organization" stickyCase="true" />
+        <ChooserEntry elementPath="Address/postalCode" elementLabel="Postal or Zip Code" ftElementType="Element" toolTip="Organization's postal or zip code" />
+        <ChooserEntry elementPath="Address/country" elementLabel="Country" ftElementType="Element" toolTip="Organization country" stickyCase="true" />
+        <ChooserEntry elementPath="Address/telephone" elementLabel="Telephone" ftElementType="Element" toolTip="Organization's telephone number - any format OK" />
+        <ChooserEntry elementPath="Address/fax" elementLabel="Facsimile" ftElementType="Element" toolTip="Organization's fax number - any format OK" />
+        <ChooserEntry elementPath="custom1" elementLabel="custom1" ftElementType="Element" customvar="true" toolTip="Custom variable one." enumList="PurposeTypes" dataType="Coded" />
+        <ChooserEntry elementPath="custom2" elementLabel="custom2" ftElementType="Element" customvar="true" toolTip="Custom variable two." />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+  <ElementBucket bucketLabel="Contacts" elementType="Contacts" systemName="Contacts">
+    <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/Contacts/Contact" elementLabel="Contact" ftElementType="Template" toolTip="A contact person for this study.  Person's role is defined in contact type" stickyCase="true">
+      <Complex>
+        <ChooserEntry elementPath="personName" elementLabel="Contact Name" ftElementType="Element" toolTip="Full name of contact as it will appear in the protocol." stickyCase="true" />
+        <ChooserEntry elementPath="roleType" elementLabel="Role" ftElementType="Element" toolTip="Contact's role in this study" enumList="ContactRoleTypes" stickyCase="true" dataType="Coded" />
+        <ChooserEntry elementPath="associatedOrganizations/associatedOrganization" elementLabel="Organization" ftElementType="Collection" toolTip="This contact's associated organization" assocChooserPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization" assocClass="Tspd.Businessobject.Organization" stickyCase="true" />
+        <ChooserEntry elementPath="Address/address1" elementLabel="Address 1" ftElementType="Element" toolTip="Contact person's address line 1." stickyCase="true" />
+        <ChooserEntry elementPath="Address/address2" elementLabel="Address 2" ftElementType="Element" toolTip="Contact person's address line 2." stickyCase="true" />
+        <ChooserEntry elementPath="Address/city" elementLabel="City" ftElementType="Element" toolTip="Contact person's city." stickyCase="true" />
+        <ChooserEntry elementPath="Address/stateprov" elementLabel="State / Province" ftElementType="Element" toolTip="Contact person's state or province." stickyCase="true" />
+        <ChooserEntry elementPath="Address/postalCode" elementLabel="Postal or Zip Code" ftElementType="Element" toolTip="Contact person's zip or postal code." />
+        <ChooserEntry elementPath="Address/country" elementLabel="Country" ftElementType="Element" toolTip="Contact person's country." stickyCase="true" />
+        <ChooserEntry elementPath="Address/telephone" elementLabel="Telephone" ftElementType="Element" toolTip="Contact person's voice telephone - any format OK" />
+        <ChooserEntry elementPath="Address/fax" elementLabel="Facsimile" ftElementType="Element" toolTip="Contact person's fax number - any format OK." />
+        <ChooserEntry elementPath="Address/email" elementLabel="e-mail" ftElementType="Element" toolTip="Contact person's e-mail address at the organization." />
+        <ChooserEntry elementPath="roleComment" elementLabel="Role Details" ftElementType="Element" toolTip="Comments on this person's role in the study." />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

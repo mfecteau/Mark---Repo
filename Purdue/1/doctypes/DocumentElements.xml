@@ -1,0 +1,29 @@
+<ElementTab elementType="TOC" file="../../doctypes/DocumentElements.xml" systemName="TOC" tabLabel="Document Elements" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\icd\echoosersect.xsd">
+	<ElementBucket bucketLabel="Design" docType="Design" elementType="TOC" startType="false">
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Study Attributes" elementPath="StudyAttributes" ftElementType="DocSection" required="false" sectionLevel="1"/>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Study Design Parameters" elementPath="StudyDesign" ftElementType="DocSection" required="false" sectionLevel="1">
+			<Complex>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Test Articles" elementPath="TestArticles" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Objectives" elementPath="Objectives" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Endpoints" elementPath="EndPoints" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Arms" elementPath="Arms" ftElementType="DocSection" required="false" sectionLevel="2"/>
+			</Complex>
+		</ChooserEntry>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Study Schedule" elementPath="StudySchedule" ftElementType="DocSection" required="false" sectionLevel="1">
+			<Complex>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Procedures and Variables" elementPath="ProceduresandVariables" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Study Narrartive" elementPath="StudyNarrative" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Event Tables" elementPath="Tables" ftElementType="DocSection" required="false" sectionLevel="2"/>
+			</Complex>
+		</ChooserEntry>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Subject Eligibility" elementPath="SubjectEligibility" ftElementType="DocSection" required="false" sectionLevel="1">
+			<Complex>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Inclusion Criteria" elementPath="InclusionCriteria" ftElementType="DocSection" required="false" sectionLevel="2"/>
+				<ChooserEntry docHeaderStyle="Heading 2" elementLabel="Exclusion Criteria" elementPath="ExclusionCriteria" ftElementType="DocSection" required="false" sectionLevel="2"/>
+			</Complex>
+		</ChooserEntry>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Study Metrics" elementPath="Metrics" ftElementType="DocSection" required="false" sectionLevel="1"/>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Study Restrictions And Compliance" elementPath="Restrictions" ftElementType="DocSection" required="false" sectionLevel="1"/>
+		<ChooserEntry docHeaderStyle="Heading 1" elementLabel="Statistical Objects" elementPath="StatisticalPlan" ftElementType="DocSection" required="false" sectionLevel="1"/>
+	</ElementBucket>
+</ElementTab>

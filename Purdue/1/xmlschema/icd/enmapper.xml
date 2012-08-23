@@ -1,0 +1,416 @@
+<EnumMapper xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/enmapper.xsd">
+  <EnumType enumName="CodedPhaseTypes" enumLabel="CodedPhaseTypes" toolTip="">
+    <EnumPair systemName="1" userLabel="phase 1" />
+    <EnumPair systemName="1-2" userLabel="phase 1/2" />
+    <EnumPair systemName="2" userLabel="phase 2" />
+    <EnumPair systemName="2-3" userLabel="phase 2/3" />
+    <EnumPair systemName="3" userLabel="phase 3" />
+    <EnumPair systemName="3a" userLabel="phase 3a" />
+    <EnumPair systemName="3b" userLabel="phase 3b" />
+    <EnumPair systemName="4" userLabel="phase 4" />
+  </EnumType>
+  <EnumType enumName="CurrencyTypes">
+    <EnumPair systemName="USDollars" userLabel="US dollars" />
+    <EnumPair systemName="UKPounds" userLabel="pounds" />
+    <EnumPair systemName="Euros" userLabel="euros" />
+    <EnumPair systemName="SwissFrancs" userLabel="Swiss francs" />
+    <EnumPair systemName="Yen" userLabel="yen" />
+  </EnumType>
+  <EnumType enumName="PurposeTypes">
+    <EnumPair preserve="true" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair preserve="true" systemName="Safety" userLabel="safety" />
+    <EnumPair systemName="Regulatory" userLabel="regulatory" />
+    <EnumPair preserve="true" systemName="Screening" userLabel="screening" />
+    <EnumPair preserve="true" systemName="Treatment" userLabel="treatment" />
+    <EnumPair systemName="StandardOfCare" userLabel="standard of care" />
+    <EnumPair systemName="Pharmacokinetic" userLabel="pharmacokinetics" />
+    <EnumPair systemName="Pharmacodynamic" userLabel="pharmacodynamics" />
+    <EnumPair systemName="Pharmacogenomic" userLabel="pharmacogenomics" />
+    <EnumPair systemName="Pharmacoeconomic" userLabel="pharmacoeconomics" />
+    <EnumPair systemName="HealthOutcome" userLabel="health outcomes" />
+    <EnumPair systemName="QualityofLife" userLabel="quality of life" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+	<EnumType enumName="DGPurposeTypes">  <!-- this is needed by TSD 3.0 -->
+    		<EnumPair systemName="Regulatory" userLabel="Other regulatory" />
+    		<EnumPair preserve="true" systemName="OtherScreening" userLabel="screening" />
+    		<EnumPair preserve="true" systemName="OtherTreatment" userLabel="treatment" />
+    		<EnumPair systemName="other" userLabel="other" />
+  	</EnumType>
+  <EnumType enumName="StudyPurposeTypes">
+    <EnumPair systemName="Prevention" userLabel="prevention" />
+    <EnumPair preserve="true" systemName="Treatment" userLabel="treatment" />
+    <EnumPair systemName="Diagnosis" userLabel="diagnosis" />
+    <EnumPair systemName="LongTermSafety" userLabel="long-term safety" />
+    <EnumPair systemName="ProofOfConcept" userLabel="proof of concept" />
+    <EnumPair systemName="EducCouncilTrain" userLabel="educational/counseling/training" />
+    <EnumPair systemName="Conception" userLabel="conception" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="BlindingTypes">
+    <EnumPair systemName="Single-blinded" userLabel="single-blinded" />
+    <EnumPair systemName="Double-blinded" userLabel="double-blinded" />
+    <EnumPair systemName="Triple-blinded" userLabel="triple-blinded" />
+    <EnumPair systemName="Open-label" userLabel="open label" />
+    <EnumPair systemName="Third-partyblinded" userLabel="third-party blinded" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ControlTypes">
+    <EnumPair systemName="Active" userLabel="active-controlled" />
+    <EnumPair systemName="Placebo" userLabel="placebo-controlled" />
+    <EnumPair systemName="Uncontrolled" userLabel="non-controlled" />
+    <EnumPair systemName="Historical" userLabel="retrospectively-controlled" />
+    <EnumPair systemName="DoseComparison" userLabel="dose-comparison" />
+    <EnumPair systemName="DoubleDummy" userLabel="double-dummy" />
+    <EnumPair systemName="ActivePlacebo" userLabel="active-placebo" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AllocationTypes">
+    <EnumPair systemName="Randomized" userLabel="randomized" />
+    <EnumPair systemName="Unrandomized" userLabel="non-randomized" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ConfigurationTypes">
+    <EnumPair systemName="Parallel" userLabel="parallel-group" />
+    <EnumPair systemName="Single-group" userLabel="single-group" />
+    <EnumPair systemName="Cross-over" userLabel="cross-over" />
+    <EnumPair systemName="Factorial" userLabel="factorial" />
+    <EnumPair systemName="Cohort" userLabel="cohort" />
+    <EnumPair systemName="titration" userLabel="dose titration" />
+    <EnumPair systemName="up-titration" userLabel="up-titration" />
+    <EnumPair systemName="down-titration" userLabel="down-titration" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OverallStudyOutcomeTypes">
+    <EnumPair preserve="true" systemName="Safety" userLabel="safety" />
+    <EnumPair preserve="true" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair systemName="Safety-efficacy" userLabel="safety and efficacy" />
+    <EnumPair systemName="Bio-equivalence" userLabel="bioequivalence" />
+    <EnumPair systemName="Bio-availability" userLabel="bioavailability" />
+    <EnumPair systemName="Pharmacokinetics" userLabel="pharmacokinetic" />
+    <EnumPair systemName="Pharmacodynamics" userLabel="pharmacodynamic" />
+    <EnumPair systemName="PkPd" userLabel="pharmacokinetic/pharmacodynamic" />
+    <EnumPair systemName="PopPk" userLabel="population pharmacokinetic" />
+    <EnumPair systemName="Pharmacoeconomic" userLabel="pharmacoeconomic" />
+    <EnumPair systemName="Pharmacogenomic" userLabel="pharmacogenomic" />
+    <EnumPair systemName="QOL" userLabel="quality of life" />
+    <EnumPair systemName="HealthEcon" userLabel="health economics" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="InvestigationTypes">
+    <EnumPair systemName="observational" userLabel="observational" />
+    <EnumPair systemName="interventional" userLabel="interventional" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OutcomeTypes">
+    <EnumPair preserve="true" systemName="PrimaryEfficacy" userLabel="primary efficacy" />
+    <EnumPair preserve="true" systemName="SecondaryEfficacy" userLabel="secondary efficacy" />
+    <EnumPair systemName="TertiaryEfficacy" userLabel="tertiary efficacy" />
+    <EnumPair preserve="true" systemName="Safety" userLabel="safety" />
+    <EnumPair systemName="Pharmacoeconomic" userLabel="pharmacoeconomic" />
+    <EnumPair systemName="Pharmacogenomic" userLabel="pharmacogenomic" />
+    <EnumPair systemName="Pharmacodynamic" userLabel="pharmacodynamic" />
+    <EnumPair systemName="Pharmacokinetic" userLabel="pharmacokinetic" />
+    <EnumPair systemName="Quality of Life" userLabel="quality of life" />
+    <EnumPair systemName="Exploratory" userLabel="exploratory" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ObjectiveTypes">
+    <EnumPair preserve="true" systemName="Primary" userLabel="primary" />
+    <EnumPair preserve="true" systemName="Secondary" userLabel="secondary" />
+    <EnumPair preserve="true" systemName="Tertiary" userLabel="tertiary" />
+    <EnumPair preserve="true" systemName="Safety" userLabel="safety" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CTMaterialTypes">
+    <EnumPair systemName="Drug" userLabel="drug" />
+    <EnumPair systemName="GeneTransfer" userLabel="gene transfer" />
+    <EnumPair systemName="Device" userLabel="device" />
+    <EnumPair systemName="Vaccine" userLabel="vaccine" />
+    <EnumPair systemName="Behavior" userLabel="behavior" />
+    <EnumPair systemName="Procedure" userLabel="procedure" />
+    <EnumPair systemName="Radiation" userLabel="radiation" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="RouteOfAdminTypes">
+    <EnumPair systemName="Topical" userLabel="topical" />
+    <EnumPair systemName="Oral" userLabel="oral" />
+    <EnumPair systemName="Intramuscular" userLabel="intramuscular" />
+    <EnumPair systemName="Intravenous" userLabel="intravenous" />
+    <EnumPair systemName="Subcutaneous" userLabel="subcutaneous" />
+    <EnumPair systemName="Sublingual" userLabel="sublingual" />
+    <EnumPair systemName="Rectal" userLabel="rectal" />
+    <EnumPair systemName="Inhalation" userLabel="inhalation" />
+    <EnumPair systemName="Transdermal" userLabel="transdermal" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="FormulationTypes">
+    <EnumPair systemName="Tablet" userLabel="tablet" />
+    <EnumPair systemName="Capsule" userLabel="capsule" />
+    <EnumPair systemName="Liquid" userLabel="liquid" />
+    <EnumPair systemName="Suspension" userLabel="suspension" />
+    <EnumPair systemName="Powder" userLabel="powder" />
+    <EnumPair systemName="Patch" userLabel="patch" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="EntranceCriterionTypes">
+    <EnumPair preserve="true" systemName="Inclusion" userLabel="inclusion" />
+    <EnumPair preserve="true" systemName="Exclusion" userLabel="exclusion" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="GenderTypes">
+    <EnumPair systemName="Male" userLabel="male" />
+    <EnumPair systemName="Female" userLabel="female" />
+    <EnumPair systemName="Both" userLabel="male and female" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AlphaTailTypes">
+    <EnumPair systemName="OneTailed" userLabel="one-tailed" />
+    <EnumPair systemName="TwoTailed" userLabel="two-tailed" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="CTMaterialRoleTypes">
+    <EnumPair systemName="investigationalProduct" userLabel="investigational product" />
+    <EnumPair systemName="comparator" userLabel="comparator" />
+    <EnumPair systemName="supportiveCare" userLabel="supportive measures" />
+    <EnumPair systemName="adjunctTx" userLabel="adjunct treatment" />
+    <EnumPair systemName="placebo" userLabel="placebo" />
+    <EnumPair systemName="rescue" userLabel="rescue measures" />
+    <EnumPair systemName="postStudyTreatment" userLabel="post-study treatment" />
+    <EnumPair systemName="Palliation" userLabel="palliation" />
+    <EnumPair systemName="Prevention" userLabel="prevention" />
+    <EnumPair systemName="Activecontrol" userLabel="active control" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ScheduleItemTypes">
+    <EnumPair systemName="screening" userLabel="screening" />
+    <EnumPair systemName="prestudy" userLabel="pre-study" />
+    <EnumPair systemName="Baseline" userLabel="baseline" />
+    <EnumPair systemName="blindedbaseline" userLabel="blinded baseline" />
+    <EnumPair systemName="treatment" userLabel="treatment" />
+    <EnumPair systemName="blindedtreatment" userLabel="blinded treatment" />
+    <EnumPair systemName="Transition" userLabel="transition" />
+    <EnumPair systemName="blindedtransition" userLabel="blinded transition" />
+    <EnumPair systemName="Taper" userLabel="taper" />
+    <EnumPair systemName="blindedtaper" userLabel="blinded taper" />
+    <EnumPair systemName="OnTherapy" userLabel="on-therapy" />
+    <EnumPair systemName="blindedtherapy" userLabel="blinded on-therapy" />
+    <EnumPair systemName="Washout" userLabel="wash-out" />
+    <EnumPair systemName="blindedwashout" userLabel="blinded wash-out" />
+    <EnumPair systemName="followUp" userLabel="follow up" />
+    <EnumPair systemName="DiscontinuationFromIntervention" userLabel="discontinuation from intervention" />
+    <EnumPair systemName="withdrawalFromStudy" userLabel="withdrawal from study" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="MultiCenteredTypes">
+    <EnumPair systemName="multiplecenters" userLabel="multi center" />
+    <EnumPair systemName="singlecenter" userLabel="single center" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="OrganizationTypes">
+    <EnumPair preserve="true" systemName="sponsor" userLabel="sponsor" />
+    <EnumPair systemName="cosponsor" userLabel="co-sponsor" />
+    <EnumPair systemName="cro" userLabel="CRO" />
+    <EnumPair systemName="centrallab" userLabel="central laboratory" />
+    <EnumPair systemName="governmentalagency" userLabel="governmental agency" />
+    <EnumPair systemName="aro" userLabel="academic research organization" />
+    <EnumPair systemName="cooperativegroup" userLabel="cooperative group" />
+    <EnumPair systemName="datamonitoring" userLabel="data monitoring committee" />
+    <EnumPair systemName="steeringcommittee" userLabel="steering committee" />
+    <EnumPair systemName="centralizedtesting" userLabel="centralized testing center" />
+    <EnumPair systemName="locallab" userLabel="local laboratory" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="ContactRoleTypes">
+    <EnumPair systemName="statistician" userLabel="Statistician" />
+    <EnumPair systemName="safetyMonitor" userLabel="Safety Monitor" />
+    <EnumPair systemName="medicalMonitor" userLabel="Medical Monitor" />
+    <EnumPair systemName="CRA" userLabel="Clinical Research Associate" />
+    <EnumPair systemName="AffiliatePhysician" userLabel="Affiliate Physician" />
+    <EnumPair systemName="DataManager" userLabel="Data Management Coordinator" />
+    <EnumPair systemName="ProjectManagerOrLead" userLabel="Project Manager" />
+    <EnumPair systemName="emergencyContact" userLabel="Emergency Contact" />
+    <EnumPair systemName="clinicalpharmacologist" userLabel="Clinical Pharmacologist" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="TimeUnit">
+    <EnumPair preserve="true" systemName="hours" userLabel="hours" />
+    <EnumPair preserve="true" systemName="days" userLabel="days" />
+    <EnumPair preserve="true" systemName="weeks" userLabel="weeks" />
+    <EnumPair preserve="true" systemName="years" userLabel="years" />
+  </EnumType>
+  <EnumType enumName="RestrictedTimeUnit">
+    <EnumPair preserve="true" systemName="minutes" userLabel="minutes" />
+    <EnumPair preserve="true" systemName="hours" userLabel="hours" />
+    <EnumPair preserve="true" systemName="days" userLabel="days" />
+    <EnumPair preserve="true" systemName="weeks" userLabel="weeks" />
+  </EnumType>
+  <EnumType enumName="CentralFacilityTypes">
+    <EnumPair preserve="true" systemName="true" userLabel="central facility" />
+    <EnumPair preserve="true" systemName="false" userLabel="non central facility" />
+  </EnumType>
+  <EnumType enumName="LocalFacilityTypes">
+    <EnumPair preserve="true" systemName="true" userLabel="local facility" />
+    <EnumPair preserve="true" systemName="false" userLabel="non-local facility" />
+  </EnumType>
+  <EnumType enumName="AcceptsHealthyVolunteersTypes">
+    <EnumPair preserve="true" systemName="true" userLabel="accepts healthy volunteers" />
+    <EnumPair preserve="true" systemName="false" userLabel="does not accept healthy volunteers" />
+  </EnumType>
+  <EnumType enumName="EntranceCriterionClassifierTypes">
+    <EnumPair preserve="true" systemName="Safety" userLabel="safety" />
+    <EnumPair preserve="true" systemName="Efficacy" userLabel="efficacy" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="UsesIVRSTypes">
+    <EnumPair preserve="true" systemName="true" userLabel="this study uses an IVRS" />
+    <EnumPair preserve="true" systemName="false" userLabel="this study does not use an IVRS" />
+  </EnumType>
+  <EnumType enumName="EventTypes">
+    <EnumPair preserve="true" systemName="milestone" userLabel="Milestone" />
+    <EnumPair preserve="true" systemName="randomization" userLabel="Randomization" />
+    <EnumPair preserve="true" systemName="stratification" userLabel="Stratification" />
+    <EnumPair preserve="true" systemName="phoneEncounter" userLabel="Telephone Encounter" />
+    <EnumPair preserve="true" systemName="inPatientEncounter" userLabel="In-Patient Encounter" />
+    <EnumPair preserve="true" systemName="selfTreatment" userLabel="Home Treatment" />
+    <EnumPair preserve="true" systemName="subjectDiary" userLabel="Subject Diary" />
+    <EnumPair preserve="true" systemName="continuous" userLabel="Continuous" />
+    <EnumPair preserve="true" systemName="visit" userLabel="Visit" />
+    <EnumPair preserve="true" systemName="SAE" userLabel="SAE" />
+  </EnumType>
+  <EnumType enumName="PositionRoles">
+    <EnumPair preserve="true" systemName="entrance" userLabel="at event start" />
+    <EnumPair systemName="event" userLabel="at event" />
+    <EnumPair preserve="true" systemName="exit" userLabel="at event end" />
+  </EnumType>
+  <EnumType enumName="AnalysisTypes">
+    <EnumPair systemName="inferential" userLabel="Inferential" />
+    <EnumPair systemName="estimational" userLabel="Estimational" />
+    <EnumPair systemName="inferential-estimational" userLabel="InferentialEstimational" />
+    <EnumPair systemName="descriptive" userLabel="Descriptive" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalysisRoles">
+    <EnumPair preserve="true" systemName="principal" userLabel="Principal" />
+    <EnumPair systemName="supportive-diagnostic" userLabel="Diagnostic" />
+    <EnumPair systemName="supportive-sensitivity" userLabel="Sensitivity" />
+    <EnumPair systemName="supportive-alt-method" userLabel="AlternateMethod" />
+    <EnumPair preserve="true" systemName="samplesize" userLabel="SampleSize" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalyticComparisonTypes">
+    <EnumPair systemName="superiority" userLabel="Superiority" />
+    <EnumPair systemName="inferiority" userLabel="Inferiority" />
+    <EnumPair systemName="non-inferiority" userLabel="Non Inferiority" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="AnalysisSetTypes">
+    <EnumPair preserve="true" systemName="principal" userLabel="Principal" />
+    <EnumPair systemName="intenttotreat" userLabel="Intent To Treat" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumLabel="StudyVariableOrigins" enumName="StudyVariableOrigins" toolTip="">
+    <EnumPair hidden="false" preserve="true" systemName="analysis" userLabel="Analysis" />
+    <EnumPair preserve="true" systemName="derivation" userLabel="Derivation" />
+    <EnumPair preserve="true" systemName="imputed" userLabel="Imputed" />
+    <EnumPair preserve="true" systemName="measurement" userLabel="Measurement" />
+    <EnumPair preserve="true" systemName="recoded" userLabel="Recoded" />
+    <EnumPair preserve="true" systemName="parameter" userLabel="Parameter" />
+  </EnumType>
+  <EnumType enumName="StudyDatumStatus">
+    <EnumPair systemName="calculated" userLabel="Calculated" />
+    <EnumPair preserve="true" systemName="imputed" userLabel="Imputed" />
+    <EnumPair systemName="measured" userLabel="Measured" />
+    <EnumPair systemName="incomplete" userLabel="Incomplete" />
+  </EnumType>
+  <EnumType enumName="InterimAnalysisTypes">
+    <EnumPair systemName="formal" userLabel="Formal" />
+    <EnumPair preserve="true" systemName="safety" userLabel="Safety" />
+    <EnumPair systemName="adhoc" userLabel="Ad Hoc" />
+    <EnumPair systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumLabel="VariableDataTypes" enumName="VariableDataTypes" toolTip="">
+    <EnumPair hidden="false" preserve="true" systemName="Integer" userLabel="Integer" />
+    <EnumPair preserve="true" systemName="Number" userLabel="Real" />
+    <EnumPair hidden="false" preserve="true" systemName="Coded" userLabel="Coded" />
+    <EnumPair hidden="false" preserve="true" systemName="String" userLabel="Text" />
+    <EnumPair hidden="false" preserve="true" systemName="Date" userLabel="Date" />
+    <EnumPair hidden="false" preserve="true" systemName="Vector" userLabel="Vector" />
+    <EnumPair hidden="false" preserve="true" systemName="Matrix" userLabel="Matrix" />
+    <EnumPair hidden="false" preserve="false" systemName="other" userLabel="other" />
+  </EnumType>
+  <EnumType enumName="HypothesisTypes">
+    <EnumPair systemName="nullhypothesis" userLabel="Null" />
+    <EnumPair systemName="alternative" userLabel="Alternative" />
+    <!--EnumPair systemName="other" userLabel="other"/-->
+  </EnumType>
+  <EnumType enumName="AnalysisClassTypes">
+    <EnumPair preserve="true" systemName="HypothesisTest" userLabel="Hypothesis Test" />
+    <EnumPair preserve="true" systemName="SampleSizeCalc" userLabel="Sample Size Calculation" />
+    <EnumPair systemName="OtherAnalysis" userLabel="Other Analysis" />
+  </EnumType>
+  <EnumType enumName="AdvisoryList">
+    <EnumPair preserve="true" systemName="Open" userLabel="open" />
+    <EnumPair preserve="true" systemName="Closed" userLabel="closed" />
+  </EnumType>
+  <EnumType enumLabel="Comments State Enum" enumName="CommentsStateEnum" toolTip="Custom enum SystemName must start with either 0 or 1 to support the 'unresolved/resolved' binary info">
+    <EnumPair hidden="false" preserve="true" systemName="0-unresolved" userLabel="Unresolved" />
+    <EnumPair hidden="false" preserve="true" systemName="1-resolved" userLabel="Resolved" />
+    <EnumPair customValue="true" hidden="false" preserve="false" systemName="2-modified" userLabel="Modified" />
+  </EnumType>
+  <EnumType enumLabel="Comments Filter Enum" enumName="CommentsFilterEnum" toolTip="Custom enum must match any of the CommentsStateEnum.SystemNames to be a valid filter">
+    <EnumPair hidden="false" preserve="true" systemName="all" userLabel="All" />
+    <EnumPair hidden="false" preserve="true" systemName="0" userLabel="All Unresolved" />
+    <EnumPair hidden="false" preserve="true" systemName="1" userLabel="All Resolved" />
+    <EnumPair hidden="false" preserve="true" systemName="2" userLabel="All Modified" />
+  </EnumType>
+  <EnumType enumLabel="Frequency Types" enumName="TimeIntervalTypes" toolTip="Clinical names of  time intervals or frequencies">
+    <EnumPair systemName="QD" userLabel="QD" />
+    <EnumPair systemName="BID" userLabel="BID" />
+    <EnumPair systemName="TID" userLabel="TID" />
+    <EnumPair systemName="PRN" userLabel="PRN" />
+    <EnumPair systemName="q30m" userLabel="q30m" />
+    <EnumPair systemName="q1h" userLabel="q1h" />
+    <EnumPair systemName="q2h" userLabel="q2h" />
+    <EnumPair systemName="q3h" userLabel="q3h" />
+  </EnumType>
+  <EnumType enumName="ConceptOwnerTypes" enumLabel="Concept Owner Types" toolTip="Define the type of lock ownership applicable to the protocol.">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Owner" userLabel="Owner" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="OwnerAuthor" userLabel="Owner Author" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="Admin" userLabel="Admin" />
+  </EnumType>
+  <EnumType enumName="ConceptPolicyTypes" enumLabel="Concept Policy Types" toolTip="Define the type of lock applicable to the protocol.">
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="StageBased" userLabel="Stage Based" />
+    <EnumPair customValue="false" preserve="true" hidden="false" systemName="SMEBased" userLabel="SME Based" />
+  </EnumType>
+   <EnumType enumLabel="Stage Lock Reasons" enumName="StageLockReasons" toolTip="Define the type of Stage Lock Reasons applicable to the protocol.">
+    <EnumPair hidden="false" preserve="false" systemName="StageLockReason" userLabel="Lock Required" />
+  </EnumType>
+  <EnumType enumLabel="Stage Unlock Reasons" enumName="StageUnlockReasons" toolTip="Define the type of Stage Unlock Reasons applicable to the protocol.">
+    <EnumPair hidden="false" preserve="true" systemName="StageUnlockReason" userLabel="Unlock Required" />
+  </EnumType>
+  <EnumType enumLabel="SME Lock Reasons" enumName="SMELockReasons" toolTip="Define the type of SME Lock Reasons applicable to the protocol.">
+    <EnumPair hidden="false" preserve="false" systemName="SMELockReason" userLabel="Lock Required" />
+  </EnumType>
+  <EnumType enumLabel="SME Unlock Reasons" enumName="SMEUnlockReasons" toolTip="Define the type of SME Unlock Reasons applicable to the protocol.">
+    <EnumPair hidden="false" preserve="true" systemName="SMEUnlockReason" userLabel="Unlock Required" />
+  </EnumType>
+  <EnumType enumLabel="Study Restrictions" enumName="StudyRestrictionTypes" toolTip="Types of Restrictions and Conduct Policies of the study">
+    <EnumPair preserve="true" systemName="disallowedMedPrior" userLabel="Disallowed Med Prior" />
+    <EnumPair preserve="true" systemName="disallowedMedsConcomitant" userLabel="Disallowed Med Concomitant" />
+    <EnumPair preserve="true" systemName="criteriaForDiscontinuationFromTestArticle" userLabel="Discontinuation from Test Article" />
+    <EnumPair preserve="true" systemName="criteriaForWithdrawalFromStudy" userLabel="Discontinuation from Study" />
+  </EnumType>
+  <EnumType enumName="WeightTypes" enumLabel="Weights" toolTip="Define the unit.">
+     <EnumPair systemName="mg" userLabel="mg" preserve="true" hidden="false" />
+     <EnumPair systemName="g" userLabel="g" preserve="true" hidden="false" />
+     <EnumPair systemName="oz" userLabel="oz" preserve="true" hidden="false" />
+  </EnumType>
+  <EnumType enumName="FoodFastingTypes" enumLabel="Food/Fasting Types" toolTip="Define the food and fasting requirement">
+     <EnumPair systemName="none" userLabel="None" preserve="true" hidden="false" />
+     <EnumPair systemName="withFood" userLabel="With food" preserve="true" hidden="false" />
+     <EnumPair systemName="emptyStomach" userLabel="On an empty stomach" preserve="true" hidden="false" />
+     <EnumPair systemName="fast12Hours" userLabel="Fast for 12 hours" preserve="true" hidden="false" />
+     <EnumPair systemName="fast24hours" userLabel="Fast for 24 hours" preserve="true" hidden="false" />
+  </EnumType>
+</EnumMapper>

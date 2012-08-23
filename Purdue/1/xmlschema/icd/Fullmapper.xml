@@ -1,0 +1,1024 @@
+<ElementChooser xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/echooser.xsd">
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Administration" tabColor="#5299CC" elementType="" editorClass="PDG.Administration" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="AdminMapping.xml" systemName="Administrative" toolTip="" hidden="false" cdiscIdentifier="">
+    <ElementBucket bucketLabel="Identification" elementType="Administrative" systemName="Administrative" toolTip="" cdiscIdentifier="" hidden="false">
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" elementLabel="Protocol ID" ftElementType="Element" toolTip="The unique identifier for this study">
+        <ElementStatus docType="Protocol" required="true" default="true" mfu="false" />
+      </ChooserEntry>
+      <!-- DG Uncommented version, version name, and version type and made unrequired 6-7-04 -->
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionDate" elementLabel="Protocol Date" ftElementType="Element" toolTip="The date of the version of the protocol">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionName" elementLabel="Protocol Version" ftElementType="Element" toolTip="The name of the version or amendment of this protocol">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/versionType" elementLabel="Version Type" ftElementType="Element" toolTip="The type of version (draft, final, etc.)">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/title/brief" elementLabel="Short Title" ftElementType="Element" toolTip="A short title or label for this study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/title/full" elementLabel="Full Title" ftElementType="Element" toolTip="The official title of the protocol">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" elementLabel="Phase" ftElementType="Element" toolTip="Coded study phase" enumList="CodedPhaseTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/@phase" elementLabel="Phase" ftElementType="Element" toolTip="The phase of investigation for this study">
+				<ElementStatus docType="Protocol" required="true" default="false" mfu="false"/>
+			</ChooserEntry-->
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/indication" elementLabel="Indication" ftElementType="Element" toolTip="The specific therapeutic indication for this study">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/description/brief" elementLabel="Brief Description" ftElementType="Element" toolTip="A brief description of the study design">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/description/full" elementLabel="Detailed Description" ftElementType="Element" toolTip="A detailed summary of the study design">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/isMultiCentered" elementLabel="Study Type" ftElementType="Element" toolTip="Whether the study will be conducted at a single center or multiple centers" enumList="MultiCenteredTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/plannedNumberStudyCenters" elementLabel="Planned # Sites" ftElementType="Element" toolTip="The number of study centers anticipated">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/countries" elementLabel="Countries" ftElementType="Element" toolTip="Countries where a study will be performed" stickyCase="true" />
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryGrantor" elementLabel="Grantor" ftElementType="Element" toolTip="The name of the regulatory authority granting permission to conduct a study in a particular country" stickyCase="true" />
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber" elementLabel="Grantor Number" ftElementType="Element" toolTip="The number assigned to a protocol by a regulatory authority">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryGrantor" elementLabel="Other Grantor" ftElementType="Element" toolTip="The name of other regulatory authority granting permission to conduct a study in a particular country; applicable for multi-national studies" stickyCase="true" />
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryNumber" elementLabel="Other Grantor Number" ftElementType="Element" toolTip="The number assigned to a protocol by a second regulatory authority">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/@indicationCoded" elementLabel="ICD-9 Indication" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="true" default="false" mfu="false"/>
+			</ChooserEntry-->
+      <!--Removed TherapeuticArea-->
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/IndicationCode" elementLabel="IndicationCode" ftElementType="Collection" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/contacts" elementLabel="Contacts" ftElementType="Template" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/conditionKeywords" elementLabel="Condition Keywords" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+      <!--ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" elementLabel="Coded Conditions" ftElementType="Element" toolTip="tooltip here">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry-->
+    </ElementBucket>
+    <ElementBucket bucketLabel="Organizations" elementType="Organizations" systemName="Organizations">
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization" elementLabel="Associated Organization" ftElementType="Template" toolTip="An organization associated with this study - role is defined in role type" stickyCase="true">
+        <Complex>
+          <ChooserEntry elementPath="name" elementLabel="Organization Name" ftElementType="Element" toolTip="The official organization name. Organizations may be sponsors, CROs, labs, etc." stickyCase="true" />
+          <ChooserEntry elementPath="organizationType" elementLabel="Type" ftElementType="Element" toolTip="Organization's role in this study" enumList="OrganizationTypes" dataType="Coded" />
+          <ChooserEntry elementPath="Address/address1" elementLabel="Address 1" ftElementType="Element" toolTip="Organization address line 1" stickyCase="true" />
+          <ChooserEntry elementPath="Address/address2" elementLabel="Address 2" ftElementType="Element" toolTip="Organization address line 2" stickyCase="true" />
+          <ChooserEntry elementPath="Address/city" elementLabel="City" ftElementType="Element" toolTip="City in which the organization ls located." stickyCase="true" />
+          <ChooserEntry elementPath="Address/stateprov" elementLabel="State / Province" ftElementType="Element" toolTip="State or province of the organization" stickyCase="true" />
+          <ChooserEntry elementPath="Address/postalCode" elementLabel="Postal or Zip Code" ftElementType="Element" toolTip="Organization's postal or zip code" />
+          <ChooserEntry elementPath="Address/country" elementLabel="Country" ftElementType="Element" toolTip="Organization country" stickyCase="true" />
+          <ChooserEntry elementPath="Address/telephone" elementLabel="Telephone" ftElementType="Element" toolTip="Organization's telephone number - any format OK" />
+          <ChooserEntry elementPath="Address/fax" elementLabel="Facsimile" ftElementType="Element" toolTip="Organization's fax number - any format OK" />
+          <ChooserEntry elementPath="custom1" elementLabel="custom1" ftElementType="Element" customvar="true" toolTip="Custom variable one." enumList="PurposeTypes" dataType="Coded" />
+          <ChooserEntry elementPath="custom2" elementLabel="custom2" ftElementType="Element" customvar="true" toolTip="Custom variable two." />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Contacts" elementType="Contacts" systemName="Contacts">
+      <ChooserEntry elementPath="/FTICP/Administrative/ProtocolSkeleton/Contacts/Contact" elementLabel="Contact" ftElementType="Template" toolTip="A contact person for this study.  Person's role is defined in contact type" stickyCase="true">
+        <Complex>
+          <ChooserEntry elementPath="personName" elementLabel="Contact Name" ftElementType="Element" toolTip="Full name of contact as it will appear in the protocol." stickyCase="true" />
+          <ChooserEntry elementPath="roleType" elementLabel="Role" ftElementType="Element" toolTip="Contact's role in this study" enumList="ContactRoleTypes" stickyCase="true" dataType="Coded" />
+          <ChooserEntry elementPath="associatedOrganizations/associatedOrganization" elementLabel="Organization" ftElementType="Collection" toolTip="This contact's associated organization" assocChooserPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization" assocClass="Tspd.Businessobject.Organization" stickyCase="true" />
+          <ChooserEntry elementPath="Address/address1" elementLabel="Address 1" ftElementType="Element" toolTip="Contact person's address line 1." stickyCase="true" />
+          <ChooserEntry elementPath="Address/address2" elementLabel="Address 2" ftElementType="Element" toolTip="Contact person's address line 2." stickyCase="true" />
+          <ChooserEntry elementPath="Address/city" elementLabel="City" ftElementType="Element" toolTip="Contact person's city." stickyCase="true" />
+          <ChooserEntry elementPath="Address/stateprov" elementLabel="State / Province" ftElementType="Element" toolTip="Contact person's state or province." stickyCase="true" />
+          <ChooserEntry elementPath="Address/postalCode" elementLabel="Postal or Zip Code" ftElementType="Element" toolTip="Contact person's zip or postal code." />
+          <ChooserEntry elementPath="Address/country" elementLabel="Country" ftElementType="Element" toolTip="Contact person's country." stickyCase="true" />
+          <ChooserEntry elementPath="Address/telephone" elementLabel="Telephone" ftElementType="Element" toolTip="Contact person's voice telephone - any format OK" />
+          <ChooserEntry elementPath="Address/fax" elementLabel="Facsimile" ftElementType="Element" toolTip="Contact person's fax number - any format OK." />
+          <ChooserEntry elementPath="Address/email" elementLabel="e-mail" ftElementType="Element" toolTip="Contact person's e-mail address at the organization." />
+          <ChooserEntry elementPath="roleComment" elementLabel="Role Details" ftElementType="Element" toolTip="Comments on this person's role in the study." />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Test Article" tabColor="#FCCD63" editorClass="PDG.Test Article" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="CTMaterialMapping.xml" systemName="TrialMaterials">
+    <ElementBucket elementType="TrialMaterials" bucketLabel="Test Article" hidden="true" systemName="TrialMaterials">
+      <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" elementLabel="Clinical Trial Material" ftElementType="Template" toolTip="A material used in a clinical trial." stickyCase="true">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="CTMaterialName" elementLabel="Test Article Name" ftElementType="Element" toolTip="The name of the clinical trial material" stickyCase="true" />
+          <ChooserEntry elementPath="CTMaterialType" elementLabel="Type" ftElementType="Element" toolTip="The type of the clinical trial material" enumList="CTMaterialTypes" dataType="Coded" />
+          <ChooserEntry elementPath="primaryRoleInStudy" elementLabel="Primary Role" ftElementType="Element" toolTip="The primary role for this clinical trial material in the study" enumList="CTMaterialRoleTypes" dataType="Coded" />
+          <ChooserEntry elementPath="routeOfAdministration" elementLabel="Route" ftElementType="Element" toolTip="The route of administration for the trial material" enumList="RouteOfAdminTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="formulation" elementLabel="Formulation" ftElementType="Element" toolTip="The formulation of the trial material" enumList="FormulationTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="dose" elementLabel="Dose" ftElementType="Element" toolTip="The dosing of the formulation of the clinical trial material">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="strength" elementLabel="Strength" ftElementType="Element" toolTip="The strength of the formulation of the clinical trial material">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="accountabilityProcedures" elementLabel="Accountability Procedures" ftElementType="Element" toolTip="The accountability procedures for a particular clinical trial material">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedCTMaterials/associatedCTMaterial" elementLabel="Assoc. CTMaterial" ftElementType="Collection" toolTip="The ClinicalTrialMaterial(s) this ClinicalTrialMaterial is linked to" assocChooserPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" assocClass="Tspd.Businessobject.ClinicalTrialMaterial">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="SDTMDomain" elementLabel="Tag for SDTM output" ftElementType="Element" toolTip="" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/ClinicalTrialMaterials/MaterialsInArms/MaterialInArm" elementLabel="clinical trial material" ftElementType="Template" toolTip="The clinical trial material used in a particular study arm">
+        <Complex>
+          <ChooserEntry elementPath="roleOfMaterialInArm" elementLabel="Role in Arm" ftElementType="Element" toolTip="The role of the trial material in a particular arm" enumList="CTMaterialRoleTypes" dataType="Coded" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Study Design" tabColor="#83A49D" editorClass="PDG.Design" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="DesignMapping.xml" systemName="StudyDesign">
+    <ElementBucket bucketLabel="Objectives" elementType="Objectives" systemName="Objectives">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Objectives/Objective" elementLabel="Objective" ftElementType="Template" toolTip="An objective or goal of this study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Objective Text" ftElementType="Element" toolTip="A statement of a planned objective of the study">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="objectiveType" elementLabel="Objective Type" ftElementType="Element" toolTip="The type of objective: primary, secondary, etc." enumList="ObjectiveTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedOutcomes/associatedOutcome" elementLabel="Assoc. Outcomes" ftElementType="Collection" toolTip="The outcomes used to establish this objective" assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Outcomes" elementType="PriOutcomes" systemName="PriOutcomes">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Primary Outcome" ftElementType="Template" toolTip="A measurable outcome or endpoint used to establish an objective for this study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="Variables/StudyVarRef" elementLabel="Endpoint" ftElementType="Collection" toolTip="The Endpoint Variables for this Outcome" assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Secondary Outcomes" elementType="SecOutcomes" systemName="SecOutcomes">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Secondary Outcome" ftElementType="Template" toolTip="An endpoint or outcome used in this study to establish an objective">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Tertiary Outcomes" elementType="TerOutcomes" systemName="TerOutcomes">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" elementLabel="Tertiary Outcome" ftElementType="Template" toolTip="The tertiary outcomes or endpoints defined in this study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Outcome Text" ftElementType="Element" toolTip="A statement of a planned outcome of the study">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="A short description for this objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="outcomeType" elementLabel="Outcome Type" ftElementType="Element" toolTip="The type of outcome (e.g. efficacy, safety, etc)" enumList="OutcomeTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedObjectives/associatedObjective" elementLabel="Assoc. Objectives" ftElementType="Collection" toolTip="The objective(s) this outcome is used to establish" assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="analyticMethods/analyticMethod" elementLabel="Analytic Method" ftElementType="Collection" toolTip="The analytic method used to assess the outcome" assocChooserPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" assocClass="Tspd.Businessobject.AnalyticMethod">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Design Concepts" elementType="StudyDesign" systemName="StudyDesign">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/masking" elementLabel="Blinding" ftElementType="Element" toolTip="Information regarding blinding of the study" enumList="BlindingTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/maintainingBlindProcedure" elementLabel="Study Blinding" ftElementType="Element" toolTip="The process for maintaining the blind of the study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/subjectUnblindingProcedure" elementLabel="Unblinding Procedure" ftElementType="Element" toolTip="The process for unblinding treatment assignment">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/controlType" elementLabel="Control Type" ftElementType="Element" toolTip="The type of control, if any, used in the study" enumList="ControlTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/comparator" elementLabel="Comparator" ftElementType="Element" toolTip="The comparative product used in studies involving a control group" hidden="True" />
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/methodOfAllocation" elementLabel="Randomization" ftElementType="Element" toolTip="The method of assigning treatment or randomizing a subject to a study arm" enumList="AllocationTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/randAndStratDetails" elementLabel="Randomization / Stratification" ftElementType="Element" toolTip="The statistical details regarding any randomization and stratification">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/studyConfiguration" elementLabel="Study Configuration" ftElementType="Element" toolTip="The configuration of the study (single group, parallel, etc.)" enumList="ConfigurationTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/natureOfInvestigation" elementLabel="Investigation Type" ftElementType="Element" toolTip="The nature of the investigation of the study (observational, interventional)" enumList="InvestigationTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/overallStudyOutcomeType" elementLabel="Overall Study Outcome" ftElementType="Element" toolTip="The planned overall outcome of the study (safety, efficacy, etc)" enumList="OverallStudyOutcomeTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/studyPurpose" elementLabel="Study Purpose" ftElementType="Element" toolTip="The purpose of the study (treatment, prevention, etc.)" enumList="StudyPurposeTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/numberOfArms" elementLabel="# Study Arms" ftElementType="Element" toolTip="" hidden="true">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Study Arms" elementType="Arms" systemName="Arms">
+      <ChooserEntry elementPath="/FTICP/StudyDesign/Design/Arms/Arm" elementLabel="Arm" ftElementType="Template" toolTip="Independent study arms">
+        <Complex>
+          <!--until we have a way of displaying schedules-->
+          <!--ChooserEntry elementPath="associatedScheduleID" elementLabel="" ftElementType="Collection"/-->
+          <ChooserEntry elementPath="description/brief" elementLabel="Arm Name" ftElementType="Element" toolTip="Name of the study arm as it appears in the protocol." />
+          <ChooserEntry elementPath="plannedEnrollmentPerArm" elementLabel="# of Subjects" ftElementType="Element" toolTip="Planned number of subjects in this arm." />
+          <ChooserEntry elementPath="randomizationWeightForArm" elementLabel="Randomization Weight this Arm" ftElementType="Element" toolTip="Relative weight for randomization of patients for this arm." />
+          <ChooserEntry elementPath="SDTMDomain" elementLabel="Tag for SDTM output" ftElementType="Element" toolTip="" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Statistics" elementType="AdvancedStats" file="StatMapping2.xml" systemName="AdvancedStats" tabColor="#ED6A36" tabLabel="Statistics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+    <ElementBucket bucketLabel="Anaysis Sets" elementType="AnalysisSets" hidden="false" systemName="AnalysisSets">
+      <ChooserEntry elementLabel="Population Set" elementPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" ftElementType="Template" toolTip="A subset of the population for analysis">
+        <Complex>
+          <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Set Type" elementPath="setType" enumList="AnalysisSetTypes" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Set Criteria" elementPath="criteria" ftElementType="Element" toolTip="The criteria for the Analysis Set">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Endpoints" elementPath="classVariables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used to filter for this set">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Analyses" elementType="Analyses" hidden="false" systemName="Analyses">
+      <ChooserEntry elementLabel="Analysis" elementPath="/FTICP/StatisticsFull/Analyses/Analysis" ftElementType="Template" toolTip="An Analysis, HypothesisTest, or Sample Size Calculation">
+        <Complex>
+          <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Rationale" elementPath="rationale" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Analysis Role" elementPath="analysisRole" enumList="AnalysisRoles" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Analysis Class" elementPath="analysisClass" enumList="AnalysisClassTypes" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Number" elementLabel="Significance Level" elementPath="significanceLevel" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Number" elementLabel="Power" elementPath="power" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Alpha Tail" elementPath="alphaTails" enumList="AlphaTailTypes" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Number" elementLabel="Rejection Region" elementPath="lowerRejectionLimit" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Number" elementLabel="Lower  -  Upper" elementPath="upperRejectionLimit" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Comparison Types" elementPath="comparisonType" enumList="AnalyticComparisonTypes" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Comparisons Adjustment" elementPath="multipleComparisonsAdjustment" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="End Points" elementPath="compositeEndpoints" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Missing Data Procedures" elementPath="missingDataProcedures" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Number" elementLabel="Variability" elementPath="variability" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" assocClass="Tspd.Businessobject.StatisticalModel" elementLabel="StatisticalModels" elementPath="StatisticalModels/StatisticalModel" ftElementType="Collection" toolTip="The StatisticalModel(s) this Analysis is used to establish">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="SampleSizes" elementPath="SampleSizeAnalyses/sampleSizeAnalysis" ftElementType="Collection" toolTip="The SampleSize(s) this Analysis is used to establish">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" assocClass="Tspd.Businessobject.AnalysisPopulationSet" elementLabel="AnalysisSets" elementPath="AnalysisSets/analysisSet" ftElementType="Collection" toolTip="The AnalysisSet(s) this Analysis is used to establish">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Hypotheses" elementType="Hypotheses" hidden="false" systemName="Hypotheses">
+      <ChooserEntry elementLabel="Hypothesis" elementPath="/FTICP/StatisticsFull/Hypotheses/Hypothesis" ftElementType="Template" toolTip="A postulate leading to a study objective">
+        <Complex>
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Significant Difference" elementPath="clinicallySignificantDifference" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Objectives/Objective" assocClass="Tspd.Businessobject.Objective" elementLabel="Objectives" elementPath="AssociatedObjectives/associatedObjective" ftElementType="Collection" toolTip="The objective(s) this Hypothesis is used to establish">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/Analyses/Analysis" assocClass="Tspd.Businessobject.Analysis" elementLabel="Analyses" elementPath="AssociatedAnalyses/associatedAnalysis" ftElementType="Collection" toolTip="The analysis/es this Hypothesis is used to establish">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <ChooserEntry dataType="Coded" elementLabel="Type" elementPath="hypothesisType" enumList="HypothesisTypes" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Test Statistic" elementPath="TestStatistics/StudyVarRef" ftElementType="Collection" toolTip="Test Statistics associated with this hypothesis">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+          <!--xs:element name="testStatistic" ref="StudyVarRef" /-->
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Interim Analyses" elementType="InterimAnalyses" hidden="true" systemName="InterimAnalyses">
+      <ChooserEntry elementLabel="Interim Analysis" elementPath="InterimAnalyses/InterimAnalysis" ftElementType="Template" toolTip="tooltip to be defined">
+        <Complex>
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Adjustment Rule" elementPath="trialAdjustmentRule" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Timing Adjustment" elementPath="timingAdjustment" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Spending Function" elementPath="alphaSpendingFunction" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Sequence Type" elementPath="interimType" enumList="InterimAnalysisTypes" ftElementType="Element" hidden="true" toolTip="" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Statistical Models" elementType="StatisticalModels" hidden="false" systemName="StatisticalModels">
+      <ChooserEntry elementLabel="StatisticalModel" elementPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" ftElementType="Template" toolTip="Statistical Model">
+        <Complex>
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="Full description of the statistical model" />
+          <ChooserEntry elementLabel="Comp Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="Brief Description of the statistical model" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="Label of the statistical model" />
+          <ChooserEntry elementLabel="Proc Signature" elementPath="procSignature" ftElementType="Element" hidden="false" toolTip="prolog code to invoke an analysis procedure" />
+          <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.EquationMacro.EquationDisplay,FTProtocolDTs.dll" dataType="MathML" elementLabel="Method" elementPath="methodFunc" ftElementType="Element" hidden="false" toolTip="MathML expression for the procedure" />
+          <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Assumptions" elementPath="Assumptions" ftElementType="Element" hidden="false" toolTip="Assumptions under which this model will function" />
+          <ChooserEntry dataType="Coded" elementLabel="Model Type" elementPath="analysisType" enumList="AnalysisTypes" ftElementType="Element" hidden="false" toolTip="The role this analysis plays in the study" />
+          <!--xs:element name="Computation" type="Computation" /-->
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Parameter" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The parameters for this Statistical Model">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="AnalysisVariableMap" elementPath="/FTICP/StatisticsFull/ModelMappings/AnalysisToModel" ftElementType="Template" hidden="true" toolTip="Mapping between Statistical Models and Analyses">
+        <Complex>
+          <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Last Element" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry assocChooserPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" assocClass="Tspd.Businessobject.StudyVariable" elementLabel="Analysis Variables" elementPath="Variables/StudyVarRef" ftElementType="Collection" toolTip="The variables that are used by this analysis">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Study Variables" elementType="StudyVariables" hidden="false" systemName="StudyVariables">
+      <ChooserEntry detEditorClass="WP_VARIABLE_DETAIL_FORM_ELD02" editorClass="WP_VARIABLE_DETAIL_FORM_ELD02" elementLabel="Study Variable" elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" ftElementType="Template" toolTip="Study Variable Definition">
+        <Complex>
+          <ChooserEntry elementLabel="Instructions" elementPath="description/full" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" toolTip="Brief description of this variable" />
+          <ChooserEntry elementLabel="Symbol" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="Variable's accepted Symbol" />
+          <ChooserEntry elementLabel="Definition" elementPath="definition" ftElementType="Element" hidden="false" toolTip="Variable Definition" />
+          <ChooserEntry elementLabel="Unit" elementPath="unitOfMeasureString" ftElementType="Element" hidden="false" toolTip="Unit of Measure" />
+          <ChooserEntry elementLabel="Unit ID" elementPath="unitOfMeasureID" ftElementType="Element" hidden="true" toolTip="FT Id for this unit of measure" />
+          <ChooserEntry elementLabel="Valid Min" elementPath="minValid" ftElementType="Element" hidden="false" toolTip="Minimum valid value for this unit of measure" />
+          <ChooserEntry elementLabel="Valid Max" elementPath="maxValid" ftElementType="Element" hidden="false" toolTip="Maximum valid value for this unit of measure" />
+          <ChooserEntry elementLabel="Normal Min" elementPath="studyMin" ftElementType="Element" hidden="false" toolTip="Normal minimum for this study population" />
+          <ChooserEntry elementLabel="Normal Max" elementPath="studyMax" ftElementType="Element" hidden="false" toolTip="Normal maximum for this study population" />
+          <ChooserEntry elementLabel="Panic Low" elementPath="panicLow" ftElementType="Element" hidden="false" toolTip="Minimum threshhold needing attention by investigator" />
+          <ChooserEntry elementLabel="Panic High" elementPath="panicHigh" ftElementType="Element" hidden="false" toolTip="Maximum threshhold needed attention by investigator" />
+          <ChooserEntry elementLabel="SAS Name" elementPath="alias1" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Unused" elementPath="alias2" ftElementType="Element" hidden="false" toolTip="" />
+          <ChooserEntry elementLabel="Unused" elementPath="alias3" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="SAScodesys" elementPath="alias1CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Unused" elementPath="alias2CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Unused" elementPath="alias3CodeSys" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry dataType="Coded" elementLabel="Data Type" elementPath="dataType" enumList="VariableDataTypes" ftElementType="Element" hidden="false" toolTip="Value data type for this variable" />
+          <ChooserEntry elementLabel="Keys" elementPath="dimension" ftElementType="Element" hidden="false" toolTip="Variables defining the axes of a multi dimensional variable" />
+          <ChooserEntry dataType="Coded" elementLabel="Origin" elementPath="originType" enumList="StudyVariableOrigins" ftElementType="Element" hidden="false" toolTip="Method of instantiation for this variable" />
+          <ChooserEntry elementLabel="Imputation Func" elementPath="imputationFunc" ftElementType="Element" hidden="true" toolTip="Math expression of the manner in which data is imputed for this variable, if missing" />
+          <ChooserEntry elementLabel="Imputation Method" elementPath="imputationMethod" ftElementType="Element" hidden="true" toolTip="Description of method by which data is imputed for this variable, if missing" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Statistics" tabColor="#ED6A36" editorClass="PDG.Statistics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="StatMapping.xml" systemName="Statistical" elementType="Statistical">
+    <ElementBucket elementType="Statistical" bucketLabel="Statistical Info" systemName="Statistical">
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/evaluableSubjectDef" elementLabel="Evaluable Subject Definition" ftElementType="Element" toolTip="A definition of the evaluable subject subset">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/intentToTreatPopulation" elementLabel="Intent to Treat Population" ftElementType="Element" toolTip="A definition of the intent to treat population">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/clinicallyMeaningfulDifference" elementLabel="Clinically Meaningful Difference" ftElementType="Element" toolTip="A definition of the clinically meaningful difference for planned statistical analyses">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/missingDataProcedures" elementLabel="Missing Data Procedures" ftElementType="Element" toolTip="The procedures for addressing missing data in the planned statistical analyses">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/interimAnalysisInfo" elementLabel="Interim Analysis Plan" ftElementType="Element" toolTip="The details for all planned interim analyses">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/subgroupAnalyses" elementLabel="Planned Sub-group Analyses" ftElementType="Element" toolTip="Description of planned sub-group analyses">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/multipleComparisonsAdjustment" elementLabel="Multiple Comparisons Adjustment" ftElementType="Element" toolTip="The description of adjustments in order to make multiple comparisons">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/methodForMinimizingBias" elementLabel="Bias Issues" ftElementType="Element" toolTip="The method of minimizing bias">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/statSoftware" elementLabel="Statistical Software / Version" ftElementType="Element" toolTip="The statistical software to be used for data analysis" stickyCase="true" />
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/compositeEndpoints" elementLabel="Composite Endpoints" ftElementType="Element" toolTip="The planned composite endpoints of the study, if any">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket elementType="Mixed" bucketLabel="Sample Size Calculation" systemName="Statistical">
+      <!-- this mechanism is not supported to map an object id to an object so it is commented out 
+			<ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/@primaryStudyOutcomeID" elementLabel="Primary Study Outcome" ftElementType="Collection" toolTip="The primary study outcome"
+					assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+				<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+			</ChooserEntry>
+			 -->
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/power" elementLabel="Power" ftElementType="Element" toolTip="The probability of detecting a true difference between groups">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/sampleSize" elementLabel="Sample Size" ftElementType="Element" toolTip="The sample size of the study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/sampleSizeCalcMethod" elementLabel="Calculation Method" ftElementType="Element" toolTip="The method used to calculate the sample size of the study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/sampleSizeCalculation/anticipatedEffectSize" elementLabel="Expected Effect" ftElementType="Element" toolTip="The expected change in the primary analysis based on intervention">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket elementType="AnalyticMethods" bucketLabel="Analytic Method" systemName="AnalyticMethods">
+      <ChooserEntry elementPath="/FTICP/Statistical/Statistics/AnalyticMethods/AnalyticMethod" elementLabel="Analytical Method" ftElementType="Template" toolTip="An analytical methods used to analyze data from the study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Description" ftElementType="Element" toolTip="The description of the analytical method">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <!--ChooserEntry elementPath="description/brief" elementLabel="Description" ftElementType="Element" toolTip="The description of the analytical method">
+						<ElementStatus docType="Protocol" required="false" default="false" mfu="false"/>
+					</ChooserEntry-->
+          <ChooserEntry elementPath="alphaValue" elementLabel="Alpha Value" ftElementType="Element" toolTip="The alpha value associated with a specific analytical method">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="alphaTails" elementLabel="Alpha Tails" ftElementType="Element" toolTip="Either one-tailed or two-tailed" enumList="AlphaTailTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="analysisSetPopulation" elementLabel="Population" ftElementType="Element" toolTip="The set of subjects to be uused for a given analysis (ITT, evaluable, per protocol)">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="associatedOutcomes/associatedOutcome" elementLabel="Outcome" ftElementType="Collection" toolTip="The outcome associated with an analysis method" assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Study Variables" elementType="StudyVariables" hidden="false">
+      <ChooserEntry elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" elementLabel="Study Variable" ftElementType="Template" toolTip="Study Variable Definition" editorClass="WP_VARIABLE_DETAIL_FORM_ELD02" detEditorClass="WP_VARIABLE_DETAIL_FORM_ELD02">
+        <Complex>
+          <ChooserEntry elementPath="description/full" elementLabel="Instructions" ftElementType="Element" toolTip="" hidden="false" />
+          <ChooserEntry elementPath="description/brief" elementLabel="Name" ftElementType="Element" toolTip="Brief description of this variable" hidden="false" />
+          <ChooserEntry elementPath="description/label" elementLabel="Symbol" ftElementType="Element" toolTip="Variable's accepted Symbol" hidden="false" />
+          <ChooserEntry elementPath="definition" elementLabel="Definition" ftElementType="Element" toolTip="Variable Definition" hidden="false" />
+          <ChooserEntry elementPath="unitOfMeasureString" elementLabel="Unit" ftElementType="Element" toolTip="Unit of Measure" hidden="false" />
+          <ChooserEntry elementPath="unitOfMeasureID" elementLabel="Unit ID" ftElementType="Element" toolTip="FT Id for this unit of measure" hidden="true" />
+          <ChooserEntry elementPath="minValid" elementLabel="Valid Min" ftElementType="Element" toolTip="Minimum valid value for this unit of measure" hidden="false" />
+          <ChooserEntry elementPath="maxValid" elementLabel="Valid Max" ftElementType="Element" toolTip="Maximum valid value for this unit of measure" hidden="false" />
+          <ChooserEntry elementPath="studyMin" elementLabel="Normal Min" ftElementType="Element" toolTip="Normal minimum for this study population" hidden="false" />
+          <ChooserEntry elementPath="studyMax" elementLabel="Normal Max" ftElementType="Element" toolTip="Normal maximum for this study population" hidden="false" />
+          <ChooserEntry elementPath="panicLow" elementLabel="Panic Low" ftElementType="Element" toolTip="Minimum threshhold needing attention by investigator" hidden="false" />
+          <ChooserEntry elementPath="panicHigh" elementLabel="Panic High" ftElementType="Element" toolTip="Maximum threshhold needed attention by investigator" hidden="false" />
+          <ChooserEntry elementPath="alias1" elementLabel="SAS Name" ftElementType="Element" toolTip="" hidden="false" />
+          <ChooserEntry elementPath="alias2" elementLabel="CRF Form" ftElementType="Element" toolTip="" hidden="false" />
+          <ChooserEntry elementPath="alias3" elementLabel="Unused" ftElementType="Element" toolTip="" hidden="true" />
+          <ChooserEntry elementPath="alias1CodeSys" elementLabel="SAScodesys" ftElementType="Element" toolTip="" hidden="true" />
+          <ChooserEntry elementPath="alias2CodeSys" elementLabel="CRFcodesys" ftElementType="Element" toolTip="" hidden="true" />
+          <ChooserEntry elementPath="alias3CodeSys" elementLabel="Unused" ftElementType="Element" toolTip="" hidden="true" />
+          <ChooserEntry elementPath="dataType" elementLabel="Data Type" ftElementType="Element" toolTip="Value data type for this variable" hidden="false" enumList="VariableDataTypes" dataType="Coded" />
+          <ChooserEntry elementPath="dimension" elementLabel="Keys" ftElementType="Element" toolTip="Variables defining the axes of a multi dimensional variable" hidden="false" />
+          <ChooserEntry elementPath="originType" elementLabel="Origin" ftElementType="Element" toolTip="Method of instantiation for this variable" hidden="false" enumList="StudyVariableOrigins" dataType="Coded" />
+          <ChooserEntry elementPath="imputationFunc" elementLabel="Imputation Func" ftElementType="Element" toolTip="Math expression of the manner in which data is imputed for this variable, if missing" hidden="true" />
+          <ChooserEntry elementPath="imputationMethod" elementLabel="Imputation Method" ftElementType="Element" toolTip="Description of method by which data is imputed for this variable, if missing" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Population" tabColor="#68BED9" editorClass="PDG.Population" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="PopulationMapping.xml" systemName="StudyPopulation">
+    <ElementBucket elementType="StudyPopulation" bucketLabel="Population Info" systemName="StudyPopulation">
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/entranceCriteriaSummary" elementLabel="Summary of Entrance Criteria" ftElementType="Element" toolTip="A brief summary of the entrance criteria">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/evaluableSubjectDef" elementLabel="Evaluable Subject Definition" ftElementType="Element" toolTip="A definition of the evaluable subject subset">
+        <ElementStatus docType="Protocol" required="true" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/acceptsHealthyVolunteersType" elementLabel="This study accepts healthy volunteers" ftElementType="Element" toolTip="Whether or not this study accepts healthy volunteers." enumList="AcceptsHealthyVolunteersTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/minSubjectAge" elementLabel="Min Subject Age" ftElementType="Element" toolTip="The minimum allowable age for a subject to enter into study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/maxSubjectAge" elementLabel="Max Subject Age" ftElementType="Element" toolTip="The maximum age for subjects to enter into study">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/subjectAgeTimeUnit" elementLabel="Subject Age Time Unit" ftElementType="Element" toolTip="The subject age time unit" enumList="TimeUnit" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/gender" elementLabel="Gender" ftElementType="Element" toolTip="The gender of subjects who can enter this study" enumList="GenderTypes" dataType="Coded">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket elementType="EligibilityCriteria" bucketLabel="Eligibility Criteria" systemName="EligibilityCriteria">
+      <ChooserEntry elementPath="/FTICP/StudyPopulation/Population/EligibilityCriteria/EligibilityCriterion" elementLabel="Eligibility Criterion" ftElementType="Template" toolTip="A single eligibility criterion">
+        <Complex>
+          <ChooserEntry elementPath="description/brief" elementLabel="Short Description" ftElementType="Element" toolTip="A short name for this eligibility criterion">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="criterionType" elementLabel="Type" ftElementType="Element" toolTip="Whether a criterion is used to include or exclude a subject from study" enumList="EntranceCriterionTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="description/full" elementLabel="Long Description" ftElementType="Element" toolTip="The full text of an eligibility criterion">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="rationale" elementLabel="Rationale" ftElementType="Element" toolTip="The rationale for this eligibility criterion">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+          <ChooserEntry elementPath="classifierType" elementLabel="Sub-type" ftElementType="Element" toolTip="criteria sub-type" enumList="EntranceCriterionClassifierTypes" dataType="Coded">
+            <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Schedule of Activities" elementType="Schedule" file="ScheduleMapping.xml" systemName="Schedule" tabColor="#83A49D" tabLabel="Schedule" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+    <ElementBucket bucketLabel="Schedule" elementType="Schedule" hidden="true" systemName="Schedule">
+      <ChooserEntry elementLabel="Schedule Of Activities" elementPath="/FTICP/StudySchedule/Schedules/Schedule" toolTip="Schedule of activities or events.">
+        <Complex>
+          <ChooserEntry elementLabel="Schedule Name" elementPath="soaName" ftElementType="Element" stickyCase="true" toolTip="The name of this schedule" />
+          <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Arms/Arm" assocClass="Tspd.Businessobject.Arm" elementLabel="Study Arms" elementPath="AssociatedArms/AssociatedArm" ftElementType="Collection" toolTip="The study arms using this schedule">
+            <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+          </ChooserEntry>
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry detEditorClass="WP_PERIOD_DETAIL_ELD04" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Period" elementPath="Periods/Period" ftElementType="Template" toolTip="Study Period">
+        <Complex>
+          <ChooserEntry elementLabel="Period Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a period within the study" />
+          <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a period within the study" />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this period" />
+          <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+          <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="TimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this period." />
+          <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+          <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry detEditorClass="WP_SUBPERIOD_DETAIL_ELD05" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Sub-Period" elementPath="Children/SubPeriod" ftElementType="Template" toolTip="A sub-period is an optional breakout of the study period">
+        <Complex>
+          <ChooserEntry elementLabel="Sub-Period Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a subperiod within the study" />
+          <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a subperiod within the study" />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this subperiod" />
+          <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+          <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="TimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this subperiod." />
+          <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+          <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry detEditorClass="WP_EVENT_DETAIL_FORM_ELD06" editorClass="WP_VISITS_SCHEDULE_WKP04" elementLabel="Event" elementPath="Children/ProtocolEvent" ftElementType="Template" toolTip="This may be either an outpatient visit, or an inpatient day.">
+        <Complex>
+          <ChooserEntry elementLabel="Event Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a visit within the study" />
+          <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a visit within the study" />
+          <ChooserEntry dataType="Coded" elementLabel="Event Type" elementPath="eventType" enumList="EventTypes" ftElementType="Element" hidden="false" toolTip="The class of the study event">
+            <ElementStatus default="true" docType="Protocol" />
+          </ChooserEntry>
+          <ChooserEntry elementLabel="Window" elementPath="permittedTimeWindow" ftElementType="Element" toolTip="The window in which a visit can take place" />
+          <ChooserEntry elementLabel="Study Day" elementPath="effectiveTime" ftElementType="Element" toolTip="The study day or time relative to day 0 for this visit" />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Additional information (other than duration or footnote) pertaining to this visit" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="A footnote for this visit" />
+          <ChooserEntry dataType="Coded" elementLabel="Trial Epoch" elementPath="scheduleItemType" enumList="ScheduleItemTypes" ftElementType="Element" hidden="false" toolTip="EPOCH is used to describe a period of time that cuts across Arms, and applies to the trial as a whole.  Epochs may contain the same number or a different number of Elements for each Arm" />
+          <ChooserEntry elementLabel="other" elementPath="scheduleItemType/@otherText" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry detEditorClass="WP_SOA_CELL_DETAIL_FORM_ELD07" editorClass="PDG.Tasks" elementLabel="Task-Visit" elementPath="TaskVisits/TaskVisit" ftElementType="Template" toolTip="A task-visit lists all of the tasks that happen on a given visit.">
+        <Complex>
+          <ChooserEntry assocChooserPath="TaskVisitPurpose" assocClass="Tspd.Businessobject.TaskVisitPurpose" dataType="Coded" elementLabel="Purpose" elementPath="TaskVisitPurpose" enumList="PurposeTypes" ftElementType="Collection" toolTip="The purpose for this task at this visit" />
+          <ChooserEntry assocChooserPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" assocClass="Tspd.Businessobject.Outcome" elementLabel="Assoc. Outcomes" elementPath="associatedOutcomes/associatedOutcome" ftElementType="Collection" hidden="true" toolTip="Outcomes associated with this task on this visit" />
+          <ChooserEntry dataType="Coded" elementLabel="Local Lab" elementPath="localFacilityType" enumList="LocalFacilityTypes" ftElementType="Element" toolTip="Is the Visit to be held in a local facility." />
+          <ChooserEntry dataType="Coded" elementLabel="Central Lab" elementPath="centralFacilityType" enumList="CentralFacilityTypes" ftElementType="Element" toolTip="Is the Visit to be held in a central facility." />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail pertaining to the performance of this task at this visit" />
+          <ChooserEntry elementLabel="Label" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="A label for a planned execution of a Task at this visit" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this visit in the study" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Footnotes for this task during this visit" />
+          <ChooserEntry dataType="Coded" elementLabel="Frequency" elementPath="repeatInterval" enumList="TimeIntervalTypes" ftElementType="Element" toolTip="Frequency at which Task should be performed" />
+          <ChooserEntry dataType="Integer" elementLabel="Min Repeats" elementPath="repeatMin" ftElementType="Element" toolTip="Minimum number of repeats (0 = no minimum)" />
+          <ChooserEntry dataType="Integer" elementLabel="Max Repeats" elementPath="repeatMax" ftElementType="Element" toolTip="Maximum number of repeats (0 = no maximum)" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Valid window for repeatt" uomPath="windowUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for Repeat Window" />
+        </Complex>
+      </ChooserEntry>
+      <!-- always fetched in the context of a TaskVisit - so the path is relative-->
+      <ChooserEntry elementLabel="Purpose of Task at Visit" elementPath="TaskVisitPurpose" ftElementType="Template" toolTip="The purpose of this task at this specific visit.">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Purpose" elementPath="purposeType" enumList="PurposeTypes" ftElementType="Element" toolTip="Purpose of task at this visit" />
+          <ChooserEntry elementLabel="Other Purpose" elementPath="purposeType/@otherText" ftElementType="Element" toolTip="The user supplied purpose for this task at this visit" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="Divider Name" elementPath="Periods/Period" ftElementType="Template" isDivider="true" toolTip="A visual help to grouping periods.">
+        <Complex>
+          <ChooserEntry elementLabel="Divider Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name or identifier of a column break within the study" />
+          <ChooserEntry elementLabel="Abbreviation" elementPath="description/label" ftElementType="Element" hidden="false" toolTip="The abbreviation of a column break within the study" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Arm Path" elementPath="ArmRules/ArmRule" ftElementType="Template" toolTip="A link between two trial Periods">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Arm Linkage" elementPath="qualifier" enumList="LocalFacilityTypes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Last Element" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Unused" elementPath="termEVID" ftElementType="Element" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Decision Rule" elementPath="ClinicalRules/ClinicalRule" ftElementType="Template" toolTip="A branch which is executed now if the rule evaluates to true">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Clinical Rule" elementPath="qualifier" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Last Activity" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Next Activity" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Skip Rule" elementPath="NegationRules/NegationRule" ftElementType="Template" toolTip="Whether to Skip">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Negation of current Event" elementPath="qualifier" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Element To Test" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Next Element" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Repeat Rule" elementPath="CycleRules/CycleRule" ftElementType="Template" toolTip="Repeat rule for a group of trial activities">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="This" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Next" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Current" elementPath="current" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Frequency" elementPath="repeatInterval" enumList="TimeIntervalTypes" ftElementType="Element" toolTip="Frequency of   repeat" />
+          <ChooserEntry dataType="Integer" elementLabel="Min Repeats" elementPath="repeatMin" ftElementType="Element" toolTip="Minimum number of repeats (0 = no minimum)" />
+          <ChooserEntry dataType="Integer" elementLabel="Max Repeats" elementPath="repeatMax" ftElementType="Element" toolTip="Maximum number of repeats (0 = no maximum)" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Valid window for repeatt" uomPath="windowUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for Repeat Window" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Time Offset" elementPath="TemporalRules/TemporalRule" ftElementType="Template" toolTip="A temporal offset  between two trial Activities or Events">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Anchor" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="This" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Pegged To" elementPath="anchorPosition" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Time Offset" elementPath="duration" ftElementType="Element" toolTip="Time offset" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Offset Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for offset" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Window" elementPath="window" ftElementType="Element" toolTip="Time offset" uomPath="windowUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Window Unit" elementPath="windowUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Unit of time for offset" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Alarm Rule" elementPath="TriggerRules/TriggerRule" ftElementType="Template" toolTip="A branch which is executed whenever the rule evaluates to true">
+        <Complex>
+          <ChooserEntry dataType="Coded" elementLabel="Trial state" elementPath="processMode" enumList="ProcessModes" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Arm Linkage" elementPath="qualifier" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Starting" elementPath="fromID" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="This" elementPath="toID" ftElementType="Element" hidden="true" />
+          <ChooserEntry dataType="Coded" elementLabel="Exit/Entrance" elementPath="position" enumList="PositionRoles" ftElementType="Element" hidden="true" />
+          <ChooserEntry elementLabel="Description" elementPath="description/full" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" hidden="false" />
+          <ChooserEntry elementLabel="Ending" elementPath="termEVID" ftElementType="Element" hidden="true" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Tasks" file="TaskMapping.xml" systemName="Tasks" tabColor="#83A49D" tabLabel="Tasks" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+    <ElementBucket bucketLabel="Tasks" elementType="Tasks" hidden="true" systemName="Tasks">
+      <ChooserEntry editorClass="PDG.Tasks" elementLabel="Task" elementPath="Tasks/TSPDTask" ftElementType="Template" toolTip="A task is a procedure or treatment performed for the study.">
+        <Complex>
+          <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" />
+          <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this planned Task" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" />
+          <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry editorClass="PDG.Tasks" elementLabel="Dose Task" elementPath="Tasks/TSPDTask" ftElementType="Template" isDoseTask="true" toolTip="Administration of a specific study material in a specific dose">
+        <Complex>
+          <ChooserEntry elementLabel="Dose Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" />
+          <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" />
+          <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" />
+          <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this dosing administration" uomPath="durationTimeUnit" />
+          <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+          <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" />
+          <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="unused" elementPath="ctMaterialID" ftElementType="Element" hidden="true" toolTip="" />
+          <ChooserEntry elementLabel="Associated Dose Element" elementPath="ctMaterialAlias" ftElementType="Element" hidden="false" toolTip="The Test Article Dose associated with this task" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="Task Divider" elementPath="Tasks/TSPDTask" ftElementType="Template" isDivider="true" toolTip="A visual help to grouping tasks.">
+        <Complex>
+          <ChooserEntry elementLabel="Task Divider" elementPath="description/brief" ftElementType="Element" toolTip="The name of a task divider" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Planned Metrics" tabColor="#88984F" editorClass="PDG.Planned Metrics" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="MetricsMapping.xml" systemName="Metrics">
+    <ElementBucket bucketLabel="Planned Metrics" elementType="Metrics" systemName="Metrics">
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEnrollmentTotal" elementLabel="Enrolled Subjects" ftElementType="Element" toolTip="The total planned number of subjects enrolled in the study" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumScreeningFailures" elementLabel="Subject Screening Failures" ftElementType="Element" toolTip="The anticipated number of subjects who will fail to meet eligibility criteria during screening" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumDropouts" elementLabel="Subject Anticipated Dropouts" ftElementType="Element" toolTip="The anticipated number of subjects who will drop out of the study" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEvaluableSubjCount" elementLabel="# Evaluable Subjects" ftElementType="Element" toolTip="The anticipated number of evaluable subjects" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedEnrollmentPerSite" elementLabel="Enrollment / Site" ftElementType="Element" toolTip="The anticipated number of subjects planned per site" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFirstSubjEnrollDate" elementLabel="First Subject Enrolled" ftElementType="Element" toolTip="The anticipated date of enrollment of the first subject in the study" dataType="Date">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedLastSubjEnrollDate" elementLabel="Last Subject Enrolled" ftElementType="Element" toolTip="The anticipated date of enrollment of the last subject in the study" dataType="Date">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedLastSubjCompleteDate" elementLabel="Last Subject Complete" ftElementType="Element" toolTip="The anticipated date of the last visit for the last subject enrolled" dataType="Date">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedStudyDuration" elementLabel="Total Study Duration" ftElementType="Element" toolTip="The maximum time a study will run" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedStudyDurationTimeUnit" elementLabel="Study Duration Time Unit" ftElementType="Element" toolTip="Unit of time for Study Duration" enumList="TimeUnit" dataType="Coded" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedScreeningDuration" elementLabel="Screening Duration" ftElementType="Element" toolTip="The planned duration of the screening period" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedScreeningDurationTimeUnit" elementLabel="Screening Duration Time Unit" ftElementType="Element" toolTip="Unit of time for screening period" enumList="TimeUnit" dataType="Coded" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedTreatmentDuration" elementLabel="Treatment Duration" ftElementType="Element" toolTip="The planned duration of the treatment period" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedTreatmentDurationTimeUnit" elementLabel="Treat. Duration Time Unit" ftElementType="Element" toolTip="Unit of time for the treatment period" enumList="TimeUnit" dataType="Coded" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFollowUpDuration" elementLabel="F/U Duration" ftElementType="Element" toolTip="The planned duration of the follow up period" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedFollowUpDurationTimeUnit" elementLabel="F/U Duration Time Unit" ftElementType="Element" toolTip="Unit of time for the follow up period" enumList="TimeUnit" dataType="Coded" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedRecruitmentPeriod" elementLabel="Recruitment Duration" ftElementType="Element" toolTip="The anticipated duration of the period for recruitment of subjects into the study" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedRecruitmentPeriodTimeUnit" elementLabel="Recruitment Duration Time Unit" ftElementType="Element" toolTip="Unit of time for recruitment period" enumList="TimeUnit" dataType="Coded" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/totalNumVisits" elementLabel="Total # of Visits" ftElementType="Element" toolTip="The total number of planned visits" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumScreeningVisits" elementLabel="# Screening Visits" ftElementType="Element" toolTip="The total number of planned screening visits" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumTxVisits" elementLabel="# Treatment Visits" ftElementType="Element" toolTip="The total number of planned treatment visits" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedNumFollowupVisits" elementLabel="# F/U Visits" ftElementType="Element" toolTip="The total number of planned follow up visits" dataType="Integer">
+        <ElementStatus docType="Protocol" required="false" default="false" mfu="false" />
+      </ChooserEntry>
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedSubjectParticipationDuration" elementLabel="Subject Participation" ftElementType="Element" toolTip="The maximum planned time a subject will be in the study" dataType="Integer" />
+      <ChooserEntry elementPath="/FTICP/Metrics/PMG/plannedSubjectParticipationDurationTimeUnit" elementLabel="Subj Particip. Time Unit" ftElementType="Element" toolTip="Unit of time for the subject participation duration" enumList="TimeUnit" dataType="Coded" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab editorClass="PDG.Study Conduct" elementType="StudyConduct" file="StudyConductMapping.xml" systemName="StudyConduct" tabColor="#E9CA78" tabLabel="Study Conduct" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+    <ElementBucket bucketLabel="Compliance" elementType="StudyConductCompliance" systemName="StudyConductCompliance">
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Disallowed Meds Prior to Study" elementPath="/FTICP/StudyConduct/SCG/disallowedMedsPrior" ftElementType="Element" toolTip="A description of disallowed pre-study medications">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Disallowed Concomitant Meds" elementPath="/FTICP/StudyConduct/SCG/disallowedMedsConcomitant" ftElementType="Element" toolTip="A description of disallowed treatments during the course of the study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Subject Compliance Measures" elementPath="/FTICP/StudyConduct/SCG/subjectComplianceMeasures" ftElementType="Element" toolTip="A description of the steps taken to ensure and document subject compliance">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Anticipated Interactions" elementPath="/FTICP/StudyConduct/SCG/anticipatedInteractions" ftElementType="Element" toolTip="A description of anticipated test article interactions">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Definition of SAE" elementPath="/FTICP/StudyConduct/SCG/definitionOfSAE" ftElementType="Element" toolTip="A definition of serious adverse event">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="true" />
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Subject Payment" elementPath="/FTICP/StudyConduct/SCG/subjectPayment" ftElementType="Element" toolTip="Description of payment or compensation to patient for participation in study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry dataType="Coded" elementLabel="This study uses an IVRS" elementPath="/FTICP/StudyConduct/SCG/usesIVRSType" enumList="UsesIVRSTypes" ftElementType="Element" toolTip="Whether or not external automated systems for subject randomization or treatment assignment are used">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Termination" elementType="StudyConductTermination" systemName="StudyConductTermination">
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Criteria for D/C from Test Article" elementPath="/FTICP/StudyConduct/SCG/criteriaForDiscontinuationFromTestArticle" ftElementType="Element" toolTip="The criteria leading to discontinuation of treatment for a subject">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="true" />
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Criteria for Withdrawal from Study" elementPath="/FTICP/StudyConduct/SCG/criteriaForWithdrawalFromStudy" ftElementType="Element" toolTip="The criteria for withdrawing a subject from the study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="true" />
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Subject Handling After D/C from Test Article" elementPath="/FTICP/StudyConduct/SCG/subjectHandlingAfterDiscontinuationFromTestArticle" ftElementType="Element" toolTip="The procedures for handling subjects to be discontinued from the study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="true" />
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Subject Handling After Withdrawal from Study" elementPath="/FTICP/StudyConduct/SCG/subjectHandlingAfterWithdrawalFromStudy" ftElementType="Element" toolTip="The procedures for handling subjects withdrawn from the study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="true" />
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Stopping Rules for Study" elementPath="/FTICP/StudyConduct/SCG/stoppingRulesForStudy" ftElementType="Element" toolTip="A description of the criteria for discontinuation of the entire study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+        <!--ElementStatus docType="StudyGuide" required="false" default="false" mfu="false"/-->
+      </ChooserEntry>
+      <ChooserEntry associatedMacro="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" dataType="Composite" editorClass="RES_STRINGLIST_EDIT" elementLabel="Restriction Rules During Study" elementPath="/FTICP/StudyConduct/SCG/restrictionRulesDuringStudy" ftElementType="Element" toolTip="Description of other restriction rules pertaining to subjects during study">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+      <ChooserEntry elementLabel="Subject Replacement Plan" elementPath="/FTICP/StudyConduct/SCG/subjectReplacementStrategy" ftElementType="Element" toolTip="A description of if and how subjects can be replaced">
+        <ElementStatus default="false" docType="Protocol" mfu="false" required="false" />
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Study Restrictions" elementType="StudyRestrictions">
+      <ChooserEntry elementLabel="Study Restriction" elementPath="/FTICP/StudyConduct/SCG/StudyRestrictions/StudyRestriction" ftElementType="Template" toolTip="Study Restrictions">
+        <Complex>
+          <ChooserEntry elementLabel="Text" elementPath="description/full" ftElementType="Element" toolTip="Description of the Restriction" />
+          <ChooserEntry dataType="Coded" elementLabel="RestrictionType" elementPath="type" enumList="StudyRestrictionTypes" ftElementType="Element" toolTip="Category of the Restriction" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab tabLabel="Document Elements" elementType="TOC" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="..\icd\echoosersect.xsd" systemName="TOC" file="../../doctypes/DocumentElements.xml">
+    <ElementBucket bucketLabel="Design" docType="Design" elementType="TOC" startType="false">
+      <ElementBucket bucketLabel="Design" docType="Design" elementType="TOC" startType="false">
+        <ElementBucket bucketLabel="Design" docType="Design" elementType="TOC" startType="false">
+          <ElementBucket bucketLabel="Design" elementType="TOC" docType="Design" startType="true">
+            <ChooserEntry elementPath="OutlineSection1" elementLabel="Outline Intro This Longer" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" toolTip="$library/__guide.AbbrevDefinitions" />
+            <ChooserEntry elementPath="OutlineSection2" elementLabel="Outline Synopsis" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+            <ChooserEntry elementPath="SignaturePage" elementLabel="Outline Signoff" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+          </ElementBucket>
+        </ElementBucket>
+      </ElementBucket>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Phase III Synopsis" docType="synopsis" elementType="TOC" startType="false">
+      <ElementBucket bucketLabel="Phase III Synopsis" docType="synopsis" elementType="TOC" startType="false">
+        <ElementBucket bucketLabel="synopsis" docType="synopsis" elementType="TOC" startType="false">
+          <ChooserEntry elementLabel="Study Synopsis" elementPath="StudySynopsis" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+          <ChooserEntry elementLabel="Special Considerations" elementPath="SpecialConsiderations" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+        </ElementBucket>
+      </ElementBucket>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Phase II Synopsis" docType="synopsis2" elementType="TOC" startType="false">
+      <ElementBucket bucketLabel="Phase II Synopsis" docType="synopsis2" elementType="TOC" startType="false">
+        <ChooserEntry elementLabel="Study Synopsis" elementPath="StudySynopsis" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+        <ChooserEntry elementLabel="Special Considerations" elementPath="SpecialConsiderations" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+        <ChooserEntry elementLabel="Excuses" elementPath="Excuses" ftElementType="DocSection" sectionLevel="1" docHeaderStyle="Heading 1" required="false" />
+        <ElementBucket bucketLabel="synopsis2" docType="synopsis2" elementType="TOC" startType="false" />
+      </ElementBucket>
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Dynamic Templates" tabColor="#F9A038" file="DynamicTemplates.xml" elementType="Macros" systemName="Macros" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+    <ElementBucket bucketLabel="Administration" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SponsorMacro.SponsorCoSponsorList,FTProtocolDTs.dll" elementLabel="Sponsor/Cosponsor" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates a list of sponsors/cosponsors." shouldRun="true" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Test Articles" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ClinicalTrialMaterialsMacros.InvestigationalProducts,FTProtocolDTs.dll" elementLabel="Investigational Products" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Test Article" autogenerates="true" shouldRun="true" toolTip="Generate a list of all investigational products" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ClinicalTrialMaterialsMacros.Comparators,FTProtocolDTs.dll" elementLabel="Comparators" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Test Article" autogenerates="true" shouldRun="true" toolTip="Generate a list of all comparator products" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ClinicalTrialMaterialsMacros.TAAdministration,FTProtocolDTs.dll" elementLabel="Test Article Administration" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Test Article" autogenerates="true" shouldRun="true" toolTip="Prints name, dose, dose form, route, schedule and duration of administration for each test article, including placebo." />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Design" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.PrimaryObjectives,FTProtocolDTs.dll" elementLabel="Primary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists primary objectives." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.SecondaryObjectives,FTProtocolDTs.dll" elementLabel="Secondary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists secondary objectives." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.TertiaryObjectives,FTProtocolDTs.dll" elementLabel="Tertiary Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists tertiary objectives." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.SafetyObjectives,FTProtocolDTs.dll" elementLabel="Safety Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists safety objectives." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.ObjectivesABMacros.OtherObjectives,FTProtocolDTs.dll" elementLabel="Other Objectives" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Objectives" autogenerates="true" toolTip="Lists other objectives." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.DesignABMacro.TrialDesignSummary,FTProtocolDTs.dll" elementLabel="Trial Design Summary" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Design" autogenerates="true" toolTip="Describes overall study design features." shouldRun="true" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Population" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.CriteriaABMacros.InclusionCriteria,FTProtocolDTs.dll" elementLabel="Inclusion Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Eligibility Criteria" toolTip="Lists population inclusion criteria." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.CriteriaABMacros.ExclusionCriteria,FTProtocolDTs.dll" elementLabel="Exclusion Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Eligibility Criteria" toolTip="Lists population exclusion criteria." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.CriteriaABMacros.OtherCriteria,FTProtocolDTs.dll" elementLabel="Other Criteria" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Eligibility Criteria" toolTip="Lists population other criteria." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.CriteriaABMacros.EligibilityCriteriaRationale,FTProtocolDTs.dll" elementLabel="Eligibility Criteria Rationale" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Eligibility Criteria" toolTip="Lists text of Rationale field (Swp-02) for each I&amp;E criteria, sorted in the same order as in PDG." shouldRun="true" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Study Schedule" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SOANarrativeMacros.SOANarrative,FTProtocolDTs.dll" elementLabel="SOA Narrative" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Generates a text description of tasks as per Study Schedule." shouldRun="true">
+        <Complex>
+          <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SOATableMacro.SOATables,FTProtocolDTs.dll" elementLabel="SOA Tables" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Schedule of Activities" toolTip="Generates table for Study Schedule." shouldRun="true" specialShading="true">
+        <Complex>
+          <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SOATableMacro2.SOATable2,FTProtocolDTs.dll" elementLabel="SOA Table2" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" editorClass="PDG.Schedule of Activities" toolTip="SOA Table break out time chunk buckets." shouldRun="true" specialShading="true">
+        <Complex>
+          <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+        </Complex>
+      </ChooserEntry>
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.SDMacros.InsertDiagram,FTProtocolDTs.dll" elementLabel="Insert Diagram" ftElementType="Macro" ftMacroType="CSHARP" protected="true" autogenerates="true" toolTip="Inserts Schema Diagram." shouldRun="true" editorClass="WP_SCHEMA_DESIGNER">
+        <Complex>
+          <ChooserEntry ftElementType="Collection" assocClass="Tspd.Icp.SOA,IcpMgr" elementPath="dummy" elementLabel="dummy" assocChooserPath="/FTICP/StudySchedule/Schedules/Schedule" />
+        </Complex>
+      </ChooserEntry>
+    </ElementBucket>
+    <ElementBucket bucketLabel="Assessments" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.EfficacyAssessments,FTProtocolDTs.dll" elementLabel="Efficacy Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure efficacy." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.SafetyAssessments,FTProtocolDTs.dll" elementLabel="Safety Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure safety." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.RegulatoryAssessments,FTProtocolDTs.dll" elementLabel="Regulatory Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure regulatory." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.ScreeningAssessments,FTProtocolDTs.dll" elementLabel="Screening Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure screening." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.TreatmentAssessments,FTProtocolDTs.dll" elementLabel="Treatment Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure treatment." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.SOCAssessments,FTProtocolDTs.dll" elementLabel="Standard of Care Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure standard of care." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.PharmacokineticsAssessments,FTProtocolDTs.dll" elementLabel="Pharmacokinetics Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure pharmacokinetics." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.PharmacodynamicsAssessments,FTProtocolDTs.dll" elementLabel="Pharmacodynamics Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure pharmacodynamics." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.PharmacogenomicsAssessments,FTProtocolDTs.dll" elementLabel="Pharmacogenomics Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure pharmacogenomics." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.PharmacoeconomicAssessments,FTProtocolDTs.dll" elementLabel="Pharmacoeconomic Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure pharmacoeconomic." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.HealthOutcomesAssessments,FTProtocolDTs.dll" elementLabel="Health Outcomes Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure health outcomes." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.QOLAssessments,FTProtocolDTs.dll" elementLabel="Quality of Life Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure quality of life." shouldRun="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.AssessmentsABMacros.OtherAssessments,FTProtocolDTs.dll" elementLabel="Other Assessments" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Schedule of Activities" autogenerates="true" toolTip="List tasks used to measure other." shouldRun="true" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Special populations" elementType="Macros">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.TargetPopulationABMacros.WomenInstructions,FTProtocolDTs.dll" elementLabel="Special Instruction for Women" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Population" autogenerates="true" toolTip="Add library text for women of child-bearing potential." shouldRun="true" />
+      <!-- ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.TargetPopulationABMacros.InsertLibraryImageTest,FTProtocolDTs.dll" elementLabel="InsertLibraryImageTest" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="PDG.Population" autogenerates="true" toolTip="Add library text for women of child-bearing potential." shouldRun="true"/ -->
+    </ElementBucket>
+    <ElementBucket bucketLabel="String List Hidden Macro" elementType="Macros" hidden="true">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.StringBulletListMacro.StringList,FTProtocolDTs.dll" elementLabel="StringList" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="RES_STRINGLIST_EDIT" autogenerates="true" toolTip="" shouldRun="true" hidden="true" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="String List Hidden Macro" elementType="Macros" hidden="true">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.DynTmplts.EquationMacro.EquationDisplay,FTProtocolDTs.dll" elementLabel="Equation" ftElementType="Macro" ftMacroType="CSHARP" protected="true" editorClass="EQUATION_INSERT" autogenerates="true" toolTip="" shouldRun="true" hidden="true" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab systemName="Library" tabColor="#F8CF59" tabLabel="Library">
+    <ElementBucket bucketLabel="Library Items" elementType="Library">
+      <ChooserEntry elementLabel="Dummy" elementPath="Dummy" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab editorClass="PDG.Schedule of Activities" systemName="Footnotes" tabColor="#83A49D" tabLabel="SOA Footnotes">
+    <ElementBucket bucketLabel="Used Footnotes" elementType="UsedFootnote" hidden="false">
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="footnote name" elementPath="usedFootnote" ftElementType="Element" toolTip="footnote text" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Unused Footnotes" elementType="UnusedFootnote" hidden="false">
+      <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="footnote name" elementPath="unusedFootnote" ftElementType="Element" toolTip="footnote text" />
+    </ElementBucket>
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Custom Elements" elementType="CustomVars" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" file="CustomVariables.xml" systemName="CustomVars">
+    <ElementBucket bucketLabel="Custom Elements Tab One" elementType="CustomVars" hidden="true" systemName="CustomVars">
+      <ChooserEntry elementPath="/FTICP/CustomVars/uno" elementLabel="Custom Element Placeholder One" ftElementType="Element" customvar="true" hidden="False" toolTip="Custom Element Placeholder" />
+      <ChooserEntry elementPath="/FTICP/CustomVars/due" elementLabel="Custom Element Placeholder Two" ftElementType="Element" customvar="true" hidden="False" toolTip="Custom Element Placeholder" />
+    </ElementBucket>
+    <ElementBucket bucketLabel="Custom Elements Tab Two" elementType="CustomVars" hidden="true" />
+  </ElementTab>
+  <ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" tabLabel="Custom Reports" tabColor="#F9A038" file="CustomReports.xml" elementType="Reports" systemName="CustomReports" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd" hidden="true">
+    <ElementBucket bucketLabel="Custom Reports Not For Element Panel consumption" elementType="Reports" hidden="false">
+      <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.TestReport.SeeHowItWorksAsACustomReport,FTCustomReports.dll" elementLabel="Custom Report" ftElementType="Macro" funcType="CSHARP" toolTip="Custom Report function put here" hidden="true" />
+      <ChooserEntry elementPath="TspdCfg.FastTrack.CustomReports.TestReport.AnotherCustomReport,FTCustomReports.dll" elementLabel="Custom Report Two" ftElementType="Macro" funcType="CSHARP" toolTip="Custom Report function put here" hidden="true" />
+      <!-- the dll is installed in <template>/reports folder, try it copying it over and printing testreportt as a custom report-->
+      <!-- your custom printing function needs to be declared as
+		    public static CustomReportExecutor.CustomReportRetCd YourPrintFunction(object crp)
+		    {
+				...
+				return CustomReportExecutor.CustomReportRetCd.Succeeded;
+		    }
+		    //crp is of type CustomReportExecutor.CustomReportParameters but it is not as yet enabled (April 2006)
+		    //see ReportBase.cs Test report for an example		
+		-->
+    </ElementBucket>
+  </ElementTab>
+  <ConceptAuditPolicies>
+    <AuditLock systemName="StageBased" userLabel="StageBased" lockType="StageLockReasons" unlockType="StageUnlockReasons" lockCommentRequired="false" unlockCommentRequired="true" />
+    <AuditLock systemName="SMEBased" userLabel="SMEBased" lockType="SMEUnlockReasons" unlockType="SMEUnlockReasons" lockCommentRequired="false" unlockCommentRequired="true" />
+  </ConceptAuditPolicies>
+</ElementChooser>

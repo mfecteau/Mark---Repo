@@ -1,0 +1,73 @@
+loaditem | __procdesc | Adverse Events (P1) |   | AdverseEvents(P1).rtf
+loaditem | __procdesc | Adverse Events |   | AdverseEvents.rtf
+loaditem | __procdesc | Average Pain over the Last 24 Hours |   | AveragePainovertheLast24Hours.rtf
+loaditem | __procdesc | Average Pain over the Past 14 Days |   | AveragePainoverthePast14Days.rtf
+loaditem | __procdesc | BPI SF |   | BPISF.rtf
+loaditem | __procdesc | Collect the subjects Diary |   | CollectthesubjectsDiary.rtf
+loaditem | __procdesc | Completion of Diary by Subjects |   | CompletionofDiarybySubjects.rtf
+loaditem | __procdesc | Concomitant Therapies - End of Study (P1) |   | ConcomitantTherapies(P1-EOS).rtf
+loaditem | __procdesc | Concomitant Therapies - Screening (P1) |   | ConcomitantTherapies(P1-Screening).rtf
+loaditem | __procdesc | Concomitant Therapies |   | ConcomitantTherapies.rtf
+loaditem | __procdesc | Concomitant Therapies - Visit 1 |   | ConcomitantTherapiesVisit1.rtf
+loaditem | __procdesc | Concomitant Therapies - Visit 2 |   | ConcomitantTherapiesVisit2.rtf
+loaditem | __procdesc | Conduct drug accountability/ Review for CSPCs |   | ConductdrugaccountabilityReviewforCSPCs.rtf
+loaditem | __procdesc | Confirm subject abstained from Rescue |   | ConfirmsubjectabstainedfromRescue.rtf
+loaditem | __procdesc | Contact IVRS/IWRS |   | ContactIVRSIWRS.rtf
+loaditem | __procdesc | Demography (P1) |   | Demography(P1).rtf
+loaditem | __procdesc | Demography |   | Demography.rtf
+loaditem | __procdesc | Dispense of Rescue |   | DispenseofRescue.rtf
+loaditem | __procdesc | Dispense of study drug |   | Dispenseofstudydrug.rtf
+loaditem | __procdesc | Distribution of Subject Diary |   | DistributionofSubjectDiary.rtf
+loaditem | __procdesc | Drug/Alcohol/Cotinine Screen - Check In (P1) |   | DrugAlcoholCotinineScreen(P1-CheckIn).rtf
+loaditem | __procdesc | Drug/Alcohol/Cotinine Screen - Screening (P1) |   | DrugAlcoholCotinineScreen(P1-Screening).rtf
+loaditem | __procdesc | Electorcardiogram (ECGs) |   | ECG.rtf
+loaditem | __procdesc | Electorcardiogram (ECGs)- End of Study Visit |   | ElectorcardiogramECGsEndofStudyVisit.rtf
+loaditem | __procdesc | Electrocardiogram (ECGs)- Randomization Visit |   | ElectrocardiogramECGsRandomizationVisit.rtf
+loaditem | __procdesc | Electrocardiogram (ECGs)- Run-In Failure |   | ElectrocardiogramECGsRunInFailure.rtf
+loaditem | __procdesc | Electrocardiogram (ECGs) - Visit 1 |   | ElectrocardiogramECGsVisit1.rtf
+loaditem | __procdesc | Evaluation of study drug (Run-in Period) |   | EvaluationofstudydrugRuninPeriod.rtf
+loaditem | __procdesc | HBsAg/Anti-HCV |   | HBsAgAntiHCV.rtf
+loaditem | __procdesc | Hematology/Chemistry/Urinalysis - CheckIn (P1) |   | HematologyChemistryUrinalysis(P1-CheckIn).rtf
+loaditem | __procdesc | Hematology/Chemistry/Urinalysis - End Of Study (P1) |   | HematologyChemistryUrinalysis(P1-EOS).rtf
+loaditem | __procdesc | Hematology/Chemistry/Urinalysis - Screening (P1) |   | HematologyChemistryUrinalysis(P1-Screening).rtf
+loaditem | __procdesc | ICF |   | ICF.rtf
+loaditem | __procdesc | Incl./Excl. Criteria - CheckIn (P1) |   | InclExclCriteria(P1-CheckIn).rtf
+loaditem | __procdesc | Incl./Excl. Criteria - Screening (P1) |   | InclExclCriteria(P1-Screening).rtf
+loaditem | __procdesc | Incl./Excl. Criteria |   | InclExclCriteria.rtf
+loaditem | __procdesc | Incoming Analgesic Medication |   | IncomingAnalgesicMedication.rtf
+loaditem | __procdesc | Incoming Analgesic Medication - Visit 1 |   | IncomingAnalgesicMedicationVisit1.rtf
+loaditem | __procdesc | Incoming Analgesic Medication - Visit 2 |   | IncomingAnalgesicMedicationVisit2.rtf
+loaditem | __procdesc | Informed Consent |   | InformedConsent.rtf
+loaditem | __procdesc | Instruction of Rescue |   | InstructionofRescue.rtf
+loaditem | __procdesc | Laboratory Evaluations |   | LaboratoryEvaluations.rtf
+loaditem | __procdesc | Laboratory Evaluations - Visit 1 |   | LaboratoryEvaluationsVisit1.rtf
+loaditem | __procdesc | Medical History |   | MedicalHistory.rtf
+loaditem | __procdesc | MOS Sleep Scale |   | MOSSleepScale.rtf
+loaditem | __procdesc | Naltrexone Dosing |   | NaltrexoneDosing(P1-Treatment).rtf
+loaditem | __procdesc | Oral Temperature - End of Study (P1) |   | OralTemperature(P1-EOS).rtf
+loaditem | __procdesc | Oral Temperature - Screening (P1) |   | OralTemperature(P1-Screening).rtf
+loaditem | __procdesc | Oswestry Disability Index |   | OswestryDisabilityIndex.rtf
+loaditem | __procdesc | Pain History |   | PainHistory.rtf
+loaditem | __procdesc | PGIC |   | PGIC.rtf
+loaditem | __procdesc | Pharmacogenomic  sample (postdose) |   | Pharmacogenomicsamplepostdose.rtf
+loaditem | __procdesc | Pharmacogenomic  sample (predose) |   | Pharmacogenomicsamplepredose.rtf
+loaditem | __procdesc | Physical Examination (P1) |   | PhysicalExamination(P1).rtf
+loaditem | __procdesc | Physical Examination |   | PhysicalExamination.rtf
+loaditem | __procdesc | Randomization Procedures |   | RandomizationProcedures.rtf
+loaditem | __procdesc | Remind subject abstained from Rescue |   | RemindsubjectabstainedfromRescue.rtf
+loaditem | __procdesc | Review of Subject Diary |   | ReviewofSubjectDiary.rtf
+loaditem | __procdesc | Review of Subject Diary Visit 2 |   | ReviewofSubjectDiaryVisit2.rtf
+loaditem | __procdesc | Review of Subject Diary  Weeks 1 and 2 |   | ReviewofSubjectDiaryWeeks1and2.rtf
+loaditem | __procdesc | Schedule next visit |   | Schedulenextvisit.rtf
+loaditem | __procdesc | Serum FSH |   | SerumFSH.rtf
+loaditem | __procdesc | Serum Pregnancy Test (P1) |   | SerumPregnancy(P1-Screening).rtf
+loaditem | __procdesc | Serum Pregnancy Test |   | SerumPregnancyTest.rtf
+loaditem | __procdesc | SF- 36 |   | SF36.rtf
+loaditem | __procdesc | SOWS |   | SOWS.rtf
+loaditem | __procdesc | Study Discontinuation /Completion |   | StudyDiscontinuationCompletion.rtf
+loaditem | __procdesc | Urine Pregnancy Test |   | UrinePregnancyTest(P1).rtf
+loaditem | __procdesc | Vital Signs |   | VitalSigns.rtf
+loaditem | __procdesc | Vital Signs And SpO2 - CheckIn (P1) |   | VitalSignsAndSpO2(P1-CheckIn).rtf
+loaditem | __procdesc | Vital Signs And SpO2 - End of Study (P1) |   | VitalSignsAndSpO2(P1-EOS).rtf
+loaditem | __procdesc | Vital Signs And SpO2 - Screening (P1) |   | VitalSignsAndSpO2(P1-Screening).rtf
+loaditem | __procdesc | Vital Signs And SpO2 - Treatment (P1) |   | VitalSignsAndSpO2(P1-Treatment).rtf

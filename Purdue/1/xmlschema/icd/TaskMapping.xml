@@ -1,0 +1,36 @@
+<ElementTab xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" editorClass="PDG.Tasks" file="TaskMapping.xml" systemName="Tasks" tabColor="#83A49D" tabLabel="Tasks" xsi:noNamespaceSchemaLocation="../icd/echoosersect.xsd">
+  <ElementBucket bucketLabel="Tasks" elementType="Tasks" hidden="true" systemName="Tasks">
+    <ChooserEntry editorClass="PDG.Tasks" elementLabel="Task" elementPath="Tasks/TSPDTask" ftElementType="Template" toolTip="A task is a procedure or treatment performed for the study.">
+      <Complex>
+        <ChooserEntry elementLabel="Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" />
+        <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this planned Task" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" />
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+		<ChooserEntry elementPath="complexity" elementLabel="Complexity" ftElementType="Element" toolTip="Complexity" dataType="Number"/>
+		<ChooserEntry elementPath="costAmount" elementLabel="Cost" ftElementType="Element" toolTip="Procedure Cost" dataType="Number"/>    
+	 </Complex>
+    </ChooserEntry>
+    <ChooserEntry editorClass="PDG.Tasks" elementLabel="Dose Task" elementPath="Tasks/TSPDTask" ftElementType="Template" isDoseTask="true" toolTip="Administration of a specific study material in a specific dose">
+      <Complex>
+        <ChooserEntry elementLabel="Dose Name" elementPath="description/brief" ftElementType="Element" stickyCase="true" toolTip="The name of a task" />
+        <ChooserEntry elementLabel="Performed by" elementPath="whoPerforms" ftElementType="Element" toolTip="The person responsible for carrying out this task" />
+        <ChooserEntry elementLabel="Detail Text" elementPath="description/full" ftElementType="Element" toolTip="Detail about the task" />
+        <ChooserEntry dataType="TimeSpan" elementLabel="Duration" elementPath="duration" ftElementType="Element" toolTip="The duration of this dosing administration" uomPath="durationTimeUnit" />
+        <ChooserEntry dataType="Coded" elementLabel="Dur Unit" elementPath="durationTimeUnit" enumList="RestrictedTimeUnit" ftElementType="Element" toolTip="Units of Duration" />
+        <ChooserEntry elementLabel="SOA Footnotes" elementPath="SOADetail/footnote/@footnoteID" ftElementType="Collection" toolTip="Schedule of activities footnotes for this task" />
+        <ChooserEntry elementLabel="Tag for SDTM output" elementPath="SDTMDomain" ftElementType="Element" hidden="true" toolTip="" />
+		<ChooserEntry elementPath="complexity" elementLabel="Complexity" ftElementType="Element" toolTip="Complexity" dataType="Number"/>       
+		<ChooserEntry elementLabel="unused" elementPath="ctMaterialID" ftElementType="Element" hidden="true" toolTip="" />
+        <ChooserEntry elementLabel="Associated Dose Element" elementPath="ctMaterialAlias" ftElementType="Element" hidden="false" toolTip="The Test Article Dose associated with this task" />
+      </Complex>
+    </ChooserEntry>
+    <ChooserEntry editorClass="PDG.Schedule of Activities" elementLabel="Task Divider" elementPath="Tasks/TSPDTask" ftElementType="Template" isDivider="true" toolTip="A visual help to grouping tasks.">
+      <Complex>
+        <ChooserEntry elementLabel="Task Divider" elementPath="description/brief" ftElementType="Element" toolTip="The name of a task divider" />
+      </Complex>
+    </ChooserEntry>
+  </ElementBucket>
+</ElementTab>

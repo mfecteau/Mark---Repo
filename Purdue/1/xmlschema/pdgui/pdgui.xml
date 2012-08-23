@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated from the PDG User Interface on 5/7/2010 -->
+<DesignGuideTree includeOtherBranchesFromMapper="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="pdgui.xsd">
+	<DesignGuideBranch branchLabel="Study Details" includeOtherPagesFromMapper="true" source="Config" systemName="Administrative">
+		<DesignGuidePage elementType="Administrative"  includeOtherEntriesFromMapper="true" pageLabel="Identification" source="Mapper">
+			<DesignGuideHeader headerLabel="Identification" helpID="2095"/>
+			<DesignGuideColumnStack>
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/protocolID" readOnly="true"/>
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/phaseCoded" />
+				<DesignGuideField containsMultilineText="true" elementPath="/FTICP/Administrative/ProtocolSkeleton/title/full"/>
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/title/brief"/>
+				<DesignGuideField containsMultilineText="true" elementPath="/FTICP/Administrative/ProtocolSkeleton/description/full" fieldLabel="Description"/>
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryNumber"  />
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryNumber" />
+			</DesignGuideColumnStack>
+			<DesignGuideColumnStack>
+				<DesignGuideField controlHeight="200" elementPath="/FTICP/Administrative/ProtocolSkeleton/codedConditions" fieldClassPath="Tspd.WpfControls.GUIControls.FTListField" formatterClassPath="Tspd.WpfControls.PDG.Dialogs.Indication.IndicationFormatter">
+					<DesignGuideFieldButton buttonClassPath="Tspd.WpfControls.PDG.Dialogs.Indication.IndicationLookup" buttonText="Edit"/>
+				</DesignGuideField>
+				<DesignGuideField containsMultilineText="true" controlHeight="200" elementPath="/FTICP/Administrative/ProtocolSkeleton/codedCountries" fieldClassPath="Tspd.WpfControls.GUIControls.FTListField" fieldLabel="Countries" formatterClassPath="Tspd.WpfControls.PDG.Dialogs.Country.CountryFormatter">
+					<DesignGuideFieldButton buttonClassPath="Tspd.WpfControls.PDG.Dialogs.Country.CountryLookup" buttonText="Edit"/>
+				</DesignGuideField>
+			</DesignGuideColumnStack>
+			<DesignGuideHeader headerLabel="Attributes" helpID="2094"/>
+			<DesignGuideColumnStack>
+				<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/isMultiCentered"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/masking" elementType="StudyDesign"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/controlType" elementType="StudyDesign"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/methodOfAllocation" elementType="StudyDesign"/>
+			</DesignGuideColumnStack>
+			<DesignGuideColumnStack>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/studyConfiguration" elementType="StudyDesign"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/natureOfInvestigation" elementType="StudyDesign"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/overallStudyOutcomeType" elementType="StudyDesign"/>
+				<DesignGuideField elementPath="/FTICP/StudyDesign/Design/studyPurpose" elementType="StudyDesign"/>
+			</DesignGuideColumnStack>
+		</DesignGuidePage>
+		<DesignGuidePage classPath="Tspd.WpfControls.PDG.Pages.PlannedMetrics.PlannedMetrics" elementType="Metrics"  source="WPF"/>
+		<DesignGuidePage elementType="StudyConductCompliance"  pageLabel="Execution" source="Mapper">
+			<DesignGuideHeader headerLabel="Execution" helpID="2105"/>
+			<DesignGuideField elementPath="/FTICP/StudyConduct/SCG/usesIVRSType"/>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Organizations" helpID="2110" pageLabel="Organizations and Contacts" source="Mapper">
+			<DesignGuideProtocolObject addNewButtonText="Create New Organization" dependentProtocolObjectElementPath="/FTICP/Administrative/ProtocolSkeleton/Contacts/Contact" detailHelpID="2137" elementPath="/FTICP/Administrative/ProtocolSkeleton/Organizations/Organization" helpID="2096" parentChildHelperClassPath="Tspd.WpfControls.PDG.Helpers.OrganizationHelper" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.OrganizationHelper" tableOrderingElementPath="name">
+				<DesignGuideField elementPath="name" headerLabel="Name" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="organizationType" headerLabel="Type/Role" visibleInDetailPane="true" visibleInTable="true"/>
+				<DesignGuideMultiField fieldLabel="Address" visibleInDetailPane="true" visibleInTable="true">
+					<MultiFieldContents elementPath="Address/address1"/>
+					<MultiFieldContents elementPath="Address/address2"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="false" elementPath="Address/city"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/stateprov" separatorBeforeFieldOnSameLine=","/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/postalCode"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/country"/>
+				</DesignGuideMultiField>
+				<DesignGuideField elementPath="Address/address1" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/address2" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/city" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/stateprov" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/postalCode" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/country" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/telephone" visibleInTable="true"/>
+				<DesignGuideField elementPath="Address/fax" visibleInTable="false"/>
+				<DesignGuideField elementPath="custom1" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="custom2" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+			</DesignGuideProtocolObject>
+<!-- 
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/versionDate" visibleInDetailPane="false"/>
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/versionName" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/versionType" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/description/brief" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/externalRegulatoryGrantor" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/otherExternalRegulatoryGrantor" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/one" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/two" />
+			<DesignGuideField elementPath="/FTICP/Administrative/ProtocolSkeleton/three" />
+                         -->
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Contacts" helpID="2111" source="Mapper" visible="false">
+			<DesignGuideProtocolObject addNewButtonText="Create New Contact" detailHelpID="2138" editDialogHelperClassPath="Tspd.WpfControls.PDG.Helpers.ContactHelper" elementPath="/FTICP/Administrative/ProtocolSkeleton/Contacts/Contact" helpID="2097" parentChildHelperClassPath="Tspd.WpfControls.PDG.Helpers.OrganizationHelper" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.OrganizationHelper">
+				<DesignGuideField elementPath="personName" maxWidth="150.0" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="roleType" headerLabel="Type/Role" maxWidth="150.0" visibleInTable="true"/>
+				<DesignGuideField dataType="Coded" elementPath="associatedOrganizations/associatedOrganization" enumList="_runtime" helperClassPath="Tspd.WpfControls.PDG.Helpers.ContactHelper"/>
+				<DesignGuideCheckBox label="Use same address as Organization" listenerClassPath="Tspd.WpfControls.PDG.Helpers.ContactHelper"/>
+				<DesignGuideMultiField fieldLabel="Address" visibleInDetailPane="true" visibleInTable="true">
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="false" elementPath="Address/address1"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="false" elementPath="Address/address2"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="false" elementPath="Address/city"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/stateprov" separatorBeforeFieldOnSameLine=","/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/postalCode"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInDetails="true" displayOnSameLineAsPreviousInTable="true" elementPath="Address/country"/>
+				</DesignGuideMultiField>
+				<DesignGuideField elementPath="Address/address1" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/address2" visibleInDetailPane="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="Address/city" visibleInDetailPane="false" visibleInTable="false" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/stateprov" visibleInDetailPane="false" visibleInTable="false" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/postalCode" visibleInDetailPane="false" visibleInTable="false" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/country" visibleInDetailPane="false" visibleInTable="false" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/telephone" maxWidth="100.0" visibleInTable="true" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/fax" visibleInTable="false" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="Address/email" />
+				<DesignGuideField elementPath="roleComment" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+	</DesignGuideBranch>
+	<DesignGuideBranch branchLabel="Study Design" includeOtherPagesFromMapper="false" source="Config" systemName="StudyDesign">
+		<DesignGuidePage elementType="Objectives" helpID="2112" source="Mapper">
+			<DesignGuideProtocolObject detailHelpID="2139" displayUpDownTableButtons="true"
+				elementPath="/FTICP/StudyDesign/Design/Objectives/Objective" helpID="2099" saveLabel="an Objective" 
+				source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.ObjectiveHelper" upDownLimitElementPath="objectiveType"
+				addButtonOverrideClassPath="Tspd.WpfControls.PDG.Helpers.ObjectiveHelper" addNewButtonText="Manage Objectives">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full" fieldLabel="Objective" required="true" 
+					updateHelperClass="Tspd.WpfControls.PDG.Helpers.ObjectiveHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="objectiveType" maxWidth="150.0" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="associatedOutcomes/associatedOutcome" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="description/brief" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="PriOutcomes" helpID="2113" pageLabel="Endpoints" source="Mapper">
+			<DesignGuideProtocolObject detailHelpID="2140" elementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" headerLabel="Endpoint" 
+				helpID="2100" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.OutcomeHelper"
+				upDownLimitElementPath="outcomeType"
+				addButtonOverrideClassPath="Tspd.WpfControls.PDG.Helpers.OutcomeHelper" addNewButtonText="Manage Endpoints">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full" required="true" 
+					updateHelperClass="Tspd.WpfControls.PDG.Helpers.OutcomeHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="description/brief" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="outcomeType" fieldLabel="Type" maxWidth="150.0" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="associatedObjectives/associatedObjective" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="analyticMethods/analyticMethod" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="Variables/StudyVarRef" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideAssociationList elementPath="associatedObjectives/associatedObjective" fieldElementPath="description/full" 
+					fieldLabel="Objective Associations" listElementPath="/FTICP/StudyDesign/Design/Objectives/Objective" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.OutcomeHelper" spanBothColumns="true"/>
+				<!-- variable associations
+				<DesignGuideAssociationList elementPath="Variables/StudyVarRef" fieldElementPath="description/full" 
+					fieldLabel="Variable Associations" listElementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.OutcomeHelper" spanBothColumns="true"/>
+				-->
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="EligibilityCriteria" helpID="2114" source="Mapper">
+			<DesignGuideProtocolObject addButtonOverrideClassPath="Tspd.WpfControls.PDG.Helpers.EligibilityCriteriaHelper" 
+				addNewButtonText="Manage Criteria" detailHelpID="2141" displayUpDownTableButtons="true" 
+				elementPath="/FTICP/StudyPopulation/Population/EligibilityCriteria/EligibilityCriterion" helpID="2101" source="Mapper"
+				tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.EligibilityCriteriaHelper" upDownLimitElementPath="criterionType">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full"  required="true" 
+					updateHelperClass="Tspd.WpfControls.PDG.Helpers.EligibilityCriteriaHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="criterionType" maxWidth="120.0" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="classifierType"  maxWidth="120.0" visibleInTable="true"/>
+				<DesignGuideField containsMultilineText="true" elementPath="rationale"/>
+				<DesignGuideField elementPath="description/brief" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="extraString" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="extraDate" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="extraCoded" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="StudyRestrictions" helpID="2115" pageLabel="Study Restrictions and Compliance" source="Mapper">
+			<DesignGuideProtocolObject detailHelpID="2142" displayUpDownTableButtons="true" elementPath="/FTICP/StudyConduct/SCG/StudyRestrictions/StudyRestriction" helpID="2106" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.StudyRestrictionHelper" upDownLimitElementPath="type" addNewButtonText="Create New Study Restriction">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full" visibleInTable="true" required="true"/>
+				<DesignGuideField elementPath="type" maxWidth="150.0" visibleInTable="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="StudyPopulation" helpID="2116" source="Mapper" visible="false">
+			<DesignGuideHeader headerLabel="Population" helpID="2104"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/entranceCriteriaSummary"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/evaluableSubjectDef"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/acceptsHealthyVolunteersType"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/minSubjectAge"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/maxSubjectAge"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/subjectAgeTimeUnit"/>
+			<DesignGuideField elementPath="/FTICP/StudyPopulation/Population/gender"/>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="TrialMaterials" helpID="2117" includeOtherEntriesFromMapper="false" source="Config" visible="false">
+			<DesignGuideProtocolObject childDetailHelpID="2144" detailHelpID="2143" elementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" groupingTableHelperClassPath="Tspd.WpfControls.PDG.Helpers.ClinicalTrialMaterialHelper" headerLabel="Test Article" helpID="2098" source="Mapper">
+				<DesignGuideField addCounter="true" elementPath="CTMaterialName" required="true" visibleInTable="true"/>
+				<DesignGuideField addCounter="true" elementPath="developmentID"  visibleInTable="false"/>
+				<DesignGuideField elementPath="CTMaterialType" maxWidth="120.0" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="primaryRoleInStudy" maxWidth="120.0" visibleInTable="true"/>
+				<DesignGuideField elementPath="routeOfAdministration" visibleInTable="true"/>
+				<DesignGuideField elementPath="formulation" visibleInTable="true"/>
+				<DesignGuideField elementPath="dose" required="true" visibleInChildDialog="true" visibleInChildTable="false" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="doseUnit" visibleInChildDialog="true" visibleInChildTable="false" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideMultiField fieldLabel="Dose" visibleInChildTable="true" visibleInDetailPane="false" visibleInTable="false">
+					<MultiFieldContents elementPath="dose"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInTable="true" elementPath="doseUnit"/>
+				</DesignGuideMultiField>
+				<DesignGuideMultiField fieldLabel="Frequency" visibleInChildTable="false" visibleInDetailPane="false" visibleInTable="false">
+					<MultiFieldContents elementPath="frequency"/>
+					<MultiFieldContents displayOnSameLineAsPreviousInTable="true" elementPath="frequencyUnit" separatorBeforeFieldOnSameLine="per"/>
+				</DesignGuideMultiField>
+				<DesignGuideField elementPath="frequency" visibleInChildDialog="true" visibleInChildTable="false" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="frequencyUnit" visibleInChildDialog="true" visibleInChildTable="true" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="strength" fieldLabel="Formulation Strength" visibleInChildDialog="true" visibleInChildTable="true" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="accountabilityProcedures" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideAssociationList elementPath="associatedCTMaterials/associatedCTMaterial" fieldElementPath="CTMaterialName" 
+					fieldLabel="Associations" listElementPath="/FTICP/ClinicalTrialMaterials/ClinicalTrialMaterials/ClinicalTrialMaterial" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.ClinicalTrialMaterialHelper" visibleInChildDialog="true" 
+					visibleInChildTable="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="SDTMDomain" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="roleOfMaterialInArm" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+<!-- 
+			<DesignGuideProtocolObject elementPath="/FTICP/ClinicalTrialMaterials/MaterialsInArms/MaterialInArm" source="Mapper" visible="false">
+				<DesignGuideField elementPath="roleOfMaterialInArm"/>
+			</DesignGuideProtocolObject>
+			tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper"
+		-->
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Schedule" helpID="2119" pageLabel="Study Arms" source="SOA" visible="true">
+			<DesignGuideProtocolObject addNewButtonText="Create New Schedule" dependentProtocolObjectElementPath="/FTICP/StudyDesign/Design/Arms/Arm" detailHelpID="2145" displayUpDownTableButtons="true" elementPath="/FTICP/StudySchedule/Schedules/Schedule" headerLabel="Schedule" helpID="2103" parentChildHelperClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper">
+				<DesignGuideField addCounter="false" containsMultilineText="true" elementPath="soaName" headerLabel="Schedule / Study Arms" required="true" spanBothColumns="true" updateHelperClass="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="AssociatedArms/AssociatedArm" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideAssociationList elementPath="AssociatedArms/AssociatedArm" fieldElementPath="description/brief" fieldLabel="List of Study Arms" headerLabel="Study Arm" listElementPath="/FTICP/StudyDesign/Design/Arms/Arm" listHelperClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" spanBothColumns="true"/>
+				<DesignGuideField elementPath="plannedEnrollmentPerArm" headerLabel="Subjects" maxWidth="60.0" numericInTable="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="true"/>
+				<DesignGuideField elementPath="randomizationWeightForArm"  headerLabel="Weight" maxWidth="60.0" numericInTable="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Arms" helpID="2119" pageLabel="Study Arms" source="Mapper" visible="false">
+			<DesignGuideProtocolObject addNewButtonText="Create New Arm" detailHelpID="2146" 
+				displayUpDownTableButtons="true" 
+				editDialogHelperClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" 
+				elementPath="/FTICP/StudyDesign/Design/Arms/Arm" helpID="2102" 
+				parentChildHelperClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" 
+				source="Config" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper">
+				<DesignGuideField elementPath="description/brief" required="true" updateHelperClass="Tspd.WpfControls.PDG.Helpers.SchedulesAndArmsHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="plannedEnrollmentPerArm" headerLabel="Subjects" maxWidth="60.0" numericInTable="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="randomizationWeightForArm"  headerLabel="Weight" maxWidth="60.0" numericInTable="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="SDTMDomain" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuideBranch branchLabel="Schedule(s)" includeOtherPagesFromMapper="true" source="Mapper" systemName="Schedule" visible="true">
+			<DesignGuideRuntimePage classPath="Tspd.WpfControls.PDG.Pages.Schedule.Schedule" elementType="Schedule" helperClassPath="Tspd.WpfControls.PDG.Helpers.ScheduleCollectionHelper" visible="true">
+				<DesignGuidePage classPath="Tspd.WpfControls.PDG.Pages.Schedule.Schedule" elementType="Schedule" helpID="2118" source="WPF" visible="true"/>
+			</DesignGuideRuntimePage>
+		</DesignGuideBranch>
+		<DesignGuideBranch branchLabel="Treatment Schedule(s)" includeOtherPagesFromMapper="false" source="Config" systemName="TreatmentStrategies" visible="true">
+			<DesignGuideRuntimePage classPath="Tspd.WpfControls.PDG.Pages.DosingSchedulePlan.ScheduleDosingPlan" elementType="DosingSchedules" helperClassPath="Tspd.WpfControls.PDG.Helpers.DosingPlanCollectionHelper" visible="true">
+				<DesignGuidePage classPath="Tspd.WpfControls.PDG.Pages.DosingSchedulePlan.ScheduleDosingPlan" elementType="DosingSchedules" helpID="2186" source="WPF" visible="true"/>
+			</DesignGuideRuntimePage>
+		</DesignGuideBranch>
+	</DesignGuideBranch>
+	<DesignGuideBranch branchLabel="Study Analysis" includeOtherPagesFromMapper="true" source="Mapper" systemName="AdvancedStats">
+		<DesignGuidePage elementType="Hypotheses" helpID="2120" source="Mapper">
+			<DesignGuideProtocolObject dependentProtocolObjectElementPath="/FTICP/StatisticsFull/Hypotheses/Hypothesis" detailHelpID="2147" 
+				elementPath="/FTICP/StatisticsFull/Hypotheses/Hypothesis" helpID="2040" 
+				addNewButtonText="Create New Hypothesis"
+				parentChildHelperClassPath="Tspd.WpfControls.PDG.Helpers.HypothesisHelper" source="Mapper" 
+				tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.HypothesisHelper" showParentChildPlacement="true">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full" required="true" updateHelperClass="Tspd.WpfControls.PDG.Helpers.HypothesisHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="description/brief" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="description/label" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="clinicallySignificantDifference"/>
+				<DesignGuideField elementPath="AssociatedObjectives/associatedObjective" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="AssociatedAnalyses/associatedAnalysis" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="hypothesisType" maxWidth="150.0" visibleInTable="true"/>
+				<DesignGuideField elementPath="TestStatistics/StudyVarRef" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideAssociationList elementPath="associatedObjectives/associatedObjective" fieldElementPath="description/full" fieldLabel="Objective Associations" listElementPath="/FTICP/StudyDesign/Design/Objectives/Objective" listHelperClassPath="Tspd.WpfControls.PDG.Helpers.HypothesisHelper" spanBothColumns="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Analyses" helpID="2121" source="Mapper">
+			<DesignGuideProtocolObject detailHelpID="2148" displayUpDownTableButtons="true" elementPath="/FTICP/StatisticsFull/Analyses/Analysis" helpID="2041" source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisHelper" tableOrderingElementPath="description/brief" upDownLimitElementPath="analysisRole" addNewButtonText="Create New Analysis">
+				<DesignGuideField addCounter="true" elementPath="description/brief" headerLabel="Analysis" required="true" visibleInTable="true"/>
+				<DesignGuideField elementPath="analysisRole" headerLabel="Type" maxWidth="150.0" visibleInTable="true"/>
+				<DesignGuideField containsMultilineText="true" elementPath="description/full" updateHelperClass="Tspd.WpfControls.PDG.Helpers.AnalysisHelper"/>
+				<DesignGuideField containsMultilineText="true" elementPath="rationale"/>
+				<DesignGuideField elementPath="description/label" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="analysisClass" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="significanceLevel" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="power" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="alphaTails" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="lowerRejectionLimit" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="upperRejectionLimit" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="comparisonType" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="multipleComparisonsAdjustment" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="compositeEndpoints" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="missingDataProcedures" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="variability" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="StatisticalModels/StatisticalModel" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="SampleSizeAnalyses/sampleSizeAnalysis" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="AnalysisSets/analysisSet" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="AnalysisSets" helpID="2122" pageLabel="Population Sets" source="Mapper">
+			<DesignGuideProtocolObject detailHelpID="2149" displayUpDownTableButtons="true" 
+				elementPath="/FTICP/StatisticsFull/AnalysisSets/AnalysisPopulationSet" helpID="2042" source="Mapper" 
+				tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisSetHelper" tableOrderingElementPath="description/full" upDownLimitElementPath="setType"
+				updateHelperClass="Tspd.WpfControls.PDG.Helpers.AnalysisSetHelper">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full"  headerLabel="Population Set" visibleInTable="true" required="true"/>
+				<DesignGuideField elementPath="setType"  headerLabel="Type" maxWidth="150.0" visibleInTable="true"/>
+				<DesignGuideField containsMultilineText="true" elementPath="rationale"/>
+				<DesignGuideStringListField elementPath="criteria"  spanBothColumns="false" visibleInDetailPane="true" visibleInEditDialog="true"/>
+				<DesignGuideField elementPath="description/brief" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="description/label" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="classVariables/StudyVarRef" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="InterimAnalyses" helpID="2123" source="Mapper" visible="false"/>
+		<DesignGuidePage elementType="StatisticalModels" helpID="2124" includeOtherEntriesFromMapper="false" source="Config">
+			<DesignGuideProtocolObject addLoadButtonText="Load From Library" detailHelpID="2150" displayUpDownTableButtons="true" 
+				elementPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" helpID="2043" headerLabel="Statistical Model" 			
+				loadButtonElementPath="/FTICP/StatisticsFull/StatisticalModels/StatisticalModel" source="Mapper" upDownLimitElementPath="analysisType"
+				tableOrderingClassPath="Tspd.WpfControls.PDG.Pages.StatsModel.StatisticalModelHelper" tableOrderingElementPath="description/full">
+				<DesignGuideField addCounter="true" containsMultilineText="true" elementPath="description/full" headerLabel="Statistical Model" updateHelperClass="Tspd.WpfControls.PDG.Pages.StatsModel.StatisticalModelHelper" visibleInTable="true" required="true"/>
+				<DesignGuideField elementPath="analysisType"  headerLabel="Model Type" maxWidth="150.0" visibleInTable="true"/>
+				<DesignGuideStringListField elementPath="Assumptions" spanBothColumns="true"/>
+				<DesignGuideField elementPath="fromID" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="toID" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="description/brief" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="description/label" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="procSignature" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="methodFunc" visibleInDetailPane="false" visibleInEditDialog="false"/>
+				<DesignGuideField elementPath="Variables/StudyVarRef" visibleInDetailPane="false" visibleInEditDialog="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="StudyVariables" helpID="2125" pageLabel="Analysis Variables" 
+			source="Mapper" visible="true">
+			<DesignGuideProtocolObject 
+			editDialogHelperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+			deleteOverriderClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+			elementPath="/FTICP/StatisticsFull/VariableDictionary/StudyVarDef" headerLabel="Analysis Variable" 
+			displayUpDownTableButtons="true" upDownLimitElementPath="originType" detailHelpID="2174" helpID="2044" 
+			source="Mapper" tableOrderingClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper">
+				<!-- in study variable -->
+				<DesignGuideField elementPath="description/brief"/>
+				<DesignGuideField elementPath="definition"/>
+				<!-- in both -->
+				<DesignGuideField addCounter="true" elementPath="description/full"  visibleInTable="true"/>
+				<DesignGuideField elementPath="description/label" shareLineInEditDialog="true" 
+					visibleInTable="true" required="true"/>
+				<DesignGuideField elementPath="dataType" enumList="_runtime" 
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					shareLineInEditDialog="true" required="true"/>
+				<DesignGuideField dataType="Coded" elementPath="UnitOfMeasureCategory" enumList="_runtime" 
+					fieldLabel="Unit of Measure" 
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					shareLineInEditDialog="true"/>
+				<DesignGuideField dataType="Coded" elementPath="UnitOfMeasureValue" enumList="_runtime" 
+					fieldLabel="" helperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="originType" enumList="_runtime" 
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					shareLineInEditDialog="true" visibleInTable="true" required="true"/>
+				<!-- in analysis variable -->
+				<DesignGuideField elementPath="InitialValue" fieldLabel="Initial Value" 
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					shareLineInEditDialog="true"/>
+				<!-- in both -->
+				<DesignGuideField elementPath="alias1" shareLineInEditDialog="true"/> <!-- SAS Name -->
+				<!-- in study variable -->
+				<DesignGuideField elementPath="oid" fieldLabel="OID" shareLineInEditDialog="true" 
+					required="true"/>
+				<DesignGuideField elementPath="minValid" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="maxValid" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="studyMin" shareLineInEditDialog="true"/> 
+				<DesignGuideField elementPath="studyMax" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="panicLow" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="panicHigh" shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="precision"/>
+				<!-- in analysis variable 	-->
+				<DesignGuideAssociationList elementPath="dimension" fieldElementPath="text" fieldLabel="Keys" 
+					listElementPath="text" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					visibleInChildDialog="false" visibleInChildTable="false" 
+					visibleInDetailPane="true" visibleInEditDialog="true" visibleInTable="false"/>
+				<DesignGuideAssociationList elementPath="associatedOutcomes/associatedOutcome" 
+					fieldElementPath="description/full" 
+					fieldLabel="Endpoint Associations" 
+					listElementPath="/FTICP/StudyDesign/Design/Outcomes/Outcome" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.AnalysisVariableHelper" 
+					spanBothColumns="true"/>
+				<!-- hidden in all variables -->
+				<DesignGuideField elementPath="alias2" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="alias3" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="alias1CodeSys" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="alias2CodeSys" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="alias3CodeSys" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="imputationFunc" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="imputationMethod" readOnly="true" visibleInDetailPane="false" visibleInEditDialog="false" visibleInTable="false"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+	</DesignGuideBranch>
+	<DesignGuideBranch branchLabel="TrialMaterials" includeOtherEntriesFromMapper="true" source="Mapper" systemName="TrialMaterials" visible="false"/>
+	<DesignGuideBranch branchLabel="Population" includeOtherPagesFromMapper="true" source="Mapper" systemName="StudyPopulation" visible="false"/>
+	<DesignGuideBranch branchLabel="Schedule : SOA1_2" includeOtherPagesFromMapper="true" source="Mapper" systemName="Schedule" visible="false"/>
+	<DesignGuideBranch branchLabel="Planned Metrics" includeOtherPagesFromMapper="true" source="Mapper" systemName="Metrics" visible="false"/>
+	<DesignGuideBranch branchLabel="Study Conduct" includeOtherPagesFromMapper="true" source="Mapper" systemName="StudyConduct" visible="false"/>
+	<DesignGuideBranch branchLabel="Custom Elements" includeOtherPagesFromMapper="true" source="Mapper" systemName="CustomVars" visible="false"/>
+	<DesignGuideBranch branchLabel="TreatmentStrategies" includeOtherPagesFromMapper="true" source="Mapper" systemName="TreatmentStrategies" visible="false">
+		<DesignGuidePage elementType="TestArticles" source="Mapper" visible="false"  helpID="2196">
+			<DesignGuideProtocolObject displayUpDownTableButtons="true" detailHelpID="2193"  helpID="2190"
+				elementPath="/FTICP/TreatmentStrategies/TestArticles/TestArticle" headerLabel="Test Article" 
+				source="Mapper" deleteOverriderClassPath="Tspd.WpfControls.PDG.Helpers.TestArticleHelper">
+				<DesignGuideField elementPath="Name" headerLabel="Name" required="true"	visibleInTable="true"
+					containsMultilineText="true" updateHelperClass="Tspd.WpfControls.PDG.Helpers.TestArticleHelper"/>
+				<DesignGuideField elementPath="MaterialType" headerLabel="Type" visibleInTable="true"/>
+				<DesignGuideField elementPath="PrimaryRole" headerLabel="Primary Role" visibleInTable="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Components"  source="Mapper" visible="false"  helpID="2197" >
+			<DesignGuideProtocolObject displayUpDownTableButtons="true"  detailHelpID="2194" helpID="2191" 
+				elementPath="/FTICP/TreatmentStrategies/Components/Component" headerLabel="Component" 
+				source="Mapper" deleteOverriderClassPath="Tspd.WpfControls.PDG.Helpers.ComponentHelper">
+				<DesignGuideField elementPath="Name" headerLabel="Name" required="true"	visibleInTable="true"
+					 updateHelperClass="Tspd.WpfControls.PDG.Helpers.ComponentHelper"/>
+				<DesignGuideField elementPath="DevelopmentID" headerLabel="ID" visibleInTable="true"/>
+				<DesignGuideField dataType="Coded" elementPath="TestArticleID/ID" enumList="_runtime" fieldLabel="Test Article"
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.ComponentHelper" visibleInTable="true"/>
+				<DesignGuideField elementPath="Strength" headerLabel="Strength" required="false" visibleInDetailPane="false"
+					shareLineInEditDialog="true"/>
+				<DesignGuideField elementPath="StrengthUnit" visibleInDetailPane="false" shareLineInEditDialog="true"/>
+				<DesignGuideMultiField fieldLabel="Strength" visibleInTable="true" visibleInDetailPane="true">
+					<MultiFieldContents elementPath="Strength"/>
+					<MultiFieldContents elementPath="StrengthUnit" displayOnSameLineAsPreviousInDetails="true"
+						displayOnSameLineAsPreviousInTable="true" />
+				</DesignGuideMultiField>
+				<DesignGuideField elementPath="Formulation" headerLabel="Formulation" required="false" visibleInTable="true"/>
+				<DesignGuideField elementPath="Manufacturer" headerLabel="Manufacturer" required="false" visibleInTable="true"/>
+				<DesignGuideAssociationList elementPath="associatedComponents/associatedComponent" fieldElementPath="Name" 
+					fieldLabel="Associations" listElementPath="/FTICP/TreatmentStrategies/Components/Component" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.ComponentHelper"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="Treatments"  source="Mapper" visible="false" helpID="2198">
+			<DesignGuideProtocolObject displayUpDownTableButtons="true" detailHelpID="2195" helpID="2192"
+				elementPath="/FTICP/TreatmentStrategies/Treatments/Treatment" headerLabel="Treatment" 
+				source="Mapper" deleteOverriderClassPath="Tspd.WpfControls.PDG.Helpers.TreatmentHelper">
+				<DesignGuideField elementPath="Name" headerLabel="Name" required="true"	visibleInTable="true"
+					updateHelperClass="Tspd.WpfControls.PDG.Helpers.TreatmentHelper"/>
+				<DesignGuideAssociationList elementPath="associatedComponents/associatedComponent" fieldElementPath="Name" 
+					fieldLabel="Components" listElementPath="/FTICP/TreatmentStrategies/Components/Component" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.TreatmentHelper" useQuantityField="true" visibleInTable="false"/>
+				<DesignGuideField elementPath="Dose" headerLabel="Dose" required="false" 
+					visibleInTable="false" shareLineInEditDialog="true" visibleInDetailPane="false"/>
+				<DesignGuideField elementPath="DoseUnit" headerLabel=" " required="false" 
+					visibleInTable="false" shareLineInEditDialog="true" visibleInDetailPane="false"/>
+				<DesignGuideMultiField fieldLabel="Dose" visibleInDetailPane="true" visibleInTable="true">
+					<MultiFieldContents elementPath="Dose"/>
+					<MultiFieldContents elementPath="DoseUnit" displayOnSameLineAsPreviousInTable="true" 
+						displayOnSameLineAsPreviousInDetails="true"/>
+				</DesignGuideMultiField>
+				<!-- not needed
+				<DesignGuideField elementPath="Frequency" headerLabel="Frequency" required="false"	visibleInTable="true"/>
+				-->
+				<DesignGuideField elementPath="FrequencyUnit" headerLabel="Frequency" required="false" visibleInTable="true"/>
+				<DesignGuideField elementPath="TotalDailyDose" headerLabel="Total Daily Dose" required="false" visibleInTable="true"/>
+				<DesignGuideField elementPath="DeliveryMethod" headerLabel="Delivery Method" required="false" visibleInTable="false"/>
+				<DesignGuideField elementPath="DeliveryInstruction" headerLabel="Delivery Instruction" required="false"	
+					visibleInTable="false" containsMultilineText="true" />
+				<DesignGuideField elementPath="FoodFastingRequirements" headerLabel="Food/Fasting Requirements" required="false" 
+					visibleInTable="false"/>
+				<DesignGuideField elementPath="FoodFastingInstructions" headerLabel="Food/Fasting Instructions" required="false" 
+					visibleInTable="false" containsMultilineText="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="DosingScheduleFootnotes" helpID="2188" source="Mapper" visible="true">
+			<DesignGuideProtocolObject displayUpDownTableButtons="true" 
+				elementPath="/FTICP/TreatmentStrategies/DosingScheduleFootnotes/DosingScheduleFootnote" headerLabel="Dosing Schedule Footnote" 
+				source="Mapper">
+				<DesignGuideField elementPath="Text" headerLabel="Text" required="true"	visibleInTable="true" containsMultilineText="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="DosingScheduleMappings" helpID="2187" source="Mapper" visible="true">
+			<DesignGuideProtocolObject displayUpDownTableButtons="true" 
+				elementPath="/FTICP/TreatmentStrategies/DosingScheduleMappings/DosingScheduleMapping" headerLabel="Dosing Schedule Mapping" 
+				source="Mapper">
+				<DesignGuideAssociationList elementPath="associatedTreatments/associatedTreatment" fieldElementPath="Name" 
+					fieldLabel="Treatments" listElementPath="/FTICP/TreatmentStrategies/Treatments/Treatment" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleMappingHelper"/>
+				<DesignGuideField dataType="Coded" elementPath="ActivityID/ID" enumList="_runtime" fieldLabel="Activity"
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleMappingHelper" visibleInTable="true"/>
+				<DesignGuideAssociationList elementPath="associatedFootnotes/associatedFootnote" fieldElementPath="Name" 
+					fieldLabel="Footnotes" listElementPath="/FTICP/TreatmentStrategies/DosingScheduleFootnotes/DosingScheduleFootnote" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleMappingHelper"/>
+				<DesignGuideField elementPath="RoleInArm" headerLabel="Role In Arm" visibleInTable="true"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+		<DesignGuidePage elementType="DosingSchedules" helpID="2189" source="Mapper" visible="true">
+			<DesignGuideProtocolObject displayUpDownTableButtons="true" 
+				elementPath="/FTICP/TreatmentStrategies/DosingSchedules/DosingSchedule" headerLabel="Dosing Schedule" 
+				source="Mapper">
+				<!-- MOVED TO SCHEDULE - you can figure out how to get it!
+				<DesignGuideField dataType="Coded" elementPath="ActivityType" enumList="_runtime" fieldLabel="Activity Type"
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleHelper" visibleInTable="true"/>
+				-->
+				<DesignGuideField dataType="Coded" elementPath="ScheduleID/ID" enumList="_runtime" fieldLabel="Schedule"
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleHelper" visibleInTable="true"/>
+				<DesignGuideField dataType="Coded" elementPath="ArmID/ID" enumList="_runtime" fieldLabel="Arm"
+					helperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleHelper" visibleInTable="true"/>
+				<DesignGuideAssociationList elementPath="associatedDosingScheduleMappings/associatedDosingScheduleMapping" fieldElementPath="Name" 
+					fieldLabel="Mappings" listElementPath="/FTICP/TreatmentStrategies/DosingScheduleMappings/DosingScheduleMapping" 
+					listHelperClassPath="Tspd.WpfControls.PDG.Helpers.DosingScheduleHelper"/>
+			</DesignGuideProtocolObject>
+		</DesignGuidePage>
+	</DesignGuideBranch>	
+</DesignGuideTree>

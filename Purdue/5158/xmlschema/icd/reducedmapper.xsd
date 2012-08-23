@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema elementFormDefault="qualified" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:annotation>Reduced TSD Configuration Schema TSD2.4.x (c) 2007 FastTrack Systems Inc.</xsd:annotation>
+	<xsd:element name="Configuration">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="ElementTab"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ElementTab">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="ElementGroup"/>
+			</xsd:sequence>
+			<xsd:attribute name="tabID" type="xsd:string" use="required"/>
+			<xsd:attribute name="tabLabel" type="xsd:string" use="required"/>
+			<xsd:attribute name="docType" type="xsd:string" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ElementGroup">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" minOccurs="0" ref="Element"/>
+			</xsd:sequence>
+			<xsd:attribute name="groupID" type="xsd:string" use="required"/>
+			<xsd:attribute name="groupLabel" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="Element">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element maxOccurs="unbounded" minOccurs="o" ref="ElementAttribute"/>
+			</xsd:sequence>
+			<xsd:attribute name="elementID" type="xsd:string" use="required"/>
+			<xsd:attribute name="elementLabel" type="xsd:string" use="required"/>
+		</xsd:complexType>
+	</xsd:element>
+	<xsd:element name="ElementAttribute" nillable="true">
+		<xsd:complexType>
+			<xsd:attribute name="attribute" type="xsd:string" use="required"/>
+			<xsd:attribute name="label" type="xsd:string" use="required"/>
+			<xsd:attribute name="stickyCase" type="xsd:boolean" use="required"/>
+			<xsd:attribute name="hidden" type="xsd:boolean" use="required"/>
+			<xsd:attribute name="tooltip" type="xsd:string" use="required"/>
+			<xsd:attribute name="required" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="dataType" type="xsd:string" use="optional"/>
+			<xsd:attribute name="enumList" type="xsd:string" use="optional"/>
+			<xsd:attribute name="custom" type="xsd:boolean" use="optional"/>
+			<xsd:attribute name="headerStyle" type="xsd:string" use="optional"/>
+			<xsd:attribute name="sectionLevel" type="xsd:string" use="optional"/>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

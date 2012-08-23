@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="DesignGuideTree">
+		<xs:annotation>
+			<xs:documentation>The root of the design guide.
+				If we are including other branches from the Mapper, we will auto-build all branches and their pages.  
+				If you want a branch or page hidden, set the &quot;visible&quot; attribute to &quot;false&quot;.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideBranch"/>
+			</xs:sequence>
+			<xs:attribute default="true" name="includeOtherBranchesFromMapper" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideBranch">
+		<xs:annotation>
+			<xs:documentation>For each branch of the design guide tree.  
+				If the source is &quot;Mapper&quot;, use the Mapper to configure the pages - and you&apos;re done here!
+				If the source is &quot;Config&quot;, define the pages.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuidePage"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideRuntimePage"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideBranch"/>
+			</xs:sequence>
+			<xs:attribute default="Mapper" name="source" type="BranchSource" use="optional"/>
+			<xs:attribute name="systemName" use="required"/>
+			<xs:attribute name="branchLabel" type="xs:string" use="optional"/>
+			<xs:attribute default="true" name="includeOtherPagesFromMapper" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visible" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideRuntimePage">
+		<xs:annotation>
+			<xs:documentation>        For design guide Pages that are driven by the collection of BPO [as SOA].
+        Must define both classPath to the page helper, and helperClassPath to the collection/bpo helper.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuidePage"/>
+			</xs:sequence>
+			<xs:attribute name="elementType" type="xs:string" use="required"/>
+			<xs:attribute name="helperClassPath" type="xs:string" use="required"/>
+			<xs:attribute name="classPath" type="xs:string" use="required"/>
+			<xs:attribute default="true" name="visible" type="xs:boolean" use="optional"/>
+			<xs:attribute name="helpID" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuidePage">
+		<xs:annotation>
+			<xs:documentation>For design guide custom pages. 
+				If the source is &quot;Mapper&quot;, auto-generate the page from the mapper.
+				If the source is &quot;Config&quot;, specify the elements or protocol object that are displayed on this page.
+				If the source is &quot;WinForm&quot; or &quot;WPF&quot;, you must specify the fully-qualified classPath for the control.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideHeader"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideField"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideMultiField"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideProtocolObject"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideSpacer"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideColumnStack"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideStringListField"/>
+			</xs:sequence>
+			<xs:attribute name="elementType" type="xs:string" use="required"/>
+			<xs:attribute default="Mapper" name="source" type="PageSource" use="optional"/>
+			<xs:attribute name="classPath" type="xs:string" use="optional"/>
+			<xs:attribute default="true" name="includeOtherEntriesFromMapper" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visible" type="xs:boolean" use="optional"/>
+			<xs:attribute name="verificationClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="pageLabel" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideProtocolObject">
+		<xs:annotation>
+			<xs:documentation>For ProtocolObjects. 
+	       			If the source is &quot;Mapper&quot;, auto-generate the object table, details and edit page from the mapper.
+	       			If the source is &quot;Config:, specify the fields that are displayed in the table and on the detail pane.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence minOccurs="0">
+				<xs:element maxOccurs="1" minOccurs="0" ref="DesignGuideHeader"/>
+				<xs:element maxOccurs="1" minOccurs="0" ref="DesignGuideAssociationList"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideField"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideMultiField"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideSpacer"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideCheckBox"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideStringListField"/>
+			</xs:sequence>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute default="Mapper" name="source" type="ProtocolObjectSource" use="optional"/>
+			<xs:attribute default="true" name="includeOtherFieldsFromMapper" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visible" type="xs:boolean" use="optional"/>
+			<xs:attribute name="headerLabel" type="xs:string" use="optional"/>
+			<xs:attribute default="-1" name="helpID" type="xs:int" use="optional"/>
+			<xs:attribute default="-1" name="detailHelpID" type="xs:int" use="optional"/>
+			<xs:attribute default="-1" name="childDetailHelpID" type="xs:int" use="optional"/>
+			<xs:attribute name="guideText" type="xs:string" use="optional"/>
+			<xs:attribute default="false" name="displayParentChildTableButtons" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="displayUpDownTableButtons" type="xs:boolean" use="optional"/>
+			<xs:attribute name="upDownLimitElementPath" type="xs:string" use="optional"/>
+			<xs:attribute name="tableOrderingClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="editDialogHelperClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="dependentProtocolObjectElementPath" type="xs:string" use="optional"/>
+			<xs:attribute name="parentChildHelperClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="showParentChildPlacement" type="xs:boolean" use="optional"/>
+			<xs:attribute name="addNewButtonText" type="xs:string" use="optional"/>
+			<xs:attribute name="tableOrderingElementPath" type="xs:string" use="optional"/>
+			<xs:attribute name="saveLabel" type="xs:string" use="optional"/>
+			<xs:attribute name="addButtonOverrideClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="updateHelperClass" type="xs:string" use="optional"/>
+			<xs:attribute name="addLoadButtonText" type="xs:string" use="optional"/>
+			<xs:attribute name="loadButtonClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="loadButtonElementPath" type="xs:string" use="optional"/>
+			<xs:attribute name="groupingTableHelperClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="deleteOverriderClassPath" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideField">
+		<xs:annotation>
+			<xs:documentation>NOTE:  Trial-level (atomic) fields are only displayed in the editing pane, so the &quot;visibleInDetailPane&quot; attribute will be used.
+	                                            Object-level fields are displayed in the table, the detail pane and in the editing dialog, so visibility may be set for each.
+
+				The fields on each page.  These fields are formatted to meet the current corporate style guide. 
+	       			If you&apos;re using the multiple fields, please set the original elements&apos; visibility correctly.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="1" minOccurs="0" ref="DesignGuideFieldButton"/>
+			</xs:sequence>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute name="fieldLabel" type="xs:string" use="optional"/>
+			<xs:attribute name="tableLabel" type="xs:string" use="optional"/>
+			<xs:attribute name="toolTip" type="xs:string" use="optional"/>
+			<xs:attribute default="String" name="dataType" use="optional"/>
+			<xs:attribute name="enumList" type="xs:string" use="optional"/>
+			<xs:attribute default="false" name="required" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="readOnly" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="containsMultilineText" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="numericInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInDetailPane" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInEditDialog" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInChildTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInChildDialog" type="xs:boolean" use="optional"/>
+			<xs:attribute name="controlType" type="xs:string"/>
+			<xs:attribute name="helperClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="elementType" type="xs:string" use="optional"/>
+			<xs:attribute name="headerLabel" type="xs:string" use="optional"/>
+			<xs:attribute name="formatterClassPath" type="xs:string" use="optional"/>
+			<xs:attribute default="false" name="saveSelf" type="xs:string" use="optional"/>
+			<xs:attribute default="true" name="allowDirectEditing" type="xs:string" use="optional"/>
+			<xs:attribute default="-1" name="controlHeight" type="xs:string" use="optional"/>
+			<xs:attribute name="updateHelperClass" type="xs:string" use="optional"/>
+			<xs:attribute default="false" name="addCounter" type="xs:boolean" use="optional"/>
+			<xs:attribute name="maxWidth" type="xs:double" use="optional"/>
+			<xs:attribute name="maxTextLength" type="xs:int" use="optional"/>
+			<xs:attribute name="shareLineInEditDialog" type="xs:boolean" use="optional" default="false"/>
+			<xs:attribute name="fieldClassPath" type="xs:string" use="optional"/>
+			<xs:attribute name="listenerClassPath" type="xs:string" use="optional"/>
+			<xs:attribute default="true" name="allowBlankComboitem" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideStringListField">
+		<xs:annotation>
+			<xs:documentation>Used to populate a String List</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="1" ref="MultiFieldContents"/>
+				<xs:element maxOccurs="1" minOccurs="0" ref="DesignGuideFieldButton"/>
+			</xs:sequence>
+			<xs:attribute name="fieldLabel" type="xs:string" use="required"/>
+			<xs:attribute default="false" name="visibleInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInDetailPane" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInEditDialog" type="xs:boolean" use="optional"/>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute default="false" name="spanBothColumns" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInChildTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInChildDialog" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideMultiField">
+		<xs:annotation>
+			<xs:documentation>Use Multi-fields to put text from several elements into one display area - in the table and/or on the detail pane</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="1" ref="MultiFieldContents"/>
+				<xs:element maxOccurs="1" minOccurs="0" ref="DesignGuideFieldButton"/>
+			</xs:sequence>
+			<xs:attribute name="fieldLabel" type="xs:string" use="required"/>
+			<xs:attribute default="true" name="visibleInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInDetailPane" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInEditDialog" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInChildDialog" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="MultiFieldContents">
+		<xs:annotation>
+			<xs:documentation>Element path and formatting options for each multi-field.
+	       			The &quot;displayOnSameLineAsPreviousXXX&quot; and &quot;separatorBeforeFieldOnSameLine&quot; attributes specify the difference between
+	       				32 Ross Common Suite 220 Ross CA 94901
+	       			- AND -
+	       				32 Ross Common, Suite 220
+	        				Ross, CA 94901</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute default="false" name="displayOnSameLineAsPreviousInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="displayOnSameLineAsPreviousInDetails" type="xs:boolean" use="optional"/>
+			<xs:attribute default=" " name="separatorBeforeFieldOnSameLine" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideHeader">
+		<xs:annotation>
+			<xs:documentation>The gray line that spans all columns.  The help ID is the reference into the help file. Guide text will optionally display beneath the header</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="headerLabel" type="xs:string" use="required"/>
+			<xs:attribute name="helpID" type="xs:integer" use="optional"/>
+			<xs:attribute name="guideText" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideCheckBox">
+		<xs:annotation>
+			<xs:documentation>A check box</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="label" type="xs:string" use="required"/>
+			<xs:attribute name="listenerClassPath" type="xs:string" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideSpacer">
+		<xs:annotation>
+			<xs:documentation>An empty space.</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:element name="DesignGuideFieldButton">
+		<xs:annotation>
+			<xs:documentation>Buttons may be added to Fields and MultiFields.  Pressing the button causes the dialog in &quot;buttonClassPath&quot; to be displayed.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="buttonText" type="xs:string" use="required"/>
+			<xs:attribute name="buttonClassPath" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideColumnStack">
+		<xs:annotation>
+			<xs:documentation>For design guide layouts</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideField"/>
+				<xs:element maxOccurs="unbounded" minOccurs="0" ref="DesignGuideMultiField"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="DesignGuideAssociationList">
+		<xs:annotation>
+			<xs:documentation>A list of checkboxes for object associations</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:attribute name="elementPath" type="xs:string" use="required"/>
+			<xs:attribute name="fieldLabel" type="xs:string" use="required"/>
+			<xs:attribute name="fieldElementPath" type="xs:string" use="required"/>
+			<xs:attribute name="listElementPath" type="xs:string" use="required"/>
+			<xs:attribute name="listHelperClassPath" type="xs:string" use="required"/>
+			<xs:attribute default="false" name="useQuantityField" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInDetailPane" type="xs:boolean" use="optional"/>
+			<xs:attribute default="true" name="visibleInEditDialog" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInChildTable" type="xs:boolean" use="optional"/>
+			<xs:attribute default="false" name="visibleInChildDialog" type="xs:boolean" use="optional"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:simpleType name="BranchSource">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Mapper"/>
+			<xs:enumeration value="Config"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="PageSource">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Mapper"/>
+			<xs:enumeration value="Config"/>
+			<xs:enumeration value="WinForm"/>
+			<xs:enumeration value="WPF"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<xs:simpleType name="ProtocolObjectSource">
+		<xs:restriction base="xs:token">
+			<xs:enumeration value="Mapper"/>
+			<xs:enumeration value="Config"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>
